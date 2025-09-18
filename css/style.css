@@ -955,7 +955,7 @@ transform: translateY(-2px);
 }
 
 .why-us-container .grid .item span.number {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   display: block;
   margin-bottom: 10px;
@@ -964,14 +964,14 @@ transform: translateY(-2px);
 }
 
 .why-us-container .item h3 {
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-weight: bold;
   margin-bottom: 10px;
   color: #fff;
 }
 
 .why-us-container .item p {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #CAD3E0;
   line-height: 1.4;
 }
@@ -1030,14 +1030,14 @@ transform: translateY(-2px);
 .footer-container .contact-address{ display: flex; flex-direction: column;}
 
 .contact-box h4 {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 2px;
   color: #444;
 }
 
 .contact-box p {
-  font-size:14px;
+  font-size:16px;
   color: #444;
   margin: 3px 0;
 }
@@ -1067,7 +1067,7 @@ transform: translateY(-2px);
 }
 
 .footer-logo p {
-  font-size: 14px;
+  font-size: 16px;
   color: #000;
   line-height: 1.5;
 }
@@ -1080,7 +1080,7 @@ transform: translateY(-2px);
 .footer-column h5 {
   font-weight: bold;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 18px;
   color: #1F1F1F;
 }
 
@@ -1092,7 +1092,7 @@ transform: translateY(-2px);
 
 .footer-column ul li {
   margin-bottom:8px;
-  font-size: 14px;
+  font-size: 16px;
   color: #1F1F1F;
 
 }
