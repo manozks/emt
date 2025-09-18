@@ -308,6 +308,10 @@ body {
       .about-section .content h1 {
           font-size: 2rem;
       }
+      
+  .contact-info {
+    display:none;
+  }
   }
 
   /* SERVICES SECTION*/
