@@ -20,14 +20,26 @@ body {
     100% { opacity: 1; transform: translateY(0); }
   }
 
-  .navbar {
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    padding: 12px 20px;
-    left: 4%;
-    right: 4%;
-    top:4%;
-    border-radius: 6px;
-  }
+.navbar {
+  position: fixed;
+  left: 4%;
+  right: 4%;
+  top: 4%;
+  border-radius: 6px;
+  padding: 12px 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background: #fff;
+  transition: all 0.4s ease;
+  z-index: 999;
+}
+
+.navbar.scrolled {
+  left: 0;
+  right: 0;
+  top: 0;
+  border-radius: 0;
+
+}
   .blue-bg{
     background:#09368C;
     border:1px solid #0F4CC0;
