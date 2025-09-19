@@ -718,14 +718,16 @@ padding:0;
 .testimonial {
   
   padding: 30px;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+ 
   position: relative;
  border-radius: 2%;
+ transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .testimonial:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    box-shadow:none;
 }
 
  .testimonial-1 {
@@ -772,13 +774,13 @@ padding:0;
 
 .client-name {
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #2c3e50;
   margin-bottom: 5px;
 }
 
 .client-position {
-  font-size: 1rem;
+  font-size: 1.4rem;
   color: #7f8c8d;
 }
 
