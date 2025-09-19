@@ -281,6 +281,8 @@ body {
   .about-section img {
       max-width: 100%;
       height: auto;
+      animation: bgAnimation 5s linear infinite alternate;
+     
   }
 
   /* ANIMATION */
