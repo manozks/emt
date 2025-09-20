@@ -100,7 +100,7 @@ body {
       right: -220px;
       width: 220px;
       height: 100vh;
-      background: linear-gradient(180deg, #007BFF, #0F4777);
+      background: linear-gradient(180deg, #007BFF, #09368C);
       box-shadow: -2px 0 12px rgba(0, 0, 0, 0.2);
       padding: 20px;
       display: flex;
@@ -1022,6 +1022,7 @@ transform: translateY(-2px);
 }
 
 
+
 /* Footer Section */
 
 
@@ -1209,16 +1210,28 @@ transform: translateY(-2px);
 }
 
  /* Contact Section */
-.contact__hero {
-  /* background: linear-gradient(to bottom, #002057, #002D70); */
-  background:  linear-gradient(89deg, #071545 0%, #08174B 100%);
+.contact__hero {  
+ background-image: url(../images/top-bg.png),  linear-gradient(130deg, #091c5d, #040c27 60%);
+ background-position: center 0;
+ background-repeat: no-repeat;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: left;
   padding: 0 15px;
-  animation: bgAnimation 20s linear infinite alternate;
+  animation: scrollAnimation 20s linear infinite alternate;
+}
+@keyframes scrollAnimation {
+  0% {
+    background-position: top left;
+  }
+  50% {
+    background-position: top top;
+  }
+  100% {
+    background-position: top right;
+  }
 }
 
 .contact__section{
