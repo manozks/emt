@@ -1286,13 +1286,15 @@ transform: translateY(-2px);
       gap: 15px;
     }
 
-    .form-box form input,
+    .form-box form input[type="text"],
+    .form-box form input[type="email"],
     .form-box form select,
     .form-box form textarea {
       width: 100%;
       padding: 12px;
       border: none;
       border-radius: 6px;
+      min-height: 40px;
       font-size: 0.95rem;
       outline: none;
       color: #555!important;
@@ -1335,8 +1337,8 @@ transform: translateY(-2px);
 
     .checkbox-group input[type="checkbox"] {
       appearance: none;
-      width: 14px;
-      height: 14px;
+      width: 18px!important;
+      height: 18px!important;
       border: 2px solid #3D4D6B;
       background: #fff;
       border-radius: 4px;
@@ -1354,8 +1356,8 @@ transform: translateY(-2px);
     .checkbox-group input[type="checkbox"]:checked::after {
       content: "✔";
       position: absolute;
-      top: -2px;
-      left: 5px;
+      top: -8px;
+      left: 3px;
       font-size: 18px;
       color: #fff;
     }
