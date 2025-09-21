@@ -41,8 +41,8 @@ body {
 
 }
   .blue-bg{
-    background:#09368C;
-    border:1px solid #0F4CC0;
+    background:#051233;
+    border:1px solid #0B2364;
   }
 
   .right--bar{
@@ -100,7 +100,7 @@ body {
       right: -220px;
       width: 220px;
       height: 100vh;
-      background: linear-gradient(180deg, #007BFF, #09368C);
+      background: linear-gradient(135deg, #09368C, #051233);
       box-shadow: -2px 0 12px rgba(0, 0, 0, 0.2);
       padding: 20px;
       display: flex;
@@ -161,7 +161,7 @@ body {
  .hero {
   position: relative;
   height: 100vh;
-  background: #004488 url('../images/banner-bg-img.png') no-repeat center center/cover;
+  background: #051233 url('../images/banner-bg-img.png') no-repeat center center/cover;
   color: white;
   display: flex;
   align-items: center;
