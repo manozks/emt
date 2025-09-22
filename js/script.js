@@ -29,6 +29,8 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
+
+
 // Change navbar background on scroll
 window.addEventListener('scroll', function() {
   if (window.scrollY > 50) {
@@ -93,6 +95,7 @@ window.addEventListener('scroll', function() {
 
  // Init
  updateCarousel();
+
 
 
  
