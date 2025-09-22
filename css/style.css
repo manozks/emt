@@ -1588,6 +1588,15 @@ transform: translateY(-2px);
   
     }
 
+    .about-page h5{
+      font-size: 1rem;
+    }
+    .about-page h2,
+    .who-we-are h2,
+    .flexible-container .card h2{
+      font-size: 1.6rem!important;
+    }
+
         .who-we-are,
         .who-we-are p {
       text-align: left;
@@ -1904,7 +1913,10 @@ transform: translateY(-2px);
         gap: 15px;
       }
       .team-section h2 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+      }
+      .team-section h4 {
+        font-size: 1rem;
       }
     }
 
