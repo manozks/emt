@@ -1577,8 +1577,14 @@ transform: translateY(-2px);
         width: 26px;
       }
 
-        .about-page {
-      padding: 160px 9% 100px;
+        .about-page,
+        .outsourcing-page {
+      padding: 160px 9% 50px;
+  
+    }
+
+     .outsourcing-page {
+      padding: 60px 9% 50px;
   
     }
 
