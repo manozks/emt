@@ -541,7 +541,7 @@ background-size: contain;
  
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
   .services-section {
     padding:25% 5% 5%;
@@ -553,6 +553,17 @@ background-size: contain;
    
  
 }
+
+@media (max-width: 600px) {
+
+  .services-section {
+    padding:30% 5% 5%;
+}
+   
+   
+ 
+}
+
 
 /* OUR WORK SECTION */
 
