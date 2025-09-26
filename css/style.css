@@ -554,10 +554,10 @@ background-size: contain;
  
 }
 
-@media (min-width: 600px) {
+@media (max-width: 552px) {
 
   .services-section {
-    padding:30% 5% 5%;
+    padding:40% 5% 5%;
 }
    
    
