@@ -541,10 +541,10 @@ background-size: contain;
  
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
   .services-section {
-    padding:25% 5% 5%;
+    padding:30% 5% 5%;
 }
    .services-container {
       grid-template-columns:1fr;
@@ -554,15 +554,7 @@ background-size: contain;
  
 }
 
-@media (max-width: 552px) {
 
-  .services-section {
-    padding:40% 5% 5%;
-}
-   
-   
- 
-}
 
 
 /* OUR WORK SECTION */
