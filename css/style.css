@@ -2420,6 +2420,7 @@ transform: translateY(-2px);
       margin: auto;
       background: #051233;
       position: relative;
+      overflow: hidden;
     }
 
   .ai__container::after {
