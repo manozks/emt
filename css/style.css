@@ -45,6 +45,9 @@ body {
     background:#051233;
     border:1px solid #0B2364;
   }
+   .white-bg{
+    background: #fff !important;;
+  }
 
   .right--bar{
     display: flex;
@@ -53,14 +56,13 @@ body {
   .navbar-nav .nav-link {
     font-weight: 400;
     color: #fff!important;
-    font-size: 1.6rem;
-    padding-left: 15px;
+    font-size: 2rem!important;
     transition: all 0.5s ease!important;
   }
 
   .navbar-nav .nav-link:hover {
     color: #D7DDE8!important;
-    transform: translateX(8px);
+    transform: translateX(8px)!important;
   }
 
   .contact-info {
@@ -78,86 +80,197 @@ body {
   }
   
 
-    /* Backdrop (blurred background) */
-    .menu-backdrop {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;    
-      background: rgba(0, 0, 0, 0.3);
-      display: none;
-      z-index: 1100;
-    }
-  
-    .menu-backdrop.show {
-      display: block;
-    }
-  
-    /* Slide-in menu */
-    .navbar-collapse {
-      position: fixed;
-      top: 0;
-      right: -220px;
-      width: 220px;
-      height: 100vh;
-      background: linear-gradient(90deg, #051233, #09368C);
-      box-shadow: -2px 0 12px rgba(0, 0, 0, 0.2);
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      transition: right 0.4s ease;
-      z-index: 1102;
-      opacity: 0.9;
-    }
-  
-    .navbar-collapse.show {
-      right: 0;
-    }
+   /* Backdrop (blurred background) */
+.menu-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;    
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 1100;
+}
 
-    .navbar-toggler{
-      border: none!important;
-      outline: none!important;
-      box-shadow: none!important;
-    }
-    .navbar-toggler:focus{
-      outline: none!important;
-    }
-  
-    .navbar-nav {
-      margin-top: 40px;
-    }
-  
-    .navbar-nav .nav-link {
-      padding: 12px 0;
-      font-weight: 500;
-      color: #000;
-      text-align: left;     
-      transition: background 0.2s;
-    }
-  
-    .navbar-nav .nav-link:hover {
-     
-      color: #fff;
-    }
-  
-    /* Close button */
-    .menu-close {
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      font-size: 20px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      background: #fff;
-     width: 28px;
-     height: 28px;;
-      border-radius: 100%;
-    }
+.menu-backdrop.show {
+    display: block;
+}
 
+/* Slide-in menu */
+.navbar-collapse {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 320px;
+    height: 100vh;
+    background: linear-gradient(90deg, #051233, #09368C);
+    box-shadow: -2px 0 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    transition: right 0.4s ease;
+    z-index: 1102;
+    opacity: 0.9;
+    /* Prevent content shift */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
 
+.navbar-collapse.show {
+    right: 0;
+}
+
+.navbar-toggler{
+    border: none!important;
+    outline: none!important;
+    box-shadow: none!important;
+}
+.navbar-toggler:focus{
+    outline: none!important;
+}
+
+.navbar-nav {
+    margin-top: 40px;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    /* Crucial: Prevent layout shifts */
+    position: relative;
+}
+
+.navbar-nav .nav-link {
+    padding: 12px 15px;
+    font-weight: 500;
+    color: #000;
+    text-align: left;     
+    transition: all 0.3s ease!important;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    border: none;
+    background: none;
+    cursor: pointer;
+    /* Fixed positioning */
+    position: relative;
+    left: 0;
+    right: 0;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff;
+    /* Remove any transform that causes shifting */
+    transform: translateX(8px)!important;
+}
+
+/* Close button */
+.menu-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    background: #fff;
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+}
+
+/* Services Dropdown Styles */
+.nav-item {
+    position: relative;
+    width: 100%;
+    /* Prevent layout shifts */
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    background: none;
+    /* Fixed positioning */
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    content: "";
+    font-size: 20px;
+    transition: transform 0.3s ease;
+    margin-left: 8px;
+}
+
+.dropdown-toggle.active::after {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    max-height: 0;
+    overflow: hidden;
+    background: transparent !important;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    transition: max-height 0.4s ease;
+    width: 100%;
+    /* Absolute positioning inside the nav-item */
+    position: relative;
+    z-index: 1;
+}
+
+.dropdown-menu.show {
+    max-height: 300px;
+}
+
+.dropdown-item {
+    padding: 5px 0px 5px 30px;
+    color: #A6BBDB;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    border-bottom: none;
+    transition: all 0.3s ease !important;
+    width: 100%;
+    /* Ensure dropdown items don't affect layout */
+    position: relative;
+}
+
+.dropdown-item:hover {
+    color: #f2f2f2;
+    background: none !important;
+    transform: translateX(8px);
+    padding-left: 33px; /* Instead of transform for layout stability */
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+/* Critical fix: Ensure all other menu items stay fixed */
+.navbar-nav > .nav-item:not(:has(.dropdown-menu.show)) {
+    position: relative;
+    transform: none !important;
+    transition: none !important;
+}
+
+/* Alternative fix for browsers that don't support :has() */
+.navbar-nav > .nav-item {
+    position: relative;
+    transform: none !important;
+}
+
+/* Make sure the dropdown doesn't push other content */
+.navbar-nav > .nav-item + .nav-item {
+    margin-top: 0;
+}
 
  /* Hero Section */
  .hero {
@@ -225,6 +338,15 @@ body {
   background: #E5E5E5;
   padding: 30px 15px;
 }
+
+.company-logo-section h4{
+ font-size:22px;
+  font-weight: 300;
+  padding: 10px 0;
+  color: #051233;
+  text-align: center;
+}
+
 .logo-section img {
   max-height: 40px;
   opacity: 0.8;
@@ -1477,7 +1599,16 @@ transform: translateY(-2px);
 
     .outsourcing-page{ padding-top: 60px;}
 
-    .about-page h5 {
+      .about-page h2,
+      .ai-solution-section h2 {
+      margin: 0;
+      font-size: 2rem;
+      color: #07225B;
+       font-weight: 700;
+    }
+
+    .about-page h5,
+    .ai-solution-section h5 {
       color: #1077EA;
       font-size: 1.3rem;
       text-transform: uppercase;
@@ -1485,14 +1616,10 @@ transform: translateY(-2px);
       margin-bottom:4px;
     }
 
-    .about-page h2 {
-      margin: 0;
-      font-size: 2rem;
-      color: #07225B;
-       font-weight: 500;
-    }
+ 
 
-    .about-page p {
+    .about-page p,
+    .ai-solution-section p {
       margin-top: 10px;
       max-width: 1000px;
       font-size: 1.2rem;
@@ -1999,3 +2126,382 @@ transform: translateY(-2px);
         font-size: 1.4rem;
       }
     }
+
+
+    /* AI Solutions */
+
+     .ai-solution-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 150px 4% 80px;
+      flex-wrap: wrap;
+    }
+
+    /* Left section */
+    .ai-solution-section .text-section {
+      flex: 1 1 500px;
+    }
+
+    .ai-solution-section .features {
+      margin-bottom: 30px;
+      margin-top: 40px;
+    }
+
+     .ai-solution-section .feature-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+
+    /* White square with blue border + blue checkmark */
+     .ai-solution-section .check-box {
+      width: 30px;
+      height: 30px;
+      background: #fff;
+      border: 4px solid #051233;
+      border-radius: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 12px;
+      flex-shrink: 0;
+    }
+
+     .ai-solution-section .check-box::before {
+      content: "✔";
+      color: #051233;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    /* Dark background text area */
+     .ai-solution-section .feature-text {
+      background: #051233;
+      color: #fff;
+      padding: 10px 16px;
+      font-size:20px;
+      
+    }
+
+    
+
+    /* Right section */
+     .ai-solution-section .image-section {
+      flex: 1 1 400px;
+      display: flex;
+      justify-content: right;
+      margin-top: 20px;
+    }
+
+     .ai-solution-section .image-section img {
+      max-width: 100%;
+      border-radius: 0px 60px 0px 60px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Responsive */
+@media (max-width: 992px) {
+   .ai-solution-section .image-section {
+        order: 1;
+        margin: 30px auto 20;
+         justify-content:center;
+    }
+
+     .ai-solution-section .image-section img{
+        border-radius: 0;
+    }
+}
+
+    @media (max-width: 768px) {
+      .ai-solution-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .ai-solution-section .features {
+        text-align: left;
+      }
+
+      .btn {
+        margin: 0 auto;
+      }
+      
+    }
+
+    /* We Turn AI Ideas */
+    .we-turn-ai {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 40px;
+      padding: 60px;
+      margin: auto;
+      background: #DADAFB;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Decorative shapes with ::before and ::after */
+.we-turn-ai::before {
+  content: "";
+  position: absolute;
+  top: 260px;
+  left: 100px;
+  width: 350px;
+  height: 350px;
+  background: url("../images/shape-icon1.png") no-repeat center;
+  border-radius: 50%;
+  opacity: 0.7;
+  z-index: 9;
+}
+
+    /* Left Section */
+    .we-turn-ai .intro {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .we-turn-ai .intro h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      color: #051233;
+    }
+
+    .we-turn-ai .intro p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #051233;
+    }
+
+    /* Right Section */
+    .we-turn-ai .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .we-turn-ai .feature {
+      padding: 20px;
+    }
+
+    .we-turn-ai .icon--block {
+      background: #fff;
+      width: 50px;
+      height: 50px;
+      border-radius:50%;
+      margin-bottom: 10px;
+      position: relative;
+    }
+    .we-turn-ai .icon--block img {
+     position: absolute;
+     top: -10px;
+     right: -10px;
+    }
+
+    .we-turn-ai .feature h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #051233;
+      font-weight: 700;
+    }
+
+    .we-turn-ai .feature p {
+      font-size: 18px;
+      color: #051233;
+      line-height: 1.5;
+      font-weight: 300;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 900px) {
+      .we-turn-ai {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+      }
+
+      .we-turn-ai .features {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+    /* Strategy & AI Engineering */
+    .strategy-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      width: 100%;
+      min-height: 532px;
+      margin: 10px 0;
+      overflow: hidden;
+    }
+
+    .strategy-wrapper .col {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 30px;
+    }
+
+    /* Image Columns */
+    .strategy-wrapper .img1 {
+      background: url('../images/strategy-pic.jpg') no-repeat center center/cover;
+    }
+
+    .strategy-wrapper .img2 {
+      background: url('../images/ai-engineering.jpg') no-repeat center center/cover;
+    }
+
+    /* Text Columns */
+    .strategy-wrapper .text {
+      background: #fff;
+    }
+
+    .strategy-wrapper .text h2 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #051233;
+    }
+
+    .strategy-wrapper .text ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .strategy-wrapper .text ul li {
+      font-size: 18px;
+      margin-bottom: 15px;
+      line-height: 1.4;
+      position: relative;
+      padding-left: 25px;
+      color: #051233;
+    }
+
+    .strategy-wrapper .text ul li::before {
+      content: "✓";
+      color: #051233;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .strategy-wrapper {
+        grid-template-columns: 1fr 1fr;
+      }
+      .strategy-wrapper .col {
+        padding: 40px 25px;
+      }
+    }
+
+    @media (max-width: 768px) {
+     .strategy-wrapper {
+        grid-template-columns: 1fr;
+      }
+      .strategy-wrapper .col {
+        min-height: 300px;
+        padding: 30px 20px;
+        text-align: left;
+      }
+
+    }
+
+
+     /* The Journey to AI */
+
+      .ai__container {
+      padding: 60px;
+      margin: auto;
+      background: #051233;
+      position: relative;
+    }
+
+  .ai__container::after {
+  content: "";
+  position: absolute;
+  bottom: 50px;
+  right: 100px;
+  width: 350px;
+  height: 350px;
+  background: url("../images/shape-icon.png") no-repeat center;
+  border-radius: 50%;
+  opacity: 0.7;
+  z-index: 9;
+}
+
+    .ai__container .heading {
+      text-align: left;
+      color: #7192C5;
+      margin-bottom: 40px;
+    }
+
+    .ai__container .heading h2 {
+      font-size: 42px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .ai__container .heading p {
+      font-size: 18px;
+      color: #A5BADA;
+    }
+
+   .ai__container .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 40px;
+    }
+
+    .ai__container .card {
+      background: transparent;
+      border: none;
+      border-radius:0;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .ai__container .icon--round {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 15px;
+      background: #355482;
+      border-radius: 50%;
+      position: relative;
+    }
+   .ai__container .icon--round img {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+    .ai__container .card h3 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .ai__container .card p {
+      font-size: 16px;
+      color: #CAD2DF;
+    }
+
+
+
+    @media (max-width: 768px) {
+     .ai__container .heading h2 {
+        font-size: 26px;
+      }
+  
+      .ai__container .grid {
+        gap: 25px;
+      }
+    }
+
+    

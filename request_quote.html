@@ -55,7 +55,19 @@
   <ul class="navbar-nav">
     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+      <li class="nav-item">
+        <a class="nav-link dropdown-toggle" id="servicesDropdown" onclick="toggleDropdown(this)">
+          Services
+        </a>
+        <div class="dropdown-menu" id="servicesMenu">
+          <a class="dropdown-item" href="ai-solutions.html">AI Solutions </a>
+          <a class="dropdown-item" href="mobile-development.html">Mobile App Development</a>
+          <a class="dropdown-item" href="web-development.html">Web Development </a>
+          <a class="dropdown-item" href="software-development.html">Software Development</a>
+          <a class="dropdown-item" href="devops-engineer.html">DevOps Engineer</a>
+           <a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a>
+        </div>
+      </li>
     <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
     <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
 
