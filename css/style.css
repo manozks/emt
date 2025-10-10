@@ -1605,6 +1605,7 @@ transform: translateY(-2px);
       font-size: 2rem;
       color: #07225B;
        font-weight: 700;
+       max-width: 600px;
     }
 
     .about-page h5,
@@ -2349,6 +2350,7 @@ transform: translateY(-2px);
     /* Image Columns */
     .strategy-wrapper .img1 {
       background: url('../images/strategy-pic.jpg') no-repeat center center/cover;
+     
     }
 
     .strategy-wrapper .img2 {
@@ -2540,7 +2542,9 @@ transform: translateY(-2px);
       display: flex;
       justify-content: center;
       margin-top: 20px;
-      position: relative;
+      position: relative;      
+      
+
     }
 
     /* Decorative shapes with ::before and ::after */
@@ -2556,12 +2560,16 @@ transform: translateY(-2px);
   border-radius:0%;
   opacity:1;
   z-index: -1;
+ 
+  
+
 }
 
      .mobile-app-section .image-section img {
       max-width: 100%;
       border-radius: 0px 60px 0px 60px;
       box-shadow:none!important;
+       animation: bgMove 20s linear infinite alternate;
     }
 
     /* Responsive */
