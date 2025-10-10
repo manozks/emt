@@ -2529,9 +2529,7 @@ transform: translateY(-2px);
         gap: 25px;
       }
 
-      .mobile-app-section .image-section::after{
-        background: none!important;
-      }
+   
     }
 
         /* Mobile App Development */
@@ -2579,3 +2577,15 @@ transform: translateY(-2px);
         border-radius: 0;
     }
 }
+
+
+
+    @media (max-width: 768px) {
+   
+      .mobile-app-section .image-section::after{
+        
+        width: 319px !important;
+        height: 251px !important;
+        background: url("../images/circle-shape-mobile.png") no-repeat center!important;
+      }
+    }
