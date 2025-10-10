@@ -341,8 +341,8 @@ body {
 
 .company-logo-section h4{
  font-size:22px;
-  font-weight: 300;
-  padding: 10px 0;
+  font-weight: 500;
+  padding: 10px 0 20px;
   color: #051233;
   text-align: center;
 }
@@ -2140,7 +2140,7 @@ transform: translateY(-2px);
 
     /* Left section */
     .ai-solution-section .text-section {
-      flex: 1 1 500px;
+      flex: 1 1 600px;
     }
 
     .ai-solution-section .features {
@@ -2188,7 +2188,7 @@ transform: translateY(-2px);
 
     /* Right section */
      .ai-solution-section .image-section {
-      flex: 1 1 400px;
+      flex: 1 1 350px;
       display: flex;
       justify-content: right;
       margin-top: 20px;
@@ -2262,7 +2262,7 @@ transform: translateY(-2px);
     }
 
     .we-turn-ai .intro h2 {
-      font-size: 32px;
+      font-size: 30px;
       margin-bottom: 20px;
       font-weight: bold;
       color: #051233;
@@ -2278,7 +2278,7 @@ transform: translateY(-2px);
     .we-turn-ai .features {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 30px;
+      gap: 20px;
     }
 
     .we-turn-ai .feature {
@@ -2355,6 +2355,22 @@ transform: translateY(-2px);
       background: url('../images/ai-engineering.jpg') no-repeat center center/cover;
     }
 
+    .strategy-wrapper .img3 {
+      background: url('../images/free-estimation.jpg') no-repeat center center/cover;
+    }
+
+     .strategy-wrapper .img4 {
+      background: url('../images/on-time-delivery.jpg') no-repeat center center/cover;
+    }
+       .strategy-wrapper .img5 {
+      background: url('../images/friendly-apps.jpg') no-repeat center center/cover;
+    }
+
+     .strategy-wrapper .img6 {
+      background: url('../images/personalized.jpg') no-repeat center center/cover;
+    }
+
+
     /* Text Columns */
     .strategy-wrapper .text {
       background: #fff;
@@ -2366,6 +2382,15 @@ transform: translateY(-2px);
       margin-bottom: 20px;
       color: #051233;
     }
+
+    
+    .strategy-wrapper .text p {
+      font-size: 18px;
+      margin-bottom: 15px;
+      line-height: 1.4;
+      color: #051233;
+    }
+
 
     .strategy-wrapper .text ul {
       list-style: none;
@@ -2505,4 +2530,48 @@ transform: translateY(-2px);
       }
     }
 
+        /* Mobile App Development */
     
+           /* Right section */
+     .mobile-app-section .image-section {
+      flex: 1 1 350px;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      position: relative;
+    }
+
+    /* Decorative shapes with ::before and ::after */
+.mobile-app-section .image-section::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 474px;
+  height: 373px;
+  background: url("../images/circle-shape.png") no-repeat center;
+  border-radius:0%;
+  opacity:1;
+  z-index: -1;
+}
+
+     .mobile-app-section .image-section img {
+      max-width: 100%;
+      border-radius: 0px 60px 0px 60px;
+      box-shadow:none!important;
+    }
+
+    /* Responsive */
+@media (max-width: 992px) {
+   .mobile-app-section .image-section {
+        order: 1;
+        margin: 30px auto 20;
+         justify-content:center;
+    }
+    
+
+     .mobile-app-section .image-section img{
+        border-radius: 0;
+    }
+}
