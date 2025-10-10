@@ -2528,6 +2528,10 @@ transform: translateY(-2px);
       .ai__container .grid {
         gap: 25px;
       }
+
+      .mobile-app-section .image-section::after{
+        background: none!important;
+      }
     }
 
         /* Mobile App Development */
