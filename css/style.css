@@ -231,8 +231,8 @@ body {
 
 .dropdown-item {
     padding: 5px 0px 5px 30px;
-    color: #A6BBDB;
-    font-size: 16px;
+    color: #fff;
+    font-size: 18px;
     font-weight: 500;
     text-decoration: none;
     display: block;
@@ -2197,7 +2197,7 @@ transform: translateY(-2px);
 
      .ai-solution-section .image-section img {
       max-width: 100%;
-      border-radius: 0px 60px 0px 60px;
+      border-radius: 0px 30% 0px 30%;
       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
     }
 
@@ -2441,8 +2441,11 @@ transform: translateY(-2px);
 
 
      /* The Journey to AI */
+       /* Web Development Section */
 
-      .ai__container {
+      .ai__container,
+      .web__container,
+      .core__step__container {
       padding: 60px;
       margin: auto;
       background: #051233;
@@ -2450,43 +2453,86 @@ transform: translateY(-2px);
       overflow: hidden;
     }
 
-  .ai__container::after {
+    .web__container{
+      background: #DADAFB;
+    }
+
+  .ai__container::after,
+  .web__container::after,
+  .core__step__container::after {
+    content: "";
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+    width: 350px;
+    height: 350px;
+    background: url("../images/shape-icon.png") no-repeat center;
+    border-radius: 50%;
+    opacity: 0.7;
+    z-index: 9;
+}
+
+.web__container::before {
   content: "";
   position: absolute;
-  bottom: 50px;
-  right: 100px;
+  top: 260px;
+  left: 100px;
   width: 350px;
   height: 350px;
-  background: url("../images/shape-icon.png") no-repeat center;
+  background: url("../images/shape-icon1.png") no-repeat center;
   border-radius: 50%;
   opacity: 0.7;
   z-index: 9;
 }
 
-    .ai__container .heading {
+    .ai__container .heading,
+    .web__container .heading,
+    .core__step__container .heading  {
       text-align: left;
       color: #7192C5;
       margin-bottom: 40px;
     }
 
-    .ai__container .heading h2 {
+       .web__container .heading  {      
+      color: #051233;
+    }
+
+    .ai__container .heading h2,
+    .web__container .heading h2,
+    .core__step__container .heading h2 {
       font-size: 42px;
       font-weight: 600;
       margin-bottom: 10px;
     }
 
-    .ai__container .heading p {
+    .ai__container .heading p,
+    .web__container .heading p,
+    .core__step__container .heading p {
       font-size: 18px;
       color: #A5BADA;
     }
 
-   .ai__container .grid {
+     .web__container .heading p {
+      color: #051233;
+      max-width: 700px;
+    }
+
+   .ai__container .grid,
+   .web__container .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 40px;
     }
 
-    .ai__container .card {
+    .core__step__container .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 40px;
+    }
+
+    .ai__container .card,
+    .web__container .card,
+    .core__step__container .card   {
       background: transparent;
       border: none;
       border-radius:0;
@@ -2494,7 +2540,9 @@ transform: translateY(-2px);
       text-align: left;
     }
 
-    .ai__container .icon--round {
+    .ai__container .icon--round,
+    .web__container .icon--round,
+    .core__step__container .icon--round {
       width: 50px;
       height: 50px;
       margin-bottom: 15px;
@@ -2502,32 +2550,55 @@ transform: translateY(-2px);
       border-radius: 50%;
       position: relative;
     }
-   .ai__container .icon--round img {
+     .web__container .icon--round {
+  
+      background: #fff;
+     
+    }
+   .ai__container .icon--round img,
+   .web__container .icon--round img,
+   .core__step__container .icon--round img  
+   {
     position: absolute;
     top: -10px;
     right: -10px;
 }
 
-    .ai__container .card h3 {
+    .ai__container .card h3,
+    .web__container .card h3,
+    .core__step__container .card h3 {
       font-size: 20px;
       font-weight: 600;
       color: #fff;
       margin-bottom: 10px;
     }
+     .web__container .card h3 {
+      color: #051233;
+    }
 
-    .ai__container .card p {
+    .ai__container .card p,
+    .web__container .card p,
+    .core__step__container .card p {
       font-size: 16px;
       color: #CAD2DF;
+    }
+
+     .web__container .card p {
+      color: #051233;
     }
 
 
 
     @media (max-width: 768px) {
-     .ai__container .heading h2 {
+     .ai__container .heading h2,
+     .web__container .heading h2,
+     .core__step__container .card h2 {
         font-size: 26px;
       }
   
-      .ai__container .grid {
+      .ai__container .grid,
+      .web__container .grid,
+      .core__step__container .grid  {
         gap: 25px;
       }
 
@@ -2588,12 +2659,95 @@ transform: translateY(-2px);
 
 
 
-    @media (max-width: 768px) {
-   
-      .mobile-app-section .image-section::after{
-        
+    @media (max-width: 768px) {   
+      .mobile-app-section .image-section::after{        
         width: 319px !important;
         height: 251px !important;
         background: url("../images/circle-shape-mobile.png") no-repeat center!important;
       }
     }
+
+
+      /* web company info */
+    .web__wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
+      min-height: 532px;
+      margin: 10px 0;
+      overflow: hidden;
+    }
+
+    .web__wrapper .col {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 30px;
+    }
+
+    /* Image Columns */
+    .web__wrapper .img1 {
+      background: url('../images/web-info.jpg') no-repeat center center/cover;
+     
+    }
+
+    /* Text Columns */
+    .web__wrapper .text {
+      background: #fff;
+    }
+
+    .web__wrapper .text h2 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #051233;
+    }
+
+    
+    .web__wrapper .text p {
+      font-size: 18px;
+      margin-bottom: 15px;
+      line-height: 1.4;
+      color: #051233;
+    }
+
+
+    .web__wrapper .text ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .web__wrapper .text ul li {
+      font-size: 18px;
+      margin-bottom: 15px;
+      line-height: 1.4;
+      position: relative;
+      padding-left: 25px;
+      color: #051233;
+    }
+
+    .web__wrapper .text ul li::before {
+      content: "✓";
+      color: #051233;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    /* Responsive */
+   
+    @media (max-width: 768px) {
+     .web__wrapper {
+        grid-template-columns: 1fr;
+      }
+      .web__wrapper .col {
+        min-height: 300px;
+        padding: 30px 20px;
+        text-align: left;
+      }
+
+    }
+
+
+   
