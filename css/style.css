@@ -2195,11 +2195,32 @@ transform: translateY(-2px);
       margin-top: 20px;
     }
 
-     .ai-solution-section .image-section img {
+       .ai-solution-section .image-section img {
       max-width: 100%;
-      border-radius: 0px 30% 0px 30%;
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+      border-radius: 0px 60px 0px 60px;
+      box-shadow:none!important;
+       animation: bgMove 20s linear infinite alternate;
     }
+
+        /* Decorative shapes with ::before and ::after */
+.ai-solution-section .image-section::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 474px;
+  height: 373px;
+  background: url("../images/circle-shape.png") no-repeat center;
+  border-radius:0%;
+  opacity:1;
+  z-index: -1;
+ 
+  
+
+}
+
+
 
     /* Responsive */
 @media (max-width: 992px) {
@@ -2518,10 +2539,40 @@ transform: translateY(-2px);
     }
 
    .ai__container .grid,
-   .web__container .grid {
+   .web__container .grid,
+   .software__container .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 40px;
+    }
+
+     .software__container .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 40px;
+    }
+
+    .software__container ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .software__container ul li {
+      font-size: 18px;
+      margin-bottom: 15px;
+      line-height: 1.4;
+      position: relative;
+      padding-left: 25px;
+      color: #051233;
+    }
+
+    .software__container ul li::before {
+      content: "✓";
+      color: #051233;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+      top: 0;
     }
 
     .core__step__container .grid {
@@ -2688,6 +2739,11 @@ transform: translateY(-2px);
     /* Image Columns */
     .web__wrapper .img1 {
       background: url('../images/web-info.jpg') no-repeat center center/cover;
+     
+    }
+
+    .web__wrapper .img_2 {
+      background: url('../images/programmer.png') no-repeat center center;
      
     }
 
