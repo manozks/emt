@@ -126,107 +126,54 @@
  
 
 <!--Software Development Services Section -->
-    <section class="web__container software__container">
+    <section class="web__container noshape">
     <div class="heading" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
       <h2>Our Custom Software <br>Development Services</h2>
       <p>we focus on building secure, scalable, and high-performing applications that streamline operations and enhance user experiences</p>
     </div>
 
-    <div class="grid">
-      <div class="card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" >
-        <div class="icon--round"><img src="./images/code-settings.png" alt="Custom Software Development"></div>
-        <h3>Custom Software Development</h3>
-        <ul>
-            <li>Software consulting</li>
+    <div class="software__wrapper">
+       <div class="tabs">
+      <div class="tab active" data-tab="custom">
+        <span><img src="images/code-settings.png" alt="Custom Software Development"></span>Custom Software Development
+      </div>
+      <div class="tab" data-tab="automation">
+       <span><img src="images/ia-automation.png" alt="Intelligent Automation"></span>Intelligent Automation
+      </div>
+      <div class="tab" data-tab="ai">
+      <span><img src="images/artifical-intelligence.png" alt="Data and AI"></span>Data and AI
+      </div>
+        <div class="tab" data-tab="ad">
+      <span><img src="images/app-development.png" alt="Application Development"></span>Application Development
+      </div>
+         <div class="tab" data-tab="ic">
+      <span><img src="images/it-consulting.png" alt="IT Consulting"></span>IT Consulting
+      </div>
+        <div class="tab" data-tab="cloud">
+      <span><img src="images/cloud.png" alt="Cloud"></span>Cloud
+      </div>
+
+       <div class="tab" data-tab="tqa">
+      <span><img src="images/qa.png" alt="Testing and QA"></span>Testing and QA
+      </div>
+    </div>
+
+    <div class="content" id="content">
+      <h2>Custom Software Development</h2>
+      <p>
+        The process of designing, creating, deploying, and maintaining software applications that are tailored specifically to meet the unique needs of a business or organization. Unlike off-the-shelf solutions, custom software is built to address specific challenges, enhance efficiency, and support business growth.
+      </p>
+      <ul>
+        <li>Software consulting</li>
             <li>Software product development</li>
             <li>Enterprise software development</li>
             <li>Low Code Development solution</li>
             <li>API Development</li>
-        </ul>
-      </div>
-
-   
-
-   
-               <div class="card" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
-        <div class="icon--round"><img src="./images/ia-automation.png" alt="Intelligent Automation"></div>
-        <h3>Intelligent Automation</h3>
-         <ul>
-            <li>Business Process Automation</li>
-            <li>Robotic Process Automation</li>
-            <li>AI Driven Automation</li>
-            <li>Advisory & Consulting</li>
-        </ul>
-      </div>
-         <div class="card" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
-        <div class="icon--round"><img src="./images/artifical-intelligence.png" alt="Data and AI"></div>
-        <h3>Data and AI</h3>
-        <ul>
-            <li>Generative AI Development.</li>
-            <li>Data Management</li>
-            <li>Data Modernization</li>
-            <li>Data Strategy</li>
-            <li>Reporting & Analytics</li>
-            </ul>
-           
-      </div>
-
-      <div class="card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-        <div class="icon--round"><img src="./images/app-development.png" alt="Application Development"></div>
-        <h3>Application Development</h3>
-        <ul>
-            <li>Mobile Application Development</li>
-            <li>Web Application Development</li>
-            <li>Ecommerce application development</li>
-            <li>Desktop Application</li>
-            <li>Application testing</li>
-        </ul>
-      </div>
-
-      <div class="card" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
-        <div class="icon--round"><img src="./images/it-consulting.png" alt="IT Consulting"></div>
-        <h3>IT Consulting</h3>
-         <ul>
-            <li>Digital Transformation Consulting</li>
-            <li>Project Management Consulting</li>
-            <li>IT Assessment</li>
-            <li>Security Risk Assesment</li>
-            <li>Enterprise IT consulting</li>
-            <li>Business Processes and Cost Optimization</li>
-        </ul>
-      </div>
-
-         <div class="card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-       <div class="icon--round"><img src="./images/cloud.png" alt="Cloud"></div>
-        <h3>Cloud</h3>
-        <ul>
-            <li>Cloud strategy</li>
-            <li>Cloud Engineering</li>
-            <li>Managed services and support</li>
-            <li>Cloud Security</li>
-            <li>Cloud Migration Services</li>
-        </ul>
-      </div>
-   
-       
-
-               <div class="card" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
-        <div class="icon--round"><img src="./images/qa.png" alt="Testing and QA"></div>
-        <h3>Testing and QA
-</h3>
-         <ul>
-            <li>Automation Testing</li>
-            <li>Functional testing</li>
-            <li>Performance testing</li>
-            <li>Penetration testing</li>
-            <li>Security Testing</li>
-            <li>Manual Testing</li>
-         </ul>
-      </div>
-
-     
-     
+      </ul>
     </div>
+    </div>
+
+    
    
   </section>
 
@@ -443,6 +390,111 @@ Start Getting Results Online
   </div>
 </section>
 
+<script>
+
+ const tabs = document.querySelectorAll(".tab ");
+    const content = document.getElementById("content");
+
+    const tabData = {
+      custom: {
+        title: "Custom Software Development",
+        text: "The process of designing, creating, deploying, and maintaining software applications that are tailored specifically to meet the unique needs of a business or organization. Unlike off-the-shelf solutions, custom software is built to address specific challenges, enhance efficiency, and support business growth.",
+        list: [
+          "Software consulting",
+          "Software product development",
+          "Enterprise software development",
+          "Low Code Development solution",
+          "API Development",
+        ],
+      },
+      automation: {
+        title: "Intelligent Automation",
+        text: "It enables systems to perform repetitive tasks, make data-driven decisions, and adapt to changing conditions with minimal human intervention. By integrating machine learning, natural language processing, and analytics, intelligent automation helps organizations increase efficiency, reduce errors, lower costs, and improve overall productivity while allowing employees to focus on higher-value tasks.",
+        list: [
+          "Business Process Automation",
+           "Robotic Process Automation",
+           "AI Driven Automation",
+           "Advisory & Consulting",
+        ],
+      },
+      ai: {
+        title: "Data and AI Solutions",
+        text: "Data and AI (Artificial Intelligence) work together to help organizations make smarter, data-driven decisions. Data provides the foundation, while AI analyzes and interprets that data to uncover patterns, predict trends, and automate complex processes. By leveraging data and AI technologies such as machine learning, predictive analytics, and natural language processing, businesses can enhance decision-making, improve customer experiences, and drive innovation.",
+        list: [
+          "Generative AI Development",
+          "Data analytics and visualization",
+          "Machine learning models",
+          "Predictive analytics",
+          "AI-powered business intelligence",
+        ],
+      },
+           ad: {
+        title: "Application Development",
+        text: "Application Development is the process of designing, building, testing, and deploying software applications for various platforms such as web, mobile, or desktop. It involves understanding user needs, creating intuitive interfaces, and ensuring functionality, performance, and security. The goal of application development is to deliver scalable, efficient, and user-friendly solutions that enhance business operations and customer engagement. Modern development often uses agile methods, cloud integration, and continuous updates to keep applications adaptable and future-ready.",
+        list: [
+          "Mobile Application Development",
+          "Web Application Development",
+          "Ecommerce application development",
+          "Desktop Application",
+          "Application testing",
+        ],
+      },
+               ic: {
+        title: "IT Consulting",
+        text: "IT consultants analyze existing systems, identify challenges, and recommend effective solutions to improve efficiency, security, and performance. Their services often include digital transformation planning, software implementation, cloud strategy, and IT infrastructure optimization.",
+        list: [
+          "Digital Transformation Consulting",
+          "Project Management Consulting",
+          "IT Assessment",
+          "Security Risk Assesment",
+          "Enterprise IT consulting",
+          "Business Processes and Cost Optimization",
+        ],
+      },
+       cloud: {
+        title: "Cloud",
+        text: "Cloud Computing is a technology that allows users and businesses to access computing resources—such as servers, storage, databases, and software—over the internet instead of relying on local hardware. It provides flexibility, scalability, and cost efficiency by enabling users to pay only for what they use. Cloud services are typically categorized into models like Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). This technology supports remote work, data backup, and faster innovation, making it a cornerstone of modern IT infrastructure.",
+        list: [
+          "Cloud strategy",
+          "Cloud Engineering",
+          "Managed services and support",
+          "Cloud Security",
+          "Cloud Migration Services",
+        ],
+      },
+            tqa: {
+        title: "Testing and QA",
+        text: "Testing and Quality Assurance (QA) are essential processes in software development that ensure a product is reliable, functional, and free from defects before release. Testing involves systematically checking software to identify bugs, errors, or performance issues, while QA focuses on improving development processes to prevent defects from occurring. Together, they help maintain high standards of quality, enhance user satisfaction, and ensure that the final product meets business and technical requirements.",
+        list: [
+          "Automation Testing",
+          "Functional testing",
+          "Performance testing",
+          "Penetration testing",
+          "Security Testing",
+          "Manual Testing",
+        ],
+      },
+    };
+
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        tabs.forEach((t) => t.classList.remove("active"));
+        tab.classList.add("active");
+
+        const selected = tab.getAttribute("data-tab");
+        const { title, text, list } = tabData[selected];
+
+        content.innerHTML = `
+          <h2>${title}</h2>
+          <p>${text}</p>
+          <ul>
+            ${list.map((item) => `<li>${item}</li>`).join("")}
+          </ul>
+        `;
+      });
+    });
+
+</script>
 
 <script src="js/aos.js"></script>
 <script>

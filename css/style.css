@@ -2493,6 +2493,8 @@ transform: translateY(-2px);
     z-index: 9;
 }
 
+
+
 .web__container::before {
   content: "";
   position: absolute;
@@ -2504,6 +2506,10 @@ transform: translateY(-2px);
   border-radius: 50%;
   opacity: 0.7;
   z-index: 9;
+}
+
+.web__container.noshape::before{
+ display: none;
 }
 
     .ai__container .heading,
@@ -2804,6 +2810,119 @@ transform: translateY(-2px);
       }
 
     }
+
+
+
+    /* Custom Software Development Services */
+
+     .software__wrapper {
+      margin: 20px auto;
+      padding:0px;
+      display: flex;
+      gap: 20px;
+      background-color: #d9d9f3;
+    }
+
+    .software__wrapper .tabs {
+      width: 30%;
+      background-color: #c6c5f5;
+      border-radius: 10px;
+      overflow: hidden;}
+
+    .software__wrapper .tab {
+      padding: 18px 20px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .software__wrapper .tab span img {
+      width:30px;
+      height:30px;
+    }
+
+    .software__wrapper .tab.active {
+      background-color: #fff;
+      color: #000;
+    }
+
+    .software__wrapper .content {
+      width: 70%;
+      background-color: #d9d9f3;
+      padding:20px;
+    }
+
+    .software__wrapper .content h2 {
+      font-size:20px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: #051233;
+      text-transform: capitalize;
+    }
+
+    .software__wrapper .content p {
+      margin-bottom: 20px;
+     color: #051233;
+      font-size:18px;
+    }
+
+    .software__wrapper .content ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: space-between;
+      gap: 10px 40px;
+      color: #051233;
+      font-size: 18px;
+    }
+   
+
+    .software__wrapper .content ul li::before {
+      content: "✔";
+      color: #051233;
+      margin-right: 8px;
+    }
+
+    @media (max-width: 925px) {
+      .software__wrapper {
+        flex-direction: column;
+      }
+
+      .software__wrapper .content{
+        padding: 0;
+      }
+
+      .software__wrapper .content ul {
+    
+      grid-template-columns: 1fr;
+      
+     
+    }
+
+      .software__wrapper .tabs,
+      .software__wrapper .content {
+        width: 100%;
+      }
+
+      .software__wrapper .tab {
+        justify-content: flex-start;
+      }
+    }
+
+
+     @media (max-width:768px) {
+
+     .software__wrapper .tabs {
+      width:100%;    
+      overflow-y: scroll;    
+      height:200px;
+      border-radius: 0;
+    }
+  }
 
 
    
