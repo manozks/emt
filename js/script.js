@@ -69,6 +69,10 @@
 
  elements.forEach(el => observer.observe(el));
 
+
+ 
+
+
  const carousel = document.getElementById("carousel");
  const leftBtn = document.getElementById("leftBtn");
  const rightBtn = document.getElementById("rightBtn");
@@ -113,6 +117,7 @@
  // Init
  updateCarousel();
 
+ 
 
 
  
