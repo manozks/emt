@@ -2919,9 +2919,25 @@ transform: translateY(-2px);
      .software__wrapper .tabs {
       width:100%;    
       overflow-y: scroll;    
-      height:200px;
+      height:220px;
       border-radius: 0;
     }
+
+    .ai__container, 
+    .web__container, 
+    .core__step__container {
+    padding: 40px 20px;
+    }
+    .why-us-container{
+      padding: 40px 20px;
+    }
+    .we-turn-ai .feature {
+    padding:0px;
+}
+
+.web__wrapper .img_2{
+  order: 1;
+}
   }
 
 
