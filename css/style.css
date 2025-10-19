@@ -1145,8 +1145,9 @@ transform: translateY(-2px);
 
 
 
-/* Footer Section */
 
+
+/* Footer Section */
 
 .footer-container {
   background: #F8FAFC;
@@ -2819,14 +2820,14 @@ transform: translateY(-2px);
       margin: 20px auto;
       padding:0px;
       display: flex;
-      gap: 20px;
+      gap:0px;
       background-color: #d9d9f3;
     }
 
     .software__wrapper .tabs {
       width: 30%;
       background-color: #c6c5f5;
-      border-radius: 10px;
+      border-radius: 10px 0 0 10px;
       overflow: hidden;}
 
     .software__wrapper .tab {
@@ -2846,13 +2847,14 @@ transform: translateY(-2px);
     }
 
     .software__wrapper .tab.active {
-      background-color: #fff;
+      background-color: #F1F1FE;
       color: #000;
     }
 
     .software__wrapper .content {
       width: 70%;
-      background-color: #d9d9f3;
+      background-color: #F1F1FE;
+      border-radius: 0 10px 10px 0;
       padding:20px;
     }
 
@@ -2893,7 +2895,8 @@ transform: translateY(-2px);
       }
 
       .software__wrapper .content{
-        padding: 0;
+        padding: 20px;
+        border-radius: 0;
       }
 
       .software__wrapper .content ul {
@@ -2940,5 +2943,366 @@ transform: translateY(-2px);
 }
   }
 
+ /* Do You Want to Develop banner */
+      .banner-develop-wrapper{
+        padding: 60px;
+        margin: auto;
+      }
+      .banner-develop {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(90deg, #4E3F56 0%, #BFA8D2 100%);
+      border-radius: 12px;
+      padding:0px;
+      margin: 0px auto;
+      color: #fff;
+      flex-wrap: wrap;
+      overflow: hidden;
+    }
 
-   
+    .banner-develop .banner-content {
+      flex: 1 1 50%;
+      min-width: 280px;
+    }
+
+    .banner-develop .banner-content h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      line-height: 1.3;
+      padding-left: 50px;
+    }
+
+    .banner-develop .banner-content a {
+      display: inline-block;
+      background: #fff;
+      color: #000;
+      font-weight: 600;
+      font-size: 20px;
+      text-decoration: none;
+      padding: 12px 28px;
+      border-radius: 30px;
+      margin-left: 50px;
+      transition: all 0.3s ease;
+    }
+
+    .banner-develop .banner-content a:hover {
+      background: #000;
+      color: #fff;
+    }
+
+    .banner-develop .banner-image {
+      flex: 1 1 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 250px;
+      margin-top:0px;
+    }
+
+    .banner-develop .banner-image img {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    @media (max-width: 768px) {
+        .banner-develop-wrapper{
+        padding: 30px;
+      }
+      .banner-develop {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+      }
+
+      .banner-develop .banner-content {
+        flex: 1 1 100%;
+      }
+
+      .banner-develop .banner-content h2 {
+        font-size: 1.8rem;
+         padding-left: 0px;
+      }
+
+      .banner-develop .banner-content a {
+        margin-top: 15px;
+        margin-left:0;
+      }
+
+      .banner-develop .banner-image {
+        flex: 1 1 100%;
+        margin-top: 30px;
+      }
+    }
+
+/* digital-marketing  section */
+    .digital-marketing {
+  text-align: center;
+  padding: 60px 40px;
+  position: relative;
+  background: linear-gradient(90deg, #051233, #002057); 
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.digital-marketing h2 {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  color: #7192C5;
+}
+
+.process {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Steps */
+.steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.step {
+  text-align: center;
+  flex: 1;
+  min-width: 120px;
+  position: relative;
+}
+
+.step img {
+  width: 60px;
+  height: 60px;
+  background: #355482;
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.step p {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Curvy Line (Desktop) */
+.curve-line {
+  position: absolute;
+  stroke: #fff;
+  stroke-width: 3;
+  stroke-dasharray: 10;
+  animation: dash 6s linear infinite;
+}
+
+.desktop-line {
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+}
+
+.mobile-line {
+  display: none;
+}
+
+/* Animate the line */
+.curve-line path {
+  fill: none;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -100;
+  }
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+
+  .digital-marketing h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .steps {
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+  }
+
+  .desktop-line {
+    display: none;
+  }
+
+  .mobile-line {
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 700px;
+    z-index: 1;
+  }
+
+  .step img {
+    width: 55px;
+    height: 55px;
+    
+  }
+
+  .step p {
+    font-size: 16px;
+  }
+}
+
+
+/* With Digital Marketing Agency section */
+
+
+
+.digital__marketing__slide{
+  padding: 60px 30px;
+  position: relative;
+  background: fff; 
+  overflow: hidden;
+  margin: 0 auto;
+}
+  .digital__marketing__slide .container__digital {
+     display: flex;
+      flex-wrap: wrap;
+      justify-content:space-around;
+      align-items: center;
+      gap:0px;
+    }
+
+  
+
+
+    .digital__marketing__slide .text-section h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #f7a400;
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+
+    .digital__marketing__slide .text-section h2 span {
+      color: #111;
+    }
+
+    /* SLIDER TEXT */
+    .digital__marketing__slide .slide-title {
+      height: 50px;
+      overflow: hidden;
+      display: inline-block;
+    }
+
+    .digital__marketing__slide .slide-title span {
+      position: absolute;
+      width: 100%;
+      text-align: left;
+      opacity: 0;
+      animation: slideText 12s infinite;
+    }
+
+    .digital__marketing__slide .slide-title span:nth-child(1) { animation-delay: 0s; }
+    .digital__marketing__slide .slide-title span:nth-child(2) { animation-delay: 3s; }
+    .digital__marketing__slide .slide-title span:nth-child(3) { animation-delay: 6s; }
+    .digital__marketing__slide .slide-title span:nth-child(4) { animation-delay: 9s; }
+
+    @keyframes slideText {
+      0% { opacity: 0; transform: translateY(100%); }
+      5%, 25% { opacity: 1; transform: translateY(0); }
+      30%, 100% { opacity: 0; transform: translateY(-100%); }
+    }
+
+    .digital__marketing__slide .stats {
+      flex: 0 0 450px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+     
+    }
+
+    .digital__marketing__slide .stat-box {
+      color: #fff;
+      padding: 40px;
+      border-radius:60px 0 60px 0px;
+      text-align: center;
+      font-weight: bold;
+      width: 200px;
+      height: 200px;
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+    }
+
+    .digital__marketing__slide .green { background-color: #138c2f;  }
+    .digital__marketing__slide .blue { background-color: #0046ff;}
+    .digital__marketing__slide .orange { background-color: #f7a400; }
+    .red { background-color: #cc2020; }
+    .digital__marketing__slide .green-txt {color: #138c2f; }
+    .digital__marketing__slide .blue-txt {color: #0046ff;}
+    .digital__marketing__slide .orange-txt {color: #f7a400; }
+    .digital__marketing__slide .red-txt {color: #cc2020; }
+
+    .digital__marketing__slide .stat-box h2 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    .digital__marketing__slide .stat-box p {
+      font-size:0.9rem;
+      text-shadow: none!important;
+    }
+
+        .text-section small {
+      display: block;
+      color:#051233;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+      font-size:20px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+
+      .digital__marketing__slide{
+  padding:0px 0 40px 0;
+ 
+}
+     
+      .digital__marketing__slide .container__digital {
+        flex-direction: column;
+        align-items:center;
+        gap: 60px;
+      }
+
+      .digital__marketing__slide .text-section h1 {
+        font-size: 2rem;
+      }
+
+      .digital__marketing__slide .stat-box {
+        padding: 25px 15px;
+      }
+
+     .digital__marketing__slide .stat-box h2 {
+        font-size: 1.6rem;
+      }
+
+      .digital__marketing__slide .text-section{
+        order: -1;
+      }
+    }
