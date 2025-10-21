@@ -117,6 +117,89 @@
  // Init
  updateCarousel();
 
+  (function () {
+      const carousel = document.getElementById('casestudyCarousel');
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+
+      const PIXELS_PER_SECOND = 40;
+      let lastTimestamp = null;
+      let running = true;
+      let rafId = null;
+      let userInteracting = false;
+      let interactionTimeout = null;
+
+      function step(timestamp) {
+        if (!lastTimestamp) lastTimestamp = timestamp;
+        const delta = timestamp - lastTimestamp;
+        lastTimestamp = timestamp;
+
+        if (running && !userInteracting) {
+          const move = (PIXELS_PER_SECOND * delta) / 1000;
+          carousel.scrollLeft += move;
+
+          const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth - 0.5;
+          if (carousel.scrollLeft >= maxScrollLeft) {
+            carousel.scrollLeft = 0;
+          }
+        }
+        rafId = requestAnimationFrame(step);
+      }
+
+      function start() {
+        if (!rafId) {
+          running = true;
+          lastTimestamp = null;
+          rafId = requestAnimationFrame(step);
+        }
+      }
+
+      function beginUserInteraction() {
+        userInteracting = true;
+        if (interactionTimeout) clearTimeout(interactionTimeout);
+      }
+
+      function endUserInteraction() {
+        if (interactionTimeout) clearTimeout(interactionTimeout);
+        interactionTimeout = setTimeout(() => (userInteracting = false), 900);
+      }
+
+      carousel.addEventListener('mouseenter', beginUserInteraction);
+      carousel.addEventListener('mouseleave', endUserInteraction);
+
+      // Touch / drag scroll
+      let isDown = false, startX, scrollStart;
+      carousel.addEventListener('pointerdown', e => {
+        isDown = true;
+        beginUserInteraction();
+        startX = e.clientX;
+        scrollStart = carousel.scrollLeft;
+        carousel.setPointerCapture(e.pointerId);
+      });
+      carousel.addEventListener('pointermove', e => {
+        if (!isDown) return;
+        const delta = startX - e.clientX;
+        carousel.scrollLeft = scrollStart + delta;
+      });
+      carousel.addEventListener('pointerup', e => { isDown = false; endUserInteraction(); });
+      carousel.addEventListener('pointercancel', () => { isDown = false; endUserInteraction(); });
+
+      // Arrow scroll
+      const CARD_SCROLL_BY = 400;
+      prevBtn.addEventListener('click', () => {
+        beginUserInteraction();
+        carousel.scrollBy({ left: -CARD_SCROLL_BY, behavior: 'smooth' });
+        endUserInteraction();
+      });
+      nextBtn.addEventListener('click', () => {
+        beginUserInteraction();
+        carousel.scrollBy({ left: CARD_SCROLL_BY, behavior: 'smooth' });
+        endUserInteraction();
+      });
+
+      start();
+    })();
+
  
 
 

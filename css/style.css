@@ -1,9 +1,6 @@
  /* Basic Reset */
- * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+ * { box-sizing: border-box; margin: 0; padding: 0; font-family: "Poppins", sans-serif; }
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -840,7 +837,8 @@ padding:0;
   z-index: 9;
 }
 
-.testimonials-container h2 {
+.testimonials-container h2,
+.casestudy-carousel-container h2 {
   text-align: left;
   font-size: 2.5rem;
   color: #000;   
@@ -849,6 +847,10 @@ padding:0;
   position: relative;
   z-index: 2;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+.casestudy-carousel-container h2 {
+  margin-bottom:0px;
+ 
 }
 
 .testimonials {
@@ -3305,4 +3307,77 @@ transform: translateY(-2px);
       .digital__marketing__slide .text-section{
         order: -1;
       }
+    }
+
+
+    /* Case Study Section */
+
+    .casestudy-carousel-container { position:relative; width: 94%; margin:0 auto; padding: 40px 0 60px; }
+    .casestudy-carousel-container .card-section {
+      display:flex;
+      gap:20px;
+      overflow-x:auto;
+      scroll-snap-type:x mandatory;
+      -webkit-overflow-scrolling:touch;
+      scroll-behavior:smooth;
+      padding:40px 6px 10px;
+    }
+
+    .casestudy-carousel-container .card-section::-webkit-scrollbar { height:8px; }
+    .casestudy-carousel-container .card-section::-webkit-scrollbar-thumb { background:#ccc; border-radius:8px; }
+
+    /* CARD STYLING */
+    .casestudy-carousel-container .card {
+      flex:0 0 calc(50% - 10px);
+      height:320px;
+      border-radius:14px;
+      overflow:hidden;
+      position:relative;
+      scroll-snap-align:start;
+      box-shadow:0 6px 20px rgba(0,0,0,0.15);
+      transition:transform .35s ease;
+      background:#222;
+    }
+    .casestudy-carousel-container .card:hover { transform:translateY(-6px); }
+    .casestudy-carousel-container .card img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .6s ease; }
+    .casestudy-carousel-container .card:hover img { transform:scale(1.07); }
+    .casestudy-carousel-container .card::after {
+      content:"";
+      position:absolute; inset:0;
+      background: linear-gradient(to top, rgba(0,0,0,.82), rgba(0,0,0,.08));
+    }
+    .casestudy-carousel-container .card-content { position:absolute; left:18px; right:18px; bottom:18px; z-index:2; color:#fff; }
+    .casestudy-carousel-container .card-content h3 { font-size:1rem; font-weight:600; line-height:1.4; margin-bottom:8px; }
+    .casestudy-carousel-container .categories { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+    .casestudy-carousel-container .categories span { font-size:.85rem; opacity:.95; position:relative; }
+    .casestudy-carousel-container .categories span:not(:last-child)::after { content:""; width:1px; height:12px; background:#fff; opacity:.6; display:inline-block; margin-left:8px; }
+
+    /* Arrows - visible on all screens */
+    .casestudy-carousel-container .arrow {
+      position:absolute;
+      top:53%;
+      transform:translateY(-50%);
+      width:42px; height:42px;
+      border-radius:50%;
+      background:rgba(0,0,0,.55);
+      color:#fff; border:0;
+      display:flex;
+      align-items:center; justify-content:center;
+      cursor:pointer;
+      z-index:50;
+      font-size:20px;
+      transition:all .3s ease;
+    }
+    .casestudy-carousel-container .arrow:hover { background:rgba(0,0,0,.75); transform:translateY(-50%) scale(1.05); }
+    .casestudy-carousel-container .arrow.left { left:5px; }
+    .casestudy-carousel-container .arrow.right { right:5px; }
+
+    /* Responsive Adjustments */
+    @media (max-width: 992px) {
+      .casestudy-carousel-container .card { flex:0 0 48%; height:240px; }
+    }
+    @media (max-width: 640px) {
+      .casestudy-carousel-container .card { flex:0 0 86%; height:200px; }
+      .casestudy-carousel-container h2 { font-size:2rem; }
+      .casestudy-carousel-container .arrow { width:36px; height:36px; font-size:18px; }
     }
