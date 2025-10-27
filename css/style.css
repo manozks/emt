@@ -274,6 +274,7 @@ body {
   position: relative;
   height: 100vh;
   background: #051233 url('../images/banner-bg-img.png') no-repeat center center/cover;
+   object-fit: cover;
   color: white;
   display: flex;
   align-items: center;
@@ -455,6 +456,13 @@ body {
   .contact-info {
     display:none;
   }
+
+   .hero {
+  
+  height:614px;
+ 
+
+}
   }
 
   /* SERVICES SECTION*/
