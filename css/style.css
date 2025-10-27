@@ -459,7 +459,10 @@ body {
 
    .hero {
   
-  height:614px;
+  height:50svh;
+   background: #051233 url('../images/banner-bg-img.png') no-repeat center center;
+   object-fit: cover;
+   background-position-x: 60% !important;
  
 
 }
