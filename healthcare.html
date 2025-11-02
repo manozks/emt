@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<title>Expert Web & Mobile App Development | AI Solutions | E Multitech Solution, Nepal</title>
+  <link rel="shortcut icon" href="images/favicon.png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+   <!-- Icon Font Stylesheet -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Navigation -->
+  <!-- Header -->
+<nav class="navbar navbar-light blue-bg fixed-top">
+  <div class="container-fluid d-flex justify-content-between">
+
+    <!-- Left Logo -->
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo.png" alt="Company Logo" height="42">
+    </a>
+
+<div class="right--bar">
+      <!-- Phone number (always visible) -->
+      <div class="contact-info">
+       
+        <img src="images/mobile-icon.png" alt="Mobile" >
+        <span>+977 - 9851038796</span>
+      </div>
+  
+      <!-- Hamburger Icon -->
+      <button class="navbar-toggler" type="button" aria-label="Toggle navigation" onclick="toggleMenu()">        
+             <img src="images/nav-toggle-icon.png" alt="toggler" >
+      </button>
+</div>
+
+  </div>
+
+
+</nav>
+<!-- Backdrop -->
+<div class="menu-backdrop" id="menuBackdrop" onclick="closeMenu()"></div>
+
+<!-- Slide-in Menu -->
+<div class="navbar-collapse" id="navbarMenu">
+  <button class="menu-close" onclick="closeMenu()">×</button>
+  <ul class="navbar-nav">
+    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item">
+        <a class="nav-link dropdown-toggle" id="servicesDropdown" onclick="toggleDropdown(this)">
+          Services
+        </a>
+        <div class="dropdown-menu" id="servicesMenu">
+          <a class="dropdown-item" href="ai-solutions.html">AI Solutions </a>
+          <a class="dropdown-item" href="mobile-development.html">Mobile App Development</a>
+          <a class="dropdown-item" href="web-development.html">Web Development </a>
+          <a class="dropdown-item" href="software-development.html">Software Development</a>
+          <a class="dropdown-item" href="devops-engineer.html">DevOps Engineer</a>
+           <a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a>
+        </div>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+     <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
+         <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+
+  </ul>
+</div>
+  
+
+
+      <!-- HealthCare Section -->
+<section class="casestudies--detail industries__detail">
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a> <span>›</span> <a href="industries.html"> Industries</a> <span>›</span> <span>HealthCare</span>
+    </nav>
+
+    <header class="page-header">
+      <h1 class="page-title">HealthCare Software</h1>
+    </header>
+
+    <!-- Info row with four items -->
+    <section class="info-row" aria-label="Key info">
+      <div class="info-item">
+        <div class="info-icon">
+          <div class="icon-circle" aria-hidden="true">
+            <!-- icon (industry/building) -->
+          <img src="images/fitness.png" alt="Fitness App Development">
+          </div>
+        </div>
+        <div class="info-text">
+          <div class="info-head">Fitness App Development</div>
+         
+        </div>
+      </div>
+
+      <div class="info-item mid-accent">
+        <div class="info-icon">
+          <div class="icon-circle" aria-hidden="true">
+            <!-- Location icon -->
+            <img src="images/telemedicine.png" alt="Telemedicine Development" >
+          </div>
+        </div>
+        <div class="info-text">
+          <div class="info-head">Telemedicine Development</div>
+          
+        </div>
+      </div>
+
+      <div class="info-item mid-accent">
+        <div class="info-icon">
+          <div class="icon-circle" aria-hidden="true">
+            <!-- briefcase -->
+           <img src="images/medicine.png" alt="Pharmacy Development" >
+          </div>
+        </div>
+        <div class="info-text">
+          <div class="info-head">Pharmacy Development</div>
+        
+        </div>
+      </div>
+
+      
+
+      <div class="info-item">
+        <div class="info-icon">
+          <div class="icon-circle" aria-hidden="true">
+            <!-- Team Size -->
+           <img src="images/medical-appointment.png" alt="Doctor Appointment Solution" >
+          </div>
+        </div>
+        <div class="info-text">
+          <div class="info-head">Doctor Appointment Solution</div>
+         
+        </div>
+      </div>
+
+        <div class="info-item">
+        <div class="info-icon">
+          <div class="icon-circle" aria-hidden="true">
+            <!-- Technologies -->
+        <img src="images/heart.png" alt="Health App Development">
+          </div>
+        </div>
+        <div class="info-text">
+          <div class="info-head">Health App Development</div>
+         
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer area -->
+    <section class="customer" aria-labelledby="customer-title">
+      <div class="circle-illustration" aria-hidden="true">
+        <!-- circular icon similar to sample -->
+       <img src="images/company-deal.png" alt="customer">
+      </div>
+
+      <div class="customer-body">
+        <h3 id="customer-title">Healthcare Development Company</h3>
+        <p>
+         We create advanced healthcare IT solutions that make patient care better, operations smoother, and data safer. Our experts work with hospitals, clinics, and startups to use technology that improves efficiency and results.
+        </p><br>
+          <a href="request_quote.html" class="btn btn-hero">Discuss Your Project</a>
+      </div>
+    </section>
+  </section>
+
+<!--Software Development Services Section -->
+    <section class="web__container noshape">
+    <div class="heading" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
+      <h2>Custom Healthcare <br>Development Services</h2>
+      <p>We provides custom healthcare development services focusing on curating solutions that streamline different parts of healthcare institutions’ operations. Each of our solutions is designed while ensuring compliance with relevant rules and regulations.</p>
+    </div>
+
+    <div class="software__wrapper">
+       <div class="tabs">
+      <div class="tab active" data-tab="ai_integration">
+        <span><img src="images/fitness-app.png" alt="AI Integration in Healthcare"></span>AI Integration in Healthcare       </div>
+      <div class="tab" data-tab="custom_healthcare">
+       <span><img src="images/protocol.png" alt="Custom healthcare development"></span>Custom healthcare development
+      </div>
+      <div class="tab" data-tab="healthcare_consultation">
+      <span><img src="images/health-services.png" alt="Healthcare Consultation Services"></span>Healthcare Consultation Services
+      </div>
+        <div class="tab" data-tab="healthcare_app">
+      <span><img src="images/tablet_healthcare.png" alt="Healthcare App Design"></span>Healthcare App Design
+      </div>
+         <div class="tab" data-tab="app_support">
+      <span><img src="images/medical-service.png" alt="Healthcare App support and evolution
+"></span>Healthcare App support and evolution
+
+      </div>
+        <div class="tab" data-tab="app_upgrade">
+      <span><img src="images/cloud.png" alt="Healthcare app upgrade and modernization"></span>Healthcare app upgrade and modernization
+      </div>
+
+    </div>
+
+    <div class="content" id="content">
+      <h2>AI Integration in Healthcare</h2>
+      <p>
+        Healthcare institutions to leverage artificial intelligence and its capabilities to automate workflows, enhance efficiency, increase productivity, and eliminate the chances of human errors. Our AI-integrated healthcare solutions bring features like image recognition, predictive analytics, AI chatbots, and more that help in providing better patient care.
+      </p>
+      <ul>
+            <li>Predictive analytics for patient risk assessment</li>
+            <li>AI-powered diagnostic tools</li>
+            <li>Clinical documentation</li>
+            <li>Medical image analysis using computer vision</li>
+            <li>AI chatbots for patient engagement</li>
+      </ul>
+    </div>
+    </div>
+
+    
+   
+  </section>
+
+   <!--How a Healthcare Company Works Section -->
+   
+   <section class="strategy-wrapper">
+       
+       <!-- Column 1: Image -->
+    <div class="col img7" data-aos="fade-right" data-aos-offset="200"
+        data-aos-easing="ease-in-sine"></div>
+
+    <!-- Column 2: Free Estimation -->
+    <div class="col text">
+      <div data-aos="fade-left" data-aos-offset="200"
+        data-aos-easing="ease-in-sine">
+        <h2>Discovery and planning
+</h2>
+       <ul>
+            <li>Understanding the client goals, healthcare regulations, and user needs
+
+</li>
+            <li>Assessing technical requirements and system architecture
+
+</li>
+            <li>In-depth market research and analysis of competitors
+
+</li>
+            <li>Curate the entire project roadmap with defined milestones
+
+</li>
+            
+        </ul>
+      </div>
+    </div>
+
+    <!-- Column 3: Image -->
+    <div class="col img8" data-aos="fade-right" data-aos-offset="200"
+        data-aos-easing="ease-in-sine"></div>
+
+    <!-- Column 4: On-Time Delivery -->
+    <div class="col text">
+      <div data-aos="fade-left" data-aos-offset="200"
+        data-aos-easing="ease-in-sine">
+        <h2>Design and Prototype</h2>
+        <ul>
+            <li>Building an interactive prototype and wireframe</li>
+            <li>Collect feedback from the relevant stakeholders</li>
+            <li>Ensuring a seamless user interface, design, and navigation</li>
+            <li>Complying with the respective healthcare standards, like HL7 and HIPAA</li>            
+            
+        </ul>
+      </div>
+    </div>
+
+   
+
+    <!-- Column 5: Budget-Friendly Apps-->
+    <div class="col text">
+      <div data-aos="fade-left" data-aos-offset="200"
+        data-aos-easing="ease-in-sine">
+        <h2>Development</h2>
+        <ul>
+            <li>Building the backend infrastructure of a healthcare mobile app</li>
+            <li>Deploying agile project management methodology for iterative development</li>
+            <li>Integrate the required features and APIs</li>
+            <li>Ensure security, code quality, and the utmost performance of features</li>
+            
+        </ul>
+      </div>
+    </div>
+      <!-- Column 6: Image -->
+    <div class="col img9" data-aos="fade-right" data-aos-offset="200"
+        data-aos-easing="ease-in-sine"></div>
+
+    
+
+    <!-- Column 7: Personalized Approach -->
+    <div class="col text">
+      <div data-aos="fade-left" data-aos-offset="200"
+        data-aos-easing="ease-in-sine">
+        <h2>Testing & Release</h2>
+        <ul>
+            <li>Perform integration, UI, and functional testing
+
+</li>
+            <li>Check the compatibility of the mobile app with diverse devices
+
+</li>
+            <li>Preparing the software to launch on the targeted platforms
+
+</li>
+            <li>Set up scalability support and cloud infrastructure
+
+ </li>
+            <li>Monitor the initial usage to assess the performance
+
+</li>
+           
+        </ul>
+      </div>
+    </div>
+
+    <!-- Column 8: Image -->
+    <div class="col img10" data-aos="fade-right" data-aos-offset="200"
+        data-aos-easing="ease-in-sine"></div>
+
+    </section>
+
+
+  <!-- Transform Healthcare Section -->
+
+  <section class="project-section transform-healthcare">
+    <div class="project-image  hero-content">
+      <img src="images/about5.jpg" alt="Project discussion">
+    </div>
+    <div class="project-content  hero-content">
+      <h2>Transform Healthcare with Cutting-Edge Software Solutions</h2>
+      <p>
+        Partner with us to build secure, scalable, and innovative healthcare software that enhances patient care, streamlines operations, and ensures compliance.
+
+ </p>
+      <div class="divider"></div>
+      <p>
+        Click to <a href="contact.html">Book a Free Consultation</a> here, now!
+      </p>
+    </div>
+  </section>
+ 
+
+
+
+
+    <!-- Ready to Hire-->
+    <section class="web__wrapper">
+       <!-- Column 1: Image -->
+    <div class="col img_2" data-aos="fade-right" data-aos-offset="200"
+        data-aos-easing="ease-in-sine"></div>
+
+    <!-- Column 2: Ready to Hire -->
+    <div class="col text">
+      <div data-aos="fade-left" data-aos-offset="200"
+        data-aos-easing="ease-in-sine">
+        <h2>Ready to Build Healthcare Software?</h2>
+<p>Partner with us and get your business future-ready.</p>
+   
+    <div><a href="request_quote.html" class="btn btn-hero">Schedule a Call </a></div>
+      </div>
+    </div>
+    </section>
+
+
+       <!--Our Healthcare App Development Solutions Section -->
+
+        <section class="ai__container">
+    <div class="heading" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
+      <h2>Our Healthcare <br>Development Solutions</h2>
+      <p>We offers the best healthcare app development solutions that enable healthcare institutions of <br>all sizes and niches to automate their workflow and elevate operational processes.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" >
+        <div class="icon--round"><img src="./images/fitness.png" alt="Fitness Development"></div>
+        <h3>Fitness Development</h3>
+        <p>Our fitness mobile app solution carries features like wearable integration, AI-powered recommendations, and an easy-to-use interface that makes the overall solution very accessible to different users.</p>
+      </div>
+
+      <div class="card" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+        <div class="icon--round"><img src="./images/telemedicine.png" alt="Telemedicine App Development"></div>
+        <h3>Telemedicine App Development</h3>
+        <p>Our team curates telemedicine apps that help to connect patients and healthcare providers. Using telemedicine apps, the patient can get online prescriptions of medicine without even visiting the healthcare facility. </p>
+      </div>
+
+      <div class="card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+       <div class="icon--round"><img src="./images/medicine.png" alt="Pharmacy App Development"></div>
+        <h3>Pharmacy App Development</h3>
+        <p>This solution is designed for pharmacy owners who come with different features like inventory tracking, medicine ordering, and prescription management.</p>
+      </div>
+
+      <div class="card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+        <div class="icon--round"><img src="./images/medical-appointment.png" alt="Doctor Appointment Solution"></div>
+        <h3>Doctor Appointment Solution</h3>
+        <p>The doctor appointment mobile apps are specifically designed for patients and doctors to streamline the appointment process and eliminate the long physical queues, causing inconvenience to both.</p>
+
+
+      </div>
+
+      <div class="card" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+        <div class="icon--round"><img src="./images/heart.png" alt="Health App Development
+"></div>
+        <h3>Health App Development
+</h3>
+         <p>The core focus of these apps is to empower users to keep them informed about their health while allowing their doctors and healthcare service providers to track their fitness level in real time.</p>
+
+      </div>
+    </div>
+  
+  </section>
+
+
+      <!--Do You Want to Develop banner Section -->
+  <section class="banner-develop-wrapper">
+  <div class="banner-develop">
+    <div class="banner-content" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+      <h2>Partner With the Best Healthcare <br>App Development Company</h2>
+      <a href="request_quote.html">Schedule a Call</a>
+    </div>
+
+    <div class="banner-image" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+      <!-- Replace image path below with your actual image -->
+      <img src="images/developer-picture.png" alt="Custom Software Illustration">
+    </div>
+  </div>
+</section>
+
+
+       
+
+
+
+<!-- Footer Section -->
+<section class="footer-container">
+  <div class="container-fluid">
+
+          <!-- QuoteSection -->
+      <div class="quote__section fade-slide">
+Start Getting Results Online
+<a href="request_quote.html" class="btn btn-hero">REQUEST A QUOTE </a>
+      </div>
+
+    <!-- Top contact info -->
+    <div class="footer-top">
+      <div class="contact-box" data-aos="fade-right" data-aos-offset="300"
+      data-aos-easing="ease-in-sine">
+        <div class="contact-icon">
+          <img src="images/map-icon.png" alt="map">
+        </div>
+        <div class="contact-address">
+        <h4>KATHMANDU</h4>
+        <p>Near UN Office, Kupondol, Lalitpur, Nepal<br/>Mobile: +977 9851038796</p>
+       
+      </div>
+      </div>
+      <div class="contact-box" data-aos="fade-right" data-aos-offset="300"
+      data-aos-easing="ease-in-sine">
+        <div class="contact-icon">
+          <img src="images/map-icon.png" alt="map">
+        </div>
+        <div class="contact-address">
+          <h4>SYDNEY</h4>
+          <p>Near UN Office, Kupondol, Lalitpur, Nepal<br/>Mobile: +977 9851038796</p>         
+        </div>
+        
+      </div>
+      <div class="contact-box" data-aos="fade-right" data-aos-offset="300"
+      data-aos-easing="ease-in-sine">
+        <div class="contact-icon">
+          <img src="images/map-icon.png" alt="map">
+        </div>
+        <div class="contact-address">
+          <h4>CANADA</h4>
+          <p>Near UN Office, Kupondol, Lalitpur, Nepal<br/>Mobile: +977 9851038796</p>         
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Middle section -->
+    <div class="footer-middle">
+      <div class="footer-logo fade-slide">
+        <img src="images/footer-logo.png" alt="eMultiTechSolutions">
+        <p>we craft, launch, and scale high-performance web, mobile, and wearable applications — from design to development, testing, and ongoing growth.</p>
+      </div>
+
+      <div class="footer-column fade-slide">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="ai-solutions.html" class="footer-text"> AI Solutions</a></li>
+          <li><a href="mobile-development.html" class="footer-text">Mobile App Development</a></li>
+          <li><a href="web-development.html" class="footer-text">Web Development</a</li>
+          <li><a href="software-development.html" class="footer-text">Software Development</a></li>
+          <li><a href="devops-engineer.html" class="footer-text">DevOps Engineer</a></li>
+          <li><a href="digital-marketing.html" class="footer-text">Digital Marketing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column fade-slide">
+        <h5>Industries</h5>
+        <ul>
+          <li><a href="#" class="footer-text">Procurement Solution</a></li>
+          <li><a href="#" class="footer-text">Healthcare</a></li>
+          <li><a href="#" class="footer-text">Auction Software</a></li>
+          <li><a href="#" class="footer-text">Real Estate</a></li>
+         
+        </ul>
+      </div>
+
+      <div class="footer-column fade-slide">
+        <h5>Information</h5>
+        <ul>
+          <li><a href="terms.html" class="footer-text">Terms and Condition</a></li>
+          <li><a href="privacy.html" class="footer-text">Privacy Policy</a></li>
+          <li><a href="contact.html" class="footer-text">Contact Us</a></li>
+        
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom section -->
+    <div class="footer-bottom">
+      <p>© Copyright by Emultitechsolution Since 2010</p>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-x-twitter"></i> </a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+
+ const tabs = document.querySelectorAll(".tab ");
+    const content = document.getElementById("content");
+
+    const tabData = {
+      ai_integration: {
+        title: "AI Integration in Healthcare",
+        text: "Healthcare institutions to leverage artificial intelligence and its capabilities to automate workflows, enhance efficiency, increase productivity, and eliminate the chances of human errors. Our AI-integrated healthcare solutions bring features like image recognition, predictive analytics, AI chatbots, and more that help in providing better patient care.",
+        list: [
+          "Predictive analytics for patient risk assessment",
+          "AI-powered diagnostic tools",
+          "Clinical documentation",
+          "Medical image analysis using computer vision",
+          "AI chatbots for patient engagement",
+        ],
+      },
+      custom_healthcare: {
+        title: "Custom healthcare development",
+        text: "We offer customized healthcare application development services that focus on building the solution from scratch while imparting each feature according to particular requirements and features. From telemedicine to patient management software and EHR systems, we help in crafting scalable, secure, and compliant digital products that align with overall business goals.",
+        list: [
+          "Electronic Health Record (EHR) systems",
+           "Telemedicine applications",
+           "Remote patient monitoring apps",
+           "Health and wellness tracking apps",
+           "Appointment scheduling platforms",
+        ],
+      },
+      healthcare_consultation: {
+        title: "Healthcare Consultation Services",
+        text: "As a leading team of healthcare app developers, we enable hospitals, medical universities, clinic owners, and healthcare centres to identify real-time challenges in their operations and implement technological solutions accordingly. Our consultation sessions are dedicated to navigating a seamless digital transformation journey for our clients by providing insights about the timeline, costs, and resources.",
+        list: [
+          "Market and competitor analysis",
+          "Compliance and regulatory advisory (HIPAA, HL7, etc.)",
+          "Technical architecture planning",
+          "UX/UI evaluation and guidance",
+          "Product roadmap development",
+        ],
+      },
+        healthcare_app: {
+        title: "Healthcare App Design",
+        text: " The best team of healthcare app designers, who curate the personalized user interface and app designs, aligning with the vision and existing brand theme. We build an easy-to-navigate UI that helps the customers, doctors, admins, and all the end-users to access all the features and functionalities seamlessly.",
+        list: [
+          "Mobile Application Development",
+          "Web Application Development",
+          "Ecommerce application development",
+          "Desktop Application",
+          "Application testing",
+        ],
+      },
+        app_support: {
+        title: "Healthcare App support and evolution",
+        text: "Our team provides consistent maintenance and support to healthcare centres that help to keep the technological architecture functional for a longer time. In our maintenance services, we ensure that any kind of technical errors are not impacting the overall user experience, frequent updates are being provided, unnecessary features are removed, and the overall software is optimized periodically.",
+        list: [
+          "Performance monitoring and optimization",
+          "Bug tracking and resolution",
+          "API and Third-Party Integration",
+          "Feature enhancements",
+          "Security patches and compliance updates",
+        ],
+      },
+       app_upgrade: {
+        title: "Healthcare app upgrade and modernization",
+        text: "We provide software modernization services that focus on imparting the latest technologies and functionalities into the existing software so the clients can adhere to changing market and patient needs. Moreover, our team also provides upgrades of medical app solutions so that they can be optimized for new devices and screen sizes.",
+        list: [
+          "UI/UX redesign with modern frameworks",
+          "Migration to cloud-based solutions",
+          "Database restructuring and optimization",
+          "Integration with wearable devices",
+          "Technology stack upgrade",
+        ],
+      },
+        
+    };
+
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        tabs.forEach((t) => t.classList.remove("active"));
+        tab.classList.add("active");
+
+        const selected = tab.getAttribute("data-tab");
+        const { title, text, list } = tabData[selected];
+
+        content.innerHTML = `
+          <h2>${title}</h2>
+          <p>${text}</p>
+          <ul>
+            ${list.map((item) => `<li>${item}</li>`).join("")}
+          </ul>
+        `;
+      });
+    });
+
+</script>
+
+<script src="js/aos.js"></script>
+<script>
+  AOS.init();
+</script> 
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

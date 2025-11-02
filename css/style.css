@@ -2093,7 +2093,8 @@ transform: translateY(-2px);
 
     /* Project Development Processes Section */
      .project-section,
-     .project-scope {
+     .project-scope,
+     .transform-healthcare{
       display: flex;
       align-items: stretch;
       justify-content: center;
@@ -2106,6 +2107,9 @@ transform: translateY(-2px);
     .project-scope{
       background: #DADAFB;
       margin-bottom: 10px;
+    }
+    .transform-healthcare{
+      margin-top:10px;
     }
 
     .project-image,
@@ -2486,6 +2490,21 @@ transform: translateY(-2px);
 
      .strategy-wrapper .img6 {
       background: url('../images/personalized.jpg') no-repeat center center/cover;
+    }
+
+     .strategy-wrapper .img7 {
+      background: url('../images/female-medical.jpg') no-repeat center center/cover;
+    }
+
+       .strategy-wrapper .img8 {
+      background: url('../images/general.jpg') no-repeat center center/cover;
+    }
+      .strategy-wrapper .img9 {
+      background: url('../images/neuroscience.jpg') no-repeat center center/cover;
+    }
+
+        .strategy-wrapper .img10 {
+      background: url('../images/new-test.jpg') no-repeat center center/cover;
     }
 
 
@@ -3496,12 +3515,14 @@ transform: translateY(-2px);
     .industries__container .card-content { position:absolute; left:18px; right:18px; bottom:18px; z-index:2; color:#fff; }
     .casestudy-carousel-container .card-content h3,
     .industries__container .card-content h3 { font-size:1rem; font-weight:600; line-height:1.4; margin-bottom:8px; }
+    .industries__container .card-content h3 {font-size:1.2rem;}
     .industries__container .card-content h3 a {color:#fff; text-decoration: none; padding:4px 10px; background-color: #0056b3; transition: all 0.5s ease!important;}
     .industries__container .card-content h3 a:hover { background-color: #fff; color: #0056b3;}
     .casestudy-carousel-container .categories,
     .industries__container .categories { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
     .casestudy-carousel-container .categories span,
     .industries__container .categories span { font-size:.85rem; opacity:.95; position:relative; }
+     .industries__container .categories span { font-size:1rem; opacity: 1;}
     .casestudy-carousel-container .categories span:not(:last-child)::after,
     .industries__container .categories span:not(:last-child)::after { content:""; width:1px; height:12px; background:#fff; opacity:.6; display:inline-block; margin-left:8px; }
 
@@ -3716,11 +3737,17 @@ transform: translateY(-2px);
   }
 
   /* icon circle and small svg */
-  .casestudies--detail .icon-circle{
+  .casestudies--detail .icon-circle,
+   .industries__detail .icon-circle{
     width:66px;height:66px;border-radius:50%;
     display:grid;place-items:center;
     background:transparent;
     border:2px solid #70757a;
+  }
+
+  .industries__detail .icon-circle{
+   background:#020288;
+    border:2px solid #020288;
   }
 
   .casestudies--detail .info-text{
@@ -3831,3 +3858,7 @@ transform: translateY(-2px);
     .casestudies--detail .customer h3{font-size:22px}
     .casestudies--detail .customer p{font-size:14px}
   }
+
+
+
+ 
