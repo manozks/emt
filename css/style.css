@@ -2238,6 +2238,10 @@ transform: translateY(-2px);
       padding: 150px 4% 0px!important;
     }
 
+      .realestate__section {    
+      padding: 20px 4% 40px!important;
+    }
+
     /* Left section */
     .ai-solution-section .text-section {
       flex: 1 1 600px;
@@ -2339,6 +2343,7 @@ transform: translateY(-2px);
         flex-direction: column;
         text-align: center;
       }
+      .realestate__section{padding: 0!important;}
 
       .ai-solution-section .features {
         text-align: left;
@@ -2903,6 +2908,11 @@ transform: translateY(-2px);
 
     .web__wrapper .img_2 {
       background: url('../images/programmer.png') no-repeat center center;
+     
+    }
+
+     .web__wrapper .img3 {
+      background: url('../images/businesswoman.jpg') no-repeat center center;
      
     }
 
@@ -3746,8 +3756,8 @@ transform: translateY(-2px);
   }
 
   .industries__detail .icon-circle{
-   background:#020288;
-    border:2px solid #020288;
+   background:#051233;
+    border:2px solid #051233;
   }
 
   .casestudies--detail .info-text{
@@ -3858,6 +3868,86 @@ transform: translateY(-2px);
     .casestudies--detail .customer h3{font-size:22px}
     .casestudies--detail .customer p{font-size:14px}
   }
+
+
+
+  /* RealEstate Feature Solutions */
+
+   .realestate__container {
+        max-width:94%;
+        margin:0 auto;
+        padding:40px 0px 0px;
+        background:#fff;
+        text-align: center;
+    }
+
+    .realestate__container h2 {
+      margin-bottom: 20px;
+    font-size: 2rem;
+    color: #07225B;
+    font-weight: 700;
+    }
+
+    .realestate__container p {
+      color: #555;
+      font-size: 0.95rem;
+      margin-bottom: 30px;
+    }
+
+    .realestate__container .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .realestate__container .feature-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #DADAFB;
+      border-radius: 50px;
+      padding: 14px 24px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      min-width: 180px;
+      justify-content: center;
+    }
+
+    .realestate__container .feature-box i {
+      font-size: 20px;
+      color: #000; /* Dark blue */
+    }
+
+    .realestate__container .feature-box span {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #0a0a0a;
+    }
+
+    .realestate__container .feature-box:hover {
+      background-color: #051233;
+      color: #fff;
+    }
+
+    .realestate__container .feature-box:hover i,
+    .realestate__container .feature-box:hover span {
+      color: #fff;
+    }
+
+    /* Responsive design */
+    @media (max-width: 992px) {
+      .realestate__container .feature-box {
+        min-width: 45%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .realestate__container .feature-box {
+        min-width: 100%;
+        justify-content: flex-start;
+      }
+    }
 
 
 
