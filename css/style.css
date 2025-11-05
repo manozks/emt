@@ -4088,5 +4088,18 @@ transform: translateY(-2px);
     }
 
 
+ .card {
+  position: relative;
+  cursor: pointer;
+}
+
+.card-link {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  text-indent: -9999px;
+}
+
+
 
  
