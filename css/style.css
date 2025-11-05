@@ -300,15 +300,21 @@ body {
   animation: fadeInUp 1.2s ease-in-out;
 }
 .hero h1 {
-  font-size: 45px;
-  font-weight: 300;
+  font-size: 40px;
+  font-weight: 600;
 }
 .hero p {
-  font-size: 30px;
+  font-size: 20px;
   margin: 20px 0;
   font-weight: 300;
 }
-.btn-hero {
+.hero__btn__area{
+  display: flex;
+  gap: 20px;
+  padding-top: 10px;
+}
+.btn-hero,
+.btn-hero-white {
   background: linear-gradient(90deg, #007BFF, #0F4777);
   color: #fff!important;
   padding: 12px 30px;
@@ -322,7 +328,17 @@ body {
 .btn-hero:hover {
   background: #007BFF;
   transform: translateY(-2px);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-hero-white {
+  background: linear-gradient(90deg, #fff, #DADAFB);
+  color: #000!important;}
+
+  .btn-hero-white:hover {
+  background: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Keyframes */
@@ -1907,6 +1923,7 @@ transform: translateY(-2px);
             .stats-container {
                 flex-direction: column;
             }
+
             
             .stat-box {
                 min-width: 100%;
@@ -1937,6 +1954,9 @@ transform: translateY(-2px);
             .profile-image {
                 height: 250px;
             }
+                        .hero__btn__area{
+  flex-direction: column;
+}
         }
 
 
@@ -2166,12 +2186,14 @@ transform: translateY(-2px);
       color: #051233;
     }
 
-    .project-scope ul {
+    .project-scope ul,
+    .auction-feature ul {
       list-style: none;
       padding: 0;
     }
 
-    .project-scope ul li {
+    .project-scope ul li,
+    .auction-feature ul li {
       font-size: 16px;
       margin-bottom: 5px;
       line-height: 1.4;
@@ -2180,13 +2202,22 @@ transform: translateY(-2px);
       color: #051233;
     }
 
-    .project-scope ul li::before {
+    .auction-feature ul li{
+        color: #fff;
+    }
+
+    .project-scope ul li::before,
+    .auction-feature ul li::before {
       content: "✓";
       color: #051233;
       font-weight: bold;
       position: absolute;
       left: 0;
       top: 0;
+    }
+
+     .auction-feature ul li::before{
+        color: #fff;
     }
 
     .project-content a {
@@ -2343,7 +2374,7 @@ transform: translateY(-2px);
         flex-direction: column;
         text-align: center;
       }
-      .realestate__section{padding: 0!important;}
+      .realestate__section{padding: 0!important; margin: 0;}
 
       .ai-solution-section .features {
         text-align: left;
@@ -2586,7 +2617,8 @@ transform: translateY(-2px);
       .ai__container,
       .web__container,
       .core__step__container,
-      .challenges__container
+      .challenges__container,
+      .auction__type__section
        {
       padding: 60px;
       margin: auto;
@@ -2602,7 +2634,8 @@ transform: translateY(-2px);
 
   .ai__container::after,
   .web__container::after,
-  .core__step__container::after {
+  .core__step__container::after,
+   .auction__type__section::after {
     content: "";
     position: absolute;
     bottom: 50px;
@@ -2661,7 +2694,8 @@ transform: translateY(-2px);
 
     .ai__container .heading,
     .web__container .heading,
-    .core__step__container .heading  {
+    .core__step__container .heading,
+     .auction__type__section .heading  {
       text-align: left;
       color: #7192C5;
       margin-bottom: 40px;
@@ -2674,7 +2708,8 @@ transform: translateY(-2px);
     .ai__container .heading h2,
     .web__container .heading h2,
     .core__step__container .heading h2,
-     .challenges__container .heading h2 {
+     .challenges__container .heading h2,
+     .auction__type__section .heading h2 {
       font-size: 42px;
       font-weight: 600;
       margin-bottom: 10px;
@@ -3879,6 +3914,7 @@ transform: translateY(-2px);
         padding:40px 0px 0px;
         background:#fff;
         text-align: center;
+        overflow: hidden;
     }
 
     .realestate__container h2 {
@@ -3946,6 +3982,108 @@ transform: translateY(-2px);
       .realestate__container .feature-box {
         min-width: 100%;
         justify-content: flex-start;
+      }
+    }
+
+
+     /* Type of auction section */
+
+
+
+    /* Card grid layout */
+    .auction__type__section .auction-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+      gap: 25px;
+    }
+
+    /* Each card */
+     .auction__type__section .auction-card {
+      background-color:transparent;
+      border: 1px solid #314F7C;
+      border-radius: 12px;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+     .auction__type__section .auction-card:hover {
+      border-color: #7192C5;
+      transform: translateY(-4px);
+    }
+
+    /* Icon area */
+     .auction__type__section .auction-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #355482;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 26px;
+      color: #fff;
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    .auction__type__section .auction-icon img {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+    /* Card content */
+     .auction__type__section .auction-card h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+     .auction__type__section .auction-card p {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: #c5c8d3;
+      flex-grow: 1;
+    }
+
+    /* Arrow icon (bottom right) */
+     .auction__type__section .arrow-icon {
+      position: absolute;
+      bottom: 18px;
+      right: 20px;
+      font-size: 18px;
+      color: #fff;
+      transition: transform 0.3s ease;
+    }
+
+     .auction__type__section .auction-card:hover .arrow-icon {
+      transform: translateX(5px);
+      color: #355482;
+    }
+
+    /* Responsive spacing */
+    @media (max-width: 768px) {
+   
+
+       .auction__type__section .auction-grid {
+        gap: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+       .auction__type__section .auction-card {
+        padding: 20px;
+      }
+
+       .auction__type__section .auction-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
       }
     }
 
