@@ -3618,10 +3618,18 @@ transform: translateY(-2px);
 
     /*case study page section */
 
-    .case-studies {
+    .case-studies,
+    .auction__example {
       margin: 0px auto;
       padding: 150px 4% 80px;
     }
+
+        .auction__example {
+      margin: 0px auto;
+      padding: 40px 4% 40px;
+    }
+
+
     .case-studies h2 {
     text-align: left;
     font-size: 2.5rem;
@@ -3869,7 +3877,7 @@ transform: translateY(-2px);
   .casestudies--detail .customer p{
     margin:0;
     color:#35373a;
-    font-size:15px;
+    font-size:16px;
     opacity:0.9;
   }
 
@@ -4102,6 +4110,291 @@ transform: translateY(-2px);
   z-index: 5;
   text-indent: -9999px;
 }
+
+
+/* low bid auction */
+
+.how__lowest__auction {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+  background-color: #DADAFB;
+}
+
+/* Background split */
+.how__lowest__auction::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: #051233; /* dark blue */
+  clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%); /* diagonal right edge */
+  z-index: 1;
+}
+
+.how__lowest__auction::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  background: #DADAFB; /* dark grey */
+  z-index: 1;
+}
+
+/* Left and Right Columns */
+.how__lowest__auction .intro,
+.how__lowest__auction .example {
+  position: relative;
+  z-index: 2;
+  padding: 3rem 4rem;
+  color: #fff;
+}
+
+.how__lowest__auction .intro {
+  background: transparent;
+   padding: 3rem 6rem 3rem 3rem;
+}
+
+.how__lowest__auction .example {
+  background: transparent;
+  color: #051233;
+}
+
+/* Typography */
+.how__lowest__auction h2{
+  color: #7192C5;
+  padding-bottom:10px ;
+}
+
+.how__lowest__auction h3 {
+ font-size: 1.2rem;
+ padding: 1rem 0;
+ color: #7192C5;
+}
+
+
+.how__lowest__auction h4 {
+  color: #051233;
+}
+
+.how__lowest__auction p,
+.how__lowest__auction li {
+  color: #f1f1f1;
+}
+
+.how__lowest__auction .note {
+  color: #051233;
+}
+
+.how__lowest__auction .image-wrapper{ text-align:center;}
+
+/* Info list */
+.how__lowest__auction .info-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.how__lowest__auction .info-list li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+/* Table */
+.how__lowest__auction .bid-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  background: #f6f7ff;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.how__lowest__auction .bid-table th {
+  background-color: #b5bef7;
+  color: #0b1e40;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+}
+
+.how__lowest__auction .bid-table td {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid #ccc;
+}
+
+.how__lowest__auction .bid-table tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.how__lowest__auction .bid-table tr.highlight {
+  background-color: #0b1e40;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .how__lowest__auction {
+    grid-template-columns: 1fr;
+  }
+
+  .how__lowest__auction .intro {
+
+  padding: 3rem 1rem 0;
+ 
+}
+
+.how__lowest__auction .example {
+
+  padding: 3rem 1rem;
+ 
+}
+
+  .how__lowest__auction::before,
+  .how__lowest__auction::after {
+    width: 100%;
+    clip-path: none;
+  }
+
+  .how__lowest__auction::before {
+    height: 50%;
+  }
+
+  .how__lowest__auction::after {
+    height: 50%;
+    top: 50%;
+  }
+
+  .how__lowest__auction h4
+
+ {
+    color: #fff;
+}
+
+}
+
+/* auction FAQ section */
+
+.faq__section {
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+  background-color: #E9E9FE;
+  margin-top: 10px;
+ 
+}
+
+.faq__section .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  width: 100%;
+  align-items: start;
+}
+
+/* Left Side */
+.faq__section .faq-left h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0b0b40;
+  margin-bottom: 1rem;
+}
+
+.faq__section .faq-left p {
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+
+
+/* Right Side - FAQ Boxes */
+.faq__section .faq-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq__section .faq-item {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq__section .faq-question {
+  width: 100%;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 600;
+  background: none;
+  border: none;
+  padding: 1.25rem 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #1b1b3a;
+  transition: 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #f3f3fc;
+}
+
+.faq__section .arrow {
+  color: #002040;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.faq__section .faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 1.5rem;
+  background: #fafafa;
+  transition: all 0.3s ease;
+}
+
+.faq__section .faq-answer p {
+  font-size: 0.95rem;
+  color: #444;
+  padding: 0.75rem 0;
+}
+
+/* Active State */
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  padding: 1rem 1.5rem;
+}
+
+.faq-item.active .arrow {
+  transform: rotate(-90deg);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .faq__section .container {
+    grid-template-columns: 1fr;
+  }
+
+ .faq__section .faq-left {
+    text-align: center;
+  }
+
+ .faq__section .faq-right {
+    margin-top: 2rem;
+  }
+}
+
 
 
 
