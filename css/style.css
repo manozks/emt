@@ -1936,6 +1936,8 @@ transform: translateY(-2px);
             .profile-image {
                 height: 320px;
             }
+
+            .hero-content{ padding-top: 80px;}
         }
 
         @media (max-width: 480px) {
@@ -4071,6 +4073,7 @@ transform: translateY(-2px);
    
 
        .auction__type__section .auction-grid {
+         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         gap: 20px;
       }
     }
