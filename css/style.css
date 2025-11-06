@@ -1937,7 +1937,7 @@ transform: translateY(-2px);
                 height: 320px;
             }
 
-            .hero-content{ padding-top: 80px;}
+            .hero-home{ padding-top: 80px;}
         }
 
         @media (max-width: 480px) {
@@ -1956,8 +1956,8 @@ transform: translateY(-2px);
             .profile-image {
                 height: 250px;
             }
-                        .hero__btn__area{
-  flex-direction: column;
+          .hero__btn__area{
+       flex-direction: column;
 }
         }
 
