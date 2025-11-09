@@ -318,10 +318,10 @@ body {
   background: linear-gradient(90deg, #007BFF, #0F4777);
   color: #fff!important;
   padding: 12px 30px;
-  border-radius: 30px;
+  border-radius: 6px;
   font-size: 1rem;
   font-weight: 600;
-  text-decoration: none;
+  text-decoration: none!important;
   border: none!important;
   transition: all 0.3s ease;
 }
@@ -411,7 +411,7 @@ body {
       background: linear-gradient(90deg, #007BFF, #0F4777);
       color: #fff;
       text-decoration: none;
-      border-radius: 30px;
+      border-radius: 6px;
       font-size: 1rem;
       font-weight: 600;
       transition: all 0.3s ease;
@@ -487,7 +487,7 @@ body {
   /* SERVICES SECTION*/
 
   .services-section {
-    padding:10% 5% 5%;
+    padding:10% 4% 5%;
     position: relative;
     overflow: hidden;
     background:#fff;
@@ -632,7 +632,7 @@ body {
   padding: 12px 24px;
   color: #fff;
   text-decoration: none;
-  border-radius: 30px;
+  border-radius: 6px;
   text-align: right;
   font-size: 1rem;
   font-weight: 600;
@@ -1552,7 +1552,7 @@ transform: translateY(-2px);
       background: linear-gradient(90deg, #007BFF, #0F4777);
       color: #fff;
       text-decoration: none;
-      border-radius:30px;
+      border-radius:6px;
       font-size: 1rem;
       font-weight: 600;
       transition: all 0.3s ease;
@@ -4352,7 +4352,7 @@ transform: translateY(-2px);
 
 .faq__section .arrow {
   color: #002040;
-  font-size: 1.2rem;
+  font-size: 1rem;
   transition: transform 0.3s ease;
 }
 
