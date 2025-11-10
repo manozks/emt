@@ -270,48 +270,35 @@ body {
 }
 
  /* Hero Section */
-.hero {
+ .hero {
   position: relative;
   height: 100vh;
+  background: #051233 url('../images/banner-bg-img.png') no-repeat center center/cover;
+   object-fit: cover;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: left;
   padding: 0 15px;
-  overflow: hidden;
+  animation: bgAnimation 20s linear infinite alternate;
+
 }
 
-/* Background Video */
-.hero-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
+@keyframes bgAnimation {
+  0% {
+    background-position: center top;
+  }
+  50% {
+    background-position: center center;
+  }
+  100% {
+    background-position: center bottom;
+  }
 }
-
-/* Dark overlay to enhance readability */
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(5, 18, 51, 0.6); /* dark blue transparent overlay */
-  z-index: 1;
-}
-
-/* Content stays above video and overlay */
 .hero-content {
-  position: relative;
-  z-index: 2;
   animation: fadeInUp 1.2s ease-in-out;
 }
-
-/* Text styles */
 .hero h1 {
   font-size: 40px;
   font-weight: 600;
@@ -321,9 +308,7 @@ body {
   margin: 20px 0;
   font-weight: 300;
 }
-
-/* Buttons */
-.hero__btn__area {
+.hero__btn__area{
   display: flex;
   gap: 20px;
   padding-top: 10px;
@@ -331,13 +316,13 @@ body {
 .btn-hero,
 .btn-hero-white {
   background: linear-gradient(90deg, #007BFF, #0F4777);
-  color: #fff !important;
+  color: #fff!important;
   padding: 12px 30px;
   border-radius: 6px;
   font-size: 1rem;
   font-weight: 600;
-  text-decoration: none !important;
-  border: none !important;
+  text-decoration: none!important;
+  border: none!important;
   transition: all 0.3s ease;
 }
 .btn-hero:hover {
@@ -345,40 +330,21 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
+
 .btn-hero-white {
   background: linear-gradient(90deg, #fff, #DADAFB);
-  color: #000 !important;
-}
-.btn-hero-white:hover {
+  color: #000!important;}
+
+  .btn-hero-white:hover {
   background: #fff;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Animation */
+/* Keyframes */
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 28px;
-  }
-  .hero p {
-    font-size: 16px;
-  }
-  .hero__btn__area {
-    flex-direction: column;
-    gap: 10px;
-  }
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* Bottom Logo Section */
@@ -470,17 +436,10 @@ body {
       
   }
 
-  .about--picture{
-    position: relative;
-      z-index: 99;
-  }
-
   .about-section img {
       max-width: 100%;
       height: auto;
       animation: bgAnimation 5s linear infinite alternate;
-      position: relative;
-      z-index: 9999;
      
   }
 
@@ -514,7 +473,15 @@ body {
     display:none;
   }
 
+   .hero {
+  
+  height:600px;
+   background: #051233 url('../images/banner-bg-img.png') no-repeat center center;
+   object-fit: cover;
+   background-position-x: 60% !important;
+ 
 
+}
   }
 
   /* SERVICES SECTION*/
