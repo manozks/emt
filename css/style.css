@@ -53,7 +53,7 @@ body {
   .navbar-nav .nav-link {
     font-weight: 400;
     color: #fff!important;
-    font-size: 2rem!important;
+    font-size: 1.6rem!important;
     transition: all 0.5s ease!important;
   }
 
@@ -137,7 +137,7 @@ body {
 }
 
 .navbar-nav .nav-link {
-    padding: 12px 15px;
+    padding: 7px 15px;
     font-weight: 500;
     color: #000;
     text-align: left;     
@@ -4490,23 +4490,26 @@ transform: translateY(-2px);
 
     .our__works .tab-btn {
       border: none;
+      border-bottom: 3px solid #DADAFB!important;
+      font-size: 18px;
       padding:10px 26px;
-      border-radius:6px;
+      border-radius:0px;
       background:#DADAFB;
       color:#111827;
-      font-weight:600;
+      font-weight:700;
       cursor:pointer;
       transition:all .22s ease;
       box-shadow: none;
     }
 
     .our__works .tab-btn[data-active="true"]{
-      background:#051233;
-      color:#fff;
-      box-shadow:0 6px 18px rgba(255,71,126,0.16);
+      background:transparent;
+      color:#051233;
+      
+      border-bottom: 3px solid #051233!important;
     }
 
-    .our__works .tab-btn:focus{outline:3px solid rgba(37,99,235,0.12); outline-offset:2px}
+    .our__works .tab-btn:focus{outline:none; outline-offset:2px}
 
     /* Grid */
     .our__works .projects-grid{
@@ -4581,7 +4584,7 @@ transform: translateY(-2px);
     }
 
     .our__works .pill{
-      background:rgba(255,255,255,0.08);
+      background:rgba(255,255,255,0.2);
       color:#fff;
       padding:6px 10px;
       border-radius:6px;
