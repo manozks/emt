@@ -472,7 +472,7 @@ body {
 
   .about--picture{
     position: relative;
-      z-index: 99;
+      z-index: 9;
   }
 
   .about-section img {
@@ -1786,6 +1786,7 @@ transform: translateY(-2px);
       text-align: center;
       padding: 25px 20px;
       border-radius: 0px;
+      z-index: 99;
     }
 
     .about-year img {
