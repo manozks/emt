@@ -4619,6 +4619,80 @@ transform: translateY(-2px);
     @media(max-width:639px){ .our__works .grid-row{grid-template-columns:repeat(1,1fr)} }
 
 
+    /* privacy Container */
+
+
+  .privacy__container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 140px 20px 40px;
+}
+
+/* Headings */
+ .privacy__container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0a2240;
+  margin-bottom: 10px;
+}
+
+ .privacy__container h2 {
+  font-size: 1.25rem;
+  color: #0a2240;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+/* Text Styling */
+ .privacy__container .last-updated {
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+
+ .privacy__container p {
+  margin-bottom: 16px;
+}
+
+ .privacy__container ul {
+  list-style: disc;
+  margin: 10px 0 20px 20px;
+}
+
+ .privacy__container strong {
+  color: #0a2240;
+}
+
+/* Links */
+ .privacy__container a {
+  color: #0f4777;
+  text-decoration: none;
+}
+
+ .privacy__container a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .privacy__container {
+    padding: 130px 16px 40px;
+  }
+
+  .privacy__container h1 {
+    font-size: 1.6rem;
+  }
+
+  .privacy__container h2 {
+    font-size: 1.1rem;
+  }
+
+  .privacy__container p, .privacy__container ul li {
+    font-size: 0.95rem;
+  }
+}
+
+
 
 
 
