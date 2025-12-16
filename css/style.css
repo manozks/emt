@@ -4395,7 +4395,8 @@ transform: translateY(-2px);
 
 
 /* Right Side - FAQ Boxes */
-.faq__section .faq-right {
+.faq__section .faq-right,
+.faq__section .faq-auction-left {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -4451,7 +4452,7 @@ transform: translateY(-2px);
 
 /* Active State */
 .faq-item.active .faq-answer {
-  max-height: 200px;
+  max-height: 520px;
   padding: 1rem 1.5rem;
 }
 
