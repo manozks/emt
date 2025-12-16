@@ -4126,11 +4126,22 @@ transform: translateY(-2px);
 }
 
     /* Card content */
-     .auction__type__section .auction-card h3 {
+     .auction__type__section .auction-card h3{
       font-size: 1.1rem;
       font-weight: 600;
       margin-bottom: 10px;
       color: #fff;
+    }
+      .auction__type__section .auction-card h3 a {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #fff;
+      text-decoration: none;
+    }
+    .auction__type__section .auction-card h3 a:hover {
+     
+      color: #7192C5;
     }
 
      .auction__type__section .auction-card p {
@@ -4691,6 +4702,356 @@ transform: translateY(-2px);
   .privacy__container p, .privacy__container ul li {
     font-size: 0.95rem;
   }
+}
+
+
+/* --- BLOG CONTAINER --- */
+.blog-section {
+    margin: 0px auto;
+    padding: 150px 4% 80px;
+    position: relative;
+    }
+
+
+.blog-section .page-title {
+   text-align: left;
+    font-size: 2.5rem;
+    color: #000;
+    font-weight: 300;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+/* --- GRID LAYOUT (Responsive) --- */
+.blog-section .blog-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile: 1 column */
+    gap: 40px; /* Spacing between cards */
+}
+
+/* Tablet (2 Columns) */
+@media (min-width: 768px) {
+    .blog-section .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop (3 Columns) */
+@media (min-width: 1024px) {
+    .blog-section .blog-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* --- CARD STYLING --- */
+.blog-section .blog-card {
+    background-color: transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    /* Smooth Transition Setup */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+/* --- CARD IMAGE --- */
+.blog-section .card-image-wrapper {
+    width: 100%;
+    height: 220px;
+    border-radius: 8px; /* Rounded corners for image */
+    overflow: hidden;
+}
+
+.blog-section .card-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills area without distortion */
+    transition: transform 0.5s ease; /* Subtle zoom effect */
+}
+
+/* --- CARD CONTENT --- */
+.blog-section .card-content {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-section .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.blog-section .card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #000;
+}
+
+.blog-section .arrow-icon {
+    font-size: 1.5rem;
+    line-height: 1;
+    font-weight: 400;
+    color: #0b0b2b;
+    transition: transform 0.3s ease;
+}
+
+/* --- META DATA (Author & Date) --- */
+.blog-section .card-meta {
+    margin-top: auto; /* Pushes to bottom if height varies */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 0.85rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.blog-section .author {
+    color: #222;
+    font-weight: 600;
+}
+
+.blog-section .date {
+    color: #888;
+}
+
+/* --- HOVER ANIMATIONS --- */
+
+/* 1. Lift the whole card */
+.blog-section .blog-card:hover {
+    transform: translateY(-8px);
+}
+
+/* 2. Zoom the image slightly */
+.blog-section .blog-card:hover .card-image-wrapper img {
+    transform: scale(1.05);
+}
+
+/* 3. Move the arrow to the top-right */
+.blog-section .blog-card:hover .arrow-icon {
+    transform: translate(0px, -5px);
+    color: #0056b3; /* Optional: Change color on hover */
+}
+
+/* --- BREADCRUMB --- */
+.blog-section .breadcrumb {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.blog-section .breadcrumb a {
+    text-decoration: none;
+    color: #0a66c2;
+    font-weight: 500;
+}
+
+.blog-section .breadcrumb a:hover {
+    color: #000;
+}
+
+.blog-section .breadcrumb .separator {
+    margin: 0 8px;
+    font-size: 0.8rem;
+}
+ 
+/* --- PAGE TITLE --- */
+.blog-section .article-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #000; /* Dark Navy from your brand */
+    margin-bottom: 40px;
+    line-height: 1.2;
+    max-width: 900px;
+}
+
+/* --- MAIN GRID LAYOUT --- */
+.blog-section .article-layout {
+    display: grid;
+    /* Desktop: 2 Columns. Left is wide (3fr), Right is narrow (1fr) */
+    grid-template-columns: 3fr 1fr; 
+    gap: 60px; /* Space between content and metadata */
+    align-items: start; /* Aligns items to the top */
+}
+
+/* --- CONTENT COLUMN --- */
+.blog-section .content-column {
+    width: 100%;
+}
+
+/* Featured Image */
+.blog-section .featured-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+ 
+.blog-section .featured-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Body Typography */
+.blog-section .article-body {
+    color: #444;
+    font-size: 1.1rem; /* Slightly larger for readability */
+}
+
+.blog-section .article-body p {
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+.blog-section .article-body h2 {
+    font-size: 1.8rem;
+    color: #000;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.blog-section .article-body a {
+    color: #0b0b2b;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+/* --- META COLUMN (SIDEBAR) --- */
+.blog-section .meta-column {
+    padding-top: 10px; /* Minor adjustment to align with image top visually */
+}
+
+.blog-section .meta-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.blog-section .meta-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.blog-section .meta-label {
+    font-size: 0.85rem;
+    color: #888;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.blog-section .meta-value {
+    font-size: 1rem;
+    color: #000;
+    font-weight: 700;
+}
+
+/* Social Icons */
+.blog-section .social-share {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.blog-section .share-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%; /* Circle shape */
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.blog-section .share-icon:hover {
+    background-color: #0b0b2b;
+    color: #fff;
+}
+
+/* =========================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================= */
+
+/* Tablet & Mobile (Max width: 1024px) */
+@media (max-width: 1024px) {
+    .blog-section .article-layout {
+        gap: 30px;
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    .blog-section .article-title {
+        font-size: 2.2rem;
+    }
+}
+
+/* Mobile (Max width: 768px) */
+@media (max-width: 768px) {
+    .blog-section .article-layout {
+        /* Switch to single column stack */
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Move Meta Column BELOW title but ABOVE content? 
+       Or below content? Usually, mobile puts meta at top or bottom.
+       Let's put it below the image for mobile like standard flow. */
+    
+    .blog-section .content-column {
+        order: 2; /* Content second */
+    }
+    
+    .blog-section .meta-column {
+        order: 1; /* Meta first? Or change HTML order. 
+                     Alternatively, keep natural flow: Image -> Content -> Meta */
+        
+        /* Let's actually put Meta under the image inside the flow visually */
+        width: 100%;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #eee; /* Divider */
+        padding-bottom: 20px;
+    }
+
+    /* Horizontal layout for meta on mobile */
+    .blog-section .meta-info {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .blog-section .article-title {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .blog-section .article-body h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.blog-card .card-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index:1;
+    text-indent: 0;
+    text-decoration: none; 
 }
 
 
