@@ -62,14 +62,24 @@ body {
     transform: translateX(8px)!important;
   }
 
-  .contact-info {
+  .contact-info{
     display: flex;
     align-items: center;
     gap: 10px;
-    font-weight: bold;
-    font-size: 16px;
+    font-weight: 500px;
+    font-size: 20px;
     margin-right: 15px;
     color:#fff;
+    text-decoration: none;
+  }
+   .contact-info a {  
+    color:#fff;
+    text-decoration: none;
+        transition: all 0.3s ease;
+  }
+    .contact-info a:hover {
+  
+    transform: translateX(-8px) !important;
   }
 
   .contact-info img {
