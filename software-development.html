@@ -1,412 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-<title>Expert Web & Mobile App Development | AI Solutions | E Multitech Solution, Nepal</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expert Web & Mobile App Development | AI Solutions | E Multitech Solution, Nepal</title>
   <link rel="shortcut icon" href="images/favicon.png">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="css/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-   <!-- Icon Font Stylesheet -->
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="css/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <!-- Header -->
-<nav class="navbar navbar-light blue-bg fixed-top">
-  <div class="container-fluid d-flex justify-content-between">
-
-    <!-- Left Logo -->
-    <a class="navbar-brand" href="index.html">
-      <img src="images/logo.png" alt="Company Logo" height="42">
-    </a>
-
-<div class="right--bar">
-      <!-- Phone number (always visible) -->
-      <div class="contact-info">
-              <a href="https://wa.me/9779851038796" target="_blank">
-    <i class="fa-brands fa-whatsapp"></i> +977 9851038796
-</a>
-      </div>
-  
-      <!-- Hamburger Icon -->
-      <button class="navbar-toggler" type="button" aria-label="Toggle navigation" onclick="toggleMenu()">        
-             <img src="images/nav-toggle-icon.png" alt="toggler" >
-      </button>
-</div>
-
-  </div>
-
-
-</nav>
-<!-- Backdrop -->
-<div class="menu-backdrop" id="menuBackdrop" onclick="closeMenu()"></div>
-
-<!-- Slide-in Menu -->
-<div class="navbar-collapse" id="navbarMenu">
-  <button class="menu-close" onclick="closeMenu()">×</button>
-  <ul class="navbar-nav">
-    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item">
-        <a class="nav-link dropdown-toggle" id="servicesDropdown" onclick="toggleDropdown(this)">
-          Services
+  <header>
+    <nav class="navbar navbar-light blue-bg fixed-top">
+      <div class="container-fluid d-flex justify-content-between">
+        
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="Company Logo" height="42">
         </a>
+
+        <div class="right--bar">
+          <div class="contact-info">
+            <a href="https://wa.me/9779851038796" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp"></i> +977 9851038796
+            </a>
+          </div>
+      
+          <button class="navbar-toggler" type="button" aria-label="Toggle navigation" onclick="toggleMenu()">        
+            <img src="images/nav-toggle-icon.png" alt="toggler">
+          </button>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <div class="menu-backdrop" id="menuBackdrop" onclick="closeMenu()"></div>
+
+  <aside class="navbar-collapse" id="navbarMenu">
+    <button class="menu-close" onclick="closeMenu()">×</button>
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      <li class="nav-item">
+        <a class="nav-link dropdown-toggle" id="servicesDropdown" onclick="toggleDropdown(this)">Services</a>
         <div class="dropdown-menu" id="servicesMenu">
-          <a class="dropdown-item" href="ai-solutions.html">AI Solutions </a>
+          <a class="dropdown-item" href="ai-solutions.html">AI Solutions</a>
           <a class="dropdown-item" href="mobile-development.html">Mobile App Development</a>
-          <a class="dropdown-item" href="web-development.html">Web Development </a>
+          <a class="dropdown-item" href="web-development.html">Web Development</a>
           <a class="dropdown-item" href="software-development.html">Software Development</a>
           <a class="dropdown-item" href="devops-engineer.html">DevOps Engineer</a>
-           <a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a>
+          <a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a>
         </div>
       </li>
-    <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
-    <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
-    <li class="nav-item"><a class="nav-link" href="works.html">Our Works</a></li>
-    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-    <li class="nav-item"><a class="nav-link" href="testimonial-all.html">Testimonial</a></li>
-    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+      <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
+      <li class="nav-item"><a class="nav-link" href="works.html">Our Works</a></li>
+      <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+      <li class="nav-item"><a class="nav-link" href="testimonial-all.html">Testimonial</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+    </ul>
+  </aside>
 
-  </ul>
-</div>
-  
+  <main>
+    <section class="ai-solution-section mobile-app-section">
+      <div class="text-section hero-content">
+        <h5>Software Development</h5>
+        <h2>Translating user needs into functional digital solutions through coding, design, and system architecture.</h2>
 
-
-    <!-- Mobile App Development Section -->
-  <section class="ai-solution-section mobile-app-section">
-     <!-- Left Side -->
-    <div class="text-section hero-content">
-      <h5>Software Development</h5>
-      <h2>Translating user needs into functional digital solutions through coding, design, and system architecture.</h2>
-
-      <div class="features">
-        <div class="feature-item">
-          <div class="check-box"></div>
-          <div class="feature-text">Automates business operations.</div>
+        <div class="features">
+          <div class="feature-item">
+            <div class="check-box"></div>
+            <div class="feature-text">Automates business operations.</div>
+          </div>
+          <div class="feature-item">
+            <div class="check-box"></div>
+            <div class="feature-text">Enhances productivity and efficiency.</div>
+          </div>
+          <div class="feature-item">
+            <div class="check-box"></div>
+            <div class="feature-text">Provides scalable and customized solutions.</div>
+          </div>
         </div>
-        <div class="feature-item">
-          <div class="check-box"></div>
-          <div class="feature-text">Enhances productivity and efficiency.</div>
-        </div>
-        <div class="feature-item">
-          <div class="check-box"></div>
-          <div class="feature-text">Provides scalable and customized solutions.</div>
-        </div>
-   
+
+        <a href="request_quote.html" class="btn btn-hero">REQUEST A QUOTE</a>
       </div>
 
-      <a href="request_quote.html" class="btn btn-hero">REQUEST A QUOTE</a>
-    </div>
-
-    <!-- Right Side -->
-    <div class="fade-slide image-section">
-      <img src="./images/software-development.png" alt="Software Development">
-    </div>
-  </section>
-
-
-    <!-- Bottom Logo Section -->
-  <section class="company-logo-section white-bg">
-    <h4>Trusted by 100+ Software Development Leading Brands</h4>
-    <div class="container-fluid">
-      <div class="row justify-content-center align-items-center text-center gy-2" data-aos="fade-right" data-aos-offset="100"
-        data-aos-easing="ease-in-sine">
-        <div class="col-6 col-md-2"><img src="images/pure.png" alt="pure" class="img-fluid"></div>
-        <div class="col-6 col-md-2"><img src="images/thorne.png" alt="Thorne" class="img-fluid"></div>
-        <div class="col-6 col-md-2"><img src="images/paslode.png" alt="Paslode" class="img-fluid"></div>
-        <div class="col-6 col-md-2"><img src="images/wahl.png" alt="wahl" class="img-fluid"></div>
-        <div class="col-6 col-md-2"><img src="images/kong.png" alt="Kong" class="img-fluid"></div>
+      <div class="fade-slide image-section">
+        <img src="./images/software-development.png" alt="Software Development">
       </div>
-    </div>
-  </section>
- 
+    </section>
 
-<!--Software Development Services Section -->
+    <section class="company-logo-section white-bg">
+      <h4>Trusted by 100+ Software Development Leading Brands</h4>
+      <div class="container-fluid">
+        <div class="row justify-content-center align-items-center text-center gy-2" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+          <div class="col-6 col-md-2">
+            <a href="https://dinepa.eu/en" target="_blank" rel="noopener noreferrer"><img src="images/dinepa.png" alt="Dinepa" class="img-fluid" loading="lazy"></a>
+          </div>
+          <div class="col-6 col-md-2">
+            <a href="https://www.nrb.org.np/" target="_blank" rel="noopener noreferrer"><img src="images/nrb.png" alt="NRB" class="img-fluid" loading="lazy"></a>
+          </div>
+          <div class="col-6 col-md-2">
+            <a href="https://www.bidbid.co.uk/en" target="_blank" rel="noopener noreferrer"><img src="images/bidbid.png" alt="bidbid" class="img-fluid" loading="lazy"></a>
+          </div>
+          <div class="col-6 col-md-2">
+            <a href="https://upkeep.pro/" target="_blank" rel="noopener noreferrer"><img src="images/upkeep.png" alt="upkeep" class="img-fluid" loading="lazy"></a>
+          </div>
+          <div class="col-6 col-md-2">
+            <a href="https://www.msg-homes.com/" target="_blank" rel="noopener noreferrer"><img src="images/mysaving-grace.png" alt="MySavingGrace" class="img-fluid" loading="lazy"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="web__container noshape">
-    <div class="heading" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
-      <h2>Our Custom Software <br>Development Services</h2>
-      <p>we focus on building secure, scalable, and high-performing applications that streamline operations and enhance user experiences</p>
-    </div>
-
-    <div class="software__wrapper">
-       <div class="tabs">
-      <div class="tab active" data-tab="custom">
-        <span><img src="images/code-settings.png" alt="Custom Software Development"></span>Custom Software Development
-      </div>
-      <div class="tab" data-tab="automation">
-       <span><img src="images/ia-automation.png" alt="Intelligent Automation"></span>Intelligent Automation
-      </div>
-      <div class="tab" data-tab="ai">
-      <span><img src="images/artifical-intelligence.png" alt="Data and AI"></span>Data and AI
-      </div>
-        <div class="tab" data-tab="ad">
-      <span><img src="images/app-development.png" alt="Application Development"></span>Application Development
-      </div>
-         <div class="tab" data-tab="ic">
-      <span><img src="images/it-consulting.png" alt="IT Consulting"></span>IT Consulting
-      </div>
-        <div class="tab" data-tab="cloud">
-      <span><img src="images/cloud.png" alt="Cloud"></span>Cloud
+      <div class="heading" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
+        <h2>Our Custom Software <br>Development Services</h2>
+        <p>We focus on building secure, scalable, and high-performing applications that streamline operations and enhance user experiences</p>
       </div>
 
-       <div class="tab" data-tab="tqa">
-      <span><img src="images/qa.png" alt="Testing and QA"></span>Testing and QA
-      </div>
-    </div>
+      <div class="software__wrapper">
+        <div class="tabs">
+          <div class="tab active" data-tab="custom">
+            <span><img src="images/code-settings.png" alt="Custom Software Development" loading="lazy"></span>Custom Software Development
+          </div>
+          <div class="tab" data-tab="automation">
+            <span><img src="images/ia-automation.png" alt="Intelligent Automation" loading="lazy"></span>Intelligent Automation
+          </div>
+          <div class="tab" data-tab="ai">
+            <span><img src="images/artifical-intelligence.png" alt="Data and AI" loading="lazy"></span>Data and AI
+          </div>
+          <div class="tab" data-tab="ad">
+            <span><img src="images/app-development.png" alt="Application Development" loading="lazy"></span>Application Development
+          </div>
+          <div class="tab" data-tab="ic">
+            <span><img src="images/it-consulting.png" alt="IT Consulting" loading="lazy"></span>IT Consulting
+          </div>
+          <div class="tab" data-tab="cloud">
+            <span><img src="images/cloud.png" alt="Cloud" loading="lazy"></span>Cloud
+          </div>
+          <div class="tab" data-tab="tqa">
+            <span><img src="images/qa.png" alt="Testing and QA" loading="lazy"></span>Testing and QA
+          </div>
+        </div>
 
-    <div class="content" id="content">
-      <h2>Custom Software Development</h2>
-      <p>
-        The process of designing, creating, deploying, and maintaining software applications that are tailored specifically to meet the unique needs of a business or organization. Unlike off-the-shelf solutions, custom software is built to address specific challenges, enhance efficiency, and support business growth.
-      </p>
-      <ul>
-        <li>Software consulting</li>
+        <div class="content" id="content">
+          <h2>Custom Software Development</h2>
+          <p>The process of designing, creating, deploying, and maintaining software applications that are tailored specifically to meet the unique needs of a business or organization. Unlike off-the-shelf solutions, custom software is built to address specific challenges, enhance efficiency, and support business growth.</p>
+          <ul>
+            <li>Software consulting</li>
             <li>Software product development</li>
             <li>Enterprise software development</li>
             <li>Low Code Development solution</li>
             <li>API Development</li>
-      </ul>
-    </div>
-    </div>
-
-    
-   
-  </section>
-
-
-
-    <!-- Ready to Hire-->
-    <section class="web__wrapper">
-       <!-- Column 1: Image -->
-    <div class="col img_2" data-aos="fade-right" data-aos-offset="200"
-        data-aos-easing="ease-in-sine"></div>
-
-    <!-- Column 2: Ready to Hire -->
-    <div class="col text">
-      <div data-aos="fade-left" data-aos-offset="200"
-        data-aos-easing="ease-in-sine">
-        <h2>Ready to Hire the Best Software Developers?</h2>
-<p>Partner with us and get your business future-ready.</p>
-   
-    <div><a href="request_quote.html" class="btn btn-hero">Schedule a Call </a></div>
+          </ul>
+        </div>
       </div>
-    </div>
-   
-
     </section>
 
+    <section class="web__wrapper">
+      <div class="col img_2" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine"></div>
 
-        <!--Core Steps in Building a Website Section -->
+      <div class="col text">
+        <div data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <h2>Ready to Hire the Best Software Developers?</h2>
+          <p>Partner with us and get your business future-ready.</p>
+          <div>
+            <a href="request_quote.html" class="btn btn-hero">Schedule a Call</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section class="core__step__container">
-    <div class="heading" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
-      <h2>Range of Custom Software<br> Development Solutions</h2>
-      <p>Custom software development empowers businesses to optimize operations, <br>improve productivity, and gain a competitive edge in the market.</p>
-    </div>
-
-    <div class="grid">
-      <div class="card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" >
-         <div class="icon--round"><img src="./images/heartbeat.png" alt="Healthcare Management software"></div>
-        <h3>Healthcare Management software</h3>
-        <p>It helps manage patient records, appointments, billing, inventory, and staff scheduling efficiently.</p>
+    <section class="core__step__container">
+      <div class="heading" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
+        <h2>Range of Custom Software<br> Development Solutions</h2>
+        <p>Custom software development empowers businesses to optimize operations, <br>improve productivity, and gain a competitive edge in the market.</p>
       </div>
 
-      <div class="card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" >
-         <div class="icon--round"><img src="./images/platform.png" alt="Enterprise Softwares"></div>
-        <h3>Enterprise Softwares</h3>
-        <p>Enterprise software is built for scalability, security, and integration, ensuring that complex business operations run efficiently and consistently across the organization.</p>
+      <div class="grid">
+        
+        <div class="card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <div class="icon--round"><img src="./images/heartbeat.png" alt="Healthcare Management software" loading="lazy"></div>
+          <h3>Healthcare Management software</h3>
+          <p>It helps manage patient records, appointments, billing, inventory, and staff scheduling efficiently.</p>
+        </div>
+
+        <div class="card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <div class="icon--round"><img src="./images/platform.png" alt="Enterprise Softwares" loading="lazy"></div>
+          <h3>Enterprise Softwares</h3>
+          <p>Enterprise software is built for scalability, security, and integration, ensuring that complex business operations run efficiently and consistently across the organization.</p>
+        </div>
+
+        <div class="card" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <div class="icon--round"><img src="./images/asset .png" alt="Asset Management Software" loading="lazy"></div>
+          <h3>Asset Management Software</h3>
+          <p>Asset management software is a tool used to track, monitor, and manage an organization’s physical and digital assets throughout their lifecycle.</p>
+        </div>
+
+        <div class="card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <div class="icon--round"><img src="./images/hr.png" alt="HR Software" loading="lazy"></div>
+          <h3>HR Software</h3>
+          <p>HR software enhances employee experience, reduces administrative workload, and supports effective human resource management.</p>
+        </div>
+
+        <div class="card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <div class="icon--round"><img src="./images/online-shopping.png" alt="eCommerce Software" loading="lazy"></div>
+          <h3>eCommerce Software</h3>
+          <p>eCommerce software is a digital platform that enables businesses to create, manage, and operate online stores.</p>
+        </div>
+
+        <div class="card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <div class="icon--round"><img src="./images/auction.png" alt="Auction Software" loading="lazy"></div>
+          <h3>Auction Software</h3>
+          <p>It allows users to list items, place bids, track bidding activity, and process payments securely.</p>
+        </div>
+
+        <div class="card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <div class="icon--round"><img src="./images/crm.png" alt="Web CRM" loading="lazy"></div>
+          <h3>Web CRM</h3>
+          <p>It centralizes customer data, including contact details, communication history, and purchase records, making it accessible anytime, anywhere.</p>
+        </div>
+
+        <div class="card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <div class="icon--round"><img src="./images/store.png" alt="Retail Management software" loading="lazy"></div>
+          <h3>Retail Management software</h3>
+          <p>It helps manage inventory, sales, billing, customer data, and employee performance from a single platform.</p>
+        </div>
+
       </div>
+    </section>
 
-      <div class="card" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
-        <div class="icon--round"><img src="./images/asset .png" alt="Asset Management Software"></div>
-        <h3>Asset Management Software</h3>
-        <p>Asset management software is a tool used to track, monitor, and manage an organization’s physical and digital assets throughout their lifecycle.</p>
+    <section class="banner-develop-wrapper">
+      <div class="banner-develop">
+        <div class="banner-content" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <h2>Do You Want to Develop a<br>Custom Software?</h2>
+          <a href="request_quote.html">Connect Now</a>
+        </div>
+
+        <div class="banner-image" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <img src="images/developer-picture.png" alt="Custom Software Illustration" loading="lazy">
+        </div>
       </div>
+    </section>
+  </main>
 
-      <div class="card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-       <div class="icon--round"><img src="./images/hr.png" alt="HR Software"></div>
-        <h3>HR Software</h3>
-        <p>HR software enhances employee experience, reduces administrative workload, and supports effective human resource management.</p>
-      </div>
+  <footer class="footer-container">
+    <div class="container-fluid">
 
-      <div class="card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-        <div class="icon--round"><img src="./images/online-shopping.png" alt="eCommerce Software"></div>
-        <h3>eCommerce Software</h3>
-        <p>eCommerce software is a digital platform that enables businesses to create, manage, and operate online stores.</p>
-      </div>
-
-       <div class="card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-        <div class="icon--round"><img src="./images/auction.png" alt="Auction Software"></div>
-        <h3>Auction Software</h3>
-        <p>It allows users to list items, place bids, track bidding activity, and process payments securely.</p>
-      </div>
-
-       <div class="card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-        <div class="icon--round"><img src="./images/crm.png" alt="Web CRM"></div>
-        <h3>Web CRM</h3>
-        <p>It centralizes customer data, including contact details, communication history, and purchase records, making it accessible anytime, anywhere.</p>
-      </div>
-
-       <div class="card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-        <div class="icon--round"><img src="./images/store.png" alt="Retail Management software"></div>
-        <h3>Retail Management software</h3>
-        <p>It helps manage inventory, sales, billing, customer data, and employee performance from a single platform.</p>
-      </div>
-
-  
-    </div>
-    
-  </section>
-
-  
-  <!--Do You Want to Develop banner Section -->
- <section class="banner-develop-wrapper">
-  <div class="banner-develop">
-    <div class="banner-content" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
-      <h2>Do You Want to Develop a<br>Custom Software?</h2>
-      <a href="request_quote.html">Connect Now</a>
-    </div>
-
-    <div class="banner-image" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-      <!-- Replace image path below with your actual image -->
-      <img src="images/developer-picture.png" alt="Custom Software Illustration">
-    </div>
-  </div>
-</section>
-
-
-  
-
-
-
-
- 
-
-
-  
-
-
-
-
-
-
-
-<!-- Footer Section -->
-<section class="footer-container">
-  <div class="container-fluid">
-
-          <!-- QuoteSection -->
       <div class="quote__section fade-slide">
-Start Getting Results Online
-<a href="request_quote.html" class="btn btn-hero">REQUEST A QUOTE </a>
+        Start Getting Results Online
+        <a href="request_quote.html" class="btn btn-hero">REQUEST A QUOTE</a>
       </div>
 
-    <!-- Top contact info -->
-  <div class="footer-top">
-      <div class="contact-box" data-aos="fade-right" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <div class="contact-icon">
-          <img src="images/map-icon.png" alt="map">
+      <div class="footer-top">
+        <div class="contact-box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="contact-icon">
+            <img src="images/map-icon.png" alt="map" loading="lazy">
+          </div>
+          <div class="contact-address">
+            <h4>KATHMANDU</h4>
+            <p>Near UN Office, Kupondol, Lalitpur, Nepal<br/>Mobile: <a href="https://wa.me/9779851038796" target="_blank" rel="noopener noreferrer">+977 9851038796</a></p>
+          </div>
         </div>
-        <div class="contact-address">
-        <h4>KATHMANDU</h4>
-        <p>Near UN Office, Kupondol, Lalitpur, Nepal<br/>Mobile: <a href="https://wa.me/9779851038796" target="_blank">+977 9851038796</a></p>
-       
-      </div>
-      </div>
-      <div class="contact-box" data-aos="fade-right" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <div class="contact-icon">
-          <img src="images/map-icon.png" alt="map">
+        <div class="contact-box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="contact-icon">
+            <img src="images/map-icon.png" alt="map" loading="lazy">
+          </div>
+          <div class="contact-address">
+            <h4>Melbourne</h4>
+            <p>Australia<br/>Mobile: <a href="https://wa.me/61406806984" target="_blank" rel="noopener noreferrer">+61 406 806 984</a></p>         
+          </div>
         </div>
-        <div class="contact-address">
-          <h4>Melbourne </h4>
-          <p>Australia<br/>Mobile: <a href="https://wa.me/61406806984" target="_blank">+61 406 806 984</a></p>         
-        </div>
-        
-      </div>
-      <!-- <div class="contact-box" data-aos="fade-right" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <div class="contact-icon">
-          <img src="images/map-icon.png" alt="map">
-        </div>
-        <div class="contact-address">
-          <h4>CANADA</h4>
-          <p>Near UN Office, Kupondol, Lalitpur, Nepal<br/>Mobile: +977 9851038796</p>         
-        </div>
-        
-      </div> -->
-    </div>
-
-    <!-- Middle section -->
-    <div class="footer-middle">
-      <div class="footer-logo fade-slide">
-        <img src="images/footer-logo.png" alt="eMultiTechSolutions">
-        <p>we craft, launch, and scale high-performance web, mobile, and wearable applications — from design to development, testing, and ongoing growth.</p>
       </div>
 
-      <div class="footer-column fade-slide">
-        <h5>Services</h5>
-        <ul>
-          <li><a href="ai-solutions.html" class="footer-text"> AI Solutions</a></li>
-          <li><a href="mobile-development.html" class="footer-text">Mobile App Development</a></li>
-          <li><a href="web-development.html" class="footer-text">Web Development</a></li>
-          <li><a href="software-development.html" class="footer-text">Software Development</a></li>
-          <li><a href="devops-engineer.html" class="footer-text">DevOps Engineer</a></li>
-          <li><a href="digital-marketing.html" class="footer-text">Digital Marketing</a></li>
-        </ul>
+      <div class="footer-middle">
+        <div class="footer-logo fade-slide">
+          <img src="images/footer-logo.png" alt="eMultiTechSolutions" loading="lazy">
+          <p>We craft, launch, and scale high-performance web, mobile, and wearable applications — from design to development, testing, and ongoing growth.</p>
+        </div>
+
+        <div class="footer-column fade-slide">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="ai-solutions.html" class="footer-text">AI Solutions</a></li>
+            <li><a href="mobile-development.html" class="footer-text">Mobile App Development</a></li>
+            <li><a href="web-development.html" class="footer-text">Web Development</a></li>
+            <li><a href="software-development.html" class="footer-text">Software Development</a></li>
+            <li><a href="devops-engineer.html" class="footer-text">DevOps Engineer</a></li>
+            <li><a href="digital-marketing.html" class="footer-text">Digital Marketing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column fade-slide">
+          <h5>Industries</h5>
+          <ul>
+            <li><a href="healthcare.html" class="footer-text">Healthcare</a></li>
+            <li><a href="realestate.html" class="footer-text">Real Estate</a></li>           
+            <li><a href="auction-software.html" class="footer-text">Auction Software</a></li>
+            <li><a href="procurement.html" class="footer-text">Procurement Solution</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column fade-slide">
+          <h5>Information</h5>
+          <ul>
+            <li><a href="about.html" class="footer-text">About Us</a></li>
+            <li><a href="privacy-policy.html" class="footer-text">Privacy Policy</a></li>
+            <li><a href="terms-of-condition.html" class="footer-text">Terms and Condition</a></li>
+            <li><a href="cookie-policy.html" class="footer-text">Cookie Policy</a></li>
+            <li><a href="contact.html" class="footer-text">Contact Us</a></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="footer-column fade-slide">
-        <h5>Industries</h5>
-        <ul>
-           <li><a href="healthcare.html" class="footer-text">Healthcare</a></li>
-           <li><a href="realestate.html" class="footer-text">Real Estate</a></li>           
-          <li><a href="auction-software.html" class="footer-text">Auction Software</a></li>
-          <li><a href="procurement.html" class="footer-text">Procurement Solution</a></li>
-          
-         
-        </ul>
-      </div>
-
-      <div class="footer-column fade-slide">
-        <h5>Information</h5>
-        <ul>
-          <li><a href="about.html" class="footer-text">About Us</a></li>
-          <li><a href="privacy-policy.html" class="footer-text">Privacy Policy</a></li>
-          <li><a href="terms-of-condition.html" class="footer-text">Terms and Condition</a></li>
-          <li><a href="cookie-policy.html" class="footer-text">Cookie Policy</a></li>
-          <li><a href="contact.html" class="footer-text">Contact Us</a></li>
-        
-        </ul>
+      <div class="footer-bottom">
+        <p>© 2010 - 2026 Emultitechsolution</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/emultitechsolutionnepal" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/company/emultitechsolution" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
       </div>
     </div>
+  </footer>
 
-    <!-- Bottom section -->
-    <div class="footer-bottom">
-     <p>© 2010 - 2026 Emultitechsolution </p>
-      <div class="social-icons">
-        <!-- <a href="#"><i class="fa-brands fa-x-twitter"></i> </a> -->
-        <a href="https://www.facebook.com/emultitechsolutionnepal" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://www.linkedin.com/company/emultitechsolution" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-        <!-- <a href="#"><i class="fa-brands fa-youtube"></i></a> -->
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<script>
-
- const tabs = document.querySelectorAll(".tab ");
+  <script>
+    const tabs = document.querySelectorAll(".tab");
     const content = document.getElementById("content");
 
     const tabData = {
@@ -418,18 +344,18 @@ Start Getting Results Online
           "Software product development",
           "Enterprise software development",
           "Low Code Development solution",
-          "API Development",
-        ],
+          "API Development"
+        ]
       },
       automation: {
         title: "Intelligent Automation",
         text: "It enables systems to perform repetitive tasks, make data-driven decisions, and adapt to changing conditions with minimal human intervention. By integrating machine learning, natural language processing, and analytics, intelligent automation helps organizations increase efficiency, reduce errors, lower costs, and improve overall productivity while allowing employees to focus on higher-value tasks.",
         list: [
           "Business Process Automation",
-           "Robotic Process Automation",
-           "AI Driven Automation",
-           "Advisory & Consulting",
-        ],
+          "Robotic Process Automation",
+          "AI Driven Automation",
+          "Advisory & Consulting"
+        ]
       },
       ai: {
         title: "Data and AI Solutions",
@@ -439,10 +365,10 @@ Start Getting Results Online
           "Data analytics and visualization",
           "Machine learning models",
           "Predictive analytics",
-          "AI-powered business intelligence",
-        ],
+          "AI-powered business intelligence"
+        ]
       },
-           ad: {
+      ad: {
         title: "Application Development",
         text: "Application Development is the process of designing, building, testing, and deploying software applications for various platforms such as web, mobile, or desktop. It involves understanding user needs, creating intuitive interfaces, and ensuring functionality, performance, and security. The goal of application development is to deliver scalable, efficient, and user-friendly solutions that enhance business operations and customer engagement. Modern development often uses agile methods, cloud integration, and continuous updates to keep applications adaptable and future-ready.",
         list: [
@@ -450,10 +376,10 @@ Start Getting Results Online
           "Web Application Development",
           "Ecommerce application development",
           "Desktop Application",
-          "Application testing",
-        ],
+          "Application testing"
+        ]
       },
-               ic: {
+      ic: {
         title: "IT Consulting",
         text: "IT consultants analyze existing systems, identify challenges, and recommend effective solutions to improve efficiency, security, and performance. Their services often include digital transformation planning, software implementation, cloud strategy, and IT infrastructure optimization.",
         list: [
@@ -462,10 +388,10 @@ Start Getting Results Online
           "IT Assessment",
           "Security Risk Assesment",
           "Enterprise IT consulting",
-          "Business Processes and Cost Optimization",
-        ],
+          "Business Processes and Cost Optimization"
+        ]
       },
-       cloud: {
+      cloud: {
         title: "Cloud",
         text: "Cloud Computing is a technology that allows users and businesses to access computing resources—such as servers, storage, databases, and software—over the internet instead of relying on local hardware. It provides flexibility, scalability, and cost efficiency by enabling users to pay only for what they use. Cloud services are typically categorized into models like Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). This technology supports remote work, data backup, and faster innovation, making it a cornerstone of modern IT infrastructure.",
         list: [
@@ -473,10 +399,10 @@ Start Getting Results Online
           "Cloud Engineering",
           "Managed services and support",
           "Cloud Security",
-          "Cloud Migration Services",
-        ],
+          "Cloud Migration Services"
+        ]
       },
-            tqa: {
+      tqa: {
         title: "Testing and QA",
         text: "Testing and Quality Assurance (QA) are essential processes in software development that ensure a product is reliable, functional, and free from defects before release. Testing involves systematically checking software to identify bugs, errors, or performance issues, while QA focuses on improving development processes to prevent defects from occurring. Together, they help maintain high standards of quality, enhance user satisfaction, and ensure that the final product meets business and technical requirements.",
         list: [
@@ -485,9 +411,9 @@ Start Getting Results Online
           "Performance testing",
           "Penetration testing",
           "Security Testing",
-          "Manual Testing",
-        ],
-      },
+          "Manual Testing"
+        ]
+      }
     };
 
     tabs.forEach((tab) => {
@@ -507,14 +433,13 @@ Start Getting Results Online
         `;
       });
     });
+  </script>
 
-</script>
-
-<script src="js/aos.js"></script>
-<script>
-  AOS.init();
-</script> 
-<script src="js/script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script> 
+  <script src="js/script.js"></script>
 </body>
 </html>

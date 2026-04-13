@@ -1,438 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-<title>Expert Web & Mobile App Development | AI Solutions | E Multitech Solution, Nepal</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expert Web & Mobile App Development | AI Solutions | E Multitech Solution, Nepal</title>
   <link rel="shortcut icon" href="images/favicon.png">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="css/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-   <!-- Icon Font Stylesheet -->
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="css/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <!-- Header -->
-<nav class="navbar navbar-light blue-bg fixed-top">
-  <div class="container-fluid d-flex justify-content-between">
-
-    <!-- Left Logo -->
-    <a class="navbar-brand" href="index.html">
-      <img src="images/logo.png" alt="Company Logo" height="42">
-    </a>
-
-<div class="right--bar">
-      <!-- Phone number (always visible) -->
-      <div class="contact-info">
-           <a href="https://wa.me/9779851038796" target="_blank">
-    <i class="fa-brands fa-whatsapp"></i> +977 9851038796
-</a>
-      </div>
-  
-      <!-- Hamburger Icon -->
-      <button class="navbar-toggler" type="button" aria-label="Toggle navigation" onclick="toggleMenu()">        
-             <img src="images/nav-toggle-icon.png" alt="toggler" >
-      </button>
-</div>
-
-  </div>
-
-
-</nav>
-<!-- Backdrop -->
-<div class="menu-backdrop" id="menuBackdrop" onclick="closeMenu()"></div>
-
-<!-- Slide-in Menu -->
-<div class="navbar-collapse" id="navbarMenu">
-  <button class="menu-close" onclick="closeMenu()">×</button>
-  <ul class="navbar-nav">
-    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item">
-        <a class="nav-link dropdown-toggle" id="servicesDropdown" onclick="toggleDropdown(this)">
-          Services
+  <header>
+    <nav class="navbar navbar-light blue-bg fixed-top">
+      <div class="container-fluid d-flex justify-content-between">
+        
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="Company Logo" height="42">
         </a>
+
+        <div class="right--bar">
+          <div class="contact-info">
+            <a href="https://wa.me/9779851038796" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp"></i> +977 9851038796
+            </a>
+          </div>
+      
+          <button class="navbar-toggler" type="button" aria-label="Toggle navigation" onclick="toggleMenu()">        
+            <img src="images/nav-toggle-icon.png" alt="toggler">
+          </button>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <div class="menu-backdrop" id="menuBackdrop" onclick="closeMenu()"></div>
+
+  <aside class="navbar-collapse" id="navbarMenu">
+    <button class="menu-close" onclick="closeMenu()">×</button>
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      <li class="nav-item">
+        <a class="nav-link dropdown-toggle" id="servicesDropdown" onclick="toggleDropdown(this)">Services</a>
         <div class="dropdown-menu" id="servicesMenu">
-          <a class="dropdown-item" href="ai-solutions.html">AI Solutions </a>
+          <a class="dropdown-item" href="ai-solutions.html">AI Solutions</a>
           <a class="dropdown-item" href="mobile-development.html">Mobile App Development</a>
-          <a class="dropdown-item" href="web-development.html">Web Development </a>
+          <a class="dropdown-item" href="web-development.html">Web Development</a>
           <a class="dropdown-item" href="software-development.html">Software Development</a>
           <a class="dropdown-item" href="devops-engineer.html">DevOps Engineer</a>
-           <a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a>
+          <a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a>
         </div>
       </li>
-    <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
-    <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
-    <li class="nav-item"><a class="nav-link" href="works.html">Our Works</a></li>
-    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-     <li class="nav-item"><a class="nav-link" href="testimonial-all.html">Testimonial</a></li>
-    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+      <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
+      <li class="nav-item"><a class="nav-link" href="works.html">Our Works</a></li>
+      <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+      <li class="nav-item"><a class="nav-link" href="testimonial-all.html">Testimonial</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+    </ul>
+  </aside>
 
-  </ul>
-</div>
-  
+  <main>
+    <section class="casestudies--detail industries__detail">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <span>›</span> 
+        <a href="industries.html"> Industries</a> <span>›</span> 
+        <a href="auction-software.html"> Auction Software</a> <span>›</span>
+        <span>Ebay Clone Script</span>
+      </nav>
 
+      <section class="customer" aria-labelledby="customer-title">
+        <div class="circle-illustration" aria-hidden="true">
+          <img src="images/penny.png" alt="penny auction" loading="lazy">
+        </div>
 
-      <!-- HealthCare Section -->
-<section class="casestudies--detail industries__detail">
-
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="index.html">Home</a> <span>›</span> <a href="industries.html"> Industries</a> <span>›</span> <a href="auction-software.html"> Auction Software</a> <span>›</span><span>Ebay Clone Script</span>
-    </nav>
-
-   
-
-
-    <!-- Customer area -->
-    <section class="customer" aria-labelledby="customer-title">
-      <div class="circle-illustration" aria-hidden="true">
-        <!-- circular icon similar to sample -->
-       <img src="images/penny.png" alt="penny auction" loading="lazy">
-      </div>
-
-      <div class="customer-body">
-        <h3 id="customer-title">Ebay Clone Script (b2b/b2c Marketplace)</h3>
-       
-        <p>eBay style marketplace auction software is ready built and easy to install and easy to manage for auction administrators from one back end admin panel. The software site is fully customizable as it is 100% open-source. It supports single seller and multiple seller marketplace for various vendors.</p>
+        <div class="customer-body">
+          <h3 id="customer-title">Ebay Clone Script (b2b/b2c Marketplace)</h3>
+          <p>eBay style marketplace auction software is ready built and easy to install and easy to manage for auction administrators from one back end admin panel. The software site is fully customizable as it is 100% open-source. It supports single seller and multiple seller marketplace for various vendors.</p>
           <br>
-         
-        <a href="request_quote.html" class="btn btn-hero">Discuss Your Project</a>
+          <a href="request_quote.html" class="btn btn-hero">Discuss Your Project</a>
+        </div>
+      </section>
+    </section>
+
+    <section class="project-section auction-feature">
+      <div class="project-content hero-content" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+        <h2>About eBay Clone Script</h2>
+        <p>This Ebay Auction Script is SEO-friendly, user-friendly, compatible on all devices including desktop, mobile and tablets and easy to use and configure; a fully ready-made auction script that is almost a clone of ebay style or English auction that you can use for your online auction website. Offers a user-friendly back end that will allow the auction site's admin to list product as single seller or allow to create marketplace for multiple venders with unlimited categories that manage everything from one central location. The b2b/b2c ebay style website is highly flexible, fast and customizable with 100% php open source codes that come with easy navigation.</p>
+        <div class="divider"></div>
+      </div>
+      <div class="project-image project-image-left hero-content" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+        <img src="images/businesswoman1.jpg" alt="Project discussion" loading="lazy">
       </div>
     </section>
-  </section>
 
-  
-
-<!-- Each auction website has these features Section -->
-  <section class="project-section auction-feature">
-   
-    <div class="project-content  hero-content" data-aos="fade-left" data-aos-offset="200"
-        data-aos-easing="ease-in-sine">
-      <h2>About eBay Clone Script</h2>
-      <p>This Ebay Auction Script is SEO-friendly, user-friendly, compatible on all devices including desktop, mobile and tablets and easy to use and configure; a fully ready-made auction script that is almost a clone of ebay style or English auction that you can use for your online auction website. Offers a user-friendly back end that will allow the auction site's admin to list product as single seller or allow to create marketplace for multiple venders with unlimited categories that manage everything from one central location. The b2b/b2c ebay style website is highly flexible, fast and customizable with 100% php open source codes that come with easy navigation.</p>
-      
-      <div class="divider"></div>
- 
-    </div>
-     <div class="project-image project-image-left  hero-content" data-aos="fade-right" data-aos-offset="200"
-        data-aos-easing="ease-in-sine">
-      <img src="images/businesswoman1.jpg" alt="Project discussion">
-    </div>
-  </section>
-
-
-
-
-
-
-
-    <!-- Ready to Hire-->
     <section class="web__wrapper">
-       <!-- Column 1: Image -->
-    <div class="col img_2" data-aos="fade-right" data-aos-offset="200"
-        data-aos-easing="ease-in-sine"></div>
+      <div class="col img_2" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine"></div>
 
-    <!-- Column 2: Ready to Hire -->
-    <div class="col text">
-      <div data-aos="fade-left" data-aos-offset="200"
-        data-aos-easing="ease-in-sine">
-        <h2>Ready to Build b2b/b2c Marketplace Software?</h2>
-<p>Partner with us and get your business future-ready.</p>
-   
-    <div><a href="request_quote.html" class="btn btn-hero">Schedule a Call </a></div>
+      <div class="col text">
+        <div data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <h2>Ready to Build b2b/b2c Marketplace Software?</h2>
+          <p>Partner with us and get your business future-ready.</p>
+          <div>
+            <a href="request_quote.html" class="btn btn-hero">Schedule a Call</a>
+          </div>
+        </div>
       </div>
-    </div>
     </section>
 
-
-      
-
- 
-
-
-      <!--FAQ Section--> 
-
-      <section class="faq__section">
-    <div class="container">
+    <section class="faq__section">
+      <div class="container">
         
-      <div class="faq-auction-left" data-aos="fade-up" data-aos-offset="200"
-        data-aos-easing="ease-in-sine">
-       
-         <div class="faq-item" data-aos="fade-up" data-aos-offset="200"
-        data-aos-easing="ease-in-sine">
-          <button class="faq-question">
-         What is an eBay clone?
-            <span class="arrow"><img src="images/faq-arrow-icon.png" alt="arrow"></span>
-          </button>
-          <div class="faq-answer">
-            <p>With an eBay clone script anybody can create their own online auction website. You can invite sellers to auction their products on your website and start making money out of commission charged for selling products and adverts. eBay can easily be ‘customised’ to fit your unique needs, and generate even more revenue for you while facilitating users to sell as many products as possible, thereby decreasing your overall expenses. Auction users can receive their payments for sold products directly in their account.</p>
+        <div class="faq-auction-left" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          
+          <div class="faq-item" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
+            <button class="faq-question">
+              What is an eBay clone?
+              <span class="arrow"><img src="images/faq-arrow-icon.png" alt="arrow" loading="lazy"></span>
+            </button>
+            <div class="faq-answer">
+              <p>With an eBay clone script anybody can create their own online auction website. You can invite sellers to auction their products on your website and start making money out of commission charged for selling products and adverts. eBay can easily be ‘customised’ to fit your unique needs, and generate even more revenue for you while facilitating users to sell as many products as possible, thereby decreasing your overall expenses. Auction users can receive their payments for sold products directly in their account.</p>
+            </div>
           </div>
-        </div>
-         <div class="faq-item" data-aos="fade-up" data-aos-offset="200"
-        data-aos-easing="ease-in-sine">
-          <button class="faq-question">
-            Why choose E-Multitech Solution for my eBay clone?
-            <span class="arrow"><img src="images/faq-arrow-icon.png" alt="arrow"></span>
-          </button>
-          <div class="faq-answer">
-            <p>When it comes to generating huge amounts of revenue through an auction website, it is crucial to invest in a product that is easy to install as well as easy to administer and manage. E-Multitech’s BidCy b2b auction software enables you to do just that. Our online auction script is jam-packed with advanced features that lets you kick-start an online auction project that is flexible and fully customisable, within hours! Our eBay clone script is developed by our expert auction script developers who have been in the industry for more than a decade, helping small businesses take their auction site to the next level. Stop wasting time, energy and money on third party scripts! Click here to order eBay clone software today!</p>
+          
+          <div class="faq-item" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
+            <button class="faq-question">
+              Why choose E-Multitech Solution for my eBay clone?
+              <span class="arrow"><img src="images/faq-arrow-icon.png" alt="arrow" loading="lazy"></span>
+            </button>
+            <div class="faq-answer">
+              <p>When it comes to generating huge amounts of revenue through an auction website, it is crucial to invest in a product that is easy to install as well as easy to administer and manage. E-Multitech’s BidCy b2b auction software enables you to do just that. Our online auction script is jam-packed with advanced features that lets you kick-start an online auction project that is flexible and fully customisable, within hours! Our eBay clone script is developed by our expert auction script developers who have been in the industry for more than a decade, helping small businesses take their auction site to the next level. Stop wasting time, energy and money on third party scripts! Click here to order eBay clone software today!</p>
+            </div>
           </div>
-        </div>
-           <div class="faq-item" data-aos="fade-up" data-aos-offset="200"
-        data-aos-easing="ease-in-sine">
-          <button class="faq-question">
-           How will I generate revenue using eBay clone?
-            <span class="arrow"><img src="images/faq-arrow-icon.png" alt="arrow"></span>
-          </button>
-          <div class="faq-answer">
-            <p>As an auction website owner you can generate revenue by three different ways using our eBay clone website:
- <br/>Membership plan
- <br/>Advertising banners
- <br/>Commission model (or affiliate programs)
-One of our business experts will help you identify the ‘best’ revenue model to suit your e-commerce business so that you can enter the market with confidence.</p>
+          
+          <div class="faq-item" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
+            <button class="faq-question">
+              How will I generate revenue using eBay clone?
+              <span class="arrow"><img src="images/faq-arrow-icon.png" alt="arrow" loading="lazy"></span>
+            </button>
+            <div class="faq-answer">
+              <p>As an auction website owner you can generate revenue by three different ways using our eBay clone website:<br/>Membership plan<br/>Advertising banners<br/>Commission model (or affiliate programs)<br/>One of our business experts will help you identify the ‘best’ revenue model to suit your e-commerce business so that you can enter the market with confidence.</p>
+            </div>
           </div>
-        </div>
-          <div class="faq-item" data-aos="fade-up" data-aos-offset="200"
-        data-aos-easing="ease-in-sine">
-          <button class="faq-question">
+          
+          <div class="faq-item" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
+            <button class="faq-question">
               What about customer support & maintenance?
-            <span class="arrow"><img src="images/faq-arrow-icon.png" alt="arrow"></span>
-          </button>
-          <div class="faq-answer">
-            <p>E-Multitech Solution is your one-stop-solution provider. We like to take full responsibility for your projects; from designing, development and deployment, to ongoing support and maintenance of your online auction after its development.</p>
+              <span class="arrow"><img src="images/faq-arrow-icon.png" alt="arrow" loading="lazy"></span>
+            </button>
+            <div class="faq-answer">
+              <p>E-Multitech Solution is your one-stop-solution provider. We like to take full responsibility for your projects; from designing, development and deployment, to ongoing support and maintenance of your online auction after its development.</p>
+            </div>
+          </div> 
+
+        </div>
+
+        <div class="faq-right">
+          
+          <div class="faq-item" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
+            <button class="faq-question">
+              How do I get started?
+              <span class="arrow"><img src="images/faq-arrow-icon.png" alt="arrow" loading="lazy"></span>
+            </button>
+            <div class="faq-answer">
+              <p>It’s easy. Just submit a request for proposal (RFP) using our form and specify any details about your eBay clone script project requirements. One of our English-speaking consultants will get in touch with you within 24 hours.</p>
+            </div>
           </div>
-        </div>     
-      
+
+          <div class="faq-item" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
+            <button class="faq-question">
+              What technology is used for eBay clone script development?
+              <span class="arrow"><img src="images/faq-arrow-icon.png" alt="arrow" loading="lazy"></span>
+            </button>
+            <div class="faq-answer">
+              <p>We have used PHP and MYSQL for the development of our eBay clone script, one of the leading development programming language and database management tools on the web today. However, we can also use other feature-rich platforms like Joomla, WordPress, Magento, and Drupal to build a custom auction site like eBay. We place high importance on using JS, Ajax, JQuery, JSON, table-less HTML/HTML5 design (CSS-based), to make sure that your auction like eBay site’s User Interface / UI design is Web 2.0 and world-class.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
+            <button class="faq-question">
+              How much will eBay Clone script cost?
+              <span class="arrow"><img src="images/faq-arrow-icon.png" alt="arrow" loading="lazy"></span>
+            </button>
+            <div class="faq-answer">
+              <p>As mentioned earlier we have a ready-made eBay clone script and a ‘custom’ eBay clone script. Therefore the overall cost depends upon your selection of the features as well as the type of functionality you want to incorporate into your own site. Once you send us the RFP, we will be able to estimate the overall project cost depending upon the features and functionality you require. We have already developed a generic framework and project wireframes for eBay Clone scripts that allows us to design, develop and deploy your unique eBay Clone site, saving plenty of time for both of us. E-Multitech Solution has years of first-hand experience in developing high quality auction sites like eBay at an extremely competitive price.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
+            <button class="faq-question">
+              ‘Ready-made’ or ‘Custom’ eBay Clone?
+              <span class="arrow"><img src="images/faq-arrow-icon.png" alt="arrow" loading="lazy"></span>
+            </button>
+            <div class="faq-answer">
+              <p>The choice is all yours! Here are a few important features that separate the two: Ready-made script: Ready-made eBay Clone Script can be designed, developed and deployed in minimal time and at an extremely affordable rate. We have already built a ‘ready to go’ and scalable platform that has all the basic features built into it, allowing you to kick-start your auction website within minutes. Custom script Do you want a script especially made for you that will reflect the sound business model you have in mind? We think you need a custom script that will help you stand out from others in the market and offer you unlimited choices to expand and develop your eBay clone site to the next level.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="case-studies auction__example">
+      <h2 data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">Penny Auction As live Bidding</h2>
+      <div class="cards">
         
-      </div>
-
-      <div class="faq-right">
-     
-        <div class="faq-item" data-aos="fade-up" data-aos-offset="200"
-        data-aos-easing="ease-in-sine">
-          <button class="faq-question">
-             How do I get started?
-            <span class="arrow"><img src="images/faq-arrow-icon.png" alt="arrow"></span>
-          </button>
-          <div class="faq-answer">
-            <p>It’s easy. Just submit a request for proposal (RFP) using our form and specify any details about your eBay clone script project requirements. One of our English-speaking consultants will get in touch with you within 24 hours.</p>
+        <div class="card">
+          <img src="images/bidbid1.jpg" alt="bidbid" loading="lazy">
+          <div class="card-content">
+            <h3><a href="bidbid.html">bidbid.co.uk</a></h3>
+            <div class="tags"><span>Penny Auction</span></div>
           </div>
         </div>
 
-        <div class="faq-item" data-aos="fade-up" data-aos-offset="200"
-        data-aos-easing="ease-in-sine">
-          <button class="faq-question">
-          What technology is used for eBay clone script development?
-            <span class="arrow"><img src="images/faq-arrow-icon.png" alt="arrow"></span>
-          </button>
-          <div class="faq-answer">
-            <p>We have used PHP and MYSQL for the development of our eBay clone script, one of the leading development programming language and database management tools on the web today. However, we can also use other feature-rich platforms like Joomla, WordPress, Magento, and Drupal to build a custom auction site like eBay. We place high importance on using JS, Ajax, JQuery, JSON, table-less HTML/HTML5 design (CSS-based), to make sure that your auction like eBay site’s User Interface / UI design is Web 2.0 and world-class.</p>
+        <div class="card">
+          <img src="images/auctioncents.jpg" alt="Auctioncents" loading="lazy">
+          <div class="card-content">
+            <h3><a href="auctioncents.html">Auctioncents</a></h3>
+            <div class="tags"><span>Penny Auction</span></div>
           </div>
         </div>
 
-        <div class="faq-item" data-aos="fade-up" data-aos-offset="200"
-        data-aos-easing="ease-in-sine">
-          <button class="faq-question">
-           How much will eBay Clone script cost?
-           <span class="arrow"><img src="images/faq-arrow-icon.png" alt="arrow"></span>
-          </button>
-          <div class="faq-answer">
-            <p>As mentioned earlier we have a ready-made eBay clone script and a ‘custom’ eBay clone script. Therefore the overall cost depends upon your selection of the features as well as the type of functionality you want to incorporate into your own site. Once you send us the RFP, we will be able to estimate the overall project cost depending upon the features and functionality you require. We have already developed a generic framework and project wireframes for eBay Clone scripts that allows us to design, develop and deploy your unique eBay Clone site, saving plenty of time for both of us.
-E-Multitech Solution has years of first-hand experience in developing high quality auction sites like eBay at an extremely competitive price.</p>
+        <div class="card">
+          <img src="images/bienbid1.jpg" alt="bienbid" loading="lazy">
+          <div class="card-content">
+            <h3><a href="bienbid.html">Bienbid</a></h3>
+            <div class="tags"><span>Penny Auction</span></div>
           </div>
         </div>
 
-        <div class="faq-item" data-aos="fade-up" data-aos-offset="200"
-        data-aos-easing="ease-in-sine">
-          <button class="faq-question">
-         ‘Ready-made’ or ‘Custom’ eBay Clone?
-            <span class="arrow"><img src="images/faq-arrow-icon.png" alt="arrow"></span>
-          </button>
-          <div class="faq-answer">
-            <p>The choice is all yours! Here are a few important features that separate the two: Ready-made script: Ready-made eBay Clone Script can be designed, developed and deployed in minimal time and at an extremely affordable rate. We have already built a ‘ready to go’ and scalable platform that has all the basic features built into it, allowing you to kick-start your auction website within minutes.
-
-Custom script Do you want a script especially made for you that will reflect the sound business model you have in mind? We think you need a custom script that will help you stand out from others in the market and offer you unlimited choices to expand and develop your eBay clone site to the next level.</p>
-          </div>
-        </div>
       </div>
+    </section>
+  </main>
 
-    </div>
-  </section>
+  <footer class="footer-container">
+    <div class="container-fluid">
 
-      <!-- Reverse/Lowest unique Auction Example Section -->
-  <section class="case-studies auction__example">
-     <h2 data-aos="fade-right" data-aos-offset="200"
-    data-aos-easing="ease-in-sine">Penny Auction As live Bidding</h2>
-    <div class="cards">
-      <div class="card">
-         <img src="images/bidbid1.jpg" alt="bidbid">
-        <div class="card-content">
-          <h3><a href="bidbid.html"> bidbid.co.uk
-</a></h3>
-          <div class="tags"><span>Penny Auction</span></div>
-        </div>
-      </div>
-
-      <div class="card">
-       <img src="images/auctioncents.jpg" alt="Auctioncents">
-        <div class="card-content">
-          <h3><a href="auctioncents.html">Auctioncents</a></h3>
-          <div class="tags"><span>Penny Auction</span></div>
-        </div>
-      </div>
-
-
-
-
-      <div class="card">
-         <img src="images/bienbid1.jpg" alt="bienbid">
-        <div class="card-content">
-          <h3><a href="bienbid.html">Bienbid</a></h3>
-          <div class="tags"><span>Penny Auction</span></div>
-        </div>
-      </div>
-
-
-
-    </div>
-  </section>
-
-
-
-
-<!-- Footer Section -->
-<section class="footer-container">
-  <div class="container-fluid">
-
-          <!-- QuoteSection -->
       <div class="quote__section fade-slide">
-Start Getting Results Online
-<a href="request_quote.html" class="btn btn-hero">REQUEST A QUOTE </a>
+        Start Getting Results Online
+        <a href="request_quote.html" class="btn btn-hero">REQUEST A QUOTE</a>
       </div>
 
-    <!-- Top contact info -->
-    <div class="footer-top">
-      <div class="contact-box" data-aos="fade-right" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <div class="contact-icon">
-          <img src="images/map-icon.png" alt="map">
+      <div class="footer-top">
+        <div class="contact-box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="contact-icon">
+            <img src="images/map-icon.png" alt="map" loading="lazy">
+          </div>
+          <div class="contact-address">
+            <h4>KATHMANDU</h4>
+            <p>Near UN Office, Kupondol, Lalitpur, Nepal<br/>Mobile: <a href="https://wa.me/9779851038796" target="_blank" rel="noopener noreferrer">+977 9851038796</a></p>
+          </div>
         </div>
-        <div class="contact-address">
-        <h4>KATHMANDU</h4>
-        <p>Near UN Office, Kupondol, Lalitpur, Nepal<br/>Mobile: <a href="https://wa.me/9779851038796" target="_blank">+977 9851038796</a></p>
-       
-      </div>
-      </div>
-      <div class="contact-box" data-aos="fade-right" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <div class="contact-icon">
-          <img src="images/map-icon.png" alt="map">
+        <div class="contact-box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="contact-icon">
+            <img src="images/map-icon.png" alt="map" loading="lazy">
+          </div>
+          <div class="contact-address">
+            <h4>Melbourne</h4>
+            <p>Australia<br/>Mobile: <a href="https://wa.me/61406806984" target="_blank" rel="noopener noreferrer">+61 406 806 984</a></p>         
+          </div>
         </div>
-        <div class="contact-address">
-          <h4>Melbourne </h4>
-          <p>Australia<br/>Mobile: <a href="https://wa.me/61406806984" target="_blank">+61 406 806 984</a></p>         
+      </div>
+
+      <div class="footer-middle">
+        <div class="footer-logo fade-slide">
+          <img src="images/footer-logo.png" alt="eMultiTechSolutions" loading="lazy">
+          <p>We craft, launch, and scale high-performance web, mobile, and wearable applications — from design to development, testing, and ongoing growth.</p>
         </div>
-        
-      </div>
-      <!-- <div class="contact-box" data-aos="fade-right" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <div class="contact-icon">
-          <img src="images/map-icon.png" alt="map">
+
+        <div class="footer-column fade-slide">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="ai-solutions.html" class="footer-text">AI Solutions</a></li>
+            <li><a href="mobile-development.html" class="footer-text">Mobile App Development</a></li>
+            <li><a href="web-development.html" class="footer-text">Web Development</a></li>
+            <li><a href="software-development.html" class="footer-text">Software Development</a></li>
+            <li><a href="devops-engineer.html" class="footer-text">DevOps Engineer</a></li>
+            <li><a href="digital-marketing.html" class="footer-text">Digital Marketing</a></li>
+          </ul>
         </div>
-        <div class="contact-address">
-          <h4>CANADA</h4>
-          <p>Near UN Office, Kupondol, Lalitpur, Nepal<br/>Mobile: +977 9851038796</p>         
+
+        <div class="footer-column fade-slide">
+          <h5>Industries</h5>
+          <ul>
+            <li><a href="healthcare.html" class="footer-text">Healthcare</a></li>
+            <li><a href="realestate.html" class="footer-text">Real Estate</a></li>           
+            <li><a href="auction-software.html" class="footer-text">Auction Software</a></li>
+            <li><a href="procurement.html" class="footer-text">Procurement Solution</a></li>
+          </ul>
         </div>
-        
-      </div> -->
-    </div>
 
-    <!-- Middle section -->
-    <div class="footer-middle">
-      <div class="footer-logo fade-slide">
-        <img src="images/footer-logo.png" alt="eMultiTechSolutions">
-        <p>we craft, launch, and scale high-performance web, mobile, and wearable applications — from design to development, testing, and ongoing growth.</p>
+        <div class="footer-column fade-slide">
+          <h5>Information</h5>
+          <ul>
+            <li><a href="about.html" class="footer-text">About Us</a></li>
+            <li><a href="privacy-policy.html" class="footer-text">Privacy Policy</a></li>
+            <li><a href="terms-of-condition.html" class="footer-text">Terms and Condition</a></li>
+            <li><a href="cookie-policy.html" class="footer-text">Cookie Policy</a></li>
+            <li><a href="contact.html" class="footer-text">Contact Us</a></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="footer-column fade-slide">
-        <h5>Services</h5>
-        <ul>
-          <li><a href="ai-solutions.html" class="footer-text"> AI Solutions</a></li>
-          <li><a href="mobile-development.html" class="footer-text">Mobile App Development</a></li>
-          <li><a href="web-development.html" class="footer-text">Web Development</a></li>
-          <li><a href="software-development.html" class="footer-text">Software Development</a></li>
-          <li><a href="devops-engineer.html" class="footer-text">DevOps Engineer</a></li>
-          <li><a href="digital-marketing.html" class="footer-text">Digital Marketing</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-column fade-slide">
-        <h5>Industries</h5>
-        <ul>
-    <li><a href="about.html" class="footer-text">About Us</a></li>
-          <li><a href="privacy-policy.html" class="footer-text">Privacy Policy</a></li>
-          <li><a href="terms-of-condition.html" class="footer-text">Terms and Condition</a></li>
-          <li><a href="cookie-policy.html" class="footer-text">Cookie Policy</a></li>
-          <li><a href="contact.html" class="footer-text">Contact Us</a></li>
-          
-          
-         
-        </ul>
-      </div>
-
-      <div class="footer-column fade-slide">
-        <h5>Information</h5>
-        <ul>
-          <li><a href="about.html" class="footer-text">About Us</a></li>
-          <li><a href="terms.html" class="footer-text">Terms and Condition</a></li>
-          <li><a href="privacy.html" class="footer-text">Privacy Policy</a></li>
-          <li><a href="contact.html" class="footer-text">Contact Us</a></li>
-        
-        </ul>
-      </div>
-    </div>
-
-    <!-- Bottom section -->
       <div class="footer-bottom">
-     <p>© 2010 - 2026 Emultitechsolution </p>
-      <div class="social-icons">
-        <!-- <a href="#"><i class="fa-brands fa-x-twitter"></i> </a> -->
-        <a href="https://www.facebook.com/emultitechsolutionnepal" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://www.linkedin.com/company/emultitechsolution" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-        <!-- <a href="#"><i class="fa-brands fa-youtube"></i></a> -->
+        <p>© 2010 - 2026 Emultitechsolution</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/emultitechsolutionnepal" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/company/emultitechsolution" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init();
+
+    // FAQ Accordion Script
     const faqItems = document.querySelectorAll(".faq-item");
-
-faqItems.forEach(item => {
-  const question = item.querySelector(".faq-question");
-  question.addEventListener("click", () => {
-    item.classList.toggle("active");
-
-    // Optional: close others when one opens
-    faqItems.forEach(otherItem => {
-      if (otherItem !== item) otherItem.classList.remove("active");
+    faqItems.forEach(item => {
+      const question = item.querySelector(".faq-question");
+      question.addEventListener("click", () => {
+        item.classList.toggle("active");
+        
+        // Optional: close others when one opens
+        faqItems.forEach(otherItem => {
+          if (otherItem !== item) otherItem.classList.remove("active");
+        });
+      });
     });
-  });
-});
-</script>
-
-<script src="js/aos.js"></script>
-<script>
-  AOS.init();
-</script> 
-<script src="js/script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </script> 
+  <script src="js/script.js"></script>
 </body>
 </html>

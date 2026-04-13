@@ -1,445 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-<title>Expert Web & Mobile App Development | AI Solutions | E Multitech Solution, Nepal</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expert Web & Mobile App Development | AI Solutions | E Multitech Solution, Nepal</title>
   <link rel="shortcut icon" href="images/favicon.png">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="css/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-   <!-- Icon Font Stylesheet -->
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="css/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <!-- Header -->
-<nav class="navbar navbar-light blue-bg fixed-top">
-  <div class="container-fluid d-flex justify-content-between">
-
-    <!-- Left Logo -->
-    <a class="navbar-brand" href="index.html">
-      <img src="images/logo.png" alt="Company Logo" height="42">
-    </a>
-
-<div class="right--bar">
-      <!-- Phone number (always visible) -->
-      <div class="contact-info">
-             <a href="https://wa.me/9779851038796" target="_blank">
-    <i class="fa-brands fa-whatsapp"></i> +977 9851038796
-</a>
-      </div>
-  
-      <!-- Hamburger Icon -->
-      <button class="navbar-toggler" type="button" aria-label="Toggle navigation" onclick="toggleMenu()">        
-             <img src="images/nav-toggle-icon.png" alt="toggler" >
-      </button>
-</div>
-
-  </div>
-
-
-</nav>
-<!-- Backdrop -->
-<div class="menu-backdrop" id="menuBackdrop" onclick="closeMenu()"></div>
-
-<!-- Slide-in Menu -->
-<div class="navbar-collapse" id="navbarMenu">
-  <button class="menu-close" onclick="closeMenu()">×</button>
-  <ul class="navbar-nav">
-    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-      <li class="nav-item">
-        <a class="nav-link dropdown-toggle" id="servicesDropdown" onclick="toggleDropdown(this)">
-          Services
+  <header>
+    <nav class="navbar navbar-light blue-bg fixed-top">
+      <div class="container-fluid d-flex justify-content-between">
+        
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="Company Logo" height="42">
         </a>
+
+        <div class="right--bar">
+          <div class="contact-info">
+            <a href="https://wa.me/9779851038796" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp"></i> +977 9851038796
+            </a>
+          </div>
+      
+          <button class="navbar-toggler" type="button" aria-label="Toggle navigation" onclick="toggleMenu()">        
+            <img src="images/nav-toggle-icon.png" alt="toggler">
+          </button>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <div class="menu-backdrop" id="menuBackdrop" onclick="closeMenu()"></div>
+
+  <aside class="navbar-collapse" id="navbarMenu">
+    <button class="menu-close" onclick="closeMenu()">×</button>
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      <li class="nav-item">
+        <a class="nav-link dropdown-toggle" id="servicesDropdown" onclick="toggleDropdown(this)">Services</a>
         <div class="dropdown-menu" id="servicesMenu">
-          <a class="dropdown-item" href="ai-solutions.html">AI Solutions </a>
+          <a class="dropdown-item" href="ai-solutions.html">AI Solutions</a>
           <a class="dropdown-item" href="mobile-development.html">Mobile App Development</a>
-          <a class="dropdown-item" href="web-development.html">Web Development </a>
+          <a class="dropdown-item" href="web-development.html">Web Development</a>
           <a class="dropdown-item" href="software-development.html">Software Development</a>
           <a class="dropdown-item" href="devops-engineer.html">DevOps Engineer</a>
-           <a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a>
+          <a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a>
         </div>
       </li>
- <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
-    <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
-    <li class="nav-item"><a class="nav-link" href="works.html">Our Works</a></li>
-    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-    <li class="nav-item"><a class="nav-link" href="testimonial-all.html">Testimonial</a></li>
-    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+      <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
+      <li class="nav-item"><a class="nav-link" href="works.html">Our Works</a></li>
+      <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+      <li class="nav-item"><a class="nav-link" href="testimonial-all.html">Testimonial</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+    </ul>
+  </aside>
 
-  </ul>
-</div>
-  
-   <!-- Our Work Section -->
-  <section class="our__works">
-    <h2 data-aos="fade-right" data-aos-offset="200"
-    data-aos-easing="ease-in-sine">Our Works</h2>
-    <p data-aos="fade-right" data-aos-offset="200"
-    data-aos-easing="ease-in-sine">E-Multitech Solution is a hub of experienced and expert web designers, apps developers & IT engineers. We aim to satisfy our clients in all aspects of web design, mobile app development and business applications.</p>
-       <hr>
-    <div class="wrap">
-    <!-- Tabs -->
-    <div class="tabs" role="tablist" aria-label="Project categories">
-      <button class="tab-btn" data-filter="all" data-active="true">All Projects</button>
-      <button class="tab-btn" data-filter="auction">Auction</button>
-      <button class="tab-btn" data-filter="mobile">Mobile Apps</button>
-      <button class="tab-btn" data-filter="others">Others</button>
-    </div>
-
-    <!-- Projects grid -->
-    <div id="projects" class="projects-grid" aria-live="polite">
-
-      <!-- Example card: add or change data-category -->
-      <article class="project-card" data-category="auction">
-         <a href="project-detail.html" class="card-link" aria-label="Read article"></a>
-        <img src="images/eodbox.jpg" alt="EodBox" loading="lazy">
-        <div class="card-meta">
-          <div class="meta-left">
-            <div class="project-title">EodBox</div>
-            <div class="project-cats">
-              <span class="pill">The unique bid auction system lets everyone shop at the lowest price</span>
-              
-            </div>
-          </div>
+  <main>
+    <section class="our__works">
+      <h2 data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">Our Works</h2>
+      <p data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">E-Multitech Solution is a hub of experienced and expert web designers, apps developers & IT engineers. We aim to satisfy our clients in all aspects of web design, mobile app development and business applications.</p>
+      <hr>
+      <div class="wrap">
+        
+        <div class="tabs" role="tablist" aria-label="Project categories">
+          <button class="tab-btn" data-filter="all" data-active="true">All Projects</button>
+          <button class="tab-btn" data-filter="auction">Auction</button>
+          <button class="tab-btn" data-filter="mobile">Mobile Apps</button>
+          <button class="tab-btn" data-filter="others">Others</button>
         </div>
-      </article>
 
-      <article class="project-card" data-category="auction">
-        <a href="#" class="card-link" aria-label="Read article"></a>
-        <img src="images/rubids.jpg" alt="Rubids" loading="lazy">
-        <div class="card-meta">
-          <div class="meta-left">
-            <div class="project-title">Rubids</div>
-            <div class="project-cats">
-              <span class="pill">All type of Auction</span>
-             
+        <div id="projects" class="projects-grid" aria-live="polite">
+
+          <article class="project-card" data-category="auction">
+            <a href="project-detail.html" class="card-link" aria-label="Read article"></a>
+            <img src="images/eodbox.jpg" alt="EodBox" loading="lazy">
+            <div class="card-meta">
+              <div class="meta-left">
+                <div class="project-title">EodBox</div>
+                <div class="project-cats">
+                  <span class="pill">The unique bid auction system lets everyone shop at the lowest price</span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </article>
+          </article>
 
-      <article class="project-card" data-category="auction">
-         <a href="#" class="card-link" aria-label="Read article"></a>
-        <img src="images/smgbid.jpg" alt="SMG Bids project screenshot" loading="lazy">
-        <div class="card-meta">
-          <div class="meta-left">
-            <div class="project-title">SMG Bids</div>
-            <div class="project-cats">
-              <span class="pill">Low Unique Bid</span>
-              
+          <article class="project-card" data-category="auction">
+            <a href="#" class="card-link" aria-label="Read article"></a>
+            <img src="images/rubids.jpg" alt="Rubids" loading="lazy">
+            <div class="card-meta">
+              <div class="meta-left">
+                <div class="project-title">Rubids</div>
+                <div class="project-cats">
+                  <span class="pill">All type of Auction</span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </article>
+          </article>
 
-      <article class="project-card" data-category="auction">
-         <a href="#" class="card-link" aria-label="Read article"></a>
-        <img src="images/ubidbuy.jpg" alt="uBidu" loading="lazy">
-        <div class="card-meta">
-          <div class="meta-left">
-            <div class="project-title">uBiduBuy.sg</div>
-            <div class="project-cats">
-              <span class="pill">Lowest & Price Reveal Auction</span>
-             
+          <article class="project-card" data-category="auction">
+            <a href="#" class="card-link" aria-label="Read article"></a>
+            <img src="images/smgbid.jpg" alt="SMG Bids project screenshot" loading="lazy">
+            <div class="card-meta">
+              <div class="meta-left">
+                <div class="project-title">SMG Bids</div>
+                <div class="project-cats">
+                  <span class="pill">Low Unique Bid</span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </article>
+          </article>
 
-      <article class="project-card" data-category="auction">
-         <a href="#" class="card-link" aria-label="Read article"></a>
-        <img src="images/onlineauction.jpg" alt="ONLINEALKU" loading="lazy">
-        <div class="card-meta">
-          <div class="meta-left">
-            <div class="project-title">ONLINEALKU</div>
-            <div class="project-cats">
-              <span class="pill">ONLINEALKU- THE REVERSE AUCTION</span>
-             
+          <article class="project-card" data-category="auction">
+            <a href="#" class="card-link" aria-label="Read article"></a>
+            <img src="images/ubidbuy.jpg" alt="uBidu" loading="lazy">
+            <div class="card-meta">
+              <div class="meta-left">
+                <div class="project-title">uBiduBuy.sg</div>
+                <div class="project-cats">
+                  <span class="pill">Lowest & Price Reveal Auction</span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </article>
+          </article>
 
-      <article class="project-card" data-category="auction">
-         <a href="#" class="card-link" aria-label="Read article"></a>
-        <img src="images/pigeon.jpg" alt="pigeononnet" loading="lazy">
-        <div class="card-meta">
-          <div class="meta-left">
-            <div class="project-title">pigeononnet.com</div>
-            <div class="project-cats">
-              <span class="pill">Dutch style auction</span>
-              
+          <article class="project-card" data-category="auction">
+            <a href="#" class="card-link" aria-label="Read article"></a>
+            <img src="images/onlineauction.jpg" alt="ONLINEALKU" loading="lazy">
+            <div class="card-meta">
+              <div class="meta-left">
+                <div class="project-title">ONLINEALKU</div>
+                <div class="project-cats">
+                  <span class="pill">ONLINEALKU- THE REVERSE AUCTION</span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </article>
+          </article>
 
-           <article class="project-card" data-category="auction">
-             <a href="#" class="card-link" aria-label="Read article"></a>
-        <img src="images/bid2u.jpg" alt="Bid2u" loading="lazy">
-        <div class="card-meta">
-          <div class="meta-left">
-            <div class="project-title">Bid2u</div>
-            <div class="project-cats">
-              <span class="pill">Penny Auction Software</span>
-              
+          <article class="project-card" data-category="auction">
+            <a href="#" class="card-link" aria-label="Read article"></a>
+            <img src="images/pigeon.jpg" alt="pigeononnet" loading="lazy">
+            <div class="card-meta">
+              <div class="meta-left">
+                <div class="project-title">pigeononnet.com</div>
+                <div class="project-cats">
+                  <span class="pill">Dutch style auction</span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </article>
+          </article>
 
-
-           <article class="project-card" data-category="others">
-             <a href="#" class="card-link" aria-label="Read article"></a>
-        <img src="images/exposure.jpg" alt="exposure" loading="lazy">
-        <div class="card-meta">
-          <div class="meta-left">
-            <div class="project-title">Exposure Realty</div>
-            <div class="project-cats">
-              <span class="pill">Real Estate & Property Listing</span>
-              
+          <article class="project-card" data-category="auction">
+            <a href="#" class="card-link" aria-label="Read article"></a>
+            <img src="images/bid2u.jpg" alt="Bid2u" loading="lazy">
+            <div class="card-meta">
+              <div class="meta-left">
+                <div class="project-title">Bid2u</div>
+                <div class="project-cats">
+                  <span class="pill">Penny Auction Software</span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </article>
+          </article>
 
-           <article class="project-card" data-category="others">
-             <a href="#" class="card-link" aria-label="Read article"></a>
-        <img src="images/pigeon.jpg" alt="pigeononnet" loading="lazy">
-        <div class="card-meta">
-          <div class="meta-left">
-            <div class="project-title">Synergy</div>
-            <div class="project-cats">
-              <span class="pill">SMALL BUSINESS</span>
-              
+          <article class="project-card" data-category="others">
+            <a href="#" class="card-link" aria-label="Read article"></a>
+            <img src="images/exposure.jpg" alt="exposure" loading="lazy">
+            <div class="card-meta">
+              <div class="meta-left">
+                <div class="project-title">Exposure Realty</div>
+                <div class="project-cats">
+                  <span class="pill">Real Estate & Property Listing</span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </article>
+          </article>
 
-           <article class="project-card" data-category="others">
-             <a href="#" class="card-link" aria-label="Read article"></a>
-        <img src="images/winly.jpg" alt="winly" loading="lazy">
-        <div class="card-meta">
-          <div class="meta-left">
-            <div class="project-title">Winly</div>
-            <div class="project-cats">
-              <span class="pill">MIS application</span>              
+          <article class="project-card" data-category="others">
+            <a href="#" class="card-link" aria-label="Read article"></a>
+            <img src="images/pigeon.jpg" alt="pigeononnet" loading="lazy">
+            <div class="card-meta">
+              <div class="meta-left">
+                <div class="project-title">Synergy</div>
+                <div class="project-cats">
+                  <span class="pill">SMALL BUSINESS</span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </article>
+          </article>
 
-               <article class="project-card" data-category="mobile">
-                 <a href="#" class="card-link" aria-label="Read article"></a>
-        <img src="images/zippy.jpg" alt="zippy" loading="lazy">
-        <div class="card-meta">
-          <div class="meta-left">
-            <div class="project-title">Zippy Alert</div>
-            <div class="project-cats">
-              <span class="pill">
-Incident Reporting And Mass Notification Applicaiton</span>              
+          <article class="project-card" data-category="others">
+            <a href="#" class="card-link" aria-label="Read article"></a>
+            <img src="images/winly.jpg" alt="winly" loading="lazy">
+            <div class="card-meta">
+              <div class="meta-left">
+                <div class="project-title">Winly</div>
+                <div class="project-cats">
+                  <span class="pill">MIS application</span>              
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </article>
+          </article>
 
-               <article class="project-card" data-category="mobile">
-                 <a href="#" class="card-link" aria-label="Read article"></a>
-        <img src="images/tiptop.jpg" alt="TiptopBids" loading="lazy">
-        <div class="card-meta">
-          <div class="meta-left">
-            <div class="project-title">TiptopBids</div>
-            <div class="project-cats">
-              <span class="pill">Event Management Application</span>              
+          <article class="project-card" data-category="mobile">
+            <a href="#" class="card-link" aria-label="Read article"></a>
+            <img src="images/zippy.jpg" alt="zippy" loading="lazy">
+            <div class="card-meta">
+              <div class="meta-left">
+                <div class="project-title">Zippy Alert</div>
+                <div class="project-cats">
+                  <span class="pill">Incident Reporting And Mass Notification Applicaiton</span>              
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </article>
+          </article>
 
-               <article class="project-card" data-category="mobile">
-                 <a href="#" class="card-link" aria-label="Read article"></a>
-        <img src="images/ibutler.jpg" alt="ibutler" loading="lazy">
-        <div class="card-meta">
-          <div class="meta-left">
-            <div class="project-title">i-butler</div>
-            <div class="project-cats">
-              <span class="pill">Price Comparison Application</span>              
+          <article class="project-card" data-category="mobile">
+            <a href="#" class="card-link" aria-label="Read article"></a>
+            <img src="images/tiptop.jpg" alt="TiptopBids" loading="lazy">
+            <div class="card-meta">
+              <div class="meta-left">
+                <div class="project-title">TiptopBids</div>
+                <div class="project-cats">
+                  <span class="pill">Event Management Application</span>              
+                </div>
+              </div>
             </div>
-          </div>
+          </article>
+
+          <article class="project-card" data-category="mobile">
+            <a href="#" class="card-link" aria-label="Read article"></a>
+            <img src="images/ibutler.jpg" alt="ibutler" loading="lazy">
+            <div class="card-meta">
+              <div class="meta-left">
+                <div class="project-title">i-butler</div>
+                <div class="project-cats">
+                  <span class="pill">Price Comparison Application</span>              
+                </div>
+              </div>
+            </div>
+          </article>
+
         </div>
-      </article>
 
-    </div>
-
-    <p id="empty" class="empty-state" hidden>No projects found in this category.</p>
-  </div>
-  </section>
-
-
-  <!-- Bottom Logo Section -->
-  <section class="company-logo-section">
-    <h4>Trusted by 100+ Leading Brands Company</h4>
-    <hr>
-    <div class="container-fluid">
-      <div class="row justify-content-center align-items-center text-center gy-2" data-aos="fade-right" data-aos-offset="100"
-        data-aos-easing="ease-in-sine">
-        <div class="col-6 col-md-2"><img src="images/pure.png" alt="pure" class="img-fluid" loading="lazy"></div>
-        <div class="col-6 col-md-2"><img src="images/thorne.png" alt="Thorne" class="img-fluid" loading="lazy"></div>
-        <div class="col-6 col-md-2"><img src="images/paslode.png" alt="Paslode" class="img-fluid" loading="lazy"></div>
-        <div class="col-6 col-md-2"><img src="images/wahl.png" alt="wahl" class="img-fluid" loading="lazy"></div>
-        <div class="col-6 col-md-2"><img src="images/kong.png" alt="Kong" class="img-fluid" loading="lazy"></div>
+        <p id="empty" class="empty-state" hidden>No projects found in this category.</p>
       </div>
-    </div>
-  </section>
-
-
-
-<!-- Ready to Hire-->
-    <section class="web__wrapper">
-       <!-- Column 1: Image -->
-    <div class="col img_2" data-aos="fade-right" data-aos-offset="200"
-        data-aos-easing="ease-in-sine"></div>
-
-    <!-- Column 2: Ready to Hire -->
-    <div class="col text">
-      <div data-aos="fade-left" data-aos-offset="200"
-        data-aos-easing="ease-in-sine">
-        <h2>Ready to Hire the Best Software Developers?</h2>
-<p>Partner with us and get your business future-ready.</p>
-   
-    <div><a href="request_quote.html" class="btn btn-hero">Schedule a Call </a></div>
-      </div>
-    </div>
-   
-
     </section>
 
+    <section class="company-logo-section">
+      <h4>Trusted by 100+ Leading Brands Company</h4>
+      <hr>
+      <div class="container-fluid">
+        <div class="row justify-content-center align-items-center text-center gy-2" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+          <div class="col-6 col-md-2">
+            <a href="https://dinepa.eu/en" target="_blank" rel="noopener noreferrer"><img src="images/dinepa.png" alt="Dinepa" class="img-fluid" loading="lazy"></a>
+          </div>
+          <div class="col-6 col-md-2">
+            <a href="https://www.nrb.org.np/" target="_blank" rel="noopener noreferrer"><img src="images/nrb.png" alt="NRB" class="img-fluid" loading="lazy"></a>
+          </div>
+          <div class="col-6 col-md-2">
+            <a href="https://www.bidbid.co.uk/en" target="_blank" rel="noopener noreferrer"><img src="images/bidbid.png" alt="bidbid" class="img-fluid" loading="lazy"></a>
+          </div>
+          <div class="col-6 col-md-2">
+            <a href="https://upkeep.pro/" target="_blank" rel="noopener noreferrer"><img src="images/upkeep.png" alt="upkeep" class="img-fluid" loading="lazy"></a>
+          </div>
+          <div class="col-6 col-md-2">
+            <a href="https://www.msg-homes.com/" target="_blank" rel="noopener noreferrer"><img src="images/mysaving-grace.png" alt="MySavingGrace" class="img-fluid" loading="lazy"></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="web__wrapper">
+      <div class="col img_2" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine"></div>
 
+      <div class="col text">
+        <div data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <h2>Ready to Hire the Best Software Developers?</h2>
+          <p>Partner with us and get your business future-ready.</p>
+          <div>
+            <a href="request_quote.html" class="btn btn-hero">Schedule a Call</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <footer class="footer-container">
+    <div class="container-fluid">
 
-
-
-
-
-
-
-
-<!-- Footer Section -->
-<section class="footer-container">
-  <div class="container-fluid">
-
-          <!-- QuoteSection -->
       <div class="quote__section fade-slide">
-Start Getting Results Online
-<a href="request_quote.html" class="btn btn-hero">REQUEST A QUOTE </a>
+        Start Getting Results Online
+        <a href="request_quote.html" class="btn btn-hero">REQUEST A QUOTE</a>
       </div>
 
-    <!-- Top contact info -->
-  <div class="footer-top">
-      <div class="contact-box" data-aos="fade-right" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <div class="contact-icon">
-          <img src="images/map-icon.png" alt="map">
+      <div class="footer-top">
+        <div class="contact-box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="contact-icon">
+            <img src="images/map-icon.png" alt="map" loading="lazy">
+          </div>
+          <div class="contact-address">
+            <h4>KATHMANDU</h4>
+            <p>Near UN Office, Kupondol, Lalitpur, Nepal<br/>Mobile: <a href="https://wa.me/9779851038796" target="_blank" rel="noopener noreferrer">+977 9851038796</a></p>
+          </div>
         </div>
-        <div class="contact-address">
-        <h4>KATHMANDU</h4>
-        <p>Near UN Office, Kupondol, Lalitpur, Nepal<br/>Mobile: <a href="https://wa.me/9779851038796" target="_blank">+977 9851038796</a></p>
-       
-      </div>
-      </div>
-      <div class="contact-box" data-aos="fade-right" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <div class="contact-icon">
-          <img src="images/map-icon.png" alt="map">
+        <div class="contact-box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="contact-icon">
+            <img src="images/map-icon.png" alt="map" loading="lazy">
+          </div>
+          <div class="contact-address">
+            <h4>Melbourne</h4>
+            <p>Australia<br/>Mobile: <a href="https://wa.me/61406806984" target="_blank" rel="noopener noreferrer">+61 406 806 984</a></p>         
+          </div>
         </div>
-        <div class="contact-address">
-          <h4>Melbourne </h4>
-          <p>Australia<br/>Mobile: <a href="https://wa.me/61406806984" target="_blank">+61 406 806 984</a></p>         
-        </div>
-        
-      </div>
-      <!-- <div class="contact-box" data-aos="fade-right" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <div class="contact-icon">
-          <img src="images/map-icon.png" alt="map">
-        </div>
-        <div class="contact-address">
-          <h4>CANADA</h4>
-          <p>Near UN Office, Kupondol, Lalitpur, Nepal<br/>Mobile: +977 9851038796</p>         
-        </div>
-        
-      </div> -->
-    </div>
-
-    <!-- Middle section -->
-    <div class="footer-middle">
-      <div class="footer-logo fade-slide">
-        <img src="images/footer-logo.png" alt="eMultiTechSolutions">
-        <p>we craft, launch, and scale high-performance web, mobile, and wearable applications — from design to development, testing, and ongoing growth.</p>
       </div>
 
-      <div class="footer-column fade-slide">
-        <h5>Services</h5>
-        <ul>
-          <li><a href="ai-solutions.html" class="footer-text"> AI Solutions</a></li>
-          <li><a href="mobile-development.html" class="footer-text">Mobile App Development</a></li>
-          <li><a href="web-development.html" class="footer-text">Web Development</a></li>
-          <li><a href="software-development.html" class="footer-text">Software Development</a></li>
-          <li><a href="devops-engineer.html" class="footer-text">DevOps Engineer</a></li>
-          <li><a href="digital-marketing.html" class="footer-text">Digital Marketing</a></li>
-        </ul>
+      <div class="footer-middle">
+        <div class="footer-logo fade-slide">
+          <img src="images/footer-logo.png" alt="eMultiTechSolutions" loading="lazy">
+          <p>We craft, launch, and scale high-performance web, mobile, and wearable applications — from design to development, testing, and ongoing growth.</p>
+        </div>
+
+        <div class="footer-column fade-slide">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="ai-solutions.html" class="footer-text">AI Solutions</a></li>
+            <li><a href="mobile-development.html" class="footer-text">Mobile App Development</a></li>
+            <li><a href="web-development.html" class="footer-text">Web Development</a></li>
+            <li><a href="software-development.html" class="footer-text">Software Development</a></li>
+            <li><a href="devops-engineer.html" class="footer-text">DevOps Engineer</a></li>
+            <li><a href="digital-marketing.html" class="footer-text">Digital Marketing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column fade-slide">
+          <h5>Industries</h5>
+          <ul>
+            <li><a href="healthcare.html" class="footer-text">Healthcare</a></li>
+            <li><a href="realestate.html" class="footer-text">Real Estate</a></li>           
+            <li><a href="auction-software.html" class="footer-text">Auction Software</a></li>
+            <li><a href="procurement.html" class="footer-text">Procurement Solution</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column fade-slide">
+          <h5>Information</h5>
+          <ul>
+            <li><a href="about.html" class="footer-text">About Us</a></li>
+            <li><a href="privacy-policy.html" class="footer-text">Privacy Policy</a></li>
+            <li><a href="terms-of-condition.html" class="footer-text">Terms and Condition</a></li>
+            <li><a href="cookie-policy.html" class="footer-text">Cookie Policy</a></li>
+            <li><a href="contact.html" class="footer-text">Contact Us</a></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="footer-column fade-slide">
-        <h5>Industries</h5>
-        <ul>
-           <li><a href="healthcare.html" class="footer-text">Healthcare</a></li>
-           <li><a href="realestate.html" class="footer-text">Real Estate</a></li>           
-          <li><a href="auction-software.html" class="footer-text">Auction Software</a></li>
-          <li><a href="procurement.html" class="footer-text">Procurement Solution</a></li>
-          
-         
-        </ul>
-      </div>
-
-      <div class="footer-column fade-slide">
-        <h5>Information</h5>
-        <ul>
-          <li><a href="about.html" class="footer-text">About Us</a></li>
-          <li><a href="privacy-policy.html" class="footer-text">Privacy Policy</a></li>
-          <li><a href="terms-of-condition.html" class="footer-text">Terms and Condition</a></li>
-          <li><a href="cookie-policy.html" class="footer-text">Cookie Policy</a></li>
-          <li><a href="contact.html" class="footer-text">Contact Us</a></li>
-        
-        </ul>
+      <div class="footer-bottom">
+        <p>© 2010 - 2026 Emultitechsolution</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/emultitechsolutionnepal" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/company/emultitechsolution" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
       </div>
     </div>
+  </footer>
 
-    <!-- Bottom section -->
-    <div class="footer-bottom">
-     <p>© 2010 - 2026 Emultitechsolution </p>
-      <div class="social-icons">
-        <!-- <a href="#"><i class="fa-brands fa-x-twitter"></i> </a> -->
-        <a href="https://www.facebook.com/emultitechsolutionnepal" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://www.linkedin.com/company/emultitechsolution" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-        <!-- <a href="#"><i class="fa-brands fa-youtube"></i></a> -->
-      </div>
-    </div>
-  </div>
-</section>
-
-<script>
-  (function(){
+  <script>
+    (function(){
       const tabs = document.querySelectorAll('.tab-btn');
       const cards = Array.from(document.querySelectorAll('.project-card'));
       const empty = document.getElementById('empty');
@@ -499,15 +438,14 @@ Start Getting Results Online
         const t = Array.from(tabs).find(x => x.dataset.filter === q);
         if(t){ t.click(); t.scrollIntoView({behavior:'smooth', block:'center'}); }
       }
-
     })();
-</script>
+  </script>
 
-<script src="js/aos.js"></script>
-<script>
-  AOS.init();
-</script> 
-<script src="js/script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script> 
+  <script src="js/script.js"></script>
 </body>
 </html>

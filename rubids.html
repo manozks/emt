@@ -1,397 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-<title>Expert Web & Mobile App Development | AI Solutions | E Multitech Solution, Nepal</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expert Web & Mobile App Development | AI Solutions | E Multitech Solution, Nepal</title>
   <link rel="shortcut icon" href="images/favicon.png">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="css/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-   <!-- Icon Font Stylesheet -->
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="css/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <!-- Header -->
-<nav class="navbar navbar-light blue-bg fixed-top">
-  <div class="container-fluid d-flex justify-content-between">
-
-    <!-- Left Logo -->
-    <a class="navbar-brand" href="index.html">
-      <img src="images/logo.png" alt="Company Logo" height="42">
-    </a>
-
-<div class="right--bar">
-      <!-- Phone number (always visible) -->
-      <div class="contact-info">
-            <a href="https://wa.me/9779851038796" target="_blank">
-    <i class="fa-brands fa-whatsapp"></i> +977 9851038796
-</a>
-      </div>
-  
-      <!-- Hamburger Icon -->
-      <button class="navbar-toggler" type="button" aria-label="Toggle navigation" onclick="toggleMenu()">        
-             <img src="images/nav-toggle-icon.png" alt="toggler" >
-      </button>
-</div>
-
-  </div>
-
-
-</nav>
-<!-- Backdrop -->
-<div class="menu-backdrop" id="menuBackdrop" onclick="closeMenu()"></div>
-
-<!-- Slide-in Menu -->
-<div class="navbar-collapse" id="navbarMenu">
-  <button class="menu-close" onclick="closeMenu()">×</button>
-  <ul class="navbar-nav">
-    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-      <li class="nav-item">
-        <a class="nav-link dropdown-toggle" id="servicesDropdown" onclick="toggleDropdown(this)">
-          Services
+  <header>
+    <nav class="navbar navbar-light blue-bg fixed-top">
+      <div class="container-fluid d-flex justify-content-between">
+        
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="Company Logo" height="42">
         </a>
+
+        <div class="right--bar">
+          <div class="contact-info">
+            <a href="https://wa.me/9779851038796" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp"></i> +977 9851038796
+            </a>
+          </div>
+      
+          <button class="navbar-toggler" type="button" aria-label="Toggle navigation" onclick="toggleMenu()">        
+            <img src="images/nav-toggle-icon.png" alt="toggler">
+          </button>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <div class="menu-backdrop" id="menuBackdrop" onclick="closeMenu()"></div>
+
+  <aside class="navbar-collapse" id="navbarMenu">
+    <button class="menu-close" onclick="closeMenu()">×</button>
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      <li class="nav-item">
+        <a class="nav-link dropdown-toggle" id="servicesDropdown" onclick="toggleDropdown(this)">Services</a>
         <div class="dropdown-menu" id="servicesMenu">
-          <a class="dropdown-item" href="ai-solutions.html">AI Solutions </a>
+          <a class="dropdown-item" href="ai-solutions.html">AI Solutions</a>
           <a class="dropdown-item" href="mobile-development.html">Mobile App Development</a>
-          <a class="dropdown-item" href="web-development.html">Web Development </a>
+          <a class="dropdown-item" href="web-development.html">Web Development</a>
           <a class="dropdown-item" href="software-development.html">Software Development</a>
           <a class="dropdown-item" href="devops-engineer.html">DevOps Engineer</a>
-           <a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a>
+          <a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a>
         </div>
       </li>
-     <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
-    <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
-    <li class="nav-item"><a class="nav-link" href="works.html">Our Works</a></li>
-    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-     <li class="nav-item"><a class="nav-link" href="testimonial-all.html">Testimonial</a></li>
-    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+      <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
+      <li class="nav-item"><a class="nav-link" href="works.html">Our Works</a></li>
+      <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+      <li class="nav-item"><a class="nav-link" href="testimonial-all.html">Testimonial</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+    </ul>
+  </aside>
 
-  </ul>
-</div>
-  
+  <main>
+    <section class="casestudies--detail">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <span>›</span> 
+        <a href="auction-software.html">Auction Software</a> <span>›</span>
+        <a href="lowest-unique-bid-auction-script-online-software-reverse-auction-low-bid.html">Lowest Unique Bid</a> <span>›</span> 
+        <span>Rubids</span>
+      </nav>
 
+      <header class="page-header">
+        <h1 class="page-title">Rubids Multi Type auction</h1>
+      </header>
 
-    <!-- Case Studies Section -->
-<section class="casestudies--detail">
-
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="index.html">Home</a> <span>›</span> <a href="auction-software.html">Auction Software</a> <span>›</span><a href="lowest-unique-bid-auction-script-online-software-reverse-auction-low-bid.html">Lowest Unique Bid</a> <span>›</span> <span>Rubids</span>
-    </nav>
-
-    <header class="page-header">
-      <h1 class="page-title">Rubids Multi Type auction</h1>
-    </header>
-
-    <!-- Info row with four items -->
-    <section class="info-row" aria-label="Key info">
-      <div class="info-item">
-        <div class="info-icon">
-          <div class="icon-circle" aria-hidden="true">
-            <!-- icon (industry/building) -->
-          <img src="images/industry.png" alt="Industry">
+      <section class="info-row" aria-label="Key info">
+        <div class="info-item">
+          <div class="info-icon">
+            <div class="icon-circle" aria-hidden="true">
+              <img src="images/industry.png" alt="Industry" loading="lazy">
+            </div>
+          </div>
+          <div class="info-text">
+            <div class="info-head">Industry</div>
+            <div class="info-sub">Lowest Unique Bid Auction</div>
           </div>
         </div>
-        <div class="info-text">
-          <div class="info-head">Industry</div>
-          <div class="info-sub">Lowest Unique Bid Auction</div>
-        </div>
-      </div>
 
-      <div class="info-item mid-accent">
-        <div class="info-icon">
-          <div class="icon-circle" aria-hidden="true">
-            <!-- Location icon -->
-            <img src="images/location_client.png" alt="Client Location" >
+        <div class="info-item mid-accent">
+          <div class="info-icon">
+            <div class="icon-circle" aria-hidden="true">
+              <img src="images/location_client.png" alt="Client Location" loading="lazy">
+            </div>
+          </div>
+          <div class="info-text">
+            <div class="info-head">Client Location</div>
+            <div class="info-sub">United States</div>
           </div>
         </div>
-        <div class="info-text">
-          <div class="info-head">Client Location</div>
-          <div class="info-sub">United States</div>
-        </div>
-      </div>
 
-      <div class="info-item mid-accent">
-        <div class="info-icon">
-          <div class="icon-circle" aria-hidden="true">
-            <!-- briefcase -->
-           <img src="images/duration.png" alt="Project Duration" >
+        <div class="info-item mid-accent">
+          <div class="info-icon">
+            <div class="icon-circle" aria-hidden="true">
+              <img src="images/duration.png" alt="Project Duration" loading="lazy">
+            </div>
+          </div>
+          <div class="info-text">
+            <div class="info-head">Project Duration</div>
+            <div class="info-sub">6 months</div>
           </div>
         </div>
-        <div class="info-text">
-          <div class="info-head">Project Duration</div>
-          <div class="info-sub">6 months</div>
-        </div>
-      </div>
-
-      
-
-      <div class="info-item">
-        <div class="info-icon">
-          <div class="icon-circle" aria-hidden="true">
-            <!-- Team Size -->
-           <img src="images/team-size.png" alt="Team Size" >
-          </div>
-        </div>
-        <div class="info-text">
-          <div class="info-head">Team Size</div>
-          <div class="info-sub">3 members</div>
-        </div>
-      </div>
 
         <div class="info-item">
-        <div class="info-icon">
-          <div class="icon-circle" aria-hidden="true">
-            <!-- Technologies -->
-        <img src="images/technology.png" alt="Technologies">
+          <div class="info-icon">
+            <div class="icon-circle" aria-hidden="true">
+              <img src="images/team-size.png" alt="Team Size" loading="lazy">
+            </div>
+          </div>
+          <div class="info-text">
+            <div class="info-head">Team Size</div>
+            <div class="info-sub">3 members</div>
           </div>
         </div>
-        <div class="info-text">
-          <div class="info-head">Technologies</div>
-          <div class="info-sub">CodeIgniter MVC framework, our application leverages PHP, MySQL</div>
+
+        <div class="info-item">
+          <div class="info-icon">
+            <div class="icon-circle" aria-hidden="true">
+              <img src="images/technology.png" alt="Technologies" loading="lazy">
+            </div>
+          </div>
+          <div class="info-text">
+            <div class="info-head">Technologies</div>
+            <div class="info-sub">CodeIgniter MVC framework, our application leverages PHP, MySQL</div>
+          </div>
         </div>
+      </section>
+    </section>
+
+    <section class="project-section project-scope">
+      <div class="project-content hero-content">
+        <h2>Project Overview</h2>
+        <p>Rubids is the world's fastest, most entertaining marketplace, with live online auctions every day in a wide variety of categories. Rubids is available on the iPhone and iPad via the App Store and on Android via Google Play. Rubids offers coupons, auctions, and games that you can enjoy. Not only that, you can share the earnings with it.</p>
+        <p>Rubids is combination of all possible auction software in one single software that includes...</p>
+        <div class="divider"></div>
+        <div class="hero__btn__area">
+          <a href="https://rubids.com/en" target="_blank" rel="noopener noreferrer" class="btn btn-hero">Visit Website</a>
+        </div>
+      </div>
+      
+      <div class="project-image project-image-left hero-content">
+        <img src="images/rubids.jpg" alt="Project discussion" loading="lazy">
       </div>
     </section>
 
-
-  </section>
-
-<!-- Project Scope Section -->
-  <section class="project-section project-scope">
-   
-    <div class="project-content  hero-content">
-      <h2>Project Overview</h2>
-      <p>
-       Rubids is the world's fastest, most entertaining marketplace, with live online auctions every day in a wide variety of categories. Rubids is available on the iPhone and iPad via the App Store and on Android via Google Play. Rubids offers coupons, auctions, and games that you can enjoy. Not only that, you can share the earnings with it
-
-Rubids is combination of all possible auction software in one single software that includes...
-      </p>
- <div class="divider"></div>
-      <div class="hero__btn__area"><a href="https://rubids.com/en" target="_blank" class="btn btn-hero">Visit Website</a>
-        </div>
-  
-    </div>
-    
-     <div class="project-image project-image-left  hero-content">
-      <img src="images/rubids.jpg" alt="Project discussion">
-    </div>
-  </section>
-
-
-
-
-
-
-
-
-
-
-      <!-- Featured Section -->
-<section class="why-us-container">
-  <div class="container-fluid">
-    <h2 data-aos="fade-right" data-aos-offset="300"
-    data-aos-easing="ease-in-sine">Our Features</h2>
-      <div class="grid">
-      <div class="item" data-num="1" data-aos="fade-up" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <span class="number">1.</span>
-       
-        <p> Enable/Disable seller feature and Rubids shop for shopping</p>
-      </div>
-      <div class="item" data-num="2" data-aos="fade-up" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <span class="number">2.</span>       
-        <p>Games to earn points</p>
-      </div>
-      <div class="item" data-num="3" data-aos="fade-up" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <span class="number">3.</span>        
-        <p>Coupons and stores for discounts and cashback</p>
-      </div>
-      <div class="item" data-num="4" data-aos="fade-up" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <span class="number">4.</span>      
-        <p>Real-time biddings and interesting auctions</p>
-      </div>
-      <div class="item" data-num="5" data-aos="fade-up" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <span class="number">5.</span>
-        <p>Upcoming events details and 
-Travel destinations and bookings</p>
-      </div>
-      <div class="item" data-num="6" data-aos="fade-up" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <span class="number">6.</span>
-       <p>Newsletter</p>
-      </div>
-      <div class="item" data-num="7" data-aos="fade-up" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <span class="number">7.</span>       
-        <p>Social media signup/login</p>
-      </div>
-         <div class="item" data-num="8" data-aos="fade-up" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <span class="number">8.</span>       
-        <p>Social media sharing</p>
-      </div>
-          <div class="item" data-num="9" data-aos="fade-up" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <span class="number">9.</span>       
-        <p> Live chat/help </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Ready to Hire-->
-    <section class="web__wrapper">
-       <!-- Column 1: Image -->
-    <div class="col img_2" data-aos="fade-right" data-aos-offset="200"
-        data-aos-easing="ease-in-sine"></div>
-
-    <!-- Column 2: Ready to Hire -->
-    <div class="col text">
-      <div data-aos="fade-left" data-aos-offset="200"
-        data-aos-easing="ease-in-sine">
-        <h2>Ready to Build Lowest Unique Bid Auction Software ?</h2>
-<p>Partner with us and get your business future-ready.</p>
-   
-    <div><a href="request_quote.html" class="btn btn-hero">Schedule a Call </a></div>
-      </div>
-    </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Footer Section -->
-<section class="footer-container">
-  <div class="container-fluid">
-
-          <!-- QuoteSection -->
-      <div class="quote__section fade-slide">
-Start Getting Results Online
-<a href="request_quote.html" class="btn btn-hero">REQUEST A QUOTE </a>
-      </div>
-
-    <!-- Top contact info -->
-  <div class="footer-top">
-      <div class="contact-box" data-aos="fade-right" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <div class="contact-icon">
-          <img src="images/map-icon.png" alt="map">
-        </div>
-        <div class="contact-address">
-        <h4>KATHMANDU</h4>
-        <p>Near UN Office, Kupondol, Lalitpur, Nepal<br/>Mobile: <a href="https://wa.me/9779851038796" target="_blank">+977 9851038796</a></p>
-       
-      </div>
-      </div>
-      <div class="contact-box" data-aos="fade-right" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <div class="contact-icon">
-          <img src="images/map-icon.png" alt="map">
-        </div>
-        <div class="contact-address">
-          <h4>Melbourne </h4>
-          <p>Australia<br/>Mobile: <a href="https://wa.me/61406806984" target="_blank">+61 406 806 984</a></p>         
-        </div>
-        
-      </div>
-      <!-- <div class="contact-box" data-aos="fade-right" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <div class="contact-icon">
-          <img src="images/map-icon.png" alt="map">
-        </div>
-        <div class="contact-address">
-          <h4>CANADA</h4>
-          <p>Near UN Office, Kupondol, Lalitpur, Nepal<br/>Mobile: +977 9851038796</p>         
-        </div>
-        
-      </div> -->
-    </div>
-
-    <!-- Middle section -->
-    <div class="footer-middle">
-      <div class="footer-logo fade-slide">
-        <img src="images/footer-logo.png" alt="eMultiTechSolutions">
-        <p>we craft, launch, and scale high-performance web, mobile, and wearable applications — from design to development, testing, and ongoing growth.</p>
-      </div>
-
-      <div class="footer-column fade-slide">
-        <h5>Services</h5>
-        <ul>
-          <li><a href="ai-solutions.html" class="footer-text"> AI Solutions</a></li>
-          <li><a href="mobile-development.html" class="footer-text">Mobile App Development</a></li>
-          <li><a href="web-development.html" class="footer-text">Web Development</a></li>
-          <li><a href="software-development.html" class="footer-text">Software Development</a></li>
-          <li><a href="devops-engineer.html" class="footer-text">DevOps Engineer</a></li>
-          <li><a href="digital-marketing.html" class="footer-text">Digital Marketing</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-column fade-slide">
-        <h5>Industries</h5>
-        <ul>
-          <li><a href="about.html" class="footer-text">About Us</a></li>
-          <li><a href="privacy-policy.html" class="footer-text">Privacy Policy</a></li>
-          <li><a href="terms-of-condition.html" class="footer-text">Terms and Condition</a></li>
-          <li><a href="cookie-policy.html" class="footer-text">Cookie Policy</a></li>
-          <li><a href="contact.html" class="footer-text">Contact Us</a></li>
+    <section class="why-us-container">
+      <div class="container-fluid">
+        <h2 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Our Features</h2>
+        <div class="grid">
           
-         
-        </ul>
+          <div class="item" data-num="1" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <span class="number">1.</span>
+            <p>Enable/Disable seller feature and Rubids shop for shopping</p>
+          </div>
+          
+          <div class="item" data-num="2" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <span class="number">2.</span>       
+            <p>Games to earn points</p>
+          </div>
+          
+          <div class="item" data-num="3" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <span class="number">3.</span>        
+            <p>Coupons and stores for discounts and cashback</p>
+          </div>
+          
+          <div class="item" data-num="4" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <span class="number">4.</span>      
+            <p>Real-time biddings and interesting auctions</p>
+          </div>
+          
+          <div class="item" data-num="5" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <span class="number">5.</span>
+            <p>Upcoming events details and Travel destinations and bookings</p>
+          </div>
+          
+          <div class="item" data-num="6" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <span class="number">6.</span>
+            <p>Newsletter</p>
+          </div>
+          
+          <div class="item" data-num="7" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <span class="number">7.</span>       
+            <p>Social media signup/login</p>
+          </div>
+          
+          <div class="item" data-num="8" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <span class="number">8.</span>       
+            <p>Social media sharing</p>
+          </div>
+          
+          <div class="item" data-num="9" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <span class="number">9.</span>       
+            <p>Live chat/help</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="web__wrapper">
+      <div class="col img_2" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine"></div>
+
+      <div class="col text">
+        <div data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <h2>Ready to Build Lowest Unique Bid Auction Software?</h2>
+          <p>Partner with us and get your business future-ready.</p>
+          <div>
+            <a href="request_quote.html" class="btn btn-hero">Schedule a Call</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-container">
+    <div class="container-fluid">
+
+      <div class="quote__section fade-slide">
+        Start Getting Results Online
+        <a href="request_quote.html" class="btn btn-hero">REQUEST A QUOTE</a>
       </div>
 
-      <div class="footer-column fade-slide">
-        <h5>Information</h5>
-        <ul>
-          <li><a href="about.html" class="footer-text">About Us</a></li>
-          <li><a href="terms.html" class="footer-text">Terms and Condition</a></li>
-          <li><a href="privacy.html" class="footer-text">Privacy Policy</a></li>
-          <li><a href="contact.html" class="footer-text">Contact Us</a></li>
-        
-        </ul>
+      <div class="footer-top">
+        <div class="contact-box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="contact-icon">
+            <img src="images/map-icon.png" alt="map" loading="lazy">
+          </div>
+          <div class="contact-address">
+            <h4>KATHMANDU</h4>
+            <p>Near UN Office, Kupondol, Lalitpur, Nepal<br/>Mobile: <a href="https://wa.me/9779851038796" target="_blank" rel="noopener noreferrer">+977 9851038796</a></p>
+          </div>
+        </div>
+        <div class="contact-box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="contact-icon">
+            <img src="images/map-icon.png" alt="map" loading="lazy">
+          </div>
+          <div class="contact-address">
+            <h4>Melbourne</h4>
+            <p>Australia<br/>Mobile: <a href="https://wa.me/61406806984" target="_blank" rel="noopener noreferrer">+61 406 806 984</a></p>         
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-middle">
+        <div class="footer-logo fade-slide">
+          <img src="images/footer-logo.png" alt="eMultiTechSolutions" loading="lazy">
+          <p>We craft, launch, and scale high-performance web, mobile, and wearable applications — from design to development, testing, and ongoing growth.</p>
+        </div>
+
+        <div class="footer-column fade-slide">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="ai-solutions.html" class="footer-text">AI Solutions</a></li>
+            <li><a href="mobile-development.html" class="footer-text">Mobile App Development</a></li>
+            <li><a href="web-development.html" class="footer-text">Web Development</a></li>
+            <li><a href="software-development.html" class="footer-text">Software Development</a></li>
+            <li><a href="devops-engineer.html" class="footer-text">DevOps Engineer</a></li>
+            <li><a href="digital-marketing.html" class="footer-text">Digital Marketing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column fade-slide">
+          <h5>Industries</h5>
+          <ul>
+            <li><a href="healthcare.html" class="footer-text">Healthcare</a></li>
+            <li><a href="realestate.html" class="footer-text">Real Estate</a></li>           
+            <li><a href="auction-software.html" class="footer-text">Auction Software</a></li>
+            <li><a href="procurement.html" class="footer-text">Procurement Solution</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column fade-slide">
+          <h5>Information</h5>
+          <ul>
+            <li><a href="about.html" class="footer-text">About Us</a></li>
+            <li><a href="privacy-policy.html" class="footer-text">Privacy Policy</a></li>
+            <li><a href="terms-of-condition.html" class="footer-text">Terms and Condition</a></li>
+            <li><a href="cookie-policy.html" class="footer-text">Cookie Policy</a></li>
+            <li><a href="contact.html" class="footer-text">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2010 - 2026 Emultitechsolution</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/emultitechsolutionnepal" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/company/emultitechsolution" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
       </div>
     </div>
+  </footer>
 
-    <!-- Bottom section -->
-    <div class="footer-bottom">
-     <p>© 2010 - 2026 Emultitechsolution </p>
-      <div class="social-icons">
-        <!-- <a href="#"><i class="fa-brands fa-x-twitter"></i> </a> -->
-        <a href="https://www.facebook.com/emultitechsolutionnepal" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://www.linkedin.com/company/emultitechsolution" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-        <!-- <a href="#"><i class="fa-brands fa-youtube"></i></a> -->
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<script src="js/aos.js"></script>
-<script>
-  AOS.init();
-</script> 
-<script src="js/script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script> 
+  <script src="js/script.js"></script>
 </body>
 </html>

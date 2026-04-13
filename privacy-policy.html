@@ -1,308 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-<title>Expert Web & Mobile App Development | AI Solutions | E Multitech Solution, Nepal</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expert Web & Mobile App Development | AI Solutions | E Multitech Solution, Nepal</title>
   <link rel="shortcut icon" href="images/favicon.png">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="css/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-   <!-- Icon Font Stylesheet -->
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="css/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <!-- Header -->
-<nav class="navbar navbar-light blue-bg fixed-top">
-  <div class="container-fluid d-flex justify-content-between">
-
-    <!-- Left Logo -->
-    <a class="navbar-brand" href="index.html">
-      <img src="images/logo.png" alt="Company Logo" height="42">
-    </a>
-
-<div class="right--bar">
-      <!-- Phone number (always visible) -->
-      <div class="contact-info">
-            <a href="https://wa.me/9779851038796" target="_blank">
-    <i class="fa-brands fa-whatsapp"></i> +977 9851038796
-</a>
-      </div>
-  
-      <!-- Hamburger Icon -->
-      <button class="navbar-toggler" type="button" aria-label="Toggle navigation" onclick="toggleMenu()">        
-             <img src="images/nav-toggle-icon.png" alt="toggler" >
-      </button>
-</div>
-
-  </div>
-
-
-</nav>
-<!-- Backdrop -->
-<div class="menu-backdrop" id="menuBackdrop" onclick="closeMenu()"></div>
-
-<!-- Slide-in Menu -->
-<div class="navbar-collapse" id="navbarMenu">
-  <button class="menu-close" onclick="closeMenu()">×</button>
-  <ul class="navbar-nav">
-    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-      <li class="nav-item">
-        <a class="nav-link dropdown-toggle" id="servicesDropdown" onclick="toggleDropdown(this)">
-          Services
+  <header>
+    <nav class="navbar navbar-light blue-bg fixed-top">
+      <div class="container-fluid d-flex justify-content-between">
+        
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="Company Logo" height="42">
         </a>
+
+        <div class="right--bar">
+          <div class="contact-info">
+            <a href="https://wa.me/9779851038796" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp"></i> +977 9851038796
+            </a>
+          </div>
+      
+          <button class="navbar-toggler" type="button" aria-label="Toggle navigation" onclick="toggleMenu()">        
+            <img src="images/nav-toggle-icon.png" alt="toggler">
+          </button>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <div class="menu-backdrop" id="menuBackdrop" onclick="closeMenu()"></div>
+
+  <aside class="navbar-collapse" id="navbarMenu">
+    <button class="menu-close" onclick="closeMenu()">×</button>
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      <li class="nav-item">
+        <a class="nav-link dropdown-toggle" id="servicesDropdown" onclick="toggleDropdown(this)">Services</a>
         <div class="dropdown-menu" id="servicesMenu">
-          <a class="dropdown-item" href="ai-solutions.html">AI Solutions </a>
+          <a class="dropdown-item" href="ai-solutions.html">AI Solutions</a>
           <a class="dropdown-item" href="mobile-development.html">Mobile App Development</a>
-          <a class="dropdown-item" href="web-development.html">Web Development </a>
+          <a class="dropdown-item" href="web-development.html">Web Development</a>
           <a class="dropdown-item" href="software-development.html">Software Development</a>
           <a class="dropdown-item" href="devops-engineer.html">DevOps Engineer</a>
-           <a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a>
+          <a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a>
         </div>
       </li>
- <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
-    <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
-    <li class="nav-item"><a class="nav-link" href="works.html">Our Works</a></li>
-    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-    <li class="nav-item"><a class="nav-link" href="testimonial-all.html">Testimonial</a></li>
-    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+      <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
+      <li class="nav-item"><a class="nav-link" href="works.html">Our Works</a></li>
+      <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+      <li class="nav-item"><a class="nav-link" href="testimonial-all.html">Testimonial</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+    </ul>
+  </aside>
 
-  </ul>
-</div>
-  
-   <!-- Privacy Section -->
-<section class="privacy__container">
-    <div class="container">
-      <h1>PRIVACY POLICY</h1>
-      <p class="last-updated"><em>Last updated: November 2025</em></p>
+  <main>
+    <section class="privacy__container">
+      <div class="container">
+        <h1>PRIVACY POLICY</h1>
+        <p class="last-updated"><em>Last updated: November 2025</em></p>
 
-      <p>
-        At <strong>Emultitechsolution</strong>, we respect your privacy and are committed to protecting your personal information.
-      </p>
-    
-      <p>
-        This policy explains what data we collect, how we use it, and your rights regarding your personal information.
-      </p>
+        <p>At <strong>Emultitechsolution</strong>, we respect your privacy and are committed to protecting your personal information.</p>
+        <p>This policy explains what data we collect, how we use it, and your rights regarding your personal information.</p>
 
-      <h2>1. What Personal Information We Collect</h2>
-      <p>We may collect:</p>
-      <ul>
-        <li><strong>Identifiers:</strong> name, email, phone number, address, IP address</li>
-        <li><strong>Account & Payment Info:</strong> login credentials, billing details, card numbers (processed securely)</li>
-        <li><strong>Usage Data:</strong> browsing history, device info, referring pages, OS</li>
-        <li><strong>Professional Data:</strong> job title, company name, employment history</li>
-        <li><strong>Geolocation Data:</strong> when needed to improve service relevance</li>
-        <li><strong>Other Data You Provide:</strong> surveys, testimonials, or reviews</li>
-      </ul>
+        <h2>1. What Personal Information We Collect</h2>
+        <p>We may collect:</p>
+        <ul>
+          <li><strong>Identifiers:</strong> name, email, phone number, address, IP address</li>
+          <li><strong>Account & Payment Info:</strong> login credentials, billing details, card numbers (processed securely)</li>
+          <li><strong>Usage Data:</strong> browsing history, device info, referring pages, OS</li>
+          <li><strong>Professional Data:</strong> job title, company name, employment history</li>
+          <li><strong>Geolocation Data:</strong> when needed to improve service relevance</li>
+          <li><strong>Other Data You Provide:</strong> surveys, testimonials, or reviews</li>
+        </ul>
 
-      <p>
-        We also collect information automatically through cookies, web beacons, and analytics tools (Google Analytics, etc.).
-      </p>
+        <p>We also collect information automatically through cookies, web beacons, and analytics tools (Google Analytics, etc.).</p>
 
-      <h2>2. How We Use Your Information</h2>
-      <p>We use your personal information to:</p>
-      <ul>
-        <li>Deliver and manage our services, projects, and communications</li>
-        <li>Process payments and maintain accurate billing records</li>
-        <li>Provide customer support and respond to inquiries</li>
-        <li>Improve our website, services, and security</li>
-        <li>Conduct analytics and research to enhance user experience</li>
-        <li>Send updates, newsletters, and promotional offers (if opted in)</li>
-        <li>Comply with legal obligations and requests</li>
-      </ul>
+        <h2>2. How We Use Your Information</h2>
+        <p>We use your personal information to:</p>
+        <ul>
+          <li>Deliver and manage our services, projects, and communications</li>
+          <li>Process payments and maintain accurate billing records</li>
+          <li>Provide customer support and respond to inquiries</li>
+          <li>Improve our website, services, and security</li>
+          <li>Conduct analytics and research to enhance user experience</li>
+          <li>Send updates, newsletters, and promotional offers (if opted in)</li>
+          <li>Comply with legal obligations and requests</li>
+        </ul>
 
-      <h2>3. Sharing of Personal Data</h2>
-      <p><strong>We do not sell your personal information.</strong></p>
-      <p>
-        We may share data with trusted service providers who support operations (hosting, analytics, CRM). Transfers outside Canada (e.g., to the U.S. or EU)
-        are protected with <strong>Standard Contractual Clauses (SCCs)</strong>.
-      </p>
+        <h2>3. Sharing of Personal Data</h2>
+        <p><strong>We do not sell your personal information.</strong></p>
+        <p>We may share data with trusted service providers who support operations (hosting, analytics, CRM). Transfers outside Canada (e.g., to the U.S. or EU) are protected with <strong>Standard Contractual Clauses (SCCs)</strong>.</p>
 
-      <h2>4. Cookies & Tracking</h2>
-      <p>We use cookies to:</p>
-      <ul>
-        <li>Remember your preferences</li>
-        <li>Measure website traffic and performance</li>
-        <li>Deliver relevant marketing content</li>
-      </ul>
+        <h2>4. Cookies & Tracking</h2>
+        <p>We use cookies to:</p>
+        <ul>
+          <li>Remember your preferences</li>
+          <li>Measure website traffic and performance</li>
+          <li>Deliver relevant marketing content</li>
+        </ul>
+        <p>You can manage cookies through your browser settings or opt out of marketing cookies.</p>
 
-      <p>
-        You can manage cookies through your browser settings or opt out of marketing cookies.
-      </p>
+        <h2>5. Your Privacy Rights</h2>
+        <p>As a Canadian resident (or under GDPR), you have the right to:</p>
+        <ul>
+          <li><strong>Access</strong> your personal data</li>
+          <li><strong>Request correction</strong> of inaccurate data</li>
+          <li><strong>Request deletion</strong> when no longer needed</li>
+          <li><strong>Withdraw consent</strong> for marketing communications</li>
+          <li><strong>Receive a copy</strong> of your data in portable format</li>
+        </ul>
+        <p>To exercise these rights, email us at <a href="mailto:hello@emultitechsolution.com">hello@emultitechsolution.com</a></p>
 
-      <h2>5. Your Privacy Rights</h2>
-      <p>As a Canadian resident (or under GDPR), you have the right to:</p>
-      <ul>
-        <li><strong>Access</strong> your personal data</li>
-        <li><strong>Request correction</strong> of inaccurate data</li>
-        <li><strong>Request deletion</strong> when no longer needed</li>
-        <li><strong>Withdraw consent</strong> for marketing communications</li>
-        <li><strong>Receive a copy</strong> of your data in portable format</li>
-      </ul>
+        <h2>6. Data Security</h2>
+        <ul>
+          <li>SSL/TLS encryption</li>
+          <li>Access controls and user authentication</li>
+          <li>Regular vulnerability scanning and PCI DSS compliance</li>
+        </ul>
+        <p>While no system is 100% secure, we take all reasonable steps to minimize risk.</p>
 
-      <p>To exercise these rights, email us at <a href="mailto:">hello@emultitechsolution.com</a></p>
+        <h2>7. Data Retention</h2>
+        <p>We retain personal data only as long as necessary for the purposes described or to comply with legal requirements. Once no longer needed, we securely delete or anonymize it.</p>
 
-      <h2>6. Data Security</h2>
-      <ul>
-        <li>SSL/TLS encryption</li>
-        <li>Access controls and user authentication</li>
-        <li>Regular vulnerability scanning and PCI DSS compliance</li>
-      </ul>
+        <h2>8. Children’s Privacy</h2>
+        <p>Our services are intended for business users. We do not knowingly collect data from anyone under 16 years of age.</p>
 
-      <p>
-        While no system is 100% secure, we take all reasonable steps to minimize risk.
-      </p>
+        <h2>9. Updates to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Significant changes will be communicated by email or website notice.</p>
+      </div>
+    </section>
+  </main>
 
-      <h2>7. Data Retention</h2>
-      <p>
-        We retain personal data only as long as necessary for the purposes described or to comply with legal requirements. Once no longer needed, we securely delete or anonymize it.
-      </p>
+  <footer class="footer-container">
+    <div class="container-fluid">
 
-      <h2>8. Children’s Privacy</h2>
-      <p>
-        Our services are intended for business users. We do not knowingly collect data from anyone under 16 years of age.
-      </p>
-
-      <h2>9. Updates to This Policy</h2>
-      <p>
-        We may update this Privacy Policy from time to time. Significant changes will be communicated by email or website notice.
-      </p>
-    </div>
-  </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Footer Section -->
-<section class="footer-container">
-  <div class="container-fluid">
-
-          <!-- QuoteSection -->
       <div class="quote__section fade-slide">
-Start Getting Results Online
-<a href="request_quote.html" class="btn btn-hero">REQUEST A QUOTE </a>
+        Start Getting Results Online
+        <a href="request_quote.html" class="btn btn-hero">REQUEST A QUOTE</a>
       </div>
 
-    <!-- Top contact info -->
-    <div class="footer-top">
-      <div class="contact-box" data-aos="fade-right" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <div class="contact-icon">
-          <img src="images/map-icon.png" alt="map">
+      <div class="footer-top">
+        <div class="contact-box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="contact-icon">
+            <img src="images/map-icon.png" alt="map" loading="lazy">
+          </div>
+          <div class="contact-address">
+            <h4>KATHMANDU</h4>
+            <p>Near UN Office, Kupondol, Lalitpur, Nepal<br/>Mobile: <a href="https://wa.me/9779851038796" target="_blank" rel="noopener noreferrer">+977 9851038796</a></p>
+          </div>
         </div>
-        <div class="contact-address">
-        <h4>KATHMANDU</h4>
-        <p>Near UN Office, Kupondol, Lalitpur, Nepal<br/>Mobile: <a href="https://wa.me/9779851038796" target="_blank">+977 9851038796</a></p>
-       
-      </div>
-      </div>
-      <div class="contact-box" data-aos="fade-right" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <div class="contact-icon">
-          <img src="images/map-icon.png" alt="map">
+        <div class="contact-box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="contact-icon">
+            <img src="images/map-icon.png" alt="map" loading="lazy">
+          </div>
+          <div class="contact-address">
+            <h4>Melbourne</h4>
+            <p>Australia<br/>Mobile: <a href="https://wa.me/61406806984" target="_blank" rel="noopener noreferrer">+61 406 806 984</a></p>         
+          </div>
         </div>
-        <div class="contact-address">
-          <h4>Melbourne </h4>
-          <p>Australia<br/>Mobile: <a href="https://wa.me/61406806984" target="_blank">+61 406 806 984</a></p>         
-        </div>
-        
-      </div>
-      <!-- <div class="contact-box" data-aos="fade-right" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <div class="contact-icon">
-          <img src="images/map-icon.png" alt="map">
-        </div>
-        <div class="contact-address">
-          <h4>CANADA</h4>
-          <p>Near UN Office, Kupondol, Lalitpur, Nepal<br/>Mobile: +977 9851038796</p>         
-        </div>
-        
-      </div> -->
-    </div>
-
-    <!-- Middle section -->
-    <div class="footer-middle">
-      <div class="footer-logo fade-slide">
-        <img src="images/footer-logo.png" alt="eMultiTechSolutions">
-        <p>we craft, launch, and scale high-performance web, mobile, and wearable applications — from design to development, testing, and ongoing growth.</p>
       </div>
 
-      <div class="footer-column fade-slide">
-        <h5>Services</h5>
-        <ul>
-          <li><a href="ai-solutions.html" class="footer-text"> AI Solutions</a></li>
-          <li><a href="mobile-development.html" class="footer-text">Mobile App Development</a></li>
-          <li><a href="web-development.html" class="footer-text">Web Development</a></li>
-          <li><a href="software-development.html" class="footer-text">Software Development</a></li>
-          <li><a href="devops-engineer.html" class="footer-text">DevOps Engineer</a></li>
-          <li><a href="digital-marketing.html" class="footer-text">Digital Marketing</a></li>
-        </ul>
+      <div class="footer-middle">
+        <div class="footer-logo fade-slide">
+          <img src="images/footer-logo.png" alt="eMultiTechSolutions" loading="lazy">
+          <p>We craft, launch, and scale high-performance web, mobile, and wearable applications — from design to development, testing, and ongoing growth.</p>
+        </div>
+
+        <div class="footer-column fade-slide">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="ai-solutions.html" class="footer-text">AI Solutions</a></li>
+            <li><a href="mobile-development.html" class="footer-text">Mobile App Development</a></li>
+            <li><a href="web-development.html" class="footer-text">Web Development</a></li>
+            <li><a href="software-development.html" class="footer-text">Software Development</a></li>
+            <li><a href="devops-engineer.html" class="footer-text">DevOps Engineer</a></li>
+            <li><a href="digital-marketing.html" class="footer-text">Digital Marketing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column fade-slide">
+          <h5>Industries</h5>
+          <ul>
+            <li><a href="healthcare.html" class="footer-text">Healthcare</a></li>
+            <li><a href="realestate.html" class="footer-text">Real Estate</a></li>           
+            <li><a href="auction-software.html" class="footer-text">Auction Software</a></li>
+            <li><a href="procurement.html" class="footer-text">Procurement Solution</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column fade-slide">
+          <h5>Information</h5>
+          <ul>
+            <li><a href="about.html" class="footer-text">About Us</a></li>
+            <li><a href="privacy-policy.html" class="footer-text">Privacy Policy</a></li>
+            <li><a href="terms-of-condition.html" class="footer-text">Terms and Condition</a></li>
+            <li><a href="cookie-policy.html" class="footer-text">Cookie Policy</a></li>
+            <li><a href="contact.html" class="footer-text">Contact Us</a></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="footer-column fade-slide">
-        <h5>Industries</h5>
-        <ul>
-           <li><a href="healthcare.html" class="footer-text">Healthcare</a></li>
-           <li><a href="realestate.html" class="footer-text">Real Estate</a></li>           
-          <li><a href="auction-software.html" class="footer-text">Auction Software</a></li>
-          <li><a href="procurement.html" class="footer-text">Procurement Solution</a></li>
-          
-         
-        </ul>
-      </div>
-
-      <div class="footer-column fade-slide">
-        <h5>Information</h5>
-        <ul>
-        <li><a href="about.html" class="footer-text">About Us</a></li>
-          <li><a href="privacy-policy.html" class="footer-text">Privacy Policy</a></li>
-          <li><a href="terms-of-condition.html" class="footer-text">Terms and Condition</a></li>
-          <li><a href="cookie-policy.html" class="footer-text">Cookie Policy</a></li>
-          <li><a href="contact.html" class="footer-text">Contact Us</a></li>
-        
-        </ul>
+      <div class="footer-bottom">
+        <p>© 2010 - 2026 Emultitechsolution</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/emultitechsolutionnepal" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/company/emultitechsolution" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
       </div>
     </div>
+  </footer>
 
-    <!-- Bottom section -->
-        <div class="footer-bottom">
-     <p>© 2010 - 2026 Emultitechsolution </p>
-      <div class="social-icons">
-        <!-- <a href="#"><i class="fa-brands fa-x-twitter"></i> </a> -->
-        <a href="https://www.facebook.com/emultitechsolutionnepal" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://www.linkedin.com/company/emultitechsolution" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-        <!-- <a href="#"><i class="fa-brands fa-youtube"></i></a> -->
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<script src="js/aos.js"></script>
-<script>
-  AOS.init();
-</script> 
-<script src="js/script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script> 
+  <script src="js/script.js"></script>
 </body>
 </html>

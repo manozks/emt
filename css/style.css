@@ -1,12 +1,27 @@
  /* Basic Reset */
  * { box-sizing: border-box; margin: 0; padding: 0; font-family: "Poppins", sans-serif; }
 
-body {
+ody {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-  line-height: 1.5;
+  line-height: 1.7; /* Increased from 1.5 for better readability */
+  color: #333;
 }
+
+/* Accessibility: Visually Hidden Labels (for Screen Readers) */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
 
   /* Smooth slide-down animation */
   .collapse.show {
@@ -2249,8 +2264,8 @@ transform: translateY(-2px);
       margin-bottom: 15px;
     }
 
-    .project-scope h2 {
-      color: #051233; /* Accent blue */
+    .project-section.project-scope h2 {
+      color: #051233!important; /* Accent blue */
      
     }
 
@@ -2261,9 +2276,8 @@ transform: translateY(-2px);
       color: #A6BBDB;
     }
 
-    .project-scope p {
-     
-      color: #051233;
+   .project-section.project-scope p {     
+      color: #051233!important;
     }
 
     .project-scope ul,
@@ -2914,7 +2928,7 @@ transform: translateY(-2px);
     }
 
      .web__container .card p {
-      color: #051233;
+      color: #051233!important;
     }
 
 
@@ -5065,7 +5079,36 @@ transform: translateY(-2px);
     height: 100%;       /* Stretches to full height of card */
     z-index: 10;        /* Sits on top of everything */
 }
+/* High Contrast Fix for Navy Sections */
+.project-content p, .why-us-container p, .card p {
+  color: #E2E8F0 !important; /* Brighter than the old blue for better contrast */
+  text-shadow: none;
+}
 
+.why-us-container h3, .project-content h2 {
+  color: #FFFFFF !important; /* Pure white for headers on dark backgrounds */
+}
+
+/* Table Responsiveness Fix */
+.bid-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 1rem;
+}
+
+/* Button Uniformity */
+.btn-hero {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+}
+
+/* Micro-interaction for Service Cards */
+.service-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
 
 
 

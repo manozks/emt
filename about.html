@@ -1,455 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-<title>Expert Web & Mobile App Development | AI Solutions | E Multitech Solution, Nepal</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expert Web & Mobile App Development | AI Solutions | E Multitech Solution, Nepal</title>
   <link rel="shortcut icon" href="images/favicon.png">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="css/aos.css" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="css/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-   <!-- Icon Font Stylesheet -->
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
 </head>
 <body>
 
-  <!-- Navigation -->
-  <!-- Header -->
-<nav class="navbar navbar-light blue-bg fixed-top">
-  <div class="container-fluid d-flex justify-content-between">
-
-    <!-- Left Logo -->
-    <a class="navbar-brand" href="index.html">
-      <img src="images/logo.png" alt="Company Logo" height="42">
-    </a>
-
-<div class="right--bar">
-      <!-- Phone number (always visible) -->
-      <div class="contact-info">
-              <a href="https://wa.me/9779851038796" target="_blank">
-    <i class="fa-brands fa-whatsapp"></i> +977 9851038796
-</a>
-      </div>
-  
-      <!-- Hamburger Icon -->
-      <button class="navbar-toggler" type="button" aria-label="Toggle navigation" onclick="toggleMenu()">        
-             <img src="images/nav-toggle-icon.png" alt="toggler" >
-      </button>
-</div>
-
-  </div>
-
-
-</nav>
-<!-- Backdrop -->
-<div class="menu-backdrop" id="menuBackdrop" onclick="closeMenu()"></div>
-
-<!-- Slide-in Menu -->
-<div class="navbar-collapse" id="navbarMenu">
-  <button class="menu-close" onclick="closeMenu()">×</button>
-  <ul class="navbar-nav">
-    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-      <li class="nav-item">
-        <a class="nav-link dropdown-toggle" id="servicesDropdown" onclick="toggleDropdown(this)">
-          Services
+  <header>
+    <nav class="navbar navbar-light blue-bg fixed-top">
+      <div class="container-fluid d-flex justify-content-between">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="Company Logo" height="42">
         </a>
+
+        <div class="right--bar">
+          <div class="contact-info">
+            <a href="https://wa.me/9779851038796" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp"></i> +977 9851038796
+            </a>
+          </div>
+      
+          <button class="navbar-toggler" type="button" aria-label="Toggle navigation" onclick="toggleMenu()">        
+            <img src="images/nav-toggle-icon.png" alt="toggler">
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="menu-backdrop" id="menuBackdrop" onclick="closeMenu()"></div>
+
+  <aside class="navbar-collapse" id="navbarMenu">
+    <button class="menu-close" onclick="closeMenu()">×</button>
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      <li class="nav-item">
+        <a class="nav-link dropdown-toggle" id="servicesDropdown" onclick="toggleDropdown(this)">Services</a>
         <div class="dropdown-menu" id="servicesMenu">
-          <a class="dropdown-item" href="ai-solutions.html">AI Solutions </a>
+          <a class="dropdown-item" href="ai-solutions.html">AI Solutions</a>
           <a class="dropdown-item" href="mobile-development.html">Mobile App Development</a>
-          <a class="dropdown-item" href="web-development.html">Web Development </a>
+          <a class="dropdown-item" href="web-development.html">Web Development</a>
           <a class="dropdown-item" href="software-development.html">Software Development</a>
           <a class="dropdown-item" href="devops-engineer.html">DevOps Engineer</a>
-           <a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a>
+          <a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a>
         </div>
       </li>
-       <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
-    <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
-    <li class="nav-item"><a class="nav-link" href="works.html">Our Works</a></li>
-    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-     <li class="nav-item"><a class="nav-link" href="testimonial-all.html">Testimonial</a></li>
-    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-
-  </ul>
-</div>
+      <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+      <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
+      <li class="nav-item"><a class="nav-link" href="works.html">Our Works</a></li>
+      <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+      <li class="nav-item"><a class="nav-link" href="testimonial-all.html">Testimonial</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+    </ul>
+  </aside>
   
+  <main>
+    <section class="about-page hero-content">
+      <h5>About Company</h5>
+      <h2>E-Multitech Solution</h2>
+      <p>We are a team of passionate, creative individuals who specialise in crafting out clear and effective web design, software development and mobile applications. In short, simplicity for you and your customer.</p>
+    </section>
 
-
-    <!-- About Section -->
-  <section class="about-page hero-content">
-    <h5>About Company</h5>
-    <h2>E-Multitech Solution</h2>
-    <p>
-      We are a team of passionate, creative individuals who specialise in crafting out clear and effective 
-      web design, software development and mobile applications. In short, simplicity for you and your customer.
-    </p>
-  </section>
-
-   <!-- Blue background + centered image -->
-  <section class="about-image-wrapper">
-    <div class="container">
-      <div class="about-image">
-      <!-- Icon + Year -->
-      <div class="about-year">
-        <img src="images/e-icon.png" alt="icon">
-        <h4>2025</h4>
-      </div>
-      <!-- Main image --> 
-	  <div class="about--picture">
-      <img src="images/about1.jpg" alt="Team Work">
-	  </div>
-    </div>
-    </div>
-  </section>
-
-  <!-- Who We Are Section -->
-  <section class="who-we-are">
-    <div class="hero-content">
-    <h2>Who we are ?</h2>
-    <p>
-      E-Multitech Solution was established in 2010 by two science and technology researchers, Utsav Subedi and Roshan Subedi. 
-      The company’s founder and Managing Director Roshan Subedi is an information technology expert who spends most of his time supervising 
-      and coordinating projects for his team. The software company, located in the busy streets of Kathmandu, Nepal, has developed and 
-      positioned itself as a leading provider of software solutions. Having completed hundreds of projects of varying levels of complexity, 
-      specialising in web development, web design, mobile applications, and business automation tools, E-Multitech Solution takes pride in 
-      providing user-friendly and cost-effective designs, web development and mobile apps to our clients all around the world.
-    </p>
-    </div>
-  </section>
-
-    <!-- YEAR experenced Section -->
-     <section>
-       <div class="content-wrapper hero-content">
-            <div class="experience-section">
-             
-			    <div class="stats-container">
-            <div class="stat-box">
-                  <div class="stat-number">15+</div>
-               
-                <div class="stat-label"><strong>Years</strong> of Australian Technology Innovation</div>
-               
-            </div>
-
-            <div class="stat-box">
-                 <div class="stat-number">799+ </div>
-               
-                <div class="stat-label"><strong>Systems </strong>Deployed with Zero-Downtime Migration</div>
-                
-            </div>
-
-
-          
+    <section class="about-image-wrapper">
+      <div class="container">
+        <div class="about-image">
+          <div class="about-year">
+            <img src="images/e-icon.png" alt="icon">
+            <h4>2025</h4>
+          </div>
+          <div class="about--picture">
+            <img src="images/about1.jpg" alt="Team Work" loading="lazy">
+          </div>
         </div>
-             
-            </div>
+      </div>
+    </section>
 
-            <div class="image-section">
-                <div class="profile-image">
-                    <img src="images/about2.jpg" alt="Professional Profile">
-                </div>
-            </div>
+    <section class="who-we-are">
+      <div class="hero-content">
+        <h2>Who we are ?</h2>
+        <p>E-Multitech Solution was established in 2010 by two science and technology researchers, Utsav Subedi and Roshan Subedi. The company’s founder and Managing Director Roshan Subedi is an information technology expert who spends most of his time supervising and coordinating projects for his team. The software company, located in the busy streets of Kathmandu, Nepal, has developed and positioned itself as a leading provider of software solutions. Having completed hundreds of projects of varying levels of complexity, specialising in web development, web design, mobile applications, and business automation tools, E-Multitech Solution takes pride in providing user-friendly and cost-effective designs, web development and mobile apps to our clients all around the world.</p>
+      </div>
+    </section>
 
-            <div class="experience-section">
-             
-             <div class="stats-container">
-      
-
-  
-
+    <section>
+      <div class="content-wrapper hero-content">
+        <div class="experience-section">
+          <div class="stats-container">
             <div class="stat-box">
-                   <div class="stat-number">	$269M+</div>
-               
-                <div class="stat-label"> in Combined Client Market Valuation    </div>
-              
+              <div class="stat-number">15+</div>
+              <div class="stat-label"><strong>Years</strong> of Australian Technology Innovation</div>
             </div>
-
             <div class="stat-box">
-                <div class="stat-number">450+ </div>
-                
-                <div class="stat-label">
-                  <strong>High-Growth Clients</strong> Across 50+ Countries</div>
-                
+              <div class="stat-number">799+</div>
+              <div class="stat-label"><strong>Systems</strong> Deployed with Zero-Downtime Migration</div>
             </div>
+          </div>
         </div>
 
-            </div>
+        <div class="image-section">
+          <div class="profile-image">
+            <img src="images/about2.jpg" alt="Professional Profile" loading="lazy">
+          </div>
         </div>
-     </section>
+
+        <div class="experience-section">
+          <div class="stats-container">
+            <div class="stat-box">
+              <div class="stat-number">$269M+</div>
+              <div class="stat-label">in Combined Client Market Valuation</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">450+</div>
+              <div class="stat-label"><strong>High-Growth Clients</strong> Across 50+ Countries</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   
-
-<!-- PROJECT DEVELOPMENT Section -->
-
-  <section class="project-section">
-    <div class="project-image  hero-content">
-      <img src="images/about4.jpg" alt="Project discussion">
-    </div>
-    <div class="project-content  hero-content">
-      <h2>Project Development Processes</h2>
-      <p>
-        It is our pride and personal mission to not only complete each project on time and under budget, 
-        but to deliver the end product exactly as you have envisioned it. We give each project the care 
-        and undivided attention that it requires. Our development processes run each project through 
-        different phases to ensure that they are working as they should be, before handing them over to you.
-      </p>
-      <div class="divider"></div>
-      <p>
-        Click here to check out <a href="portfolio.html">our portfolio</a>, or <a href="contact.html">contact us</a> here, now!
-      </p>
-    </div>
-  </section>
-
-
-
- <!-- OUTSOURCING Section -->
-
-  <section class="about-page outsourcing-page hero-content">
-    <h5>Web Development</h5>
-    <h2>Outsourcing Company</h2>
-    <p>
-      Functioning as an outsourcing company for the past seven years, E-Multitech Solution is both an offshore and onshore web development company. Click here to find out how outsourcing can benefit your company and how we outsource our projects. We’ve been providing outsourcing solutions to clients from the United States (USA), Australia, Canada, United Kingdom (UK) and many other European countries including Spain, Germany, Italy, France and Denmark.Our friends and clients in Asian countries such 
-as Singapore, Malaysia, India, and finally here in Nepal, have also shown their interest and desire to trust us in providing them with effective solutions to run their businesses </p>
-  </section>
-
-   <!-- Blue background + centered image -->
-  <section class="about-image-wrapper">
-    <div class="container">
-      <div class="about-image">
-      <!-- Icon + Year -->
-      <div class="about-year">
-        <img src="images/e-icon.png" alt="icon">
-        <h4>2025</h4>
+    <section class="project-section">
+      <div class="project-image hero-content">
+        <img src="images/about4.jpg" alt="Project discussion" loading="lazy">
       </div>
-      <!-- Main image --> 
-	  <div class="about--picture">
-      <img src="images/about3.jpg" alt="Team Work">
-	  </div>
-    </div>
-    </div>
-  </section>
-
-  <!-- flexible Section -->
-  <section class="flexible-container">
- 
-    <div class="card hero-content">
-      <h2>Flexible Approach</h2>
-      <p>
-        With a careful and flexible approach, we've managed to complete every project we have undertaken.
-        We love to involve you in the development phase, to ensure that you know exactly what is going on
-        with the project. As a result we are able to redesign or make small changes along the way, and
-        conserve valuable resources that can be applied elsewhere. We will listen to all sides of the
-        argument in order to come up with an effective plan of execution before the project begins.
-        Throughout the project development process, we will consider all alternatives before beginning
-        each phase so that the project can proceed smoothly. We always welcome constructive criticism.
-        But once we begin a development phase, we cannot and will not make changes until the phase
-        completes and the next round begins.
-      </p>
-    </div>
-    <div class="card hero-content">
-      <h2>Good Software Development</h2>
-      <p>
-        We make sure nothing is left out and everything runs exactly as you expect. Our team will give
-        your project everything they have, because good web-development practice means going that extra
-        mile to ensure that you get what you have asked for. Our priority is to complete the project on
-        time, under budget, and according to what we have discussed in our contract with you. We will not
-        move on to the next phase unless we are both 100% satisfied.
-      </p>
-    </div>
-    
-  </section>
-
-  <!-- MEET TEAM Section -->
-
-  <section class="team-section">
-    <div class="team-header">
-      <div>
-        <h4>PROFESSIONAL & EXPERTS</h4>
-        <h2>Meet Our Team</h2>
+      <div class="project-content hero-content">
+        <h2>Project Development Processes</h2>
+        <p>It is our pride and personal mission to not only complete each project on time and under budget, but to deliver the end product exactly as you have envisioned it. We give each project the care and undivided attention that it requires. Our development processes run each project through different phases to ensure that they are working as they should be, before handing them over to you.</p>
+        <div class="divider"></div>
+        <p>Click here to check out <a href="portfolio.html">our portfolio</a>, or <a href="contact.html">contact us</a> here, now!</p>
       </div>
-      <p>
-        Our customer care department will respond to any queries you may have about your project, 24/7.
-      </p>
-    </div>
+    </section>
 
-    <div class="team-container">
-      <div class="team-card">
-        <img src="images/roshan.png" alt="Roshan Subedi">
-        <h5>CTO/MD</h5>
-        <h3>Roshan Subedi</h3>
+    <section class="about-page outsourcing-page hero-content">
+      <h5>Web Development</h5>
+      <h2>Outsourcing Company</h2>
+      <p>Functioning as an outsourcing company for the past seven years, E-Multitech Solution is both an offshore and onshore web development company. Click here to find out how outsourcing can benefit your company and how we outsource our projects. We’ve been providing outsourcing solutions to clients from the United States (USA), Australia, Canada, United Kingdom (UK) and many other European countries including Spain, Germany, Italy, France and Denmark. Our friends and clients in Asian countries such as Singapore, Malaysia, India, and finally here in Nepal, have also shown their interest and desire to trust us in providing them with effective solutions to run their businesses.</p>
+    </section>
+
+    <section class="about-image-wrapper">
+      <div class="container">
+        <div class="about-image">
+          <div class="about-year">
+            <img src="images/e-icon.png" alt="icon">
+            <h4>2025</h4>
+          </div>
+          <div class="about--picture">
+            <img src="images/about3.jpg" alt="Team Work" loading="lazy">
+          </div>
+        </div>
       </div>
-      <div class="team-card">
-        <img src="images/avatar.png" alt="Utsav Subedi">
-        <h5>Director</h5>
-        <h3>Utsav Subedi</h3>
+    </section>
+
+    <section class="flexible-container">
+      <div class="card hero-content">
+        <h2>Flexible Approach</h2>
+        <p>With a careful and flexible approach, we've managed to complete every project we have undertaken. We love to involve you in the development phase, to ensure that you know exactly what is going on with the project. As a result we are able to redesign or make small changes along the way, and conserve valuable resources that can be applied elsewhere. We will listen to all sides of the argument in order to come up with an effective plan of execution before the project begins. Throughout the project development process, we will consider all alternatives before beginning each phase so that the project can proceed smoothly. We always welcome constructive criticism. But once we begin a development phase, we cannot and will not make changes until the phase completes and the next round begins.</p>
       </div>
-      <div class="team-card">
-        <img src="images/avatar.png" alt="Sujit Shah">
-        <h5>Project Manager/Director</h5>
-        <h3>Sujit Shah</h3>
+      <div class="card hero-content">
+        <h2>Good Software Development</h2>
+        <p>We make sure nothing is left out and everything runs exactly as you expect. Our team will give your project everything they have, because good web-development practice means going that extra mile to ensure that you get what you have asked for. Our priority is to complete the project on time, under budget, and according to what we have discussed in our contract with you. We will not move on to the next phase unless we are both 100% satisfied.</p>
       </div>
-      <div class="team-card">
-        <img src="images/avatar.png" alt="Shrijana Panta">
-        <h5>Business Development Officer</h5>
-        <h3>Shrijana Panta</h3>
+    </section>
+
+    <section class="team-section">
+      <div class="team-header">
+        <div>
+          <h4>PROFESSIONAL & EXPERTS</h4>
+          <h2>Meet Our Team</h2>
+        </div>
+        <p>Our customer care department will respond to any queries you may have about your project, 24/7.</p>
       </div>
-      <div class="team-card">
-        <img src="images/avatar.png" alt="Kaushal Shah">
-        <h5>Technical Advisor</h5>
-        <h3>Kaushal Shah</h3>
+
+      <div class="team-container">
+        <div class="team-card">
+          <img src="images/roshan.png" alt="Roshan Subedi" loading="lazy">
+          <h5>CTO/MD</h5>
+          <h3>Roshan Subedi</h3>
+        </div>
+        <div class="team-card">
+          <img src="images/avatar.png" alt="Utsav Subedi" loading="lazy">
+          <h5>Director</h5>
+          <h3>Utsav Subedi</h3>
+        </div>
+        <div class="team-card">
+          <img src="images/avatar.png" alt="Sujit Shah" loading="lazy">
+          <h5>Project Manager/Director</h5>
+          <h3>Sujit Shah</h3>
+        </div>
+        <div class="team-card">
+          <img src="images/avatar.png" alt="Shrijana Panta" loading="lazy">
+          <h5>Business Development Officer</h5>
+          <h3>Shrijana Panta</h3>
+        </div>
+        <div class="team-card">
+          <img src="images/avatar.png" alt="Kaushal Shah" loading="lazy">
+          <h5>Technical Advisor</h5>
+          <h3>Kaushal Shah</h3>
+        </div>
+        <div class="team-card">
+          <img src="images/avatar.png" alt="Manoj Shah" loading="lazy">
+          <h5>Senior Front-end Developer</h5>
+          <h3>Manoj Shah</h3>
+        </div>
+        <div class="team-card">
+          <img src="images/avatar.png" alt="Bibek Sharma" loading="lazy">
+          <h5>Senior Android Developer</h5>
+          <h3>Bibek Sharma</h3>
+        </div>
+        <div class="team-card">
+          <img src="images/avatar.png" alt="Sagar Chapagain" loading="lazy">
+          <h5>Senior Web Developer</h5>
+          <h3>Sagar Chapagain</h3>
+        </div>
       </div>
-      <div class="team-card">
-        <img src="images/avatar.png" alt="Manoj Shah">
-        <h5>Senior Front-end Developer</h5>
-        <h3>Manoj Shah</h3>
+    </section>
+
+    <section class="banner-develop-wrapper">
+      <div class="banner-develop">
+        <div class="banner-content" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <h2>Do You Want to Develop a<br>Custom Software?</h2>
+          <a href="request_quote.html">Connect Now</a>
+        </div>
+
+        <div class="banner-image" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <img src="images/developer-picture.png" alt="Custom Software Illustration" loading="lazy">
+        </div>
       </div>
-      <div class="team-card">
-        <img src="images/avatar.png" alt="Bibek Sharma">
-        <h5>Senior Android Developer</h5>
-        <h3>Bibek Sharma</h3>
-      </div>
-      <div class="team-card">
-        <img src="images/avatar.png" alt="Sagar Chapagain">
-        <h5>Senior Web Developer</h5>
-        <h3>Sagar Chapagain</h3>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-
-
-  <!--Do You Want to Develop banner Section -->
- <section class="banner-develop-wrapper">
-  <div class="banner-develop">
-    <div class="banner-content" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
-      <h2>Do You Want to Develop a<br>Custom Software?</h2>
-      <a href="request_quote.html">Connect Now</a>
-    </div>
-
-    <div class="banner-image" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-      <!-- Replace image path below with your actual image -->
-      <img src="images/developer-picture.png" alt="Custom Software Illustration">
-    </div>
-  </div>
-</section>
-
-
-
-
-<!-- Footer Section -->
-<section class="footer-container">
-  <div class="container-fluid">
-
-          <!-- QuoteSection -->
+  <footer class="footer-container">
+    <div class="container-fluid">
       <div class="quote__section fade-slide">
-Start Getting Results Online
-<a href="request_quote.html" class="btn btn-hero">REQUEST A QUOTE </a>
+        Start Getting Results Online
+        <a href="request_quote.html" class="btn btn-hero">REQUEST A QUOTE</a>
       </div>
 
-    <!-- Top contact info -->
-    <div class="footer-top">
-      <div class="contact-box" data-aos="fade-right" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <div class="contact-icon">
-          <img src="images/map-icon.png" alt="map">
+      <div class="footer-top">
+        <div class="contact-box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="contact-icon">
+            <img src="images/map-icon.png" alt="map" loading="lazy">
+          </div>
+          <div class="contact-address">
+            <h4>KATHMANDU</h4>
+            <p>Near UN Office, Kupondol, Lalitpur, Nepal<br/>Mobile: <a href="https://wa.me/9779851038796" target="_blank" rel="noopener noreferrer">+977 9851038796</a></p>
+          </div>
         </div>
-        <div class="contact-address">
-        <h4>KATHMANDU</h4>
-        <p>Near UN Office, Kupondol, Lalitpur, Nepal<br/>Mobile: <a href="https://wa.me/9779851038796" target="_blank">+977 9851038796</a></p>
-       
-      </div>
-      </div>
-      <div class="contact-box" data-aos="fade-right" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <div class="contact-icon">
-          <img src="images/map-icon.png" alt="map">
+        <div class="contact-box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="contact-icon">
+            <img src="images/map-icon.png" alt="map" loading="lazy">
+          </div>
+          <div class="contact-address">
+            <h4>Melbourne</h4>
+            <p>Australia<br/>Mobile: <a href="https://wa.me/61406806984" target="_blank" rel="noopener noreferrer">+61 406 806 984</a></p>         
+          </div>
         </div>
-        <div class="contact-address">
-          <h4>Melbourne </h4>
-          <p>Australia<br/>Mobile: <a href="https://wa.me/61406806984" target="_blank">+61 406 806 984</a></p>         
-        </div>
-        
-      </div>
-      <!-- <div class="contact-box" data-aos="fade-right" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <div class="contact-icon">
-          <img src="images/map-icon.png" alt="map">
-        </div>
-        <div class="contact-address">
-          <h4>CANADA</h4>
-          <p>Near UN Office, Kupondol, Lalitpur, Nepal<br/>Mobile: +977 9851038796</p>         
-        </div>
-        
-      </div> -->
-    </div>
-
-    <!-- Middle section -->
-    <div class="footer-middle">
-      <div class="footer-logo fade-slide">
-        <img src="images/footer-logo.png" alt="eMultiTechSolutions">
-        <p>we craft, launch, and scale high-performance web, mobile, and wearable applications — from design to development, testing, and ongoing growth.</p>
       </div>
 
-      <div class="footer-column fade-slide">
-        <h5>Services</h5>
-        <ul>
-          <li><a href="ai-solutions.html" class="footer-text"> AI Solutions</a></li>
-          <li><a href="mobile-development.html" class="footer-text">Mobile App Development</a></li>
-          <li><a href="web-development.html" class="footer-text">Web Development</a></li>
-          <li><a href="software-development.html" class="footer-text">Software Development</a></li>
-          <li><a href="devops-engineer.html" class="footer-text">DevOps Engineer</a></li>
-          <li><a href="digital-marketing.html" class="footer-text">Digital Marketing</a></li>
-        </ul>
+      <div class="footer-middle">
+        <div class="footer-logo fade-slide">
+          <img src="images/footer-logo.png" alt="eMultiTechSolutions" loading="lazy">
+          <p>We craft, launch, and scale high-performance web, mobile, and wearable applications — from design to development, testing, and ongoing growth.</p>
+        </div>
+
+        <div class="footer-column fade-slide">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="ai-solutions.html" class="footer-text">AI Solutions</a></li>
+            <li><a href="mobile-development.html" class="footer-text">Mobile App Development</a></li>
+            <li><a href="web-development.html" class="footer-text">Web Development</a></li>
+            <li><a href="software-development.html" class="footer-text">Software Development</a></li>
+            <li><a href="devops-engineer.html" class="footer-text">DevOps Engineer</a></li>
+            <li><a href="digital-marketing.html" class="footer-text">Digital Marketing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column fade-slide">
+          <h5>Industries</h5>
+          <ul>
+            <li><a href="healthcare.html" class="footer-text">Healthcare</a></li>
+            <li><a href="realestate.html" class="footer-text">Real Estate</a></li>           
+            <li><a href="auction-software.html" class="footer-text">Auction Software</a></li>
+            <li><a href="procurement.html" class="footer-text">Procurement Solution</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column fade-slide">
+          <h5>Information</h5>
+          <ul>
+            <li><a href="about.html" class="footer-text">About Us</a></li>
+            <li><a href="privacy-policy.html" class="footer-text">Privacy Policy</a></li>
+            <li><a href="terms-of-condition.html" class="footer-text">Terms and Condition</a></li>
+            <li><a href="cookie-policy.html" class="footer-text">Cookie Policy</a></li>
+            <li><a href="contact.html" class="footer-text">Contact Us</a></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="footer-column fade-slide">
-        <h5>Industries</h5>
-        <ul>
-           <li><a href="healthcare.html" class="footer-text">Healthcare</a></li>
-           <li><a href="realestate.html" class="footer-text">Real Estate</a></li>           
-          <li><a href="auction-software.html" class="footer-text">Auction Software</a></li>
-          <li><a href="procurement.html" class="footer-text">Procurement Solution</a></li>
-          
-         
-        </ul>
-      </div>
-
-      <div class="footer-column fade-slide">
-        <h5>Information</h5>
-        <ul>
-        <li><a href="about.html" class="footer-text">About Us</a></li>
-          <li><a href="privacy-policy.html" class="footer-text">Privacy Policy</a></li>
-          <li><a href="terms-of-condition.html" class="footer-text">Terms and Condition</a></li>
-          <li><a href="cookie-policy.html" class="footer-text">Cookie Policy</a></li>
-          <li><a href="contact.html" class="footer-text">Contact Us</a></li>
-        
-        </ul>
+      <div class="footer-bottom">
+        <p>© 2010 - 2026 Emultitechsolution</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/emultitechsolutionnepal" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/company/emultitechsolution" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
       </div>
     </div>
+  </footer>
 
-    <!-- Bottom section -->
-        <div class="footer-bottom">
-     <p>© 2010 - 2026 Emultitechsolution </p>
-      <div class="social-icons">
-        <!-- <a href="#"><i class="fa-brands fa-x-twitter"></i> </a> -->
-        <a href="https://www.facebook.com/emultitechsolutionnepal" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://www.linkedin.com/company/emultitechsolution" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-        <!-- <a href="#"><i class="fa-brands fa-youtube"></i></a> -->
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<script src="js/aos.js"></script>
-<script>
-  AOS.init();
-</script> 
-<script src="js/script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script> 
+  <script src="js/script.js"></script>
 </body>
 </html>

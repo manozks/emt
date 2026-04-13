@@ -1,144 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-<title>Expert Web & Mobile App Development | AI Solutions | E Multitech Solution, Nepal</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Solutions & Agentic Automation | E Multitech Solution</title>
   <link rel="shortcut icon" href="images/favicon.png">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="css/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-   <!-- Icon Font Stylesheet -->
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="css/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <!-- Header -->
-<nav class="navbar navbar-light blue-bg fixed-top">
-  <div class="container-fluid d-flex justify-content-between">
-
-    <!-- Left Logo -->
-    <a class="navbar-brand" href="index.html">
-      <img src="images/logo.png" alt="Company Logo" height="42">
-    </a>
-
-<div class="right--bar">
-      <!-- Phone number (always visible) -->
-      <div class="contact-info">
-        <a href="https://wa.me/9779851038796" target="_blank">
-    <i class="fa-brands fa-whatsapp"></i> +977 9851038796
-</a>
-      </div>
-  
-      <!-- Hamburger Icon -->
-      <button class="navbar-toggler" type="button" aria-label="Toggle navigation" onclick="toggleMenu()">        
-             <img src="images/nav-toggle-icon.png" alt="toggler" >
-      </button>
-</div>
-
-  </div>
-
-
-</nav>
-<!-- Backdrop -->
-<div class="menu-backdrop" id="menuBackdrop" onclick="closeMenu()"></div>
-
-<!-- Slide-in Menu -->
-<div class="navbar-collapse" id="navbarMenu">
-  <button class="menu-close" onclick="closeMenu()">×</button>
-  <ul class="navbar-nav">
-    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item">
-        <a class="nav-link dropdown-toggle" id="servicesDropdown" onclick="toggleDropdown(this)">
-          Services
+  <header>
+    <nav class="navbar navbar-light blue-bg fixed-top">
+      <div class="container-fluid d-flex justify-content-between">
+        
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="Company Logo" height="42">
         </a>
+
+        <div class="right--bar">
+          <div class="contact-info">
+            <a href="https://wa.me/9779851038796" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp"></i> +977 9851038796
+            </a>
+          </div>
+      
+          <button class="navbar-toggler" type="button" aria-label="Toggle navigation" onclick="toggleMenu()">        
+            <img src="images/nav-toggle-icon.png" alt="toggler">
+          </button>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <div class="menu-backdrop" id="menuBackdrop" onclick="closeMenu()"></div>
+
+  <aside class="navbar-collapse" id="navbarMenu">
+    <button class="menu-close" onclick="closeMenu()">×</button>
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      <li class="nav-item">
+        <a class="nav-link dropdown-toggle" id="servicesDropdown" onclick="toggleDropdown(this)">Services</a>
         <div class="dropdown-menu" id="servicesMenu">
-          <a class="dropdown-item" href="ai-solutions.html">AI Solutions </a>
+          <a class="dropdown-item" href="ai-solutions.html">AI Solutions</a>
           <a class="dropdown-item" href="mobile-development.html">Mobile App Development</a>
-          <a class="dropdown-item" href="web-development.html">Web Development </a>
+          <a class="dropdown-item" href="web-development.html">Web Development</a>
           <a class="dropdown-item" href="software-development.html">Software Development</a>
           <a class="dropdown-item" href="devops-engineer.html">DevOps Engineer</a>
-           <a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a>
+          <a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a>
         </div>
       </li>
-   <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
-    <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
-    <li class="nav-item"><a class="nav-link" href="works.html">Our Works</a></li>
-    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-     <li class="nav-item"><a class="nav-link" href="testimonial-all.html">Testimonial</a></li>
-    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+      <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
+      <li class="nav-item"><a class="nav-link" href="works.html">Our Works</a></li>
+      <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+      <li class="nav-item"><a class="nav-link" href="testimonial-all.html">Testimonial</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+    </ul>
+  </aside>
 
-  </ul>
-</div>
-  
+  <main>
+    <section class="casestudies--detail industries__detail">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <span>›</span> <a href="industries.html"> Industries</a> <span>›</span> <span>Auction Software</span>
+      </nav>
 
+      <section class="customer" aria-labelledby="customer-title">
+        <div class="circle-illustration" aria-hidden="true">
+          <img src="images/auction-software.png" alt="auction icon" loading="lazy">
+        </div>
 
-      <!-- HealthCare Section -->
-<section class="casestudies--detail industries__detail">
-
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="index.html">Home</a> <span>›</span> <a href="industries.html"> Industries</a> <span>›</span> <span>Auction Software</span>
-    </nav>
-
-   
-
-
-    <!-- Customer area -->
-    <section class="customer" aria-labelledby="customer-title">
-      <div class="circle-illustration" aria-hidden="true">
-        <!-- circular icon similar to sample -->
-       <img src="images/auction-software.png" alt="auction" loading="lazy">
-      </div>
-
-      <div class="customer-body">
-        <h3 id="customer-title">Our Auction Software</h3>
-        <p>
-         Since 2010 E-Multitech Solution has been developing-state-of-the-art php auction software such as Unique Bid Auction Software, Price Reveal Bid Auction, Classic auction, reverse auction and Penny Auction. We have provided these tools for a wide range of clients from USA, UK, Canada, Australia, as well as from Asian countries such as Malaysia, Singapore, India and europe
-        </p><br>
+        <div class="customer-body">
+          <h3 id="customer-title">Our Auction Software</h3>
+          <p>Since 2010 E-Multitech Solution has been developing-state-of-the-art php auction software such as Unique Bid Auction Software, Price Reveal Bid Auction, Classic auction, reverse auction and Penny Auction. We have provided these tools for a wide range of clients from USA, UK, Canada, Australia, as well as from Asian countries such as Malaysia, Singapore, India and europe.</p>
+          <br>
           <a href="request_quote.html" class="btn btn-hero">Discuss Your Project</a>
+        </div>
+      </section>
+    </section>
+
+    <section class="realestate__container">
+      <div class="features">
+        <div class="feature-box"><i class="fa-solid fa-user-plus"></i><span>Register</span></div>
+        <div class="feature-box"><i class="fa-solid fa-search"></i><span>Search</span></div>
+        <div class="feature-box"><i class="fa-solid fa-dollar"></i><span>Buy Bids</span></div>
+        <div class="feature-box"><i class="fa-solid fa-gavel"></i><span>Bid Product</span></div>
+        <div class="feature-box"><i class="fa-solid fa-trophy"></i><span>Win Auction</span></div>
+        <div class="feature-box"><i class="fa-solid fa-shopping-cart"></i><span>Buy Product</span></div>
+        <div class="feature-box"><i class="fa-solid fa-gift"></i><span>Get Gift</span></div>
+        <div class="feature-box"><i class="fa-solid fa-star"></i><span>Membership</span></div>
+        <div class="feature-box"><i class="fa-solid fa-mobile"></i><span>Product</span></div>
       </div>
     </section>
-  </section>
 
-  
-    <!-- Auction Feature Section -->
-
-     <div class="realestate__container">
-   
-
-    <div class="features">
-      <div class="feature-box"><i class="fa-solid fa-user-plus"></i><span>Register</span></div>
-      <div class="feature-box"><i class="fa-solid fa-search"></i><span>Search</span></div>
-      <div class="feature-box"><i class="fa-solid fa-dollar"></i><span>Buy Bids</span></div>
-      <div class="feature-box"><i class="fa-solid fa-gavel"></i><span>Bid Product</span></div>
-      <div class="feature-box"><i class="fa-solid fa-trophy"></i><span>Win Auction</span></div>
-      <div class="feature-box"><i class="fa-solid fa-shopping-cart"></i><span>Buy Product</span></div>
-      <div class="feature-box"><i class="fa-solid fa-gift"></i><span>Get Gift</span></div>
-      <div class="feature-box"><i class="fa-solid fa-star"></i><span>Membership</span></div>
-      <div class="feature-box"><i class="fa-solid fa-mobile"></i><span>Product</span></div>
-     
-    </div>
-  
-  </div>
-
-<!-- Each auction website has these features Section -->
-  <section class="project-section auction-feature">
-   
-    <div class="project-content  hero-content" data-aos="fade-left" data-aos-offset="200"
-        data-aos-easing="ease-in-sine">
-      <h2>Auction Software has these features</h2>
-      <p>
-       These online auction software are compatible on any devices like desktop, mobile & tablets
-      </p>
-      <div class="divider"></div>
-    <ul>
+    <section class="project-section auction-feature">
+      <div class="project-content hero-content" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+        <h2>Auction Software has these features</h2>
+        <p>These online auction software are compatible on any devices like desktop, mobile & tablets.</p>
+        <div class="divider"></div>
+        <ul>
           <li>Innovative and user friendly administrator panel to manage auction</li>
           <li>Full Analytical Reports</li>
           <li>Real Time Live bidding via video streaming</li>
@@ -148,255 +117,174 @@
           <li>Support Multiple Payment Gateway</li>
           <li>Support Bitcon Payment Gateway</li>
         </ul>
-    </div>
-     <div class="project-image project-image-left  hero-content" data-aos="fade-right" data-aos-offset="200"
-        data-aos-easing="ease-in-sine">
-      <img src="images/businesswoman1.jpg" alt="Project discussion">
-    </div>
-  </section>
-
-
-
-
-
-
-
-    <!-- Ready to Hire-->
-    <section class="web__wrapper">
-       <!-- Column 1: Image -->
-    <div class="col img_2" data-aos="fade-right" data-aos-offset="200"
-        data-aos-easing="ease-in-sine"></div>
-
-    <!-- Column 2: Ready to Hire -->
-    <div class="col text">
-      <div data-aos="fade-left" data-aos-offset="200"
-        data-aos-easing="ease-in-sine">
-        <h2>Ready to Build Auction Software?</h2>
-<p>Partner with us and get your business future-ready.</p>
-   
-    <div><a href="request_quote.html" class="btn btn-hero">Schedule a Call </a></div>
       </div>
-    </div>
+      <div class="project-image project-image-left hero-content" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+        <img src="images/businesswoman1.jpg" alt="Project discussion" loading="lazy">
+      </div>
     </section>
 
+    <section class="web__wrapper">
+      <div class="col img_2" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine"></div>
 
-       <!--Our Healthcare App Development Solutions Section -->
-
-        <section class="ai__container auction__type__section">
-    <div class="heading" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
-      <h2>Type of Auction <br>Software We Offer</h2>
-     
-    </div>
-<div class="auction-grid">
-      <!-- Card 1 -->
-      <div class="auction-card" data-aos="fade-left" data-aos-offset="200"
-        data-aos-easing="ease-in-sine">
-        <div>
-          <div class="auction-icon"><img src="images/sale.png" alt="Low Bid Auction"></div>
-          <h3><a href="lowest-unique-bid-auction-script-online-software-reverse-auction-low-bid.html">Low Bid Auction </a></h3>
-          <p>
-            Low Bid Auction, is one of our most popular online bidding auction software applications. In this Auction, any bids placed by the bidder that are both unique and Lowest at end of the auction will win. Our Online Low Bid Auction is packed with features and built using top-of-the-range tools and technologies. This Supports multiple languages and currencies to appeal to any target audience.
-          </p>
+      <div class="col text">
+        <div data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <h2>Ready to Build Auction Software?</h2>
+          <p>Partner with us and get your business future-ready.</p>
+          <div>
+            <a href="request_quote.html" class="btn btn-hero">Schedule a Call</a>
+          </div>
         </div>
-        <a href="lowest-unique-bid-auction-script-online-software-reverse-auction-low-bid.html"><i class="fa-solid fa-arrow-right arrow-icon"></i></a>
       </div>
+    </section>
 
-      <!-- Card 2 -->
-      <div class="auction-card" data-aos="fade-right" data-aos-offset="200"
-        data-aos-easing="ease-in-sine">
-        <div>
+    <section class="ai__container auction__type__section">
+      <div class="heading" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
+        <h2>Type of Auction <br>Software We Offer</h2>
+      </div>
+      <div class="auction-grid">
         
-            <div class="auction-icon"><img src="images/auction_penny.png" alt="Penny Auction As live Bidding"></div>
-          <h3><a href="penny-live-auction-script-software.html">Penny Auction As live Bidding</a></h3>
-          <p>
-           Penny Auction is a strategy game, where participants pay a non-refundable fee in order to place a small incremental bid - the auction price then increases by a small amount such as 0.01 or 0.06 cents. When the auction expires, the last participant to have placed a bid wins the item and also pays the final price, which is usually significantly lower than the actual price of the item.
-          </p>
+        <div class="auction-card" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <div>
+            <div class="auction-icon"><img src="images/sale.png" alt="Low Bid Auction" loading="lazy"></div>
+            <h3><a href="lowest-unique-bid-auction-script-online-software-reverse-auction-low-bid.html">Low Bid Auction</a></h3>
+            <p>Low Bid Auction, is one of our most popular online bidding auction software applications. In this Auction, any bids placed by the bidder that are both unique and Lowest at end of the auction will win. Our Online Low Bid Auction is packed with features and built using top-of-the-range tools and technologies. This Supports multiple languages and currencies to appeal to any target audience.</p>
+          </div>
+          <a href="lowest-unique-bid-auction-script-online-software-reverse-auction-low-bid.html"><i class="fa-solid fa-arrow-right arrow-icon"></i></a>
         </div>
-        <a href="penny-live-auction-script-software.html"><i class="fa-solid fa-arrow-right arrow-icon"></i></a>
-      </div>
 
-      <!-- Card 3 -->
-      <div class="auction-card" data-aos="fade-left" data-aos-offset="200"
-        data-aos-easing="ease-in-sine">
-        <div>
-        
-            <div class="auction-icon"><img src="images/gift_auction.png" alt="Price Reveal/Dutch"></div>
-          <h3><a href="price-reveal-auction-script-express-auction-software-live-unique-bidding-system.html"> Price Reveal/Dutch</a> </h3>
-          <p>
-           As a leading auction software provider in south-east Asia, E-Multitech Solution has been building customised, hand-crafted, fully-functional and profitable Price Reveal & Dutch Auction . The customer buys items whenever they think the price is right by clicking on the ‘Reveal’ button. Our Auction Software is equipped with a variety of features. We have developed this custom software using PHP, MYSQL, Ajax, HTML5, CSS3 and Javascript.
-          </p>
+        <div class="auction-card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <div>
+            <div class="auction-icon"><img src="images/auction_penny.png" alt="Penny Auction As live Bidding" loading="lazy"></div>
+            <h3><a href="penny-live-auction-script-software.html">Penny Auction As live Bidding</a></h3>
+            <p>Penny Auction is a strategy game, where participants pay a non-refundable fee in order to place a small incremental bid - the auction price then increases by a small amount such as 0.01 or 0.06 cents. When the auction expires, the last participant to have placed a bid wins the item and also pays the final price, which is usually significantly lower than the actual price of the item.</p>
+          </div>
+          <a href="penny-live-auction-script-software.html"><i class="fa-solid fa-arrow-right arrow-icon"></i></a>
         </div>
-        <a href="price-reveal-auction-script-express-auction-software-live-unique-bidding-system.html"><i class="fa-solid fa-arrow-right arrow-icon"></i></a>
-      </div>
 
-      <!-- Card 4 -->
-    <div class="auction-card" data-aos="fade-right" data-aos-offset="200"
-        data-aos-easing="ease-in-sine">
-        <div>
-        
-            <div class="auction-icon"><img src="images/btob.png" alt="B2b, B2C eBay Marketplace"></div>
-          <h3><a href="ebay-auction-like-ebay-script.html">B2B, B2C eBay Marketplace</a></h3>
-          <p>
-           Are you going to start B2B or B2C Online Shopping or or Online Auction? With E-Multitech Solution's advanced custom auction portal website, you can easily build a fully functional classic auction website within a short period of time. Our unique auction software is SEO-friendly, user-friendly and easy to use and manage; a pre built auction softwarae that Open Source for all types of B2b and B2C and start internet auciton .
-          </p>
+        <div class="auction-card" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <div>
+            <div class="auction-icon"><img src="images/gift_auction.png" alt="Price Reveal/Dutch" loading="lazy"></div>
+            <h3><a href="price-reveal-auction-script-express-auction-software-live-unique-bidding-system.html">Price Reveal/Dutch</a></h3>
+            <p>As a leading auction software provider in south-east Asia, E-Multitech Solution has been building customised, hand-crafted, fully-functional and profitable Price Reveal & Dutch Auction. The customer buys items whenever they think the price is right by clicking on the ‘Reveal’ button. Our Auction Software is equipped with a variety of features. We have developed this custom software using PHP, MYSQL, Ajax, HTML5, CSS3 and Javascript.</p>
+          </div>
+          <a href="price-reveal-auction-script-express-auction-software-live-unique-bidding-system.html"><i class="fa-solid fa-arrow-right arrow-icon"></i></a>
         </div>
-        <a href="ebay-auction-like-ebay-script.html"><i class="fa-solid fa-arrow-right arrow-icon"></i></a>
-      </div>
 
-           <!-- Card 5 -->
-    <div class="auction-card" data-aos="fade-left" data-aos-offset="200"
-        data-aos-easing="ease-in-sine">
-        <div>
-        
-            <div class="auction-icon"><img src="images/auction_high.png" alt="Highest Unique Bid Auction"></div>
-          <h3><a href="highest-unique-bids-auction-script-online-highest-bid-software-services.html">Highest Unique Bid Auction</a></h3>
-          <p>
-          The Highest Unique Bid Auction is similar to Lowest Unique Bid Auction but in this application, the bid that highest and unicue at the end of the auction will win the product. A ceiling bid value is generally set at a lower level than the actual value of the product. The auction is thrilling and provides excitement for users, encouraging them to purchase more bids.
-          </p>
+        <div class="auction-card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <div>
+            <div class="auction-icon"><img src="images/btob.png" alt="B2b, B2C eBay Marketplace" loading="lazy"></div>
+            <h3><a href="ebay-auction-like-ebay-script.html">B2B, B2C eBay Marketplace</a></h3>
+            <p>Are you going to start B2B or B2C Online Shopping or or Online Auction? With E-Multitech Solution's advanced custom auction portal website, you can easily build a fully functional classic auction website within a short period of time. Our unique auction software is SEO-friendly, user-friendly and easy to use and manage; a pre built auction softwarae that Open Source for all types of B2b and B2C and start internet auciton.</p>
+          </div>
+          <a href="ebay-auction-like-ebay-script.html"><i class="fa-solid fa-arrow-right arrow-icon"></i></a>
         </div>
-        <a href="highest-unique-bids-auction-script-online-highest-bid-software-services.html"><i class="fa-solid fa-arrow-right arrow-icon"></i></a>
-      </div>
 
-           <!-- Card 6 -->
-    <div class="auction-card" data-aos="fade-right" data-aos-offset="200"
-        data-aos-easing="ease-in-sine">
-        <div>
-        
-            <div class="auction-icon"><img src="images/auction_reverse.png" alt=" Reverse Bidding Software"></div>
-          <h3><a href="lowest-unique-bid-auction-script-online-software-reverse-auction-low-bid.html">Reverse Bidding Software</a></h3>
-          <p>
-          Reverse bidding Software is developed using object-oriented programming language, MVC, PHP 5, MySql, Javascript, Flash, Ajax, and jQuery. We use a wide variety of tools and technolo-gies in order to ensure that the software performs at it’s best, with minimal fuss and minimal glitch-es. We have successfully tested and run all our low bid auction software, ensuring high perfor-mance & easy installation.
-
-
-          </p>
+        <div class="auction-card" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <div>
+            <div class="auction-icon"><img src="images/auction_high.png" alt="Highest Unique Bid Auction" loading="lazy"></div>
+            <h3><a href="highest-unique-bids-auction-script-online-highest-bid-software-services.html">Highest Unique Bid Auction</a></h3>
+            <p>The Highest Unique Bid Auction is similar to Lowest Unique Bid Auction but in this application, the bid that highest and unicue at the end of the auction will win the product. A ceiling bid value is generally set at a lower level than the actual value of the product. The auction is thrilling and provides excitement for users, encouraging them to purchase more bids.</p>
+          </div>
+          <a href="highest-unique-bids-auction-script-online-highest-bid-software-services.html"><i class="fa-solid fa-arrow-right arrow-icon"></i></a>
         </div>
-        <a href="lowest-unique-bid-auction-script-online-software-reverse-auction-low-bid.html"><i class="fa-solid fa-arrow-right arrow-icon"></i></a>
-      </div>
 
+        <div class="auction-card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <div>
+            <div class="auction-icon"><img src="images/auction_reverse.png" alt="Reverse Bidding Software" loading="lazy"></div>
+            <h3><a href="lowest-unique-bid-auction-script-online-software-reverse-auction-low-bid.html">Reverse Bidding Software</a></h3>
+            <p>Reverse bidding Software is developed using object-oriented programming language, MVC, PHP 5, MySql, Javascript, Flash, Ajax, and jQuery. We use a wide variety of tools and technologies in order to ensure that the software performs at it’s best, with minimal fuss and minimal glitches. We have successfully tested and run all our low bid auction software, ensuring high performance & easy installation.</p>
+          </div>
+          <a href="lowest-unique-bid-auction-script-online-software-reverse-auction-low-bid.html"><i class="fa-solid fa-arrow-right arrow-icon"></i></a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-container">
+    <div class="container-fluid">
       
-    </div>
-  
-  </section>
-
-
-
-
-       
-
-
-
-<!-- Footer Section -->
-<section class="footer-container">
-  <div class="container-fluid">
-
-          <!-- QuoteSection -->
       <div class="quote__section fade-slide">
-Start Getting Results Online
-<a href="request_quote.html" class="btn btn-hero">REQUEST A QUOTE </a>
+        Start Getting Results Online
+        <a href="request_quote.html" class="btn btn-hero">REQUEST A QUOTE</a>
       </div>
 
-    <!-- Top contact info -->
-     <div class="footer-top">
-      <div class="contact-box" data-aos="fade-right" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <div class="contact-icon">
-          <img src="images/map-icon.png" alt="map">
+      <div class="footer-top">
+        <div class="contact-box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="contact-icon">
+            <img src="images/map-icon.png" alt="map" loading="lazy">
+          </div>
+          <div class="contact-address">
+            <h4>KATHMANDU</h4>
+            <p>Near UN Office, Kupondol, Lalitpur, Nepal<br/>Mobile: <a href="https://wa.me/9779851038796" target="_blank" rel="noopener noreferrer">+977 9851038796</a></p>
+          </div>
         </div>
-        <div class="contact-address">
-        <h4>KATHMANDU</h4>
-        <p>Near UN Office, Kupondol, Lalitpur, Nepal<br/>Mobile: <a href="https://wa.me/9779851038796" target="_blank">+977 9851038796</a></p>
-       
-      </div>
-      </div>
-      <div class="contact-box" data-aos="fade-right" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <div class="contact-icon">
-          <img src="images/map-icon.png" alt="map">
+        <div class="contact-box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="contact-icon">
+            <img src="images/map-icon.png" alt="map" loading="lazy">
+          </div>
+          <div class="contact-address">
+            <h4>Melbourne</h4>
+            <p>Australia<br/>Mobile: <a href="https://wa.me/61406806984" target="_blank" rel="noopener noreferrer">+61 406 806 984</a></p>         
+          </div>
         </div>
-        <div class="contact-address">
-          <h4>Melbourne </h4>
-          <p>Australia<br/>Mobile: <a href="https://wa.me/61406806984" target="_blank">+61 406 806 984</a></p>         
-        </div>
-        
-      </div>
-      <!-- <div class="contact-box" data-aos="fade-right" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <div class="contact-icon">
-          <img src="images/map-icon.png" alt="map">
-        </div>
-        <div class="contact-address">
-          <h4>CANADA</h4>
-          <p>Near UN Office, Kupondol, Lalitpur, Nepal<br/>Mobile: +977 9851038796</p>         
-        </div>
-        
-      </div> -->
-    </div>
-
-    <!-- Middle section -->
-    <div class="footer-middle">
-      <div class="footer-logo fade-slide">
-        <img src="images/footer-logo.png" alt="eMultiTechSolutions">
-        <p>we craft, launch, and scale high-performance web, mobile, and wearable applications — from design to development, testing, and ongoing growth.</p>
       </div>
 
-      <div class="footer-column fade-slide">
-        <h5>Services</h5>
-        <ul>
-          <li><a href="ai-solutions.html" class="footer-text"> AI Solutions</a></li>
-          <li><a href="mobile-development.html" class="footer-text">Mobile App Development</a></li>
-          <li><a href="web-development.html" class="footer-text">Web Development</a></li>
-          <li><a href="software-development.html" class="footer-text">Software Development</a></li>
-          <li><a href="devops-engineer.html" class="footer-text">DevOps Engineer</a></li>
-          <li><a href="digital-marketing.html" class="footer-text">Digital Marketing</a></li>
-        </ul>
+      <div class="footer-middle">
+        <div class="footer-logo fade-slide">
+          <img src="images/footer-logo.png" alt="eMultiTechSolutions" loading="lazy">
+          <p>We craft, launch, and scale high-performance web, mobile, and wearable applications — from design to development, testing, and ongoing growth.</p>
+        </div>
+
+        <div class="footer-column fade-slide">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="ai-solutions.html" class="footer-text">AI Solutions</a></li>
+            <li><a href="mobile-development.html" class="footer-text">Mobile App Development</a></li>
+            <li><a href="web-development.html" class="footer-text">Web Development</a></li>
+            <li><a href="software-development.html" class="footer-text">Software Development</a></li>
+            <li><a href="devops-engineer.html" class="footer-text">DevOps Engineer</a></li>
+            <li><a href="digital-marketing.html" class="footer-text">Digital Marketing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column fade-slide">
+          <h5>Industries</h5>
+          <ul>
+            <li><a href="healthcare.html" class="footer-text">Healthcare</a></li>
+            <li><a href="realestate.html" class="footer-text">Real Estate</a></li>           
+            <li><a href="auction-software.html" class="footer-text">Auction Software</a></li>
+            <li><a href="procurement.html" class="footer-text">Procurement Solution</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column fade-slide">
+          <h5>Information</h5>
+          <ul>
+            <li><a href="about.html" class="footer-text">About Us</a></li>
+            <li><a href="privacy-policy.html" class="footer-text">Privacy Policy</a></li>
+            <li><a href="terms-of-condition.html" class="footer-text">Terms and Condition</a></li>
+            <li><a href="cookie-policy.html" class="footer-text">Cookie Policy</a></li>
+            <li><a href="contact.html" class="footer-text">Contact Us</a></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="footer-column fade-slide">
-        <h5>Industries</h5>
-        <ul>
-           <li><a href="healthcare.html" class="footer-text">Healthcare</a></li>
-           <li><a href="realestate.html" class="footer-text">Real Estate</a></li>
-           <li><a href="auction-software.html" class="footer-text">Auction Software</a></li>
-          <li><a href="procurement.html" class="footer-text">Procurement Solution</a></li>
-          
-          
-         
-        </ul>
-      </div>
-
-      <div class="footer-column fade-slide">
-        <h5>Information</h5>
-        <ul>
-       <li><a href="about.html" class="footer-text">About Us</a></li>
-          <li><a href="privacy-policy.html" class="footer-text">Privacy Policy</a></li>
-          <li><a href="terms-of-condition.html" class="footer-text">Terms and Condition</a></li>
-          <li><a href="cookie-policy.html" class="footer-text">Cookie Policy</a></li>
-          <li><a href="contact.html" class="footer-text">Contact Us</a></li>
-        
-        </ul>
+      <div class="footer-bottom">
+        <p>© 2010 - 2026 Emultitechsolution</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/emultitechsolutionnepal" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/company/emultitechsolution" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
       </div>
     </div>
+  </footer>
 
-    <!-- Bottom section -->
-       <div class="footer-bottom">
-     <p>© 2010 - 2026 Emultitechsolution </p>
-      <div class="social-icons">
-        <!-- <a href="#"><i class="fa-brands fa-x-twitter"></i> </a> -->
-        <a href="https://www.facebook.com/emultitechsolutionnepal" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://www.linkedin.com/company/emultitechsolution" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-        <!-- <a href="#"><i class="fa-brands fa-youtube"></i></a> -->
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<script src="js/aos.js"></script>
-<script>
-  AOS.init();
-</script> 
-<script src="js/script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script> 
+  <script src="js/script.js"></script>
 </body>
 </html>

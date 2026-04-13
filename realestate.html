@@ -1,479 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-<title>Expert Web & Mobile App Development | AI Solutions | E Multitech Solution, Nepal</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expert Web & Mobile App Development | AI Solutions | E Multitech Solution, Nepal</title>
   <link rel="shortcut icon" href="images/favicon.png">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="css/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-   <!-- Icon Font Stylesheet -->
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="css/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <!-- Header -->
-<nav class="navbar navbar-light blue-bg fixed-top">
-  <div class="container-fluid d-flex justify-content-between">
-
-    <!-- Left Logo -->
-    <a class="navbar-brand" href="index.html">
-      <img src="images/logo.png" alt="Company Logo" height="42">
-    </a>
-
-<div class="right--bar">
-      <!-- Phone number (always visible) -->
-      <div class="contact-info">
-            <a href="https://wa.me/9779851038796" target="_blank">
-    <i class="fa-brands fa-whatsapp"></i> +977 9851038796
-</a>
-      </div>
-  
-      <!-- Hamburger Icon -->
-      <button class="navbar-toggler" type="button" aria-label="Toggle navigation" onclick="toggleMenu()">        
-             <img src="images/nav-toggle-icon.png" alt="toggler" >
-      </button>
-</div>
-
-  </div>
-
-
-</nav>
-<!-- Backdrop -->
-<div class="menu-backdrop" id="menuBackdrop" onclick="closeMenu()"></div>
-
-<!-- Slide-in Menu -->
-<div class="navbar-collapse" id="navbarMenu">
-  <button class="menu-close" onclick="closeMenu()">×</button>
-  <ul class="navbar-nav">
-    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item">
-        <a class="nav-link dropdown-toggle" id="servicesDropdown" onclick="toggleDropdown(this)">
-          Services
+  <header>
+    <nav class="navbar navbar-light blue-bg fixed-top">
+      <div class="container-fluid d-flex justify-content-between">
+        
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="Company Logo" height="42">
         </a>
+
+        <div class="right--bar">
+          <div class="contact-info">
+            <a href="https://wa.me/9779851038796" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp"></i> +977 9851038796
+            </a>
+          </div>
+      
+          <button class="navbar-toggler" type="button" aria-label="Toggle navigation" onclick="toggleMenu()">        
+            <img src="images/nav-toggle-icon.png" alt="toggler">
+          </button>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <div class="menu-backdrop" id="menuBackdrop" onclick="closeMenu()"></div>
+
+  <aside class="navbar-collapse" id="navbarMenu">
+    <button class="menu-close" onclick="closeMenu()">×</button>
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      <li class="nav-item">
+        <a class="nav-link dropdown-toggle" id="servicesDropdown" onclick="toggleDropdown(this)">Services</a>
         <div class="dropdown-menu" id="servicesMenu">
-          <a class="dropdown-item" href="ai-solutions.html">AI Solutions </a>
+          <a class="dropdown-item" href="ai-solutions.html">AI Solutions</a>
           <a class="dropdown-item" href="mobile-development.html">Mobile App Development</a>
-          <a class="dropdown-item" href="web-development.html">Web Development </a>
+          <a class="dropdown-item" href="web-development.html">Web Development</a>
           <a class="dropdown-item" href="software-development.html">Software Development</a>
           <a class="dropdown-item" href="devops-engineer.html">DevOps Engineer</a>
-           <a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a>
+          <a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a>
         </div>
       </li>
-   <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
-    <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
-    <li class="nav-item"><a class="nav-link" href="works.html">Our Works</a></li>
-    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-     <li class="nav-item"><a class="nav-link" href="testimonial-all.html">Testimonial</a></li>
-    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-
-  </ul>
-</div>
-  
-
-      <!-- Real Estate Section -->
-<section class="casestudies--detail industries__detail">
-
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="index.html">Home</a> <span>›</span> <a href="industries.html"> Industries</a> <span>›</span> <span>Real Estate</span>
-    </nav>
-
-  </section>
-
-    <!-- Mobile App Development Section -->
-  <section class="ai-solution-section realestate__section">
-     <!-- Left Side -->
-    <div class="text-section hero-content">
-      <h5>Our Real Estate</h5>
-      <h2>Best Real Estate App <br>Development Services</h2>
-     
-
-      <div class="features">
-     
-            <div class="feature-item">
-          <div class="check-box"></div>
-          <div class="feature-text">No hidden charges
-</div>
-        </div>
-
-             <div class="feature-item">
-          <div class="check-box"></div>
-          <div class="feature-text">User-friendly interface
-</div>
-        </div>
-
-            <div class="feature-item">
-          <div class="check-box"></div>
-          <div class="feature-text">Support and maintenance
-
-</div>
-        </div>
-        
-        <div class="feature-item">
-          <div class="check-box"></div>
-          <div class="feature-text">Free quote and consultation</div>
-        </div>
-        <div class="feature-item">
-          <div class="check-box"></div>
-          <div class="feature-text">Various secure transaction modes</div>
-        </div>
-      </div>
-
-      <a href="request_quote.html" class="btn btn-hero">Talk to Our Expert</a>
-    </div>
-
-    <!-- Right Side -->
-    <div class="fade-slide image-section">
-      <img src="./images/urban.png" alt="urban">
-    </div>
-  </section>
-
-   <!-- RealEstate Feature Section -->
-
-     <div class="realestate__container">
-    <h2>Real Estate App <br>Development Features</h2>   
-
-    <div class="features">
-      <div class="feature-box"><i class="fa-solid fa-earth-americas"></i><span>Explore</span></div>
-      <div class="feature-box"><i class="fa-solid fa-file-pen"></i><span>Registration</span></div>
-      <div class="feature-box"><i class="fa-solid fa-magnifying-glass"></i><span>Search Result</span></div>
-      <div class="feature-box"><i class="fa-solid fa-house"></i><span>Sell Your Property</span></div>
-      <div class="feature-box"><i class="fa-solid fa-filter"></i><span>Search Filter</span></div>
-      <div class="feature-box"><i class="fa-solid fa-tags"></i><span>Buy/Sell and Rent</span></div>
-      <div class="feature-box"><i class="fa-solid fa-gear"></i><span>Settings</span></div>
-      <div class="feature-box"><i class="fa-solid fa-message"></i><span>Message</span></div>
-      <div class="feature-box"><i class="fa-solid fa-map"></i><span>Map View</span></div>
-      <div class="feature-box"><i class="fa-solid fa-gauge-high"></i><span>Dashboard</span></div>
-      <div class="feature-box"><i class="fa-solid fa-gift"></i><span>Offers</span></div>
-      <div class="feature-box"><i class="fa-solid fa-building"></i><span>Property Details</span></div>
-    </div>
-    <br>
-    <hr>
-  </div>
-
-
-    <!-- Bottom Logo Section -->
-  <section class="company-logo-section white-bg">
-    <h4>Trusted by 40+ Real Estate Leading Company</h4>
-    <div class="container-fluid">
-      <div class="row justify-content-center align-items-center text-center gy-2" data-aos="fade-right" data-aos-offset="100"
-        data-aos-easing="ease-in-sine">
-        <div class="col-6 col-md-2"><img src="images/pure.png" alt="pure" class="img-fluid"></div>
-        <div class="col-6 col-md-2"><img src="images/thorne.png" alt="Thorne" class="img-fluid"></div>
-        <div class="col-6 col-md-2"><img src="images/paslode.png" alt="Paslode" class="img-fluid"></div>
-        <div class="col-6 col-md-2"><img src="images/wahl.png" alt="wahl" class="img-fluid"></div>
-        <div class="col-6 col-md-2"><img src="images/kong.png" alt="Kong" class="img-fluid"></div>
-      </div>
-    </div>
-  </section>
- 
-
-<!--Real Estate App Development Solutions Section -->
-    <section class="web__container">
-    <div class="heading" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
-      <h2>Real Estate App <br>Development Solutions</h2>
-   
-    </div>
-
-    <div class="grid">
-      <div class="card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" >
-        <div class="icon--round"><img src="./images/application-real.png" alt="Customize Real Estate App"></div>
-        <h3>Customize Real Estate App</h3>
-        <p>Select the features and customise your plans. Pay only for chosen features.</p>
-      </div>
-
-   
-
-   
-               <div class="card" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
-        <div class="icon--round"><img src="./images/reservation.png" alt="Online Property Booking Solutions"></div>
-        <h3>Online Property Booking Solutions</h3>
-         <p>Search, filter and pick the best for you. Simple and easy apps for booking the property.</p>
-      </div>
-         <div class="card" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
-        <div class="icon--round"><img src="./images/institutional.png" alt="Rental Property Management App"></div>
-        <h3>Rental Property Management App</h3>
-        <p>Rent the property on the app by choosing a filter and take a step towards your dream property. </p>
-      </div>
-
-      <div class="card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-        <div class="icon--round"><img src="./images/24-hours-support.png" alt="24X7 Support"></div>
-        <h3>24X7 Support</h3>
-        <p>We always create a space for our users. It is our pleasure to sort your query and help you in our little ways.</p>
-      </div>
-
-      <div class="card" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
-        <div class="icon--round"><img src="./images/code.png" alt="Backend Engineering"></div>
-        <h3>Real Estate CRM/ERP</h3>
-         <p>Add ease to customer relationship and other solutions by handshaking deal with eMultiTechSolutions.</p>
-      </div>
-
-         <div class="card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-       <div class="icon--round"><img src="./images/people.png" alt="Real Estate Lead Management"></div>
-        <h3>Real Estate Lead Management</h3>
-        <p>Manage the database and several queries with systematic and easy portals created by eMultiTechSolutions</p>
-      </div>
-   
-       
-
-               <div class="card" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
-        <div class="icon--round"><img src="./images/web-portal.png" alt="Property Management"></div>
-        <h3>Property Management</h3>
-         <p>Get easy interaction with the other party and several benefits of easy property dealing solutions</p>
-      </div>
-
-              <div class="card" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
-        <div class="icon--round"><img src="./images/workplace.png" alt="Tenant Management App"></div>
-        <h3>Tenant Management App</h3>
-         <p>Manage the agreement, renewals sheets, rents and other tenant data in a well-organised solution with us.</p>
-      </div>
-
-               <div class="card" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
-        <div class="icon--round"><img src="./images/software.png" alt="Auction Portals"></div>
-        <h3>Auction Portals</h3>
-         <p>We create a striking auction and property solutions that help the users to compare more properties and choose the best for themselves.
-
-</p>
-      </div>
-    </div>
-   
-  </section>
-
-    <!--Do You Want to Develop banner Section -->
-  <section class="banner-develop-wrapper">
-  <div class="banner-develop">
-    <div class="banner-content" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
-      <h2>Do You Want to Develop an <br>Real Estate App?</h2>
-      <a href="request_quote.html">Connect Now</a>
-    </div>
-
-    <div class="banner-image" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-      <!-- Replace image path below with your actual image -->
-      <img src="images/developer-picture.png" alt="Custom Software Illustration">
-    </div>
-  </div>
-</section>
-
-    <!--Free Estimation and On-Time Delivery Section -->
-    <section class="web__wrapper">
-       <!-- Column 1: Image -->
-    <div class="col img3" data-aos="fade-right" data-aos-offset="200"
-        data-aos-easing="ease-in-sine"></div>
-
-    <!-- Column 2: Free Estimation -->
-    <div class="col text">
-      <div data-aos="fade-left" data-aos-offset="200"
-        data-aos-easing="ease-in-sine">
-        <h2>Real Estate Mobile App Development Company</h2>
-    <p>The real estate app developers make the mobile version sound good and well-performed websites show the efforts done by our real estate website developers. Select the features which you wish for your app and pay only for what you choose. We avail the facility of customised plans to save your money. At the beginning of the project, we will assign a manager to you who will give updates about the project development. </p>
-    <ul>
-      <li>Dedicated Resource</li>
-       <li>Cost Effective Solution</li>
-       <li>Delivery On Time</li>
-       <li>Kick Start a Project</li>
-       
+      <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+      <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
+      <li class="nav-item"><a class="nav-link" href="works.html">Our Works</a></li>
+      <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+      <li class="nav-item"><a class="nav-link" href="testimonial-all.html">Testimonial</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
     </ul>
-      </div>
-    </div>
+  </aside>
 
-
+  <main>
+    <section class="casestudies--detail industries__detail">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <span>›</span> 
+        <a href="industries.html"> Industries</a> <span>›</span> 
+        <span>Real Estate</span>
+      </nav>
     </section>
-<!-- Property Management App Development Features Section -->
-<section class="why-us-container">
-  <div class="container-fluid">
-    <h2 data-aos="fade-right" data-aos-offset="300"
-    data-aos-easing="ease-in-sine">Property Management App <br>Development Features</h2>
+
+    <section class="ai-solution-section realestate__section">
+      <div class="text-section hero-content">
+        <h5>Our Real Estate</h5>
+        <h2>Best Real Estate App <br>Development Services</h2>
+
+        <div class="features">
+          <div class="feature-item">
+            <div class="check-box"></div>
+            <div class="feature-text">No hidden charges</div>
+          </div>
+          <div class="feature-item">
+            <div class="check-box"></div>
+            <div class="feature-text">User-friendly interface</div>
+          </div>
+          <div class="feature-item">
+            <div class="check-box"></div>
+            <div class="feature-text">Support and maintenance</div>
+          </div>
+          <div class="feature-item">
+            <div class="check-box"></div>
+            <div class="feature-text">Free quote and consultation</div>
+          </div>
+          <div class="feature-item">
+            <div class="check-box"></div>
+            <div class="feature-text">Various secure transaction modes</div>
+          </div>
+        </div>
+
+        <a href="request_quote.html" class="btn btn-hero">Talk to Our Expert</a>
+      </div>
+
+      <div class="fade-slide image-section">
+        <img src="./images/urban.png" alt="urban">
+      </div>
+    </section>
+
+    <section class="realestate__container">
+      <h2>Real Estate App <br>Development Features</h2>   
+      <div class="features">
+        <div class="feature-box"><i class="fa-solid fa-earth-americas"></i><span>Explore</span></div>
+        <div class="feature-box"><i class="fa-solid fa-file-pen"></i><span>Registration</span></div>
+        <div class="feature-box"><i class="fa-solid fa-magnifying-glass"></i><span>Search Result</span></div>
+        <div class="feature-box"><i class="fa-solid fa-house"></i><span>Sell Your Property</span></div>
+        <div class="feature-box"><i class="fa-solid fa-filter"></i><span>Search Filter</span></div>
+        <div class="feature-box"><i class="fa-solid fa-tags"></i><span>Buy/Sell and Rent</span></div>
+        <div class="feature-box"><i class="fa-solid fa-gear"></i><span>Settings</span></div>
+        <div class="feature-box"><i class="fa-solid fa-message"></i><span>Message</span></div>
+        <div class="feature-box"><i class="fa-solid fa-map"></i><span>Map View</span></div>
+        <div class="feature-box"><i class="fa-solid fa-gauge-high"></i><span>Dashboard</span></div>
+        <div class="feature-box"><i class="fa-solid fa-gift"></i><span>Offers</span></div>
+        <div class="feature-box"><i class="fa-solid fa-building"></i><span>Property Details</span></div>
+      </div>
+      <br>
+      <hr>
+    </section>
+
+    <section class="company-logo-section white-bg">
+      <h4>Trusted by 40+ Real Estate Leading Company</h4>
+      <div class="container-fluid">
+        <div class="row justify-content-center align-items-center text-center gy-2" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+          <div class="col-6 col-md-2">
+            <a href="https://dinepa.eu/en" target="_blank" rel="noopener noreferrer"><img src="images/dinepa.png" alt="Dinepa" class="img-fluid" loading="lazy"></a>
+          </div>
+          <div class="col-6 col-md-2">
+            <a href="https://www.nrb.org.np/" target="_blank" rel="noopener noreferrer"><img src="images/nrb.png" alt="NRB" class="img-fluid" loading="lazy"></a>
+          </div>
+          <div class="col-6 col-md-2">
+            <a href="https://www.bidbid.co.uk/en" target="_blank" rel="noopener noreferrer"><img src="images/bidbid.png" alt="bidbid" class="img-fluid" loading="lazy"></a>
+          </div>
+          <div class="col-6 col-md-2">
+            <a href="https://upkeep.pro/" target="_blank" rel="noopener noreferrer"><img src="images/upkeep.png" alt="upkeep" class="img-fluid" loading="lazy"></a>
+          </div>
+          <div class="col-6 col-md-2">
+            <a href="https://www.msg-homes.com/" target="_blank" rel="noopener noreferrer"><img src="images/mysaving-grace.png" alt="MySavingGrace" class="img-fluid" loading="lazy"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="web__container">
+      <div class="heading" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
+        <h2>Real Estate App <br>Development Solutions</h2>
+      </div>
+
       <div class="grid">
-      <div class="item" data-num="1" data-aos="fade-up" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <span class="number">1.</span>
-        <h3>Mobile Search</h3>
-        <p>Get the updated news about the real estate industry and make a better decision for your future capital planning.</p>
-      </div>
-      <div class="item" data-num="2" data-aos="fade-up" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <span class="number">2.</span>
-        <h3>Rated with Google Analytics</h3>
-        <p>Analysis helps you to understand the better market rate and other important factors before buying/selling any property.</p>
-      </div>
-      <div class="item" data-num="3" data-aos="fade-up" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <span class="number">3.</span>
-        <h3>Property Listing Syndication</h3>
-        <p>View the videos and images in high pixel quality to address the type of property you are looking for. Now sit and visit the various property in a minute.</p>
-      </div>
-      <div class="item" data-num="4" data-aos="fade-up" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <span class="number">4.</span>
-        <h3>Upload Bulk Property Listings</h3>
-        <p>Uploading property info one-by-one is time taking. So get an easy solution to upload multiple property info at a time. Save your time and energy for other tasks.</p>
-      </div>
-      <div class="item" data-num="5" data-aos="fade-up" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <span class="number">5.</span>
-        <h3>Currency Converter</h3>
-        <p>No matter which country you are planning to buy a property in. We have a solution for global properties with a currency converter. This will help you to buy/sell your property in various currencies.</p>
-      </div>
-      <div class="item" data-num="6" data-aos="fade-up" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <span class="number">6.</span>
-        <h3>Location-Based Search</h3>
-        <p>Need any specific location? Use the location-based feature to deal with the desired location. Select the region and get the list of properties within a fraction of seconds.</p>
-      </div>
-      <div class="item" data-num="7" data-aos="fade-up" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <span class="number">7.</span>
-        <h3>Realtors Appointment</h3>
-        <p>Book an appointment with your dealers. It saves your time and drops the unnecessary visit of sites. Reserve your time for a meeting with your respective property owner/ dealer.</p>
-      </div>
-         <div class="item" data-num="8" data-aos="fade-up" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <span class="number">8.</span>
-        <h3>Push Notifications</h3>
-        <p>Don’t miss any update from the real estates. Get the notification on phone or via mail. Also, notify with the upcoming offers and great deals for the users.</p>
-      </div>
-
-           <div class="item" data-num="9" data-aos="fade-up" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <span class="number">9.</span>
-        <h3>GPS Integration</h3>
-        <p>Finding a hassle to reach your site? Take the GPS to reach your property quickly and grab the best option for your estate.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
- 
-
-
-  
-
-
-
-
-
-
-
-<!-- Footer Section -->
-<section class="footer-container">
-  <div class="container-fluid">
-
-          <!-- QuoteSection -->
-      <div class="quote__section fade-slide">
-Start Getting Results Online
-<a href="request_quote.html" class="btn btn-hero">REQUEST A QUOTE </a>
-      </div>
-
-    <!-- Top contact info -->
-  <div class="footer-top">
-      <div class="contact-box" data-aos="fade-right" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <div class="contact-icon">
-          <img src="images/map-icon.png" alt="map">
+        <div class="card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <div class="icon--round"><img src="./images/application-real.png" alt="Customize Real Estate App" loading="lazy"></div>
+          <h3>Customize Real Estate App</h3>
+          <p>Select the features and customise your plans. Pay only for chosen features.</p>
         </div>
-        <div class="contact-address">
-        <h4>KATHMANDU</h4>
-        <p>Near UN Office, Kupondol, Lalitpur, Nepal<br/>Mobile: <a href="https://wa.me/9779851038796" target="_blank">+977 9851038796</a></p>
-       
-      </div>
-      </div>
-      <div class="contact-box" data-aos="fade-right" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <div class="contact-icon">
-          <img src="images/map-icon.png" alt="map">
-        </div>
-        <div class="contact-address">
-          <h4>Melbourne </h4>
-          <p>Australia<br/>Mobile: <a href="https://wa.me/61406806984" target="_blank">+61 406 806 984</a></p>         
-        </div>
-        
-      </div>
-      <!-- <div class="contact-box" data-aos="fade-right" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <div class="contact-icon">
-          <img src="images/map-icon.png" alt="map">
-        </div>
-        <div class="contact-address">
-          <h4>CANADA</h4>
-          <p>Near UN Office, Kupondol, Lalitpur, Nepal<br/>Mobile: +977 9851038796</p>         
-        </div>
-        
-      </div> -->
-    </div>
-    <!-- Middle section -->
-    <div class="footer-middle">
-      <div class="footer-logo fade-slide">
-        <img src="images/footer-logo.png" alt="eMultiTechSolutions">
-        <p>we craft, launch, and scale high-performance web, mobile, and wearable applications — from design to development, testing, and ongoing growth.</p>
-      </div>
 
-      <div class="footer-column fade-slide">
-        <h5>Services</h5>
-        <ul>
-          <li><a href="ai-solutions.html" class="footer-text"> AI Solutions</a></li>
-          <li><a href="mobile-development.html" class="footer-text">Mobile App Development</a></li>
-          <li><a href="web-development.html" class="footer-text">Web Development</a></li>
-          <li><a href="software-development.html" class="footer-text">Software Development</a></li>
-          <li><a href="devops-engineer.html" class="footer-text">DevOps Engineer</a></li>
-          <li><a href="digital-marketing.html" class="footer-text">Digital Marketing</a></li>
-        </ul>
-      </div>
+        <div class="card" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <div class="icon--round"><img src="./images/reservation.png" alt="Online Property Booking Solutions" loading="lazy"></div>
+          <h3>Online Property Booking Solutions</h3>
+          <p>Search, filter and pick the best for you. Simple and easy apps for booking the property.</p>
+        </div>
 
-      <div class="footer-column fade-slide">
-        <h5>Industries</h5>
-        <ul>
-           <li><a href="healthcare.html" class="footer-text">Healthcare</a></li>
-           <li><a href="realestate.html" class="footer-text">Real Estate</a></li>           
-          <li><a href="auction-software.html" class="footer-text">Auction Software</a></li>
-          <li><a href="procurement.html" class="footer-text">Procurement Solution</a></li>
+        <div class="card" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <div class="icon--round"><img src="./images/institutional.png" alt="Rental Property Management App" loading="lazy"></div>
+          <h3>Rental Property Management App</h3>
+          <p>Rent the property on the app by choosing a filter and take a step towards your dream property.</p>
+        </div>
+
+        <div class="card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <div class="icon--round"><img src="./images/24-hours-support.png" alt="24X7 Support" loading="lazy"></div>
+          <h3>24X7 Support</h3>
+          <p>We always create a space for our users. It is our pleasure to sort your query and help you in our little ways.</p>
+        </div>
+
+        <div class="card" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <div class="icon--round"><img src="./images/code.png" alt="Backend Engineering" loading="lazy"></div>
+          <h3>Real Estate CRM/ERP</h3>
+          <p>Add ease to customer relationship and other solutions by handshaking deal with eMultiTechSolutions.</p>
+        </div>
+
+        <div class="card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <div class="icon--round"><img src="./images/people.png" alt="Real Estate Lead Management" loading="lazy"></div>
+          <h3>Real Estate Lead Management</h3>
+          <p>Manage the database and several queries with systematic and easy portals created by eMultiTechSolutions.</p>
+        </div>
+
+        <div class="card" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <div class="icon--round"><img src="./images/web-portal.png" alt="Property Management" loading="lazy"></div>
+          <h3>Property Management</h3>
+          <p>Get easy interaction with the other party and several benefits of easy property dealing solutions.</p>
+        </div>
+
+        <div class="card" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <div class="icon--round"><img src="./images/workplace.png" alt="Tenant Management App" loading="lazy"></div>
+          <h3>Tenant Management App</h3>
+          <p>Manage the agreement, renewals sheets, rents and other tenant data in a well-organised solution with us.</p>
+        </div>
+
+        <div class="card" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <div class="icon--round"><img src="./images/software.png" alt="Auction Portals" loading="lazy"></div>
+          <h3>Auction Portals</h3>
+          <p>We create a striking auction and property solutions that help the users to compare more properties and choose the best for themselves.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner-develop-wrapper">
+      <div class="banner-develop">
+        <div class="banner-content" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <h2>Do You Want to Develop an <br>Real Estate App?</h2>
+          <a href="request_quote.html">Connect Now</a>
+        </div>
+        <div class="banner-image" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <img src="images/developer-picture.png" alt="Custom Software Illustration" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="web__wrapper">
+      <div class="col img3" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine"></div>
+
+      <div class="col text">
+        <div data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <h2>Real Estate Mobile App Development Company</h2>
+          <p>The real estate app developers make the mobile version sound good and well-performed websites show the efforts done by our real estate website developers. Select the features which you wish for your app and pay only for what you choose. We avail the facility of customised plans to save your money. At the beginning of the project, we will assign a manager to you who will give updates about the project development.</p>
+          <ul>
+            <li>Dedicated Resource</li>
+            <li>Cost Effective Solution</li>
+            <li>Delivery On Time</li>
+            <li>Kick Start a Project</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-us-container">
+      <div class="container-fluid">
+        <h2 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Property Management App <br>Development Features</h2>
+        <div class="grid">
           
-         
-        </ul>
+          <div class="item" data-num="1" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <span class="number">1.</span>
+            <h3>Mobile Search</h3>
+            <p>Get the updated news about the real estate industry and make a better decision for your future capital planning.</p>
+          </div>
+          
+          <div class="item" data-num="2" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <span class="number">2.</span>
+            <h3>Rated with Google Analytics</h3>
+            <p>Analysis helps you to understand the better market rate and other important factors before buying/selling any property.</p>
+          </div>
+          
+          <div class="item" data-num="3" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <span class="number">3.</span>
+            <h3>Property Listing Syndication</h3>
+            <p>View the videos and images in high pixel quality to address the type of property you are looking for. Now sit and visit the various property in a minute.</p>
+          </div>
+          
+          <div class="item" data-num="4" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <span class="number">4.</span>
+            <h3>Upload Bulk Property Listings</h3>
+            <p>Uploading property info one-by-one is time taking. So get an easy solution to upload multiple property info at a time. Save your time and energy for other tasks.</p>
+          </div>
+          
+          <div class="item" data-num="5" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <span class="number">5.</span>
+            <h3>Currency Converter</h3>
+            <p>No matter which country you are planning to buy a property in. We have a solution for global properties with a currency converter. This will help you to buy/sell your property in various currencies.</p>
+          </div>
+          
+          <div class="item" data-num="6" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <span class="number">6.</span>
+            <h3>Location-Based Search</h3>
+            <p>Need any specific location? Use the location-based feature to deal with the desired location. Select the region and get the list of properties within a fraction of seconds.</p>
+          </div>
+          
+          <div class="item" data-num="7" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <span class="number">7.</span>
+            <h3>Realtors Appointment</h3>
+            <p>Book an appointment with your dealers. It saves your time and drops the unnecessary visit of sites. Reserve your time for a meeting with your respective property owner/ dealer.</p>
+          </div>
+          
+          <div class="item" data-num="8" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <span class="number">8.</span>
+            <h3>Push Notifications</h3>
+            <p>Don’t miss any update from the real estates. Get the notification on phone or via mail. Also, notify with the upcoming offers and great deals for the users.</p>
+          </div>
+
+          <div class="item" data-num="9" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <span class="number">9.</span>
+            <h3>GPS Integration</h3>
+            <p>Finding a hassle to reach your site? Take the GPS to reach your property quickly and grab the best option for your estate.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-container">
+    <div class="container-fluid">
+
+      <div class="quote__section fade-slide">
+        Start Getting Results Online
+        <a href="request_quote.html" class="btn btn-hero">REQUEST A QUOTE</a>
       </div>
 
-      <div class="footer-column fade-slide">
-        <h5>Information</h5>
-        <ul>
-       <li><a href="about.html" class="footer-text">About Us</a></li>
-          <li><a href="privacy-policy.html" class="footer-text">Privacy Policy</a></li>
-          <li><a href="terms-of-condition.html" class="footer-text">Terms and Condition</a></li>
-          <li><a href="cookie-policy.html" class="footer-text">Cookie Policy</a></li>
-          <li><a href="contact.html" class="footer-text">Contact Us</a></li>
-        
-        </ul>
+      <div class="footer-top">
+        <div class="contact-box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="contact-icon">
+            <img src="images/map-icon.png" alt="map" loading="lazy">
+          </div>
+          <div class="contact-address">
+            <h4>KATHMANDU</h4>
+            <p>Near UN Office, Kupondol, Lalitpur, Nepal<br/>Mobile: <a href="https://wa.me/9779851038796" target="_blank" rel="noopener noreferrer">+977 9851038796</a></p>
+          </div>
+        </div>
+        <div class="contact-box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="contact-icon">
+            <img src="images/map-icon.png" alt="map" loading="lazy">
+          </div>
+          <div class="contact-address">
+            <h4>Melbourne</h4>
+            <p>Australia<br/>Mobile: <a href="https://wa.me/61406806984" target="_blank" rel="noopener noreferrer">+61 406 806 984</a></p>         
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-middle">
+        <div class="footer-logo fade-slide">
+          <img src="images/footer-logo.png" alt="eMultiTechSolutions" loading="lazy">
+          <p>We craft, launch, and scale high-performance web, mobile, and wearable applications — from design to development, testing, and ongoing growth.</p>
+        </div>
+
+        <div class="footer-column fade-slide">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="ai-solutions.html" class="footer-text">AI Solutions</a></li>
+            <li><a href="mobile-development.html" class="footer-text">Mobile App Development</a></li>
+            <li><a href="web-development.html" class="footer-text">Web Development</a></li>
+            <li><a href="software-development.html" class="footer-text">Software Development</a></li>
+            <li><a href="devops-engineer.html" class="footer-text">DevOps Engineer</a></li>
+            <li><a href="digital-marketing.html" class="footer-text">Digital Marketing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column fade-slide">
+          <h5>Industries</h5>
+          <ul>
+            <li><a href="healthcare.html" class="footer-text">Healthcare</a></li>
+            <li><a href="realestate.html" class="footer-text">Real Estate</a></li>           
+            <li><a href="auction-software.html" class="footer-text">Auction Software</a></li>
+            <li><a href="procurement.html" class="footer-text">Procurement Solution</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column fade-slide">
+          <h5>Information</h5>
+          <ul>
+            <li><a href="about.html" class="footer-text">About Us</a></li>
+            <li><a href="privacy-policy.html" class="footer-text">Privacy Policy</a></li>
+            <li><a href="terms-of-condition.html" class="footer-text">Terms and Condition</a></li>
+            <li><a href="cookie-policy.html" class="footer-text">Cookie Policy</a></li>
+            <li><a href="contact.html" class="footer-text">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2010 - 2026 Emultitechsolution</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/emultitechsolutionnepal" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/company/emultitechsolution" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
       </div>
     </div>
+  </footer>
 
-    <!-- Bottom section -->
-    <div class="footer-bottom">
-     <p>© 2010 - 2026 Emultitechsolution </p>
-      <div class="social-icons">
-        <!-- <a href="#"><i class="fa-brands fa-x-twitter"></i> </a> -->
-        <a href="https://www.facebook.com/emultitechsolutionnepal" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://www.linkedin.com/company/emultitechsolution" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-        <!-- <a href="#"><i class="fa-brands fa-youtube"></i></a> -->
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<script src="js/aos.js"></script>
-<script>
-  AOS.init();
-</script> 
-<script src="js/script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script> 
+  <script src="js/script.js"></script>
 </body>
 </html>
