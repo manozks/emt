@@ -79,43 +79,53 @@
           </div>
           
           <div class="contact-section fade-slide">
-            <div class="form-box">
-              <form>
-                <input type="text" placeholder="First Name" required>
-                <input type="email" placeholder="Email Address" required>
-                <input type="text" placeholder="Skype/IM">
-                <input type="text" placeholder="Mobile No" required>
-                <input type="text" placeholder="Company">
-                
-                <select required>
-                  <option value="">Country</option>
-                  <option value="USA">USA</option>
-                  <option value="Germany">Germany</option>
-                  <option value="Canada">Canada</option>
-                </select>
-                
-                <div class="form-section">
-                  <h3>What type of project do you need?</h3>
-                  <div class="checkbox-group">
-                    <label><input type="checkbox"> Website</label>
-                    <label><input type="checkbox"> Mobile App</label>
-                    <label><input type="checkbox"> Software Development</label>
-                  </div>
-                </div>
-                
-                <select required>
-                  <option value="">Select Budget Range</option>
-                  <option value="1000">$1000 - $5000</option>
-                  <option value="5000">$5000 - $10000</option>
-                  <option value="10000">Above $10000</option>
-                </select>
-                
-                <input type="text" placeholder="Specific timeframe or deadline?">
-                
-                <textarea placeholder="Project Detail"></textarea>
-                <button type="submit">Submit</button>
-              </form>
-            </div>
+           <div class="form-box">
+  <form action="https://api.web3forms.com/submit" method="POST" id="quote-form">
+    
+    <input type="hidden" name="access_key" value="a16358e7-a394-4206-8b98-1383badf0c9f">
+
+    <input type="text" name="firstName" placeholder="First Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input type="text" name="skype" placeholder="Skype/IM">
+    <input type="text" name="mobileNo" placeholder="Mobile No" required>
+    <input type="text" name="company" placeholder="Company">
+    
+    <select name="country" required>
+      <option value="">Country</option>
+      <option value="USA">USA</option>
+      <option value="Germany">Germany</option>
+      <option value="Canada">Canada</option>
+    </select>
+    
+    <div class="form-section">
+      <h3>What type of project do you need?</h3>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="projectType[]" value="Website"> Website</label>
+        <label><input type="checkbox" name="projectType[]" value="Mobile App"> Mobile App</label>
+        <label><input type="checkbox" name="projectType[]" value="Software Development"> Software Development</label>
+      </div>
+    </div>
+    
+    <select name="budgetRange" required>
+      <option value="">Select Budget Range</option>
+      <option value="$1000 - $5000">$1000 - $5000</option>
+      <option value="$5000 - $10000">$5000 - $10000</option>
+      <option value="Above $10000">Above $10000</option>
+    </select>
+    
+    <input type="text" name="timeframe" placeholder="Specific timeframe or deadline?">
+    
+    <textarea name="projectDetail" placeholder="Project Detail"></textarea>
+
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="success-message" style="display: none; color: #28a745; margin-top: 15px; font-weight: 600;">
+    Thank you! Your quote request has been sent. We will review your details and get back to you shortly.
+  </div>
+</div>
 
             <div class="info-box">
               <p>Our customer care staff will respond to your query within 48 hours.</p>
@@ -217,5 +227,51 @@
     AOS.init();
   </script> 
   <script src="js/script.js"></script>
+  <script>
+  document.getElementById('quote-form').addEventListener('submit', function(event) {
+    // Prevent standard browser redirect
+    event.preventDefault();
+
+    const form = this;
+    const formData = new FormData(form);
+    const successMessage = document.getElementById('success-message');
+    const submitButton = form.querySelector('button[type="submit"]');
+
+    // Change button text to show it's processing
+    submitButton.textContent = 'Sending...';
+    submitButton.disabled = true;
+
+    // Send data to Web3Forms via Fetch API
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formData
+    })
+    .then(async (response) => {
+      let json = await response.json();
+      if (response.status == 200) {
+        // Show success message and clear the form
+        successMessage.style.display = 'block';
+        form.reset();
+      } else {
+        console.log(response);
+        alert(json.message);
+      }
+    })
+    .catch(error => {
+      console.log(error);
+      alert("Something went wrong! Please try again.");
+    })
+    .finally(() => {
+      // Reset button state
+      submitButton.textContent = 'Submit';
+      submitButton.disabled = false;
+      
+      // Hide the success message after 6 seconds
+      setTimeout(() => {
+        successMessage.style.display = 'none';
+      }, 6000);
+    });
+  });
+</script>
 </body>
 </html>
