@@ -340,6 +340,7 @@ ody {
 .hero h1 {
   font-size: 40px;
   font-weight: 600;
+  padding-top: 60px;
 }
 .hero p {
   font-size: 20px;
@@ -486,11 +487,11 @@ ody {
   .about-section .right {
       flex: 1;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 40px;
+   /*    justify-content: center; 
+      align-items: center;*/
+      padding:0px;
       clip-path: polygon(20% 0, 100% 0, 100% 100%, calc(20% - 20%) 100%);
-      background: linear-gradient(to bottom, #D3EEFF, #ACDFFF);
+     
 
       
   }
@@ -548,8 +549,7 @@ ody {
     padding:10% 4% 5%;
     position: relative;
     overflow: hidden;
-    background:#fff;
-    
+    background:#fff;   
    
 }
 
@@ -580,9 +580,11 @@ ody {
     position: absolute;
     z-index: 2;
     top: 0;
-    padding: 60px 0;
+    padding: 40px 0;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
+
+
 
 .services-container {
      display: grid;
@@ -889,7 +891,7 @@ padding:0;
 .testimonials__container__all {
  
   width: 100%;
-  margin: 40px auto 0;
+  margin:0px auto;
   padding: 60px 40px;
   position: relative;
   background-color: #F8FAFC;
@@ -5112,5 +5114,59 @@ transform: translateY(-2px);
 
 
 
+/* =========================================
+   Inline Hero Trust Bar Styles
+   ========================================= */
+.hero-trust-bar {
+  margin-top: 45px; /* Adds breathing room below the buttons */
+  padding-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2); /* Elegant, subtle separator line */
+  width: 100%;
+}
 
- 
+.trust-items-inline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Aligns with your hero text */
+  gap: 35px; /* Spacing between the items */
+}
+
+.trust-items-inline li {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px; /* Slightly larger for the hero section */
+  font-weight: 500;
+  color: #ffffff; /* Crisp white for video overlay readability */
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.trust-items-inline li i {
+  color: #3b82f6; /* Modern, electric blue accent for icons */
+  font-size: 18px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 991px) {
+  .trust-items-inline {
+    gap: 20px;
+  }
+  .hero-trust-bar {
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .trust-items-inline {
+   
+    align-items: flex-start; /* Keeps it neatly stacked on mobile */
+    gap: 15px;
+  }
+  .trust-items-inline li {
+    font-size: 14px;
+  }
+}
