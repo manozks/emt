@@ -5170,3 +5170,104 @@ transform: translateY(-2px);
     font-size: 14px;
   }
 }
+
+/* Lead styling */
+.lead {
+  font-size: 1.25rem;
+  color: #4a5568;
+}
+
+/* Comparison Table Styling */
+.comparison-table {
+  border: 1px solid #e2e8f0;
+}
+
+.comparison-table thead th {
+  background: #0a2540;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+}
+
+.comparison-table tbody td {
+  padding: 1.2rem !important;
+  vertical-align: middle;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.comparison-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+/* Gray scale for trusted logos */
+.gray-scale {
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: 0.3s ease;
+}
+
+.gray-scale:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* Icon box inside grid cards */
+.icon--round i {
+  font-size: 1.8rem;
+}
+
+/* --- Responsive Adjustments --- */
+
+/* For Tablets and Mobiles */
+@media (max-width: 991px) {
+  .comparison-table {
+    display: block;
+    width: 100%;
+  }
+
+  /* Force columns to have a minimum width so they don't squish */
+  .comparison-table th, 
+  .comparison-table td {
+    min-width: 160px; /* Ensures content is readable */
+    font-size: 0.9rem;
+    padding: 1rem !important;
+  }
+
+  /* Make the first column (Feature names) sticky */
+  .comparison-table td:first-child, 
+  .comparison-table th:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 10;
+    background-color: #f8fafc; /* Matches table background to prevent overlap */
+    border-right: 1px solid #e2e8f0;
+    min-width: 140px;
+  }
+
+  /* Ensure the brand header stays distinct while scrolling */
+  .brand-header {
+    border-radius: 0 !important; /* Remove rounding on mobile for cleaner scroll */
+  }
+}
+
+/* Custom Scrollbar for the table area to make it look 'App-like' */
+.table-responsive::-webkit-scrollbar {
+  height: 6px;
+}
+.table-responsive::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.table-responsive::-webkit-scrollbar-thumb {
+  background: #0d6efd;
+  border-radius: 10px;
+}
+
+/* Adjust heading size for small mobile screens */
+@media (max-width: 576px) {
+  .heading h2 {
+    font-size: 1.5rem;
+  }
+  .brand-col {
+    min-width: 180px; /* Give your brand more room to shine on mobile */
+  }
+}
