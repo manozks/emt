@@ -5271,3 +5271,123 @@ transform: translateY(-2px);
     min-width: 180px; /* Give your brand more room to shine on mobile */
   }
 }
+
+/* Custom Software Hero Refinement */
+.software-hero-refined {
+  background: radial-gradient(circle at 10% 20%, rgba(0, 102, 255, 0.05) 0%, transparent 50%),
+              radial-gradient(circle at 90% 80%, rgba(255, 0, 150, 0.03) 0%, transparent 50%);
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+/* Badge styling */
+.custom-badge {
+  background: rgba(13, 110, 253, 0.1);
+  color: #0d6efd;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  border: 1px solid rgba(13, 110, 253, 0.2);
+}
+
+/* Text Gradient */
+.text-gradient {
+  background: linear-gradient(90deg, #0d6efd, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism Feature Grid */
+.features-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feature-glass-item {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 12px 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: fit-content;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+
+.feature-glass-item:hover {
+  transform: translateX(10px);
+  background: #fff;
+  border-color: #0d6efd;
+}
+
+.feature-glass-item i {
+  color: #0d6efd;
+  font-size: 1.2rem;
+}
+
+/* Floating Animation for Image */
+.floating-anim {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Floating UI Cards */
+.hero-image-wrapper {
+  position: relative;
+}
+
+.floating-card {
+  position: absolute;
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  z-index: 2;
+  animation: float 5s ease-in-out infinite alternate;
+}
+
+.card-1 { top: 20%; left: -10%; animation-delay: 0.5s; }
+.card-2 { bottom: 20%; right: 0%; animation-delay: 1.5s; }
+
+.floating-card i {
+  background: #0d6efd;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+/* Secondary CTA Glow */
+.btn-link-glow {
+  text-decoration: none;
+  color: #0a2540;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-link-glow:hover {
+  color: #0d6efd;
+}
+
+.shadow-blue {
+  box-shadow: 0 8px 25px rgba(13, 110, 253, 0.3);
+}
