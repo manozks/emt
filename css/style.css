@@ -5476,3 +5476,361 @@ transform: translateY(-2px);
     width: 100%;
   }
 }
+
+/* --- Integrated Capabilities Grid --- */
+.capabilities-grid {
+    background-color: #E9E9FE; /* Subtle off-white to distinguish section */
+}
+
+.capabilities-grid h2 {
+    color: #051233;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.capabilities-grid .card {
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-radius: 12px;
+    background: #DADAFE;
+}
+
+/* Hover Effect: Card lifts and shadow deepens */
+.capabilities-grid .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+    border-left: 4px solid #B3B3FD !important; /* Brand Blue Accent */
+}
+
+/* Icon Box Styling */
+.capabilities-grid i {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(13, 110, 253, 0.08);
+    border-radius: 10px;
+    font-size: 1.4rem;
+    transition: background 0.3s ease;
+}
+
+.capabilities-grid .card:hover i {
+    background: #7192C5;
+    color: #fff !important;
+}
+
+.capabilities-grid h5 {
+    color: #051233;
+    font-weight: 600;
+}
+
+.capabilities-grid p {
+    color: #051233!important;
+    line-height: 1.5;
+}
+
+/* --- Risk Elimination Section --- */
+.risk-section {
+    background: #0a2540; /* Dark Executive Blue */
+    color: #7192C5;
+    border-radius: 0;
+}
+
+.risk-section h2 {
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+/* Creating vertical separators between columns */
+.risk-section .row > div {
+    position: relative;
+    padding: 20px;
+}
+
+.risk-section .row > div:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 20%;
+    height: 60%;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.risk-section strong {
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom:5px;
+    color: #7192C5; /* Light blue accent */
+}
+
+.risk-section .small {
+    color: #cbd5e1;
+    font-size: 0.9rem;
+    display: block;
+}
+
+/* Responsive adjustment for separators */
+@media (max-width: 768px) {
+    .risk-section .row > div:not(:last-child)::after {
+        display: none;
+    }
+    .risk-section .row > div {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+
+/* Philosophy Section Modern Layout */
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+.philosophy-card {
+    padding: 50px 40px;
+}
+
+/* Common Practice Styling */
+.common-practice {
+    background: #f8fafc;
+    color: #64748b;
+    border: 1px solid #e2e8f0;
+}
+
+.common-practice h4 {
+    color: #94a3b8;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.common-practice .fa-circle-xmark {
+    color: #cbd5e1;
+    margin-right: 12px;
+}
+
+/* Our Approach (The Premium Choice) */
+.our-approach {
+    background: #0a2540; /* Your Brand Deep Blue */
+    color: #fff;
+    position: relative;
+    box-shadow: -15px 0 30px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.our-approach h4 {
+    color: #3b82f6; /* Light Blue Accent */
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.our-approach .fa-circle-check {
+    color: #3b82f6; /* Success Green */
+    margin-right: 12px;
+}
+
+.premium-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(59, 130, 246, 0.2);
+    color: #60a5fa;
+    font-size: 0.75rem;
+    padding: 5px 12px;
+    border-radius: 20px;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+/* List Styling */
+.comparison-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.comparison-list li {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.our-approach li {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.practice-outcomes {
+    padding-top: 20px;
+   
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    .philosophy-grid {
+        grid-template-columns: 1fr;
+    }
+    .our-approach {
+        box-shadow: 0 -15px 30px rgba(0,0,0,0.2);
+    }
+}
+
+/* Risk Elimination Section Styling */
+.risk-elimination-section {
+    background-color: #0a2540; /* Dark Executive Blue */
+    padding: 80px 0;
+}
+
+.text-blue-light {
+    color: #60a5fa;
+    font-weight: 500;
+}
+
+.risk-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Lift effect on hover */
+.risk-card:hover {
+    background: rgba(255, 255, 255, 0.07);
+    transform: translateY(-10px);
+    border-color: #3b82f6; /* Branded Blue accent */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.risk-icon-wrapper {
+    background: rgba(59, 130, 246, 0.15);
+    color: #3b82f6;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    font-size: 1.5rem;
+}
+
+.risk-card-body strong {
+    display: block;
+    color: #fff;
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+}
+
+.risk-card-body .small {
+    color: #94a3b8;
+    line-height: 1.4;
+    font-size: 0.9rem;
+    display: block;
+}
+
+/* Hero Section Refinement */
+.about-hero-refined {
+    background-color: #ffffff;
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, #0a2540, #0d6efd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Badge Pill */
+.badge-pill {
+    display: inline-block;
+    padding: 6px 16px;
+    background: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+    border-radius: 50px;
+    letter-spacing: 1px;
+}
+
+/* Manifesto Box Styling */
+.hero-manifesto-box {
+    background: #f8fafc;
+    border-left: 5px solid #0a2540;
+    padding: 25px;
+    border-radius: 0 12px 12px 0;
+}
+
+.manifesto-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+    color: #64748b;
+}
+
+.manifesto-item.highlight {
+    color: #0a2540;
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+/* Hero Image & Floating Card */
+.hero-image-wrapper {
+    position: relative;
+    padding: 20px;
+}
+
+.experience-card {
+    position: absolute;
+    bottom: -10px;
+    left: -20px;
+    background: #0a2540;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.experience-card .number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #3b82f6;
+}
+
+/* Trust Badge */
+.trust-badge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.85rem;
+    color: #475569;
+}
+
+.trust-badge i {
+    font-size: 1.5rem;
+    color: #0a2540;
+}
+
+.btn-hero-lg {
+    background: #0a2540;
+    color: white;
+    padding: 18px 35px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-hero-lg:hover {
+    background: #0d6efd;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(13, 110, 253, 0.3);
+}
+
