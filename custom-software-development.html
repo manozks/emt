@@ -18,56 +18,10 @@
 </head>
 <body>
 
-  <header>
-    <nav class="navbar navbar-light blue-bg fixed-top">
-      <div class="container-fluid d-flex justify-content-between">
-        
-        <a class="navbar-brand" href="index.html">
-          <img src="images/logo.png" alt="Company Logo" height="42">
-        </a>
 
-        <div class="right--bar">
-          <div class="contact-info">
-            <a href="https://wa.me/9779851038796" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-whatsapp"></i> +977 9851038796
-            </a>
-          </div>
-      
-          <button class="navbar-toggler" type="button" aria-label="Toggle navigation" onclick="toggleMenu()">        
-            <img src="images/nav-toggle-icon.png" alt="toggler">
-          </button>
-        </div>
+<!-- HEADER injected by js/header.js -->
+  <div id="site-header"></div>
 
-      </div>
-    </nav>
-  </header>
-
-  <div class="menu-backdrop" id="menuBackdrop" onclick="closeMenu()"></div>
-
-  <aside class="navbar-collapse" id="navbarMenu">
-    <button class="menu-close" onclick="closeMenu()">×</button>
-    <ul class="navbar-nav">
-      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-      <li class="nav-item">
-        <a class="nav-link dropdown-toggle" id="servicesDropdown" onclick="toggleDropdown(this)">Services</a>
-        <div class="dropdown-menu" id="servicesMenu">
-          <a class="dropdown-item" href="ai-solutions.html">AI Solutions</a>
-          <a class="dropdown-item" href="mobile-development.html">Mobile App Development</a>
-          <a class="dropdown-item" href="web-development.html">Web Development</a>
-          <a class="dropdown-item" href="software-development.html">Software Development</a>
-          <a class="dropdown-item" href="devops-engineer.html">DevOps Engineer</a>
-          <a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a>
-        </div>
-      </li>
-      <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
-      <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
-      <li class="nav-item"><a class="nav-link" href="works.html">Our Works</a></li>
-      <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-      <li class="nav-item"><a class="nav-link" href="testimonial-all.html">Testimonial</a></li>
-      <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-    </ul>
-  </aside>
 <main>
  <section class="ai-solution-section mobile-app-section software-hero-refined">
   <div class="container">
@@ -108,7 +62,7 @@
 
       <div class="col-lg-6 image-section fade-slide" data-aos="zoom-in" data-aos-delay="200">
         <div class="hero-image-wrapper">
-          <div class="blob-bg"></div> <img src="./images/software-development.png" alt="Custom Software Development" class="img-fluid floating-anim">
+          <div class="blob-bg"></div> <img src="./images/ai-solution-small.jpg" alt="Custom Software Development" class="img-fluid floating-anim">
           
           <div class="floating-card card-1">
             <i class="fa-solid fa-chart-line"></i>
@@ -125,6 +79,7 @@
   </div>
 </section>
 
+ <!-- LOGO SECTION -->
   <section class="company-logo-section white-bg py-4">
     <h4>Proven with enterprises like</h4>
   <div class="container-fluid">
@@ -158,7 +113,7 @@
     </div>
     
     <div class="project-image project-image-left hero-content" data-aos="fade-left">
-      <img src="images/about5.jpg" alt="Strategic Planning">
+      <img src="images/custom-software.jpg" alt="Strategic Planning">
     </div>
   </section>
 
@@ -322,191 +277,17 @@
   </section>
 </main>
 
-  <footer class="footer-container">
-    <div class="container-fluid">
+ <!-- FOOTER injected by js/footer.js -->
+  <div id="site-footer"></div>
 
-      <div class="quote__section fade-slide">
-        Start Getting Results Online
-        <a href="request_quote.html" class="btn btn-hero">REQUEST A QUOTE</a>
-      </div>
-
-      <div class="footer-top">
-        <div class="contact-box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-          <div class="contact-icon">
-            <img src="images/map-icon.png" alt="map" loading="lazy">
-          </div>
-          <div class="contact-address">
-            <h4>KATHMANDU</h4>
-            <p>Near UN Office, Kupondol, Lalitpur, Nepal<br/>Mobile: <a href="https://wa.me/9779851038796" target="_blank" rel="noopener noreferrer">+977 9851038796</a></p>
-          </div>
-        </div>
-        <div class="contact-box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-          <div class="contact-icon">
-            <img src="images/map-icon.png" alt="map" loading="lazy">
-          </div>
-          <div class="contact-address">
-            <h4>Melbourne</h4>
-            <p>Australia<br/>Mobile: <a href="https://wa.me/61406806984" target="_blank" rel="noopener noreferrer">+61 406 806 984</a></p>         
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-middle">
-        <div class="footer-logo fade-slide">
-          <img src="images/footer-logo.png" alt="eMultiTechSolutions" loading="lazy">
-          <p>We craft, launch, and scale high-performance web, mobile, and wearable applications — from design to development, testing, and ongoing growth.</p>
-        </div>
-
-        <div class="footer-column fade-slide">
-          <h5>Services</h5>
-          <ul>
-            <li><a href="ai-solutions.html" class="footer-text">AI Solutions</a></li>
-            <li><a href="mobile-development.html" class="footer-text">Mobile App Development</a></li>
-            <li><a href="web-development.html" class="footer-text">Web Development</a></li>
-            <li><a href="software-development.html" class="footer-text">Software Development</a></li>
-            <li><a href="devops-engineer.html" class="footer-text">DevOps Engineer</a></li>
-            <li><a href="digital-marketing.html" class="footer-text">Digital Marketing</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-column fade-slide">
-          <h5>Industries</h5>
-          <ul>
-            <li><a href="healthcare.html" class="footer-text">Healthcare</a></li>
-            <li><a href="realestate.html" class="footer-text">Real Estate</a></li>           
-            <li><a href="auction-software.html" class="footer-text">Auction Software</a></li>
-            <li><a href="procurement.html" class="footer-text">Procurement Solution</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-column fade-slide">
-          <h5>Information</h5>
-          <ul>
-            <li><a href="about.html" class="footer-text">About Us</a></li>
-            <li><a href="privacy-policy.html" class="footer-text">Privacy Policy</a></li>
-            <li><a href="terms-of-condition.html" class="footer-text">Terms and Condition</a></li>
-            <li><a href="cookie-policy.html" class="footer-text">Cookie Policy</a></li>
-            <li><a href="contact.html" class="footer-text">Contact Us</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>© 2010 - 2026 Emultitechsolution</p>
-        <div class="social-icons">
-          <a href="https://www.facebook.com/emultitechsolutionnepal" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://www.linkedin.com/company/emultitechsolution" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-   <script>
-    const tabs = document.querySelectorAll(".tab");
-    const content = document.getElementById("content");
-
-    const tabData = {
-      custom: {
-        title: "Custom Software Development",
-        text: "The process of designing, creating, deploying, and maintaining software applications that are tailored specifically to meet the unique needs of a business or organization. Unlike off-the-shelf solutions, custom software is built to address specific challenges, enhance efficiency, and support business growth.",
-        list: [
-          "Software consulting",
-          "Software product development",
-          "Enterprise software development",
-          "Low Code Development solution",
-          "API Development"
-        ]
-      },
-      automation: {
-        title: "Intelligent Automation",
-        text: "It enables systems to perform repetitive tasks, make data-driven decisions, and adapt to changing conditions with minimal human intervention. By integrating machine learning, natural language processing, and analytics, intelligent automation helps organizations increase efficiency, reduce errors, lower costs, and improve overall productivity while allowing employees to focus on higher-value tasks.",
-        list: [
-          "Business Process Automation",
-          "Robotic Process Automation",
-          "AI Driven Automation",
-          "Advisory & Consulting"
-        ]
-      },
-      ai: {
-        title: "Data and AI Solutions",
-        text: "Data and AI (Artificial Intelligence) work together to help organizations make smarter, data-driven decisions. Data provides the foundation, while AI analyzes and interprets that data to uncover patterns, predict trends, and automate complex processes. By leveraging data and AI technologies such as machine learning, predictive analytics, and natural language processing, businesses can enhance decision-making, improve customer experiences, and drive innovation.",
-        list: [
-          "Generative AI Development",
-          "Data analytics and visualization",
-          "Machine learning models",
-          "Predictive analytics",
-          "AI-powered business intelligence"
-        ]
-      },
-      ad: {
-        title: "Application Development",
-        text: "Application Development is the process of designing, building, testing, and deploying software applications for various platforms such as web, mobile, or desktop. It involves understanding user needs, creating intuitive interfaces, and ensuring functionality, performance, and security. The goal of application development is to deliver scalable, efficient, and user-friendly solutions that enhance business operations and customer engagement. Modern development often uses agile methods, cloud integration, and continuous updates to keep applications adaptable and future-ready.",
-        list: [
-          "Mobile Application Development",
-          "Web Application Development",
-          "Ecommerce application development",
-          "Desktop Application",
-          "Application testing"
-        ]
-      },
-      ic: {
-        title: "IT Consulting",
-        text: "IT consultants analyze existing systems, identify challenges, and recommend effective solutions to improve efficiency, security, and performance. Their services often include digital transformation planning, software implementation, cloud strategy, and IT infrastructure optimization.",
-        list: [
-          "Digital Transformation Consulting",
-          "Project Management Consulting",
-          "IT Assessment",
-          "Security Risk Assesment",
-          "Enterprise IT consulting",
-          "Business Processes and Cost Optimization"
-        ]
-      },
-      cloud: {
-        title: "Cloud",
-        text: "Cloud Computing is a technology that allows users and businesses to access computing resources—such as servers, storage, databases, and software—over the internet instead of relying on local hardware. It provides flexibility, scalability, and cost efficiency by enabling users to pay only for what they use. Cloud services are typically categorized into models like Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). This technology supports remote work, data backup, and faster innovation, making it a cornerstone of modern IT infrastructure.",
-        list: [
-          "Cloud strategy",
-          "Cloud Engineering",
-          "Managed services and support",
-          "Cloud Security",
-          "Cloud Migration Services"
-        ]
-      },
-      tqa: {
-        title: "Testing and QA",
-        text: "Testing and Quality Assurance (QA) are essential processes in software development that ensure a product is reliable, functional, and free from defects before release. Testing involves systematically checking software to identify bugs, errors, or performance issues, while QA focuses on improving development processes to prevent defects from occurring. Together, they help maintain high standards of quality, enhance user satisfaction, and ensure that the final product meets business and technical requirements.",
-        list: [
-          "Automation Testing",
-          "Functional testing",
-          "Performance testing",
-          "Penetration testing",
-          "Security Testing",
-          "Manual Testing"
-        ]
-      }
-    };
-
-    tabs.forEach((tab) => {
-      tab.addEventListener("click", () => {
-        tabs.forEach((t) => t.classList.remove("active"));
-        tab.classList.add("active");
-
-        const selected = tab.getAttribute("data-tab");
-        const { title, text, list } = tabData[selected];
-
-        content.innerHTML = `
-          <h2>${title}</h2>
-          <p>${text}</p>
-          <ul>
-            ${list.map((item) => `<li>${item}</li>`).join("")}
-          </ul>
-        `;
-      });
-    });
-  </script>
-
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/script.js"></script>
+  
    <script>
     AOS.init();
 
@@ -524,6 +305,6 @@
       });
     });
   </script> 
-  <script src="js/script.js"></script>
 </body>
 </html>
+
