@@ -5183,7 +5183,7 @@ transform: translateY(-2px);
 }
 
 .comparison-table thead th {
-  background: #0a2540;
+  background: #051233;
   border: none;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 1px;
@@ -5379,7 +5379,7 @@ transform: translateY(-2px);
 /* Secondary CTA Glow */
 .btn-link-glow {
   text-decoration: none;
-  color: #0a2540;
+  color: #051233;
   font-weight: 600;
   transition: 0.3s;
 }
@@ -5438,7 +5438,7 @@ transform: translateY(-2px);
 
 /* Content Styling */
 .risk-content h4 {
-  color: #0a2540; /* Your brand deep blue */
+  color: #051233; /* Your brand deep blue */
   font-size: 1.3rem;
   letter-spacing: 0.5px;
 }
@@ -5531,7 +5531,7 @@ transform: translateY(-2px);
 
 /* --- Risk Elimination Section --- */
 .risk-section {
-    background: #0a2540; /* Dark Executive Blue */
+    background: #051233; /* Dark Executive Blue */
     color: #7192C5;
     border-radius: 0;
 }
@@ -5617,7 +5617,7 @@ transform: translateY(-2px);
 
 /* Our Approach (The Premium Choice) */
 .our-approach {
-    background: #0a2540; /* Your Brand Deep Blue */
+    background: #051233; /* Your Brand Deep Blue */
     color: #fff;
     position: relative;
     box-shadow: -15px 0 30px rgba(0,0,0,0.2);
@@ -5683,7 +5683,7 @@ transform: translateY(-2px);
 
 /* Risk Elimination Section Styling */
 .risk-elimination-section {
-    background-color: #0a2540; /* Dark Executive Blue */
+    background-color: #051233; /* Dark Executive Blue */
     padding: 80px 0;
 }
 
@@ -5742,7 +5742,7 @@ transform: translateY(-2px);
 }
 
 .text-gradient {
-    background: linear-gradient(90deg, #0a2540, #0d6efd);
+    background: linear-gradient(90deg, #051233, #0d6efd);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -5760,7 +5760,7 @@ transform: translateY(-2px);
 /* Manifesto Box Styling */
 .hero-manifesto-box {
     background: #f8fafc;
-    border-left: 5px solid #0a2540;
+    border-left: 5px solid #051233;
     padding: 25px;
     border-radius: 0 12px 12px 0;
 }
@@ -5774,7 +5774,7 @@ transform: translateY(-2px);
 }
 
 .manifesto-item.highlight {
-    color: #0a2540;
+    color: #051233;
     margin-top: 15px;
     font-size: 1.1rem;
 }
@@ -5789,7 +5789,7 @@ transform: translateY(-2px);
     position: absolute;
     bottom: -10px;
     left: -20px;
-    background: #0a2540;
+    background: #051233;
     color: white;
     padding: 20px;
     border-radius: 12px;
@@ -5816,11 +5816,11 @@ transform: translateY(-2px);
 
 .trust-badge i {
     font-size: 1.5rem;
-    color: #0a2540;
+    color: #051233;
 }
 
 .btn-hero-lg {
-    background: #0a2540;
+    background: #051233;
     color: white;
     padding: 18px 35px;
     border-radius: 8px;
@@ -5833,4 +5833,7 @@ transform: translateY(-2px);
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(13, 110, 253, 0.3);
 }
+
+
+
 
