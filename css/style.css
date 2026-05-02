@@ -5599,19 +5599,19 @@ transform: translateY(-2px);
 
 /* Common Practice Styling */
 .common-practice {
-    background: #f8fafc;
+    background: #E9E9FE;
     color: #64748b;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #dddddd;
 }
 
 .common-practice h4 {
-    color: #94a3b8;
+    color: #051233;
     margin-bottom: 30px;
     font-weight: 700;
 }
 
 .common-practice .fa-circle-xmark {
-    color: #cbd5e1;
+    color: #444444;
     margin-right: 12px;
 }
 
@@ -5660,10 +5660,12 @@ transform: translateY(-2px);
     display: flex;
     align-items: center;
     font-weight: 500;
+    color: #444444;
 }
 
 .our-approach li {
     border-bottom: 1px solid rgba(255,255,255,0.1);
+    color: #fff;
 }
 
 .practice-outcomes {
