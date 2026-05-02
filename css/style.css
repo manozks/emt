@@ -1104,9 +1104,15 @@ padding:0;
       grid-column: 2;
       grid-row: 3;
   }
+
 }
 
 @media (max-width: 767px) {
+    .services-section h2 {
+    font-size: 1.5rem;
+    padding-bottom: 0;
+   
+}
   .testimonials-container {
       padding: 40px 20px;
   }
