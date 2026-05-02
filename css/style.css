@@ -1108,11 +1108,7 @@ padding:0;
 }
 
 @media (max-width: 767px) {
-    .services-section h2 {
-    font-size: 1.5rem;
-    padding-bottom: 0;
-   
-}
+
   .testimonials-container {
       padding: 40px 20px;
   }
@@ -1300,6 +1296,12 @@ transform: translateY(-2px);
   .why-us-container .grid {
     grid-template-columns: 1fr;
   }
+
+      .services-section h2 {
+    font-size: 1.5rem;
+    padding-bottom: 0;
+   
+}
 }
 
 
