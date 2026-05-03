@@ -3,153 +3,718 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Expert Web & Mobile App Development | AI Solutions | E Multitech Solution, Nepal</title>
+  <title>Get a Free Consultation | E Multitech Solution, Nepal</title>
+  <meta name="description" content="Request a free project consultation with E Multitech Solution. Tell us about your project, pick a discovery call slot, and get a response within 48 hours.">
+
   <link rel="shortcut icon" href="images/favicon.png">
-  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@600;700;800;900&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
   <link href="css/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 
-<!-- HEADER injected by js/header.js -->
-  <div id="site-header"></div>
+<div id="site-header"></div>
 
-  <main>
-    <section class="contact__hero">
-      <div class="container-fluid">
-        <div class="contact__section">
-          
-          <div class="hero-content">
-            <h2>Request Free Quote</h2>
-            <p>Please fill in our no obligation online request form below, with any queries regarding your web projects, auction software, web designs, mobile apps, and initiate a conversation with us. Be sure to include your correct email address.</p>
-          </div>
-          
-          <div class="contact-section fade-slide">
-           <div class="form-box">
-  <form action="https://api.web3forms.com/submit" method="POST" id="quote-form">
-    
-    <input type="hidden" name="access_key" value="a16358e7-a394-4206-8b98-1383badf0c9f">
+<main>
+<section class="contact__hero">
+  <div class="container position-relative" style="z-index:2;">
 
-    <input type="text" name="firstName" placeholder="First Name" required>
-    <input type="email" name="email" placeholder="Email Address" required>
-    <input type="text" name="skype" placeholder="Skype/IM">
-    <input type="text" name="mobileNo" placeholder="Mobile No" required>
-    <input type="text" name="company" placeholder="Company">
+    <!-- Head -->
+    <div class="rq-head" data-aos="fade-up" data-aos-duration="800">
+      
+      <h1>Get a <span>Free Project</span><br>Consultation</h1>
+      
     
-    <select name="country" required>
-      <option value="">Country</option>
-      <option value="USA">USA</option>
-      <option value="Germany">Germany</option>
-      <option value="Canada">Canada</option>
-    </select>
-    
-    <div class="form-section">
-      <h3>What type of project do you need?</h3>
-      <div class="checkbox-group">
-        <label><input type="checkbox" name="projectType[]" value="Website"> Website</label>
-        <label><input type="checkbox" name="projectType[]" value="Mobile App"> Mobile App</label>
-        <label><input type="checkbox" name="projectType[]" value="Software Development"> Software Development</label>
-      </div>
     </div>
-    
-    <select name="budgetRange" required>
-      <option value="">Select Budget Range</option>
-      <option value="$1000 - $5000">$1000 - $5000</option>
-      <option value="$5000 - $10000">$5000 - $10000</option>
-      <option value="Above $10000">Above $10000</option>
-    </select>
-    
-    <input type="text" name="timeframe" placeholder="Specific timeframe or deadline?">
-    
-    <textarea name="projectDetail" placeholder="Project Detail"></textarea>
 
-    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-
-    <button type="submit">Submit</button>
-  </form>
-
-  <div id="success-message" style="display: none; color: #28a745; margin-top: 15px; font-weight: 600;">
-    Thank you! Your quote request has been sent. We will review your details and get back to you shortly.
-  </div>
-</div>
-
-            <div class="info-box">
-              <p>Our customer care staff will respond to your query within 48 hours.</p>
-              <p><strong>Got more questions?</strong> Call us on</p>
-              <div class="phone">
-                <img src="images/mobile-icon.png" alt="Mobile"> +977 9851038796
-              </div>
-              <img src="images/contact-picture.png" alt="Support Illustration" loading="lazy">
-            </div>
-            
-          </div>
+    <!-- Wizard progress -->
+    <div class="wizard-wrap" data-aos="fade-up" data-aos-delay="100">
+      <div class="wizard-progress">
+        <div class="wp-step active" id="wp1">
+          <div class="wp-bubble active" id="wb1">1</div>
+          <span class="wp-label">Project Details</span>
+        </div>
+        <div class="wp-line" id="wl1"></div>
+        <div class="wp-step" id="wp2">
+          <div class="wp-bubble" id="wb2">2</div>
+          <span class="wp-label">Book a Call</span>
+        </div>
+        <div class="wp-line" id="wl2"></div>
+        <div class="wp-step" id="wp3">
+          <div class="wp-bubble" id="wb3">3</div>
+          <span class="wp-label">Review &amp; Submit</span>
         </div>
       </div>
-    </section>
-  </main>
 
- <!-- FOOTER injected by js/footer.js -->
-  <div id="site-footer"></div>
+      <!-- Outer layout: wizard + sidebar -->
+      <div class="rq-layout">
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script>AOS.init();</script>
-  <script src="js/header.js"></script>
-  <script src="js/footer.js"></script>
-  <script src="js/script.js"></script>
+        <!-- ════ WIZARD ════ -->
+        <div class="wizard-wrap-inner">
 
-  <script>
-  document.getElementById('quote-form').addEventListener('submit', function(event) {
-    // Prevent standard browser redirect
-    event.preventDefault();
+        <form id="quote-form" novalidate>
+          <input type="hidden" name="access_key" value="a16358e7-a394-4206-8b98-1383badf0c9f">
+          <input type="hidden" name="subject" value="New Project Quote Request — E Multitech Solution">
+          <input type="hidden" name="from_name" value="E Multitech Quote Form">
+          <input type="hidden" name="botcheck" value="">
+          <input type="hidden" name="selected_date" id="h_date">
+          <input type="hidden" name="selected_time" id="h_time">
 
-    const form = this;
-    const formData = new FormData(form);
-    const successMessage = document.getElementById('success-message');
-    const submitButton = form.querySelector('button[type="submit"]');
+          <!-- ══ STEP 1: PROJECT DETAILS ══ -->
+          <div class="wizard-panel active" id="panel1">
+            <div class="rq-card">
+              <div class="panel-head">
+                <div class="step-tag"><i class="fa-solid fa-user-pen"></i> Step 1 of 3</div>
+                <h2>Tell us about yourself &amp; your project</h2>
+                <p>All fields marked required help us give you a more accurate and faster response.</p>
+              </div>
 
-    // Change button text to show it's processing
-    submitButton.textContent = 'Sending...';
-    submitButton.disabled = true;
+              <!-- Name row -->
+              <div class="row g-3 mb-0">
+                <div class="col-md-6">
+                  <div class="fl">
+                    <label>First Name <span>*required</span></label>
+                    <input type="text" name="firstName" class="fi" placeholder="Rajesh" required autocomplete="given-name">
+                    <span class="field-err" id="err-firstName">Please enter your first name.</span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="fl">
+                    <label>Last Name <span>*required</span></label>
+                    <input type="text" name="lastName" class="fi" placeholder="Sharma" required autocomplete="family-name">
+                    <span class="field-err" id="err-lastName">Please enter your last name.</span>
+                  </div>
+                </div>
+              </div>
 
-    // Send data to Web3Forms via Fetch API
-    fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      body: formData
-    })
-    .then(async (response) => {
-      let json = await response.json();
-      if (response.status == 200) {
-        // Show success message and clear the form
-        successMessage.style.display = 'block';
-        form.reset();
-      } else {
-        console.log(response);
-        alert(json.message);
-      }
-    })
-    .catch(error => {
-      console.log(error);
-      alert("Something went wrong! Please try again.");
-    })
-    .finally(() => {
-      // Reset button state
-      submitButton.textContent = 'Submit';
-      submitButton.disabled = false;
-      
-      // Hide the success message after 6 seconds
-      setTimeout(() => {
-        successMessage.style.display = 'none';
-      }, 6000);
-    });
+              <!-- Email + mobile -->
+              <div class="row g-3 mb-0">
+                <div class="col-md-6">
+                  <div class="fl">
+                    <label>Work Email <span>*required</span></label>
+                    <input type="email" name="email" class="fi" placeholder="you@company.com" required autocomplete="email">
+                    <span class="field-err" id="err-email">Please enter a valid email address.</span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="fl">
+                    <label>Mobile / WhatsApp <span>*required</span></label>
+                    <div class="phone-row">
+                      <span class="phone-prefix">📞</span>
+                      <input type="tel" name="mobileNo" class="fi" placeholder="+977 98XXXXXXXX" required autocomplete="tel">
+                    </div>
+                    <span class="field-err" id="err-mobileNo">Please enter your mobile number.</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Company + Skype -->
+              <div class="row g-3 mb-0">
+                <div class="col-md-6">
+                  <div class="fl">
+                    <label>Company <span>optional</span></label>
+                    <input type="text" name="company" class="fi" placeholder="Your company name" autocomplete="organization">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="fl">
+                    <label>Skype / IM <span>optional</span></label>
+                    <input type="text" name="skype" class="fi" placeholder="skype:username or @handle">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Country -->
+              <div class="fl">
+                <label>Country <span>*required</span></label>
+                <select name="country" class="fi-select" required>
+                  <option value="">Select your country</option>
+                  <optgroup label="Asia">
+                    <option>Nepal</option><option>India</option><option>Bangladesh</option>
+                    <option>Sri Lanka</option><option>Pakistan</option><option>Singapore</option>
+                    <option>UAE</option><option>Qatar</option><option>Saudi Arabia</option>
+                    <option>Japan</option><option>South Korea</option><option>China</option>
+                    <option>Malaysia</option><option>Indonesia</option>
+                  </optgroup>
+                  <optgroup label="Europe">
+                    <option>United Kingdom</option><option>Germany</option><option>France</option>
+                    <option>Netherlands</option><option>Belgium</option><option>Switzerland</option>
+                    <option>Sweden</option><option>Norway</option><option>Denmark</option>
+                    <option>Finland</option><option>Austria</option><option>Spain</option>
+                    <option>Italy</option><option>Poland</option>
+                  </optgroup>
+                  <optgroup label="Americas">
+                    <option>USA</option><option>Canada</option><option>Mexico</option>
+                    <option>Brazil</option><option>Argentina</option>
+                  </optgroup>
+                  <optgroup label="Oceania">
+                    <option>Australia</option><option>New Zealand</option>
+                  </optgroup>
+                  <optgroup label="Africa">
+                    <option>South Africa</option><option>Nigeria</option><option>Kenya</option>
+                  </optgroup>
+                  <option value="other">Other</option>
+                </select>
+                <span class="field-err" id="err-country">Please select your country.</span>
+              </div>
+
+              <div class="fdiv"></div>
+
+              <!-- Project type -->
+              <div class="fl" style="gap:12px;">
+                <label>What type of project do you need? <span>*select all that apply</span></label>
+                <div class="project-type-grid">
+                  <label class="pt-card" id="ptc-website">
+                    <input type="checkbox" name="projectType[]" value="Website">
+                    <div class="check-tick"><i class="fa-solid fa-check"></i></div>
+                    <span class="pt-icon">🌐</span>
+                    <span class="pt-label">Website</span>
+                  </label>
+                  <label class="pt-card" id="ptc-mobile">
+                    <input type="checkbox" name="projectType[]" value="Mobile App">
+                    <div class="check-tick"><i class="fa-solid fa-check"></i></div>
+                    <span class="pt-icon">📱</span>
+                    <span class="pt-label">Mobile App</span>
+                  </label>
+                  <label class="pt-card" id="ptc-software">
+                    <input type="checkbox" name="projectType[]" value="Custom Software">
+                    <div class="check-tick"><i class="fa-solid fa-check"></i></div>
+                    <span class="pt-icon">⚙️</span>
+                    <span class="pt-label">Custom Software</span>
+                  </label>
+                  <label class="pt-card" id="ptc-ai">
+                    <input type="checkbox" name="projectType[]" value="AI / Automation">
+                    <div class="check-tick"><i class="fa-solid fa-check"></i></div>
+                    <span class="pt-icon">🤖</span>
+                    <span class="pt-label">AI / Automation</span>
+                  </label>
+                  <label class="pt-card" id="ptc-api">
+                    <input type="checkbox" name="projectType[]" value="API & Backend">
+                    <div class="check-tick"><i class="fa-solid fa-check"></i></div>
+                    <span class="pt-icon">🔌</span>
+                    <span class="pt-label">API &amp; Backend</span>
+                  </label>
+                  <label class="pt-card" id="ptc-other">
+                    <input type="checkbox" name="projectType[]" value="Other">
+                    <div class="check-tick"><i class="fa-solid fa-check"></i></div>
+                    <span class="pt-icon">💡</span>
+                    <span class="pt-label">Other</span>
+                  </label>
+                </div>
+                <span class="field-err" id="err-projectType">Please select at least one project type.</span>
+              </div>
+
+              <div class="fdiv"></div>
+
+              <!-- Budget -->
+              <div class="fl" style="gap:12px;">
+                <label>Estimated Budget Range <span>*required</span></label>
+                <div class="budget-grid">
+                  <label class="budget-tile">
+                    <input type="radio" name="budgetRange" value="Under $1,000">
+                    <div class="bt-amount">Under $1K</div>
+                    <div class="bt-note">Small project</div>
+                  </label>
+                  <label class="budget-tile">
+                    <input type="radio" name="budgetRange" value="$1,000 – $5,000">
+                    <div class="bt-amount">$1K–$5K</div>
+                    <div class="bt-note">Starter build</div>
+                  </label>
+                  <label class="budget-tile">
+                    <input type="radio" name="budgetRange" value="$5,000 – $10,000">
+                    <div class="bt-amount">$5K–$10K</div>
+                    <div class="bt-note">Mid-size</div>
+                  </label>
+                  <label class="budget-tile">
+                    <input type="radio" name="budgetRange" value="$10,000 – $25,000">
+                    <div class="bt-amount">$10K–$25K</div>
+                    <div class="bt-note">Enterprise</div>
+                  </label>
+                  <label class="budget-tile">
+                    <input type="radio" name="budgetRange" value="Above $25,000">
+                    <div class="bt-amount">$25K+</div>
+                    <div class="bt-note">Large scale</div>
+                  </label>
+                  <label class="budget-tile">
+                    <input type="radio" name="budgetRange" value="Not sure yet">
+                    <div class="bt-amount">Not sure</div>
+                    <div class="bt-note">We'll advise</div>
+                  </label>
+                </div>
+                <span class="field-err" id="err-budget">Please select a budget range.</span>
+              </div>
+
+              <!-- Timeframe + detail -->
+              <div class="fl">
+                <label>Specific Deadline or Timeframe <span>optional</span></label>
+                <input type="text" name="timeframe" class="fi" placeholder="e.g. MVP by end of Q3 2026, or No fixed deadline">
+              </div>
+
+              <div class="fl">
+                <label>Project Brief <span>optional but helpful</span></label>
+                <textarea name="projectDetail" class="fi" rows="4" placeholder="e.g. We need a live auction platform handling 5,000 concurrent bidders with real-time bid updates. Currently on a legacy PHP stack that crashes under load…"></textarea>
+              </div>
+
+              <div class="btn-row">
+                <span style="font-size:.74rem;color:var(--muted);">Step 1 of 3 — Next: Book a call slot</span>
+                <button type="button" class="btn-next" id="goStep2">
+                  Next: Book Your Call <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ══ STEP 2: CALENDAR ══ -->
+          <div class="wizard-panel" id="panel2">
+            <div class="rq-card">
+              <div class="panel-head">
+                <div class="step-tag"><i class="fa-regular fa-calendar-check"></i> Step 2 of 3</div>
+                <h2>Pick a discovery call slot</h2>
+                <p>Select an available date and a time that works for you. All times are in Nepal Time (NPT, UTC+5:45). We'll send a calendar invite on confirmation.</p>
+              </div>
+
+              <div class="step2-grid">
+                <!-- Calendar -->
+                <div>
+                  <div class="cal-hd">
+                    <h4 id="calMonthDisplay"></h4>
+                    <div class="cal-nav-row">
+                      <button type="button" class="cal-nav-btn" id="calPrev"><i class="fa-solid fa-chevron-left"></i></button>
+                      <button type="button" class="cal-nav-btn" id="calNext"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                  </div>
+                  <div class="cal-dow-row">
+                    <div class="cal-dow">Su</div><div class="cal-dow">Mo</div><div class="cal-dow">Tu</div>
+                    <div class="cal-dow">We</div><div class="cal-dow">Th</div><div class="cal-dow">Fr</div><div class="cal-dow">Sa</div>
+                  </div>
+                  <div id="calGrid" class="cal-dates"></div>
+                  <div class="cal-readout" id="calReadout">
+                    <i class="fa-regular fa-calendar" style="color:rgba(26,107,204,.45);"></i>
+                    <span id="calReadoutText">Select an available date</span>
+                  </div>
+                  <div class="cal-legend">
+                    <div class="leg"><span class="leg-dot tod"></span> Today</div>
+                    <div class="leg"><span class="leg-dot av"></span> Available</div>
+                    <div class="leg"><span class="leg-dot sel"></span> Selected</div>
+                    <div class="leg"><span class="leg-dot dis"></span> Unavailable</div>
+                  </div>
+                </div>
+
+                <!-- Time Slots -->
+                <div>
+                  <div class="fl" style="gap:10px;">
+                    <label style="display:flex;align-items:center;gap:7px;">
+                      <i class="fa-regular fa-clock" style="color:var(--cyan);"></i>
+                      Available Time Slots <span>(NPT)</span>
+                    </label>
+                    <div class="slots-box" id="slotsContainer">
+                      <div class="slots-empty">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span>Choose a date first to<br>see available slots</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bk-summary" id="bkSummary">
+                    <i class="fa-solid fa-circle-check" style="color:var(--cyan);flex-shrink:0;"></i>
+                    <span style="font-weight:600;color:var(--soft);">Selected:</span>
+                    <span class="bk-chip" id="chipDate"><i class="fa-regular fa-calendar"></i> —</span>
+                    <span class="bk-chip" id="chipTime"><i class="fa-regular fa-clock"></i> —</span>
+                  </div>
+                  <span class="field-err" id="err-slot" style="display:none;margin-top:8px;">Please select a date and time slot.</span>
+                </div>
+              </div>
+
+              <div class="btn-row">
+                <button type="button" class="btn-back" id="goBack1">
+                  <i class="fa-solid fa-arrow-left"></i> Back
+                </button>
+                <button type="button" class="btn-next" id="goStep3">
+                  Review &amp; Submit <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ══ STEP 3: REVIEW ══ -->
+          <div class="wizard-panel" id="panel3">
+            <div class="rq-card">
+              <div class="panel-head">
+                <div class="step-tag"><i class="fa-solid fa-eye"></i> Step 3 of 3 — Final Review</div>
+                <h2>Review &amp; confirm your request</h2>
+                <p>Check everything looks correct before we send it to our team.</p>
+              </div>
+
+              <!-- Booking highlight -->
+              <div class="review-booking-strip" id="reviewBookingStrip">
+                <i class="fa-solid fa-calendar-check"></i>
+                <div class="rbs-text">
+                  <h4 id="rbsTitle">Discovery Call Booked</h4>
+                  <p id="rbsDetail">—</p>
+                </div>
+              </div>
+
+              <!-- Review data grid -->
+              <div class="review-grid" id="reviewGrid">
+                <div class="review-block">
+                  <h5><i class="fa-solid fa-user"></i> Contact Details</h5>
+                  <div class="rv-row"><span class="rv-key">Name</span><span class="rv-val" id="rv-name">—</span></div>
+                  <div class="rv-row"><span class="rv-key">Email</span><span class="rv-val" id="rv-email">—</span></div>
+                  <div class="rv-row"><span class="rv-key">Mobile</span><span class="rv-val" id="rv-mobile">—</span></div>
+                  <div class="rv-row"><span class="rv-key">Company</span><span class="rv-val" id="rv-company">—</span></div>
+                  <div class="rv-row"><span class="rv-key">Country</span><span class="rv-val" id="rv-country">—</span></div>
+                </div>
+                <div class="review-block">
+                  <h5><i class="fa-solid fa-code"></i> Project Details</h5>
+                  <div class="rv-row"><span class="rv-key">Type</span><span class="rv-val" id="rv-type">—</span></div>
+                  <div class="rv-row"><span class="rv-key">Budget</span><span class="rv-val" id="rv-budget">—</span></div>
+                  <div class="rv-row"><span class="rv-key">Deadline</span><span class="rv-val" id="rv-deadline">—</span></div>
+                </div>
+              </div>
+
+              <div class="btn-row">
+                <button type="button" class="btn-back" id="goBack2">
+                  <i class="fa-solid fa-arrow-left"></i> Edit Details
+                </button>
+                <button type="submit" class="btn-submit" id="submitBtn">
+                  <span class="spin" id="btnSpin"></span>
+                  <i class="fa-solid fa-paper-plane" id="btnIco"></i>
+                  <span id="btnTxt">Send Request &amp; Confirm Booking</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </form><!-- /quote-form -->
+
+        <!-- ══ SUCCESS ══ -->
+        <div class="rq-card success-panel" id="successPanel">
+          <div class="success-ring"><i class="fa-solid fa-check"></i></div>
+          <h3>Request Sent. You're on the calendar.</h3>
+          <p>Our engineering team has your brief and your discovery call is reserved. Expect a confirmation email with a calendar invite within <strong>48 hours</strong>.</p>
+          <div class="success-chips">
+            <div class="s-chip" id="sDate"><i class="fa-regular fa-calendar"></i> —</div>
+            <div class="s-chip" id="sTime"><i class="fa-regular fa-clock"></i> —</div>
+          </div>
+          <a href="works.html" style="margin-top:12px;font-size:.8rem;color:#7eb8ff;text-decoration:none;">
+            While you wait — explore our case studies <i class="fa-solid fa-arrow-right ms-1"></i>
+          </a>
+        </div>
+
+        </div><!-- /wizard-wrap-inner -->
+
+        <!-- ════ SIDEBAR ════ -->
+        <aside class="info-sidebar" data-aos="fade-left" data-aos-delay="200">
+          <div class="sidebar-contact-block">
+            <img src="images/contact-picture.png" alt="E Multitech Support" loading="lazy">
+            <p>Our engineering team will personally review your brief and respond with a technical path forward — not a template.</p>
+            <a class="sidebar-phone" href="tel:+9779851038796">
+              <i class="fa-solid fa-phone"></i> +977 9851038796
+            </a>
+          </div>
+
+          <div class="why-us-list">
+            <div class="why-item">
+              <div class="why-icon"><i class="fa-solid fa-clock"></i></div>
+              <div class="why-text">
+                <h6>48-Hour Response Guarantee</h6>
+                <p>Every request is reviewed by a senior engineer, not an automated system.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <div class="why-text">
+                <h6>NDA Available on Request</h6>
+                <p>Share freely — your idea is confidential from the first message.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-icon"><i class="fa-solid fa-circle-check"></i></div>
+              <div class="why-text">
+                <h6>No Obligation Quote</h6>
+                <p>A free scoping call with no pressure to proceed. You keep all IP discussed.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-icon"><i class="fa-solid fa-bolt"></i></div>
+              <div class="why-text">
+                <h6>8+ Years, 40+ Projects</h6>
+                <p>Proven delivery track record across fintech, logistics, and marketplace platforms.</p>
+              </div>
+            </div>
+          </div>
+
+        
+        </aside>
+
+      </div><!-- /rq-layout -->
+    </div><!-- /wizard-wrap -->
+
+  </div><!-- /container -->
+</section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/script.js"></script>
+<script>
+AOS.init({ once: true, duration: 700 });
+
+/* ══════════════════════════════════════════════════════
+   CONFIG — adjust to your real schedule
+══════════════════════════════════════════════════════ */
+const CAL = {
+  blockedWeekdays: [0, 6], // Sun, Sat
+  blockedDates: ['2026-01-01','2026-09-18','2026-10-02','2025-01-01'],
+  slots: [
+    '09:00 AM','10:00 AM','11:00 AM','12:00 PM',
+    '02:00 PM','03:00 PM','04:00 PM','05:30 PM','06:00 PM'
+  ],
+  fakeBooked(dStr) {
+    const h = dStr.split('').reduce((a,c)=>a+c.charCodeAt(0),0);
+    const s = new Set();
+    for(let i=0;i<h%3;i++) s.add((h+i*3)%this.slots.length);
+    return s;
+  }
+};
+
+const MONTHS = ['January','February','March','April','May','June',
+                'July','August','September','October','November','December'];
+
+let calY, calM, selDate=null, selTime=null;
+
+/* ── Calendar render ─────────────────────────────────── */
+function renderCal() {
+  const grid = document.getElementById('calGrid');
+  const hd   = document.getElementById('calMonthDisplay');
+  grid.innerHTML = '';
+  hd.textContent = `${MONTHS[calM]} ${calY}`;
+
+  const firstDow = new Date(calY, calM, 1).getDay();
+  const days     = new Date(calY, calM+1, 0).getDate();
+  const todayMs  = new Date(); todayMs.setHours(0,0,0,0);
+
+  for(let i=0;i<firstDow;i++){
+    const e=document.createElement('div'); e.className='cd empty'; grid.appendChild(e);
+  }
+  for(let d=1;d<=days;d++){
+    const cell = document.createElement('div');
+    const dStr = `${calY}-${String(calM+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+    const dow  = new Date(calY, calM, d).getDay();
+    const past = new Date(calY, calM, d) < todayMs;
+    const blocked = CAL.blockedWeekdays.includes(dow) || CAL.blockedDates.includes(dStr);
+
+    cell.className = 'cd';
+    cell.textContent = d;
+    if(past||blocked){ cell.classList.add('disabled'); }
+    else { cell.classList.add('has-slots'); cell.dataset.date=dStr; cell.onclick=()=>pickDate(dStr); }
+    if(new Date(calY,calM,d).getTime()===todayMs.getTime()) cell.classList.add('today');
+    if(dStr===selDate) cell.classList.add('selected');
+    grid.appendChild(cell);
+  }
+}
+
+function pickDate(dStr) {
+  selDate = dStr; selTime = null;
+  document.getElementById('h_date').value = dStr;
+  document.getElementById('h_time').value = '';
+  renderCal();
+
+  const [y,m,d] = dStr.split('-');
+  const lbl = new Date(+y,+m-1,+d).toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'});
+  document.getElementById('calReadoutText').textContent = lbl;
+  document.getElementById('calReadout').classList.add('active');
+
+  renderSlots(dStr);
+  updateBkSummary();
+}
+
+function renderSlots(dStr) {
+  const box = document.getElementById('slotsContainer');
+  box.innerHTML = '';
+  const booked = CAL.fakeBooked(dStr);
+  const sg = document.createElement('div'); sg.className='slots-grid';
+  CAL.slots.forEach((s,i)=>{
+    const b=document.createElement('div'); b.className='ts'; b.textContent=s;
+    if(booked.has(i)){ b.classList.add('booked'); }
+    else {
+      b.style.animationDelay=`${i*35}ms`;
+      b.onclick=()=>{ document.querySelectorAll('.ts').forEach(x=>x.classList.remove('selected')); b.classList.add('selected'); selTime=s; document.getElementById('h_time').value=s+' NPT'; updateBkSummary(); };
+    }
+    if(selTime===s) b.classList.add('selected');
+    sg.appendChild(b);
   });
+  box.appendChild(sg);
+}
+
+function updateBkSummary() {
+  const strip = document.getElementById('bkSummary');
+  if(selDate){
+    const [y,m,d]=selDate.split('-');
+    const lbl=new Date(+y,+m-1,+d).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
+    document.getElementById('chipDate').innerHTML=`<i class="fa-regular fa-calendar"></i> ${lbl}`;
+  }
+  if(selTime) document.getElementById('chipTime').innerHTML=`<i class="fa-regular fa-clock"></i> ${selTime} NPT`;
+  strip.classList.toggle('show', !!(selDate && selTime));
+}
+
+/* ── Calendar nav ────────────────────────────────────── */
+document.getElementById('calPrev').onclick=()=>{ calM--; if(calM<0){calM=11;calY--;} renderCal(); };
+document.getElementById('calNext').onclick=()=>{ calM++; if(calM>11){calM=0;calY++;} renderCal(); };
+
+/* ── Progress updater ────────────────────────────────── */
+function setProgress(n) {
+  [1,2,3].forEach(i=>{
+    const b=document.getElementById(`wb${i}`); const s=document.getElementById(`wp${i}`);
+    b.classList.remove('active','done'); s.classList.remove('active','done');
+    if(i<n){ b.classList.add('done'); s.classList.add('done'); b.innerHTML='<i class="fa-solid fa-check" style="font-size:.6rem;"></i>'; }
+    else if(i===n){ b.classList.add('active'); s.classList.add('active'); b.textContent=i; }
+    else { b.textContent=i; }
+  });
+  ['wl1','wl2'].forEach((id,idx)=>{ document.getElementById(id).classList.toggle('done',n>idx+1); });
+}
+
+function showPanel(n) {
+  document.querySelectorAll('.wizard-panel').forEach(p=>p.classList.remove('active'));
+  document.getElementById(`panel${n}`).classList.add('active');
+  setProgress(n);
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+/* ── Step 1 validation ───────────────────────────────── */
+function validateStep1() {
+  let ok = true;
+  const req = [
+    {name:'firstName', err:'err-firstName'},
+    {name:'lastName',  err:'err-lastName'},
+    {name:'email',     err:'err-email'},
+    {name:'mobileNo',  err:'err-mobileNo'},
+    {name:'country',   err:'err-country'},
+  ];
+  req.forEach(({name,err})=>{
+    const el=document.querySelector(`[name="${name}"]`);
+    const errEl=document.getElementById(err);
+    if(!el.value.trim()){
+      el.classList.add('error'); errEl.classList.add('show'); ok=false;
+    } else { el.classList.remove('error'); errEl.classList.remove('show'); }
+  });
+  // email format
+  const emailEl=document.querySelector('[name="email"]');
+  if(emailEl.value && !/\S+@\S+\.\S+/.test(emailEl.value)){
+    emailEl.classList.add('error'); document.getElementById('err-email').classList.add('show'); ok=false;
+  }
+  // project type
+  const checked = document.querySelectorAll('[name="projectType[]"]:checked');
+  document.getElementById('err-projectType').classList.toggle('show', checked.length===0);
+  if(checked.length===0) ok=false;
+  // budget
+  const budget = document.querySelector('[name="budgetRange"]:checked');
+  document.getElementById('err-budget').classList.toggle('show', !budget);
+  if(!budget) ok=false;
+  return ok;
+}
+
+document.getElementById('goStep2').onclick=()=>{ if(validateStep1()) showPanel(2); };
+document.getElementById('goBack1').onclick=()=>showPanel(1);
+document.getElementById('goBack2').onclick=()=>showPanel(2);
+
+/* ── Step 2 → Step 3 ─────────────────────────────────── */
+document.getElementById('goStep3').onclick=()=>{
+  if(!selDate||!selTime){
+    document.getElementById('err-slot').style.display='block'; return;
+  }
+  document.getElementById('err-slot').style.display='none';
+  populateReview();
+  showPanel(3);
+};
+
+/* ── Populate review ─────────────────────────────────── */
+function populateReview() {
+  const g = (n)=>{ const el=document.querySelector(`[name="${n}"]`); return el?el.value.trim():'—'; };
+  const fn=g('firstName'), ln=g('lastName');
+  document.getElementById('rv-name').textContent   = [fn,ln].filter(Boolean).join(' ')||'—';
+  document.getElementById('rv-email').textContent  = g('email')||'—';
+  document.getElementById('rv-mobile').textContent = g('mobileNo')||'—';
+  document.getElementById('rv-company').textContent= g('company')||'—';
+  document.getElementById('rv-country').textContent= g('country')||'—';
+
+  const types = [...document.querySelectorAll('[name="projectType[]"]:checked')].map(e=>e.value);
+  document.getElementById('rv-type').textContent   = types.join(', ')||'—';
+  const bud = document.querySelector('[name="budgetRange"]:checked');
+  document.getElementById('rv-budget').textContent = bud?bud.value:'—';
+  document.getElementById('rv-deadline').textContent = g('timeframe')||'No fixed deadline';
+
+  // booking strip
+  if(selDate && selTime){
+    const [y,m,d]=selDate.split('-');
+    const lbl=new Date(+y,+m-1,+d).toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'});
+    document.getElementById('rbsDetail').textContent = `${lbl} at ${selTime} NPT`;
+  }
+}
+
+/* ── PT card toggle ─────────────────────────────────── */
+document.querySelectorAll('.pt-card').forEach(card=>{
+  const cb = card.querySelector('input[type=checkbox]');
+  cb.addEventListener('change',()=>card.classList.toggle('checked', cb.checked));
+});
+
+/* ── Budget tile toggle ─────────────────────────────── */
+document.querySelectorAll('.budget-tile').forEach(tile=>{
+  const rb = tile.querySelector('input[type=radio]');
+  rb.addEventListener('change',()=>{
+    document.querySelectorAll('.budget-tile').forEach(t=>t.classList.remove('checked'));
+    if(rb.checked) tile.classList.add('checked');
+  });
+});
+
+/* ── Form submit ─────────────────────────────────────── */
+document.getElementById('quote-form').addEventListener('submit', async function(e){
+  e.preventDefault();
+  const btn=document.getElementById('submitBtn');
+  const spin=document.getElementById('btnSpin');
+  const ico=document.getElementById('btnIco');
+  const txt=document.getElementById('btnTxt');
+
+  btn.disabled=true; spin.style.display='block'; ico.style.display='none';
+  txt.textContent='Sending your request…';
+
+  try {
+    const fd = new FormData(this);
+    const res = await fetch('https://api.web3forms.com/submit',{method:'POST',body:fd});
+    const data = await res.json();
+    if(data.success){
+      // success chips
+      if(selDate){
+        const [y,m,d]=selDate.split('-');
+        const lbl=new Date(+y,+m-1,+d).toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'});
+        document.getElementById('sDate').innerHTML=`<i class="fa-regular fa-calendar"></i> ${lbl}`;
+      }
+      if(selTime) document.getElementById('sTime').innerHTML=`<i class="fa-regular fa-clock"></i> ${selTime} NPT`;
+      document.getElementById('quote-form').style.display='none';
+      document.getElementById('successPanel').classList.add('show');
+      setProgress(3);
+    } else { throw new Error(data.message); }
+  } catch(err) {
+    btn.disabled=false; spin.style.display='none'; ico.style.display='inline';
+    txt.textContent='Something went wrong — please try again';
+    btn.style.background='linear-gradient(135deg,#c0392b,#922b21)';
+    setTimeout(()=>{ btn.style.background=''; txt.textContent='Send Request & Confirm Booking'; },3500);
+  }
+});
+
+/* ── Init ────────────────────────────────────────────── */
+(function(){
+  const now=new Date(); calY=now.getFullYear(); calM=now.getMonth();
+  renderCal();
+})();
 </script>
 </body>
 </html>

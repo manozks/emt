@@ -3,129 +3,576 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Expert Web & Mobile App Development | AI Solutions | E Multitech Solution, Nepal</title>
+  <title>Book a Strategy Call | E Multitech Solution, Nepal</title>
+  <meta name="description" content="Schedule a free strategic consultation with the E Multitech engineering team. Pick a date, choose your time slot, and get a response within 24 hours.">
+
   <link rel="shortcut icon" href="images/favicon.png">
-  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@600;700;800;900&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
   <link href="css/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-dark);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+  
+  </style>
 </head>
 <body>
 
 <!-- HEADER injected by js/header.js -->
-  <div id="site-header"></div>
+<div id="site-header"></div>
 
-  <main>
-    <section class="contact__hero">
-      <div class="container-fluid">
-        <div class="contact__section">
-          <div class="hero-content">
-            <h2>Contact Us</h2>
-            <p>If we miss your call we will get back to you as soon as possible within 24 hours.</p>
-          </div>
-          
-          <div class="contact-section fade-slide">
-<div class="form-box">
-  <form action="https://api.web3forms.com/submit" method="POST" id="project-form">
+<main>
+  <section class="contact__hero">
+    <div class="container position-relative" style="z-index:2;">
+
+      <!-- ── Hero Head ── -->
+      <div class="hero-head text-center" data-aos="fade-up" data-aos-duration="800">
     
-    <input type="hidden" name="access_key" value="a16358e7-a394-4206-8b98-1383badf0c9f">
-
-    <input type="text" name="firstName" placeholder="First Name" required>
-    <input type="text" name="lastName" placeholder="Last Name" required>
-    <input type="text" name="projectName" placeholder="Project Name">
-    <input type="email" name="email" placeholder="Email Address" required>
-    <input type="text" name="phone" placeholder="Phone Number">
-    <input type="text" name="budget" placeholder="Budget">
-    <textarea name="projectDetail" placeholder="Project Detail"></textarea>
-    
-    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-
-    <button type="submit">Submit</button>
-  </form>
-
-  <div id="success-message" style="display: none; color: #28a745; margin-top: 15px; font-weight: 600;">
-    Thank you! Your message has been sent successfully. We will get back to you soon.
-  </div>
-</div>
-
-            <div class="info-box">
-              <p>Our customer care staff will respond to your query within 48 hours.</p>
-              <p><strong>Got more questions?</strong> Call us on</p>
-              <div class="phone">
-                <img src="images/mobile-icon.png" alt="Mobile"> +977 9851038796
-              </div>
-              <img src="images/contact-picture.png" alt="Support Illustration" loading="lazy">
-            </div>
-          </div>
+        <h1>Schedule a <span>Strategy Call</span><br>with Our Team</h1>
+        <p>Pick a date, choose your slot, and commit to your roadmap. Our engineering team will confirm within 24 hours — no auto-responders.</p>
+        <div class="trust-bar">
+          <span class="trust-item"><i class="fa-solid fa-shield-halved"></i> NDA available on request</span>
+          <span class="trust-item"><i class="fa-solid fa-clock"></i> 30-min focused session</span>
+          <span class="trust-item"><i class="fa-solid fa-circle-check"></i> No sales pitch — just engineering talk</span>
+          <span class="trust-item"><i class="fa-solid fa-earth-asia"></i> GMT, IST, NPT, BST slots available</span>
         </div>
       </div>
-    </section>
 
-  </main>
+      <!-- ── BOOKING GRID ── -->
+      <div class="booking-grid" data-aos="fade-up" data-aos-delay="200">
 
- <!-- FOOTER injected by js/footer.js -->
-  <div id="site-footer"></div>
+        <!-- ════ LEFT: CALENDAR ════ -->
+        <div class="bk-card" id="calendarCard">
+          <!-- Progress Steps -->
+          <div class="booking-steps" id="progressSteps">
+            <div class="bk-step active" id="step1">
+              <div class="step-bubble active">1</div>
+              <span class="step-label">Pick Date</span>
+            </div>
+            <div class="step-line" id="line1"></div>
+            <div class="bk-step" id="step2">
+              <div class="step-bubble">2</div>
+              <span class="step-label">Time Slot</span>
+            </div>
+            <div class="step-line" id="line2"></div>
+            <div class="bk-step" id="step3">
+              <div class="step-bubble">3</div>
+              <span class="step-label">Confirm</span>
+            </div>
+          </div>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script>AOS.init();</script>
-  <script src="js/header.js"></script>
-  <script src="js/footer.js"></script>
-  <script src="js/script.js"></script>
-</body>
-</html>
-  <script>
-  document.getElementById('project-form').addEventListener('submit', function(event) {
-    // Prevent standard browser redirect
-    event.preventDefault();
+          <!-- Calendar Header -->
+          <div class="cal-header">
+            <h5 id="monthDisplay"></h5>
+            <div class="cal-nav">
+              <button class="cal-nav-btn" id="prevMonth" aria-label="Previous month">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button class="cal-nav-btn" id="nextMonth" aria-label="Next month">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
 
-    const form = this;
-    const formData = new FormData(form);
-    const successMessage = document.getElementById('success-message');
-    const submitButton = form.querySelector('button[type="submit"]');
+          <!-- Day-of-Week Row -->
+          <div class="cal-dow-row">
+            <div class="cal-dow">Sun</div>
+            <div class="cal-dow">Mon</div>
+            <div class="cal-dow">Tue</div>
+            <div class="cal-dow">Wed</div>
+            <div class="cal-dow">Thu</div>
+            <div class="cal-dow">Fri</div>
+            <div class="cal-dow">Sat</div>
+          </div>
 
-    // Change button text to show it's working
-    submitButton.textContent = 'Sending...';
-    submitButton.disabled = true;
+          <!-- Dates -->
+          <div id="calendarGrid" class="cal-dates-grid"></div>
 
-    // Send data to Web3Forms via Fetch API
-    fetch('https://api.web3forms.com/submit', {
+          <!-- Selected Date Readout -->
+          <div class="cal-selected-readout" id="dateReadout">
+            <i class="fa-regular fa-calendar" style="color:rgba(26,107,204,.5);"></i>
+            <span id="dateReadoutText">Select an available date to see time slots</span>
+          </div>
+
+          <!-- Legend -->
+          <div class="cal-legend">
+            <div class="legend-item"><span class="legend-dot today"></span> Today</div>
+            <div class="legend-item"><span class="legend-dot available"></span> Has Slots</div>
+            <div class="legend-item"><span class="legend-dot selected"></span> Selected</div>
+            <div class="legend-item"><span class="legend-dot disabled"></span> Unavailable</div>
+          </div>
+        </div>
+
+        <!-- ════ RIGHT: FORM ════ -->
+        <div class="bk-card" id="formCard">
+
+          <!-- Form itself -->
+          <form action="https://api.web3forms.com/submit" method="POST" id="project-form" novalidate>
+            <input type="hidden" name="access_key" value="a16358e7-a394-4206-8b98-1383badf0c9f">
+            <input type="hidden" name="subject" value="New Strategy Call Booking — E Multitech Solution">
+            <input type="hidden" name="from_name" value="E Multitech Booking System">
+            <input type="hidden" name="selected_date" id="hidden_date">
+            <input type="hidden" name="selected_time" id="hidden_time">
+            <input type="hidden" name="botcheck" value="">
+
+            <!-- Name Row -->
+            <div class="row g-3 mb-3">
+              <div class="col-6">
+                <label class="form-section-label">First Name</label>
+                <input type="text" name="firstName" class="emt-input" placeholder="Rajesh" required autocomplete="given-name">
+              </div>
+              <div class="col-6">
+                <label class="form-section-label">Last Name</label>
+                <input type="text" name="lastName" class="emt-input" placeholder="Sharma" required autocomplete="family-name">
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+              <label class="form-section-label">Work Email</label>
+              <input type="email" name="email" class="emt-input" placeholder="rajesh@company.com" required autocomplete="email">
+            </div>
+
+            <!-- Phone -->
+            <div class="mb-3">
+              <label class="form-section-label">Phone / WhatsApp</label>
+              <div class="phone-wrap">
+                <span class="phone-flag">📞</span>
+                <input type="tel" name="phone" class="emt-input" placeholder="+977 98XXXXXXXX" autocomplete="tel">
+              </div>
+            </div>
+
+            <!-- Service Interest -->
+            <div class="mb-3">
+              <label class="form-section-label">What Are You Building?</label>
+              <select name="serviceInterest" class="emt-select" required>
+                <option value="" disabled selected>Select a service area</option>
+                <option value="custom-software">Custom Software Development</option>
+                <option value="web-app">Web Application</option>
+                <option value="mobile-app">Mobile App (iOS / Android)</option>
+                <option value="ai-integration">AI & Automation Integration</option>
+                <option value="system-audit">System Performance Audit</option>
+                <option value="api-backend">API & Backend Architecture</option>
+                <option value="other">Something Else</option>
+              </select>
+            </div>
+
+            <div class="form-divider mb-3"></div>
+
+            <!-- Time Slots -->
+            <div class="mb-3">
+              <label class="form-section-label">
+                <i class="fa-regular fa-clock me-1" style="color:var(--cyan);"></i>
+                Available Time Slots
+              </label>
+              <div class="slots-wrap" id="timeSlotsContainer">
+                <div class="slots-empty">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  <span>Select a date on the calendar first</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Booking Summary Strip -->
+            <div class="booking-summary mb-3" id="bookingSummary">
+              <i class="fa-solid fa-circle-check" style="color:var(--cyan);flex-shrink:0;"></i>
+              <span style="font-size:.78rem;font-weight:600;color:var(--text-soft);">Your slot:</span>
+              <span class="summary-chip" id="summaryDate"><i class="fa-regular fa-calendar"></i> —</span>
+              <span class="summary-chip" id="summaryTime"><i class="fa-regular fa-clock"></i> —</span>
+            </div>
+
+            <!-- Project Detail -->
+            <div class="mb-3">
+              <label class="form-section-label">Brief Project Context <span style="opacity:.5;font-weight:400;">(optional)</span></label>
+              <textarea name="projectDetail" class="emt-input" rows="3"
+                placeholder="e.g. We're building a live auction platform and need architecture advice on handling 5,000 concurrent users…"
+                style="resize:vertical;"></textarea>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class="btn-submit-emt" id="submitBtn" disabled>
+              <span class="btn-spinner" id="btnSpinner"></span>
+              <i class="fa-solid fa-lock" id="btnIcon"></i>
+              <span id="btnText">Select a Date &amp; Time to Continue</span>
+            </button>
+
+            <p style="text-align:center;font-size:.7rem;color:var(--text-muted);margin-top:12px;">
+              <i class="fa-solid fa-shield-halved" style="color:var(--cyan);"></i>
+              Your information is encrypted and never sold. NDA available on request.
+            </p>
+          </form>
+
+          <!-- Success Panel (replaces form) -->
+          <div class="success-panel" id="successPanel">
+            <div class="success-icon-ring"><i class="fa-solid fa-check"></i></div>
+            <h4>You're on the calendar. ✓</h4>
+            <p>Our engineering team has received your booking request. Expect a confirmation email within <strong>24 hours</strong> with a calendar invite and a short pre-call questionnaire.</p>
+            <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px;width:100%;max-width:320px;">
+              <div class="summary-chip" id="successDate" style="justify-content:center;padding:10px 16px;font-size:.82rem;"><i class="fa-regular fa-calendar"></i> —</div>
+              <div class="summary-chip" id="successTime" style="justify-content:center;padding:10px 16px;font-size:.82rem;"><i class="fa-regular fa-clock"></i> —</div>
+            </div>
+            <a href="works.html" style="margin-top:16px;font-size:.8rem;color:#7eb8ff;text-decoration:none;">
+              While you wait — explore our case studies <i class="fa-solid fa-arrow-right ms-1"></i>
+            </a>
+          </div>
+
+        </div><!-- /formCard -->
+      </div><!-- /booking-grid -->
+    </div><!-- /container -->
+  </section>
+</main>
+
+<!-- FOOTER injected by js/footer.js -->
+<div id="site-footer"></div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/script.js"></script>
+
+<script>
+AOS.init({ once: true, duration: 700 });
+
+/* ═══════════════════════════════════════════════════════════
+   CONFIGURATION — edit these to match your real availability
+   ═══════════════════════════════════════════════════════════ */
+const CONFIG = {
+  // 0=Sun … 6=Sat  — days that are ALWAYS blocked
+  blockedWeekdays: [0, 6],
+
+  // Specific dates blocked (YYYY-MM-DD) — holidays, leaves etc.
+  blockedDates: [
+    '2025-01-01', '2025-09-18', '2025-10-02',
+    '2026-01-01', '2026-09-18', '2026-10-02',
+  ],
+
+  // Time slots offered — format 'HH:MM AM/PM | Timezone'
+  timeSlots: [
+    { time: '09:00 AM', tz: 'NPT',  label: '09:00 AM NPT' },
+    { time: '10:00 AM', tz: 'NPT',  label: '10:00 AM NPT' },
+    { time: '11:00 AM', tz: 'NPT',  label: '11:00 AM NPT' },
+    { time: '12:00 PM', tz: 'NPT',  label: '12:00 PM NPT' },
+    { time: '02:00 PM', tz: 'NPT',  label: '02:00 PM NPT' },
+    { time: '03:00 PM', tz: 'NPT',  label: '03:00 PM NPT' },
+    { time: '04:00 PM', tz: 'NPT',  label: '04:00 PM NPT' },
+    { time: '05:30 PM', tz: 'NPT',  label: '05:30 PM NPT' },
+    { time: '06:00 PM', tz: 'NPT',  label: '06:00 PM NPT' },
+  ],
+
+  // Randomly pre-book some slots to look realistic (indices 0-based)
+  // In a real app you'd fetch this from a backend
+  getSomeBookedSlots(dateStr) {
+    // Deterministic fake-booked based on date string hash
+    const hash = dateStr.split('').reduce((a,c)=>a+c.charCodeAt(0),0);
+    const count = hash % 3; // 0–2 slots booked
+    const booked = new Set();
+    for (let i = 0; i < count; i++) booked.add((hash + i * 3) % this.timeSlots.length);
+    return booked;
+  }
+};
+
+/* ═══════════════════════════════════════════════════════════
+   STATE
+   ═══════════════════════════════════════════════════════════ */
+let currentYear, currentMonth, selectedDate = null, selectedTime = null;
+
+const MONTHS = ['January','February','March','April','May','June',
+                'July','August','September','October','November','December'];
+
+/* ═══════════════════════════════════════════════════════════
+   HELPERS
+   ═══════════════════════════════════════════════════════════ */
+function toDateStr(y, m, d) {
+  return `${y}-${String(m+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+}
+
+function isBlocked(y, m, d) {
+  const dow  = new Date(y, m, d).getDay();
+  const dStr = toDateStr(y, m, d);
+  return CONFIG.blockedWeekdays.includes(dow) || CONFIG.blockedDates.includes(dStr);
+}
+
+function isPast(y, m, d) {
+  const today = new Date(); today.setHours(0,0,0,0);
+  return new Date(y, m, d) < today;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   RENDER CALENDAR
+   ═══════════════════════════════════════════════════════════ */
+function renderCalendar() {
+  const grid    = document.getElementById('calendarGrid');
+  const display = document.getElementById('monthDisplay');
+  grid.innerHTML = '';
+  display.textContent = `${MONTHS[currentMonth]} ${currentYear}`;
+
+  const firstDow  = new Date(currentYear, currentMonth, 1).getDay();
+  const daysInMon = new Date(currentYear, currentMonth + 1, 0).getDate();
+  const todayObj  = new Date(); todayObj.setHours(0,0,0,0);
+
+  // empty cells
+  for (let i = 0; i < firstDow; i++) {
+    const empty = document.createElement('div');
+    empty.className = 'cal-day empty';
+    grid.appendChild(empty);
+  }
+
+  for (let d = 1; d <= daysInMon; d++) {
+    const cell   = document.createElement('div');
+    const dStr   = toDateStr(currentYear, currentMonth, d);
+    const dayObj = new Date(currentYear, currentMonth, d);
+    const past   = isPast(currentYear, currentMonth, d);
+    const blocked = isBlocked(currentYear, currentMonth, d);
+
+    cell.className = 'cal-day';
+    cell.textContent = d;
+
+    if (past || blocked) {
+      cell.classList.add('disabled');
+    } else {
+      cell.classList.add('has-slots');
+      cell.setAttribute('data-date', dStr);
+      cell.addEventListener('click', () => selectDate(dStr, cell));
+    }
+
+    if (dayObj.getTime() === todayObj.getTime()) cell.classList.add('today');
+    if (dStr === selectedDate) cell.classList.add('selected');
+
+    grid.appendChild(cell);
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   SELECT DATE
+   ═══════════════════════════════════════════════════════════ */
+function selectDate(dStr, cellEl) {
+  selectedDate = dStr;
+  selectedTime = null;
+  document.getElementById('hidden_date').value = dStr;
+  document.getElementById('hidden_time').value = '';
+
+  // re-render to update selection highlight
+  renderCalendar();
+
+  // date readout
+  const readout = document.getElementById('dateReadout');
+  const [y,m,d] = dStr.split('-');
+  const dateObj  = new Date(+y, +m-1, +d);
+  const label    = dateObj.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'});
+  document.getElementById('dateReadoutText').textContent = label;
+  readout.classList.add('has-date');
+
+  // render time slots
+  renderTimeSlots(dStr);
+
+  // progress
+  setStep(2);
+  updateSummary();
+  updateSubmitBtn();
+}
+
+/* ═══════════════════════════════════════════════════════════
+   RENDER TIME SLOTS
+   ═══════════════════════════════════════════════════════════ */
+function renderTimeSlots(dStr) {
+  const container = document.getElementById('timeSlotsContainer');
+  container.innerHTML = '';
+
+  const bookedIndices = CONFIG.getSomeBookedSlots(dStr);
+  const slotsGrid = document.createElement('div');
+  slotsGrid.className = 'slots-grid';
+
+  CONFIG.timeSlots.forEach((slot, idx) => {
+    const btn = document.createElement('div');
+    btn.className = 'time-slot';
+    btn.textContent = slot.label;
+
+    if (bookedIndices.has(idx)) {
+      btn.classList.add('booked');
+      btn.title = 'Already booked';
+    } else {
+      btn.style.animationDelay = `${idx * 40}ms`;
+      btn.addEventListener('click', () => selectTime(slot, btn));
+    }
+
+    if (selectedTime === slot.time) btn.classList.add('selected');
+    slotsGrid.appendChild(btn);
+  });
+
+  container.appendChild(slotsGrid);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   SELECT TIME
+   ═══════════════════════════════════════════════════════════ */
+function selectTime(slot, btnEl) {
+  selectedTime = slot.time;
+  document.getElementById('hidden_time').value = slot.label;
+
+  // visual update
+  document.querySelectorAll('.time-slot').forEach(b => b.classList.remove('selected'));
+  btnEl.classList.add('selected');
+
+  setStep(3);
+  updateSummary();
+  updateSubmitBtn();
+}
+
+/* ═══════════════════════════════════════════════════════════
+   PROGRESS STEPS
+   ═══════════════════════════════════════════════════════════ */
+function setStep(n) {
+  [1,2,3].forEach(i => {
+    const step   = document.getElementById(`step${i}`);
+    const bubble = step.querySelector('.step-bubble');
+    step.classList.remove('active','done');
+    bubble.classList.remove('active','done');
+    if (i < n)       { step.classList.add('done');   bubble.classList.add('done');   bubble.innerHTML = '<i class="fa-solid fa-check" style="font-size:.65rem;"></i>'; }
+    else if (i === n){ step.classList.add('active'); bubble.classList.add('active'); bubble.textContent = i; }
+    else             { bubble.textContent = i; }
+  });
+  if (document.getElementById('line1'))
+    document.getElementById('line1').classList.toggle('done', n >= 2);
+  if (document.getElementById('line2'))
+    document.getElementById('line2').classList.toggle('done', n >= 3);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   SUMMARY STRIP
+   ═══════════════════════════════════════════════════════════ */
+function updateSummary() {
+  const strip = document.getElementById('bookingSummary');
+  const dChip = document.getElementById('summaryDate');
+  const tChip = document.getElementById('summaryTime');
+
+  if (selectedDate) {
+    const [y,m,d] = selectedDate.split('-');
+    const lbl = new Date(+y,+m-1,+d).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
+    dChip.innerHTML = `<i class="fa-regular fa-calendar"></i> ${lbl}`;
+  }
+  if (selectedTime) {
+    tChip.innerHTML = `<i class="fa-regular fa-clock"></i> ${selectedTime}`;
+  }
+  strip.classList.toggle('visible', !!(selectedDate && selectedTime));
+}
+
+/* ═══════════════════════════════════════════════════════════
+   SUBMIT BUTTON STATE
+   ═══════════════════════════════════════════════════════════ */
+function updateSubmitBtn() {
+  const btn  = document.getElementById('submitBtn');
+  const txt  = document.getElementById('btnText');
+  const icon = document.getElementById('btnIcon');
+  const ready = !!(selectedDate && selectedTime);
+  btn.disabled = !ready;
+  if (ready) {
+    txt.textContent  = 'Confirm & Book This Slot';
+    icon.className   = 'fa-solid fa-rocket';
+  } else {
+    txt.textContent  = 'Select a Date & Time to Continue';
+    icon.className   = 'fa-solid fa-lock';
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   NAVIGATION
+   ═══════════════════════════════════════════════════════════ */
+document.getElementById('prevMonth').addEventListener('click', () => {
+  currentMonth--;
+  if (currentMonth < 0) { currentMonth = 11; currentYear--; }
+  renderCalendar();
+});
+document.getElementById('nextMonth').addEventListener('click', () => {
+  currentMonth++;
+  if (currentMonth > 11) { currentMonth = 0; currentYear++; }
+  renderCalendar();
+});
+
+/* ═══════════════════════════════════════════════════════════
+   FORM SUBMIT
+   ═══════════════════════════════════════════════════════════ */
+document.getElementById('project-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+
+  if (!selectedDate || !selectedTime) {
+    alert('Please select a date and time slot before submitting.');
+    return;
+  }
+
+  const btn     = document.getElementById('submitBtn');
+  const spinner = document.getElementById('btnSpinner');
+  const icon    = document.getElementById('btnIcon');
+  const txt     = document.getElementById('btnText');
+
+  btn.disabled       = true;
+  spinner.style.display = 'block';
+  icon.style.display    = 'none';
+  txt.textContent       = 'Booking your slot…';
+
+  try {
+    const formData = new FormData(this);
+    const response = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       body: formData
-    })
-    .then(async (response) => {
-      let json = await response.json();
-      if (response.status == 200) {
-        // If successful, show the message and clear the form
-        successMessage.style.display = 'block';
-        form.reset();
-      } else {
-        // If there's an error with the key or form
-        console.log(response);
-        alert(json.message);
-      }
-    })
-    .catch(error => {
-      console.log(error);
-      alert("Something went wrong!");
-    })
-    .finally(() => {
-      // Reset the button state
-      submitButton.textContent = 'Submit';
-      submitButton.disabled = false;
-      
-      // Hide the success message after 5 seconds
-      setTimeout(() => {
-        successMessage.style.display = 'none';
-      }, 5000);
     });
-  });
+    const data = await response.json();
+
+    if (data.success) {
+      // populate success chips
+      const [y,m,d] = selectedDate.split('-');
+      const lbl = new Date(+y,+m-1,+d).toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'});
+      document.getElementById('successDate').innerHTML = `<i class="fa-regular fa-calendar"></i> ${lbl}`;
+      document.getElementById('successTime').innerHTML = `<i class="fa-regular fa-clock"></i> ${selectedTime} NPT`;
+
+      // show success panel
+      document.getElementById('project-form').style.display = 'none';
+      document.getElementById('successPanel').classList.add('visible');
+
+      // reset calendar highlight
+      selectedDate = null; selectedTime = null;
+      setStep(1);
+    } else {
+      throw new Error('Submission failed');
+    }
+  } catch (err) {
+    btn.disabled       = false;
+    spinner.style.display = 'none';
+    icon.style.display    = 'inline';
+    txt.textContent       = 'Something went wrong — please try again';
+    btn.style.background  = 'linear-gradient(135deg,#c0392b,#922b21)';
+    setTimeout(() => {
+      btn.style.background = '';
+      txt.textContent = 'Confirm & Book This Slot';
+    }, 3000);
+  }
+});
+
+/* ═══════════════════════════════════════════════════════════
+   INIT
+   ═══════════════════════════════════════════════════════════ */
+(function init() {
+  const now    = new Date();
+  currentYear  = now.getFullYear();
+  currentMonth = now.getMonth();
+  renderCalendar();
+  updateSubmitBtn();
+})();
 </script>
 </body>
 </html>
